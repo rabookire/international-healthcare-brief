@@ -61,3 +61,9 @@ GitHub Actions run [39507846953](https://github.com/rabookire/international-heal
 | Methodology | Full standard and 19-name Tier 1 list, including Dana-Farber, load under the Pages subdirectory |
 
 The managed preview initially failed to mount `/proc`. Live DOM reads and navigation subsequently worked, but browser credential protection blocked click/select actions and screenshot observations. The documented fresh-tab recovery did not remove the restriction. No screenshot was produced. Sorting, exports, reset, click-driven filters, back/forward behavior, keyboard focus, touch and desktop/mobile visual layout are not verified. No full interaction journey is claimed; the procedure remains a draft. These are browser-environment limitations, not proven application failures. See BUILD-STATUS.md and SOURCE-AUDIT.md.
+
+## Option 3 redesign — 2026-10-20
+
+The review branch replaces the overview/map with the selected split workspace, preserves the canonical facts, and adds camera/ownership regression checks. The current redesigned source passes **24 Python + 16 Node tests**, projection equality, syntax and staging. Independent code review findings and repairs are in [design-qa.md](./design-qa.md).
+
+The managed preview now starts successfully using the supplied `npm run dev` command. Cloud browser creation still fails with the native credential-state error, including after reset. No browser-rendered screenshot, visual comparison, primary interaction, console or mobile check is claimed for the redesign. The Product Design result is blocked. Existing execution evidence above describes the earlier deployed layout, not the redesigned branch.

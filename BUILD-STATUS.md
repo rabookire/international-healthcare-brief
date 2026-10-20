@@ -33,3 +33,9 @@ The static reader is published on GitHub Pages, with a reviewed partial inventor
 4. **Daily production.** The editorial workflow is encoded. No brief has been fabricated and no edition has been backdated. No complete current 24-hour scan is claimed; the first daily edition and any recurring operating schedule remain to be established.
 
 A reviewer should complete these checks before representing the publication as production-ready.
+
+## Option 3 redesign under review
+
+The selected Research Desk layout is implemented in a separate review branch: compact navigation/filters, left activity list/right map, contextual source/details, map drag/wheel/pinch/keyboard controls, adaptive mobile details and expanded-map focus handling. All facts and generated data remain unchanged. Forty automated checks pass. Independent source review findings were corrected.
+
+The supported preview starts, but browser capture remains blocked by native credential state. Visual design QA is **blocked**, recorded in [design-qa.md](./design-qa.md). This redesign has not replaced the live layout. The earlier deployment evidence above applies to the existing live version.

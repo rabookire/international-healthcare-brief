@@ -10,7 +10,7 @@ module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 
 class PublicPackage(unittest.TestCase):
     def test_required_reader_assets_are_staged(self):
-        required=['index.html','map/index.html','methodology/index.html','data/index.html','briefs/index.html','institutions/index.html','assets/app.mjs','assets/core.mjs','assets/styles.css','assets/world.geojson','assets/places.json','data/tracker.json','data/institutions.json','data/evidence.json','data/coverage.json','data/briefs.json','METHODOLOGY.md','SEED-REPORT.md']
+        required=['index.html','map/index.html','methodology/index.html','data/index.html','briefs/index.html','institutions/index.html','assets/app.mjs','assets/core.mjs','assets/styles.css','assets/world.geojson','assets/places.json','data/tracker.json','data/institutions.json','data/evidence.json','data/coverage.json','data/briefs.json','METHODOLOGY.md','SEED-REPORT.md','design-qa.md','assets/map-camera.mjs','assets/icons/search.svg','assets/icons/LICENSE.txt']
         with tempfile.TemporaryDirectory() as d:
             r=Path(d)
             for name in required:

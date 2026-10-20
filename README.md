@@ -64,3 +64,9 @@ gh workflow run pages.yml
 ```
 
 If the repository already exists, add its remote and push the reviewed source rather than creating a duplicate. If Pages already exists, preserve its settings and use the configured deployment workflow. Confirm the Actions run and returned Pages URL, then exercise the live map and source links. Repository creation and Pages administration require capabilities beyond content-only GitHub access.
+
+## Option 3 redesign review
+
+The redesign source implements the selected split map/list dashboard with concise text, compact filters and contextual details. The homepage opens the workspace directly. The data and source standard are unchanged. **40 automated checks pass** (24 Python + 16 Node). See [design-qa.md](./design-qa.md) for the remaining browser/visual acceptance gate; this branch is not the published redesign.
+
+For the supported managed preview, run `sites-preview start "$PWD"`. Its `npm run dev` command serves static files with the Python standard library; it does not introduce a production build or runtime dependency. Future checks use `node --test tests/test_*.mjs` so map-camera regressions are included.
