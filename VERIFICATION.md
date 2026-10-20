@@ -42,4 +42,22 @@ A passing local build is distinct from a successful Pages deployment. Record the
 
 ## Current execution record
 
-2026-10-20: 24 Python tests and 10 Node tests passed, as did projection equality, JavaScript syntax and public staging checks. The supported preview failed before startup because its sandbox could not mount `/proc`; no browser journey or screenshot is claimed. The procedure remains a draft pending an actual complete journey. See BUILD-STATUS.md and SOURCE-AUDIT.md.
+2026-10-20: 24 Python tests and 10 Node tests passed, as did projection equality, JavaScript syntax and public staging checks. Independent review found no new blocking finding in the twelve-month changes.
+
+GitHub Actions run [39507846953](https://github.com/rabookire/international-healthcare-brief/actions/runs/39507846953) passed validation and deployment for source commit `2753cd16afb59adccdb373f90387b9dc6e91a2f7`. The deployment returned https://rabookire.github.io/international-healthcare-brief/ and that page was opened successfully. All following observations are from the deployed reader, not a mock:
+
+| Live DOM observation | Observed result |
+| --- | --- |
+| Overview and unfiltered map | 19 institutions, 98 records, 38 countries; 98 accessible record pins |
+| History tracker `footprint=new` | 14 table rows; Alameda displays January 2026 with day not disclosed |
+| Vietnam map URL | 2 records; country panel includes Johns Hopkins and Penn |
+| GCC + T3 URL | 0 records with an explicit empty state |
+| UCLA + China + T7 + Baseline + baseline footprint URL | 4 records; primary and secondary tactics both match |
+| Saudi Arabia + operational year 2026 URL | 0 records; no unknown date treated as an opening |
+| Mayo map URL | 21 records |
+| Institution index and Dana-Farber profile | 19 profile cards; Dana-Farber has 5 records in 5 countries |
+| Alameda deep-linked record dialog | Announced; exact announcement/operational dates unstated; month-only latest event; secondary source and evidence limits visible |
+| Brief archive | No edition published yet; no fabricated no-news or backdated edition |
+| Methodology | Full standard and 19-name Tier 1 list, including Dana-Farber, load under the Pages subdirectory |
+
+The managed preview initially failed to mount `/proc`. Live DOM reads and navigation subsequently worked, but browser credential protection blocked click/select actions and screenshot observations. The documented fresh-tab recovery did not remove the restriction. No screenshot was produced. Sorting, exports, reset, click-driven filters, back/forward behavior, keyboard focus, touch and desktop/mobile visual layout are not verified. No full interaction journey is claimed; the procedure remains a draft. These are browser-environment limitations, not proven application failures. See BUILD-STATUS.md and SOURCE-AUDIT.md.

@@ -1,6 +1,11 @@
 # Build status — 2026-10-20
 
-The static implementation is prepared and structurally tested. This is not a claim of a complete production launch.
+The static reader is published on GitHub Pages, with a reviewed partial inventory and passing CI. Research coverage and browser acceptance remain incomplete.
+
+- Live publication: https://rabookire.github.io/international-healthcare-brief/
+- Live map: https://rabookire.github.io/international-healthcare-brief/map/
+- Repository: https://github.com/rabookire/international-healthcare-brief
+- Verified source deployment: `2753cd16afb59adccdb373f90387b9dc6e91a2f7`; [Actions run #1](https://github.com/rabookire/international-healthcare-brief/actions/runs/39507846953) completed validation and deployment successfully. Subsequent documentation-only commits use the same checked pipeline.
 
 ## Delivered source
 
@@ -16,15 +21,15 @@ The static implementation is prepared and structurally tested. This is not a cla
 - 24 Python tests: editorial validation, lifecycle/date/source boundaries, duplicate/shared records, deterministic projections, edition metadata and public staging.
 - 10 Node tests: actual seeded filter results, compound filters, shared membership, post-launch activity, URL roundtrips, signal-only archive filtering, Markdown safety/rebasing, CSV formula handling and map-locator coverage.
 - Generator `--check`: 24 derived projections match the canonical inputs.
-- JavaScript syntax checks, staged HTML link resolution and public asset packaging completed. Pages workflow action versions were checked against current primary documentation; remote execution remains unverified.
+- JavaScript syntax checks, staged HTML link resolution and public asset packaging completed. Pages workflow action versions were checked against current primary documentation; remote validation and deployment passed.
 - Fresh independent source/code review found missing publication assets, future-activity and archive boundary problems. These were repaired and checked. Active-year display and signal-only archive-country choices were also corrected.
 - Ten representative source records rechecked in the managing review; see SOURCE-AUDIT.md. Broader per-record evidence is in data/evidence.json.
 
 ## Unfinished acceptance criteria
 
 1. **Research completeness.** This is a partial sourced inventory, not an exhaustive baseline or 12-month historical backfill. Detailed per-institution gaps are in SEED-REPORT.md. No qualifying record was established in this bounded sweep for Boston Children's Hospital, Children's Hospital of Philadelphia, Texas Children's Hospital, Stanford Medicine or NYU Langone Health. That is not a zero-footprint conclusion. Tier 2 and Market Signal coverage need the editorial sweeps described in RUNBOOK.md.
-2. **Browser QA.** The supported managed preview could not start because its sandbox could not mount `/proc`. Consequently desktop/mobile visual layout, real interaction journeys, touch, keyboard focus, downloads and browser back/forward behavior remain unverified. Unit/static checks are not browser evidence. The procedure in VERIFICATION.md remains a draft pending the first complete browser journey.
-3. **GitHub/Pages publication.** The public GitHub repository has been created under the connected account. Pages is configured to use GitHub Actions; the source push and first deployment are pending. No live URL is claimed until the deployment is observed.
+2. **Browser QA.** The managed preview could not mount `/proc`. After deployment, live DOM checks confirmed the 98-record overview/map, 14-record history, Vietnam country panel, compound URL filters, Mayo and Dana-Farber counts, record details, archive empty state and methodology. Browser credential protection then blocked interaction and screenshot observations, including after the prescribed fresh-tab recovery. Clicks, sorting, exports, keyboard/touch behavior, visual layout and mobile acceptance remain unverified. The procedure in VERIFICATION.md remains a draft pending a full interaction journey.
+3. **Publication maintenance.** Repository creation, Pages configuration, source push, CI and initial deployment are complete. The live URL was returned by the successful deployment and opened in the browser. GitHub emitted non-blocking upstream action Node runtime and runner migration notices; no check was weakened.
 4. **Daily production.** The editorial workflow is encoded. No brief has been fabricated and no edition has been backdated. No complete current 24-hour scan is claimed; the first daily edition and any recurring operating schedule remain to be established.
 
 A reviewer should complete these checks before representing the publication as production-ready.

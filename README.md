@@ -4,7 +4,8 @@ Independent intelligence on US hospitals’ international businesses, for busine
 
 Follow overseas facilities, operating partnerships, management and consulting agreements, in-country offices, patient channels and named-market care services. Each published fact links to a public source. Analysis is labeled. Not investment or business advice. No affiliation or endorsement is implied.
 
-- [Publication home](./index.html)
+- [Live publication](https://rabookire.github.io/international-healthcare-brief/) · [Live map](https://rabookire.github.io/international-healthcare-brief/map/) · [12-month historical activity](https://rabookire.github.io/international-healthcare-brief/data/?footprint=new)
+- [Publication home source](./index.html)
 - [Latest brief and searchable archive](./briefs/index.html) — editions appear only after a completed scan identifies material news; historical seeding does not create backdated briefs.
 - [Interactive global map](./map/index.html)
 - [Sortable, filterable permanent tracker](./data/index.html) · [CSV](./data/tracker.csv) · [Markdown view](./data/tracker.md)
@@ -13,7 +14,7 @@ Follow overseas facilities, operating partnerships, management and consulting ag
 
 ## Current build status
 
-The initial inventory contains **98 records: 84 baseline and 14 historical backfill, across 38 countries**. Coverage is partial; 14 of 19 Tier 1 institutions have seeded records. The reader and editorial tooling are implemented, with 34 passing automated checks. The same-standard historical window is October 20, 2025–October 19, 2026. Browser QA, exhaustive seeding and live Pages deployment remain incomplete. See [BUILD-STATUS.md](./BUILD-STATUS.md) and [SOURCE-AUDIT.md](./SOURCE-AUDIT.md) for evidence and limits.
+The initial inventory contains **98 records: 84 baseline and 14 historical backfill, across 38 countries**. Coverage is partial; 14 of 19 Tier 1 institutions have seeded records. The reader and editorial tooling are implemented, with 34 passing automated checks. The same-standard historical window is October 20, 2025–October 19, 2026. GitHub Pages is live; the source and deployment passed the 34 automated checks. Live DOM checks confirmed page rendering, URL-filtered counts and source detail rendering. Click-based, visual, download, keyboard and mobile QA remain incomplete because browser credential protection blocked interactions and screenshots. Exhaustive seeding also remains incomplete. See [BUILD-STATUS.md](./BUILD-STATUS.md) and [SOURCE-AUDIT.md](./SOURCE-AUDIT.md) for evidence and limits.
 
 ## Sourcing standard — non-negotiable
 
