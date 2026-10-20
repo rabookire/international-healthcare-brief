@@ -1,0 +1,97 @@
+# UCLA Health
+
+Last verified: 2026-10-20. Inventory as of 2026-10-20.
+
+[Interactive profile](./index.html?institution=UCLA%20Health) · [Map slice](../map/?institution=UCLA%20Health) · [All institutions](../institutions/)
+
+Independent publication. Public sources only. Analysis is labeled. Not investment or business advice.
+
+## Footprint inventory
+
+Baseline identifies a pre-existing arrangement at seeding; it is not an operating-status claim. A baseline arrangement may still be planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
+
+| Record | Institution | Country | Region | Tactic | Status | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| IHB-0072 | UCLA Health | Jordan | Other | T4 Consulting/advisory | Baseline | [Source](https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital) |
+| IHB-0073 | UCLA Health | China | Asia Pacific | T5 Strategic affiliation/partnership | Baseline | [Source](https://www.uclahealth.org/international-services/consulting-education-services/international-projects/case-studies/second-affiliated-hospital-zhejiang-university-china) |
+| IHB-0074 | UCLA Health | China | Asia Pacific | T7 Telemedicine/remote second opinion | Baseline | [Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) |
+| IHB-0075 | UCLA Health | China | Asia Pacific | T7 Telemedicine/remote second opinion | Baseline | [Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) |
+| IHB-0076 | UCLA Health | China | Asia Pacific | T7 Telemedicine/remote second opinion | Baseline | [Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) |
+
+## Chronological timeline
+
+### Date not disclosed — UCLA Health lists Saint Lucia Consulting as a China remote-second-opinion referral partner
+
+IHB-0076 · China · Baseline · T7 Telemedicine/remote second opinion
+
+Analysis: Named referral agreements provide a care-access channel without facility ownership.
+They can matter to strategists evaluating how specialist opinions reach overseas patients.
+
+[Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) (Primary; source date: Not displayed; verified 2026-10-20).
+
+Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+
+Source scope: UCLA explicitly limits the relationship to receiving patient referrals; do not imply broader affiliation.
+
+### Date not disclosed — UCLA Health lists Jiahui Health as a China remote-second-opinion referral partner
+
+IHB-0075 · China · Baseline · T7 Telemedicine/remote second opinion
+
+Analysis: Named referral agreements provide a care-access channel without facility ownership.
+They can matter to strategists evaluating how specialist opinions reach overseas patients.
+
+[Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) (Primary; source date: Not displayed; verified 2026-10-20).
+
+Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+
+Source scope: UCLA explicitly limits the relationship to receiving patient referrals; do not imply broader affiliation.
+
+### Date not disclosed — UCLA Health lists Auro Medical Consulting as a China remote-second-opinion referral partner
+
+IHB-0074 · China · Baseline · T7 Telemedicine/remote second opinion
+
+Analysis: Named referral agreements provide a care-access channel without facility ownership.
+They can matter to strategists evaluating how specialist opinions reach overseas patients.
+
+[Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) (Primary; source date: Not displayed; verified 2026-10-20).
+
+Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+
+Source scope: UCLA explicitly limits the relationship to receiving patient referrals; do not imply broader affiliation.
+
+### Date not disclosed — UCLA Health and SAHZU maintain a clinical collaboration including telemedicine
+
+IHB-0073 · China · Baseline · T5 Strategic affiliation/partnership
+
+Analysis: An operational clinical affiliation can combine local care support with a referral pathway.
+This creates a different competitive footprint from owning an overseas hospital.
+
+[Source](https://www.uclahealth.org/international-services/consulting-education-services/international-projects/case-studies/second-affiliated-hospital-zhejiang-university-china) (Primary; source date: Not displayed; verified 2026-10-20).
+
+Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+
+Source scope: Exact historical signing date not supplied; no exact date or current volume is inferred.
+
+### Date not disclosed — UCLA Health advises development of Kingdom University Hospital in Amman
+
+IHB-0072 · Jordan · Baseline · T4 Consulting/advisory
+
+Analysis: Hospital development advice can extend an academic medical center’s reach before a facility opens.
+This model places operating standards and workforce preparation at the center of market entry.
+
+[Source](https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital) (Primary; source date: Not displayed; verified 2026-10-20).
+
+Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-20: Expanded to the same-standard 12-month historical window. Add dated corroboration of continued pre-opening advice while preserving Baseline classification and original dates. Delegation visit does not pass the material-news threshold.
+
+Source scope: Baseline means a pre-existing advisory engagement, not an operational hospital. The source supplies only the contract month, so no exact announcement date is entered.
+
+## Coverage notes
+
+October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.
+
+No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep.
+
+Open sourcing gaps:
+
+- Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change.

@@ -1,0 +1,222 @@
+[
+  {
+    "institution": "Mayo Clinic",
+    "candidate": "Sheikh Shakhbout Medical City ownership",
+    "reason": "Historical ownership stake was sold in 2024; must not appear as a current joint venture. Outside requested 90-day backfill. Strict primary-party transaction evidence not opened in this assignment.",
+    "tip_url": "https://www.jonesday.com/en/practices/experience/2024/03/mayo-clinic-sells-stake-in-sheikh-shakhbout-medical-city"
+  },
+  {
+    "institution": "Memorial Sloan Kettering",
+    "candidate": "Chennai remote second opinion center",
+    "reason": "Historical official India about page redirects; unable to confirm current local center from that page."
+  },
+  {
+    "institution": "Cleveland Clinic",
+    "candidate": "Bermuda representative as in-country presence",
+    "reason": "Official Bermuda page explicitly locates representative in contiguous United States. Do not map as physical Bermuda office."
+  },
+  {
+    "institution": "Cleveland Clinic",
+    "candidate": "London Innovation Summit 2026",
+    "reason": "Conference and data/research focus; no qualifying operational event verified."
+  },
+  {
+    "institution": "Mayo Clinic",
+    "candidate": "Care Network 15-year anniversary",
+    "reason": "Anniversary and generic membership profile; no new operational commitment verified."
+  },
+  {
+    "institution": "UPMC",
+    "candidate": "Sept 28 2026 SETU pharmacy education MoU",
+    "reason": "Standalone education/student placements; no verified new facility, operational commitment or workforce build at scale.",
+    "url": "https://upmc.ie/news-events/2026/28092026-upmc-and-setu-sign-mou-to-strengthen-pharmacy-education-and-healthcare-collaboration"
+  },
+  {
+    "institution": "UPMC",
+    "candidate": "Oct 7 2026 sixth ISMETT operating room",
+    "reason": "Hold: verified small expansion at existing hospital; materiality insufficiently established for needle test.",
+    "url": "https://upmc.it/en/news/2026/07102026-ismett-opens-its-sixth-operating-room"
+  },
+  {
+    "institution": "Cincinnati Children's",
+    "candidate": "Oct 15 2026 SEHA pediatric conference",
+    "reason": "Conference excluded; supports baseline partnership verification only.",
+    "url": "https://www.mediaoffice.abudhabi/en/health/seha-and-cincinnati-childrens-to-host-20th-international-paediatric-conference-in-abu-dhabi/"
+  },
+  {
+    "institution": "Texas Children's Hospital",
+    "candidate": "Global Health footprint in Latin America and Africa",
+    "reason": "Global-health and technical-assistance programs excluded regardless of scale.",
+    "url": "https://www.texaschildrens.org/texas-childrens-global-health/about"
+  },
+  {
+    "institution": "Boston Children's Hospital",
+    "candidate": "Generic international virtual consultations and education",
+    "reason": "No named counterparty/country-specific launch; do not fabricate a deal from a capability page.",
+    "url": "https://international.childrenshospital.org/organizations"
+  },
+  {
+    "institution": "UPMC",
+    "candidate": "UPMC Hillman provides cancer care at Whitfield Hospital.",
+    "reason": "Co-located hospital oncology service consolidated into Whitfield Hospital record to avoid double counting.",
+    "source_url": "https://upmc.ie/locations/hillman-cancer-centres"
+  },
+  {
+    "institution": "NYU Langone Health",
+    "candidate": "EHS February 2026 MoU",
+    "reason": "Government report names a MoU but does not establish a specific operational commitment; hold.",
+    "source_url": "https://www.wam.ae/en/article/bypcc9o-ehs-signs-mous-world-health-expo-dubai-2026"
+  },
+  {
+    "institution": "UCLA Health",
+    "candidate": "R&F Properties hospital consulting case study",
+    "reason": "Old source expects 2021 opening; present engagement and project status unverified.",
+    "source_url": "https://www.uclahealth.org/sites/default/files/documents/3b/consulting-rf-final.pdf?f=0221fe6d"
+  },
+  {
+    "institution": "UCLA Health",
+    "candidate": "Harapan Kita needs assessment",
+    "reason": "Undated source confirms past advisory work but current engagement not verified.",
+    "source_url": "https://www.uclahealth.org/sites/default/files/documents/e1/compressed-pnbs-consulting-services-harapan-kita.pdf?f=64606a65"
+  },
+  {
+    "institution": "UCLA Health",
+    "candidate": "Hallym simulation center consulting",
+    "reason": "Historical six-month engagement in 2018; no current footprint inferred.",
+    "source_url": "https://www.uclahealth.org/sites/default/files/documents/InternationalServicesConsultingPrograms_VF.pdf?f=a0983db6"
+  },
+  {
+    "institution": "Penn Medicine",
+    "candidate": "Botswana partnership anniversary story",
+    "reason": "Global-health/academic program excluded by editorial scope.",
+    "source_url": "https://www.pennmedicine.org/news/a-model-global-health-academic-partnership-flourishes-in-botswana"
+  },
+  {
+    "institution": "Dana-Farber Cancer Institute",
+    "candidate": "August 2026 patient-derived cancer-models collaboration",
+    "reason": "Research/data story without care delivery or operational component.",
+    "source_url": "https://hms.harvard.edu/news/global-collaboration-doubles-number-patient-derived-cancer-models-accelerate-research"
+  },
+  {
+    "institution": "Cedars-Sinai",
+    "candidate": "Eka Hospital Group collaboration",
+    "reason": "2024 primary institutional summary supports a relationship, but current status and specific operational scope require additional verification.",
+    "source_url": "https://www.cedars-sinai.org/newsroom/top-ranked-us-hospital-cedars-sinai-sending-expert-delegation-to-arab-health-2024/"
+  },
+  {
+    "institution": "Cedars-Sinai",
+    "candidate": "Cedars-Sinai lists a global office in Shanghai",
+    "reason": "June 2025 release alone does not establish current office status. Held from the baseline inventory.",
+    "source_url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/"
+  },
+  {
+    "institution": "Cedars-Sinai",
+    "candidate": "Cedars-Sinai lists a global office in Doha",
+    "reason": "June 2025 release alone does not establish current office status. Held from the baseline inventory.",
+    "source_url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/"
+  },
+  {
+    "institution": "Mass General Brigham",
+    "candidate": "Health Holding Company next phase of strategic partnership",
+    "date": "2025-10-29",
+    "source_url": "https://www.spa.gov.sa/N2431417",
+    "source_type": "Primary",
+    "reason": "Official SPA search index identifies the October 29, 2025 next-phase announcement and strategic-advisor role, but all opened SPA URL variants return zero body lines. Do not publish based only on indexed snippets. A secondary copy is available at https://alriyadhdaily.com/article/30d4aca264db43218681eb4718938572 ; no two-independent-major-source fallback established."
+  },
+  {
+    "institution": "Johns Hopkins Medicine International",
+    "candidate": "One Team Health global-rate arrangement additional transplant procedures",
+    "date": "2026-01",
+    "event_date_month": "2026-01",
+    "source_url": "https://hscrc.maryland.gov/Documents/January%202026%20POST%20MEETING%20-%20FINALv3.pdf",
+    "source_type": "Primary",
+    "reason": "Indexed regulator text reports November 26, 2025 application to add liver transplant and non-myeloablative unrelated bone-marrow transplant to an existing international TPA rate arrangement effective January 1, 2026. The 25MB PDF cannot be opened by web tool and direct retrieval failed; not admitted without full-body verification. Counterparty is Canadian, with Bermuda clientele; exact served market for this specific contract still needs source confirmation."
+  },
+  {
+    "institution": "Mass General Brigham",
+    "candidate": "Princess Nourah University healthcare-services and consulting MOU",
+    "date": "2026-01-26",
+    "source_url": "https://pnu.edu.sa/en/MediaCenter/News/Pages/NewsDetails.aspx?RequestID=867",
+    "source_type": "Primary",
+    "evidence": "The university says the parties signed an MOU in Riyadh on January 25, 2026. The framework includes improving healthcare delivery at the university and providing specialized consulting services, alongside training and research.",
+    "reason": "Opened source establishes a signed general framework and says it aims to improve healthcare delivery and provide consulting, but does not establish an executed service contract, committed work program, implementation date or named hospital operational deliverable. Held pending a specific operational work-program commitment."
+  },
+  {
+    "institution": "Boston Children's Hospital",
+    "candidate": "EHS–Boston Children’s MoU, February 2026",
+    "source_url": "https://www.wam.ae/en/article/bypcc9o-ehs-signs-mous-world-health-expo-dubai-2026",
+    "source_date": "2026-02-12",
+    "reason": "Government primary confirms MoU among 11 agreements, but no hospital specific operational/facility/patient delivery commitment. Generic knowledge exchange fails calibrated filter."
+  },
+  {
+    "institution": "Houston Methodist",
+    "candidate": "Saudi Commission for Health Specialties agreement, October 2025",
+    "source_url": "https://scfhs.org.sa/en/news/saudi-commission-health-specialties-signs-20-agreements-and-launches-3-new-digital-products-0",
+    "source_date": "2025-11-02",
+    "reason": "Official regulator confirms agreement at GHE 2025 but not institution-specific operational commitment. Further coverage points to workforce development; hold rather than standalone education record."
+  },
+  {
+    "institution": "UPMC",
+    "candidate": "ISMETT sixth operating room, October 7 2026",
+    "source_url": "https://upmc.it/en/news/2026/07102026-ismett-opens-its-sixth-operating-room",
+    "source_date": "2026-10-07",
+    "reason": "Verified limited capital addition to existing hospital; held because scale insufficiently established for needle test."
+  },
+  {
+    "institution": "Children's Hospital of Philadelphia",
+    "candidate": "Abu Dhabi gene editing capabilities agreement,June 2026",
+    "source_url": "https://www.chop.edu/news/department-health-abu-dhabi-and-childrens-hospital-philadelphia-launch-strategic-collaboration",
+    "source_date": "2026-06-24",
+    "reason": "Available description is specialized training/research; no verified operational facility/care delivery commitment. Primary article 403."
+  },
+  {
+    "institution": "Cedars-Sinai",
+    "candidate": "Al Koot / The View Hospital insurance renewal",
+    "candidate_date": "2026-10-18",
+    "source_url": "https://www.qatar-tribune.com/article/259718/latest-news/al-koot-insurance-and-reinsurance-reaffirms-partnership-extends-direct-billing-to-all-services-at-the-view-hospital",
+    "source_type": "Secondary",
+    "reason": "Source proves renewal at a clinical affiliate but not Cedars as contracting actor or facility owner/operator. All-services direct billing already existed in 2023, so material new access is unproven. Hold on actor and needle tests; no new row."
+  },
+  {
+    "institution": "NYU Langone Health",
+    "candidate": "EHS February MoU and September visiting-physician discussions",
+    "candidate_date": "2026-09-27",
+    "source_url": "https://www.emirates247.com/health/uae-expands-us-healthcare-partnerships-in-genomics-digital-health-and-specialised-care/6086?ot=ot.AMPPageLayout",
+    "reason": "Opened report describes discussions about continuing a program and action plans to be developed; no specific new operational commitment, launch, renewal or expansion verified."
+  },
+  {
+    "institution": "NewYork-Presbyterian; Penn Medicine; Dana-Farber Cancer Institute; Cedars-Sinai",
+    "candidate": "UAE delegation September 2026 meetings",
+    "candidate_date": "2026-09-27",
+    "source_url": "https://www.emirates247.com/health/uae-expands-us-healthcare-partnerships-in-genomics-digital-health-and-specialised-care/6086?ot=ot.AMPPageLayout",
+    "reason": "Exploratory meetings and discussions, not an executed operational deal or material footprint event. No records inferred."
+  },
+  {
+    "institution": "UCLA Health",
+    "candidate": "Guam Regional Medical City cancer telecare expansion",
+    "candidate_date": "2025-10-20",
+    "source_url": "https://www.uclahealth.org/news/article/ucla-health-brings-world-class-cancer-care-guam-through-new",
+    "reason": "Actual operational service, but Guam is US territory. Excluded under the prompt’s domestic-US geography rule despite international-services framing."
+  },
+  {
+    "institution": "Cedars-Sinai",
+    "candidate": "Alfaisal University collaboration MOU",
+    "candidate_date": "2025-11-02",
+    "source_url": "https://news.alfaisal.edu/alfaisal-university-signs-a-memorandum-of-understanding-with-cedars-sinai-medical-center/",
+    "reason": "Opened primary report specifies academic-program advice, research, faculty exchanges and student observerships. No operational hospital/facility commitment, so education/research exclusion applies."
+  },
+  {
+    "institution": "Mass General Brigham; Dana-Farber Cancer Institute",
+    "candidate": "Jawaher Boston Medical District master-plan review and conference references",
+    "candidate_date": "2025-10-29",
+    "source_url": "https://www.gulftoday.ae/news/2025/10/29/sheikh-sultan-attends-launch-of-sharjah-next-healthcare-series",
+    "reason": "Search identified conference/master-plan review references but no newly verified contract, groundbreaking, material capital expansion or opening. Retain existing IHB-0081 baseline; no latest-event date inferred."
+  },
+  {
+    "institution": "Stanford Medicine",
+    "candidate": "Overseas-site references and global research/education collaborations",
+    "candidate_date": "",
+    "source_url": "https://www.beckershospitalreview.com/hospital-executive-moves/commonspirit-cfo-to-retire/",
+    "reason": "Historical professional biography mentions old overseas sites but does not establish current status or an event in the history window. Search also returned research/training and domestic care stories; no qualifying row inferred."
+  }
+]

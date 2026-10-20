@@ -1,0 +1,116 @@
+[
+  {
+    "institution": "Cleveland Clinic",
+    "scope_checked": "Official global newsrooms, London facility and Bupa contract releases, Abu Dhabi partner releases and WAM, representative expansion news, and existing payer-channel item.",
+    "unresolved": "The London cancer-centre announcement is July 17, 2025, outside this window; September 2026 clinical staffing alone does not create a new facility event. Narrow routine clinical-service additions were not seeded. Earlier baseline sourcing gaps: Central Asian University Hospital, Saudi sports-medicine plans and additional Connected affiliations need ongoing-status and operational-scope verification; regional representative coverage does not prove a separate physical office in each covered country.",
+    "backfill_status": "Three new relationship events and two existing-ID updates proposed. Existing Allshores September 16 event remains valid. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture."
+  },
+  {
+    "institution": "Mayo Clinic",
+    "scope_checked": "Official Mayo news network, Laboratories commercial releases, representative-office openings and China partner announcements.",
+    "unresolved": "Heyou is included narrowly for explicit facility-specific clinical advisory and patient-case consultations; actual consultation delivery is not demonstrated. Planned diagnostic expansion does not prove new facilities in every named market. Earlier baseline sourcing gaps: China authorized offices, Quito office and Mexico City office had retrieval failures and remain unseeded. Care Network memberships without specific operational commitments excluded; additional substantive consulting and payer agreements require review. Historical Abu Dhabi JV stake sold in 2024, so not represented as current. Ten initially accessible office detail pages timed out during repeat link verification; their country-level footprint facts now cite the current working official directory. Cities not specified in the directory are not inferred.",
+    "backfill_status": "Two new service/investment relationships and one existing-ID opening update proposed. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture."
+  },
+  {
+    "institution": "Johns Hopkins Medicine International",
+    "scope_checked": "Official international active-project pages and targeted 2025–2026 hospital/partner searches, including Bermuda, Vietnam, Brazil and Saudi Arabia; Maryland regulator records screened for international payer changes.",
+    "unresolved": "One Team Health November 2025 application/January 2026 approval tip is held: regulator PDF exceeds web retrieval limit and could not be independently opened. Routine accreditation and conference activity not treated as deal updates. Earlier baseline sourcing gaps: Singapore, HCL and other projects explicitly marked completed excluded from current baseline; exact start dates for undated active-project pages remain unknown. Regional projects were screened; separate global-health and standalone training activities excluded.",
+    "backfill_status": "No additional fully opened and verified material event admitted in this bounded twelve-month sweep. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture."
+  },
+  {
+    "institution": "MD Anderson Cancer Center",
+    "scope_checked": "Official institutional newsroom and current international partner pages; targeted Madrid and international 2025–2026 collaboration searches.",
+    "unresolved": "Current Madrid relationship remains baseline. Local-owner hospital projects were not attributed to MD Anderson without an explicit MD Anderson role; narrow service and research announcements were not admitted. Earlier baseline sourcing gaps: Istanbul historical radiation-treatment affiliation not established as current in the official present partner list, so held. Academic sister relationships without operations excluded.",
+    "backfill_status": "No additional qualifying material twelve-month operational event verified. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture."
+  },
+  {
+    "institution": "Memorial Sloan Kettering",
+    "scope_checked": "Official MSK releases, existing Qatar MOU, international collaboration searches and relevant partner/government releases.",
+    "unresolved": "Research, data-platform, bilateral trial/training activity does not independently establish a material international operating relationship. Earlier baseline sourcing gaps: Historical Chennai center site redirects to general international services; current footprint could not be verified so held. Qatar MOU must remain Announced.",
+    "backfill_status": "Existing September 23, 2026 Qatar MOU remains the verified recent item; no additional qualifying material twelve-month operational event admitted. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture."
+  },
+  {
+    "institution": "Mass General Brigham",
+    "scope_checked": "Official MGB and local-partner/government releases for Saudi Arabia and China; existing Jiahui relationship reviewed. Shared BEEAH record coordinated with research_c.",
+    "unresolved": "Shared BEEAH/Jawaher project remains assigned to research_c with no duplicate record. HHC full primary text is unavailable through retrieval. Princess Nourah general MOU does not establish a concrete operational work program. Earlier baseline sourcing gaps: Shared BEEAH advisory project is one record with Dana-Farber. Other publicly marketed collaborations require named current counterparties; generic capability pages not seeded.",
+    "backfill_status": "No new relationship admitted: both Saudi candidates held for source or commitment limitations. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture."
+  },
+  {
+    "institution": "Houston Methodist",
+    "scope_checked": "12 month search; opened global news archive, foreign partner Alameda site/news pages, original broken release, regional staff reporting, and Saudi regulator agreement announcement.",
+    "unresolved": "Alameda primary release 404; no exact January announcement day established. Saudi2025 SCFHS agreement supports education/knowledge exchange with no facility or operational commitment; held. Ministry of Defense LOI details remain insufficient. Earlier baseline sourcing gaps: Baseline inventory partial: Doha, Abu Dhabi and Guayaquil appear in separate global directory but differ from detailed 10-location directory; specific page contact templates also conflict. Held pending consistency review. Advisory projects in 2025 brochure mix current/former projects, so not enough to claim all active. Alameda Jan 2026 deal primary URL returns 404; held.",
+    "backfill_status": "One narrow January 2026 strategic affiliation added using acceptable Secondary coverage, preserving month precision. Nine earlier liaison rows retained without fabricated opening dates."
+  },
+  {
+    "institution": "UPMC",
+    "scope_checked": "Opened full 2025 and 2026 Ireland/Italy news indexes; existing Kildare acquisition record; Limerick original hospital announcement and current developer update.",
+    "unresolved": "Clinical technology additions at SanPietro and ISMETT sixthOR expansion held on materiality. Malta2026 delegation described continuing existing collaboration, not a verified new agreement. Baseline inventory remains partial for smaller clinics. Earlier baseline sourcing gaps: Smaller sports medicine/outreach clinics, Limerick cancer center under development, ISMETT-2 build and Malta patient channel require additional source work. Baseline dates left blank when only month/year was proven. One hospital and separately operated cancer service share a campus; retained as distinct service/facility commitments.",
+    "backfill_status": "One new project record for Limerick, originalMay 2025 announcement and datedOctober 12 2026 construction-stage update. Existing KildareSeptember 28 2026 acquisition retained; no duplicate."
+  },
+  {
+    "institution": "Boston Children's Hospital",
+    "scope_checked": "Expanded searches across 2025 / 2026 international agreements; opened WAM government report of EHS February2026 MoUs; reviewed other international education/global-health/research tips.",
+    "unresolved": "Boston–EHS scope needs specific operational proof. No row created merely to fill institution coverage. ChileConectaAlegría is standalone physician training; excluded. Earlier baseline sourcing gaps: Public service capabilities do not identify specific current commercial counterparties/countries. No baseline deal asserted; profile must say source-backed inventory incomplete, not no footprint.",
+    "backfill_status": "No additional qualifying operational event verified. EHS MoU exists but published government report describes generic expertise exchange rather than a specific care delivery commitment."
+  },
+  {
+    "institution": "Cincinnati Children's",
+    "scope_checked": "Opened originalMay 6 2025 SKMC announcement and 2026 release index; compared November2025 Heart Institute profile and current partner evidence.",
+    "unresolved": "Other overseas commitments not established; conference/meeting coverage not treated as deal announcements. Earlier baseline sourcing gaps: Exact original announcement day not established (activity began in 2025). Other country footprint not comprehensively verified.",
+    "backfill_status": "RecoveredMay 6 2025 announcement date for IHB-0071; outside historical window, so retains Baseline. No new in-window material operational commitment verified."
+  },
+  {
+    "institution": "Children's Hospital of Philadelphia",
+    "scope_checked": "Repeated2025 / 2026 international/global medicine searches, Dominican remote-opinion candidate, UAE gene editing collaboration and current newsroom tips.",
+    "unresolved": "Direct CHOP article pages 403 prevent full review; do not publish snippets as verified facts. Earlier baseline sourcing gaps: CHOP pages returned HTTP 403; DoH partner page timed out. Dominican program and UAE candidates held because article contents could not be opened. Do not convert snippets to published rows.",
+    "backfill_status": "No new event meets both operational scope and accessible sourcing tests. Gene-editing training/research storyJune 2026 excluded. DominicanJune2025 deal precedeswindow and primary 403 persists."
+  },
+  {
+    "institution": "Texas Children's Hospital",
+    "scope_checked": "Expanded international/destination-medicine searches for 2025 / 2026 foreign partners, insurer/government agreements and country-specific operations. Reviewed available international program and2025 annual-report search results.",
+    "unresolved": "A negative search is not proof no international activity exists. No country/partner inferred from generic service-capability statements. Earlier baseline sourcing gaps: Dominant overseas findings are explicitly excluded global-health/philanthropic/technical-assistance activity; generic destination services lack country-specific commercial commitments. No footprint row asserted.",
+    "backfill_status": "No qualifying commercial/operational event verified; returned candidates mainly domestic, global health, research or conferences."
+  },
+  {
+    "institution": "Stanford Medicine",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: No specific foreign operational commitment verified; no zero-footprint claim.",
+    "backfill_status": "No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep."
+  },
+  {
+    "institution": "UCLA Health",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change.",
+    "backfill_status": "No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep."
+  },
+  {
+    "institution": "NewYork-Presbyterian",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change.",
+    "backfill_status": "No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep."
+  },
+  {
+    "institution": "NYU Langone Health",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: No specific foreign operational commitment verified; no zero-footprint claim.",
+    "backfill_status": "No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep."
+  },
+  {
+    "institution": "Cedars-Sinai",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change. The May 20, 2026 institutional release confirms China and Qatar patient referral offices at country level; Shanghai/Doha city identities from older references remain held.",
+    "backfill_status": "Existing IHB-0085 qualifies: planned-clinic source Jan 16, 2026 and opened confirmation May 20, 2026."
+  },
+  {
+    "institution": "Penn Medicine",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change.",
+    "backfill_status": "No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep."
+  },
+  {
+    "institution": "Dana-Farber Cancer Institute",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
+    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change.",
+    "backfill_status": "Existing IHB-0080 qualifies: OncoClinic academic-advisory announcement Feb 5, 2026."
+  }
+]

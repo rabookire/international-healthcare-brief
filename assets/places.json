@@ -1,0 +1,307 @@
+{
+  "countries": {
+    "Bahamas": [
+      -77.4,
+      25.0
+    ],
+    "Bermuda": [
+      -64.75,
+      32.3
+    ],
+    "Brazil": [
+      -49.55945,
+      -12.098687
+    ],
+    "Canada": [
+      -101.9107,
+      60.324287
+    ],
+    "Cayman Islands": [
+      -81.25,
+      19.3
+    ],
+    "China": [
+      106.337289,
+      32.498178
+    ],
+    "Colombia": [
+      -73.174347,
+      3.373111
+    ],
+    "Croatia": [
+      16.37241,
+      45.805799
+    ],
+    "Dominican Republic": [
+      -70.653998,
+      19.104137
+    ],
+    "Ecuador": [
+      -78.188375,
+      -1.259076
+    ],
+    "El Salvador": [
+      -88.890124,
+      13.685371
+    ],
+    "Guatemala": [
+      -90.497134,
+      14.982133
+    ],
+    "Honduras": [
+      -86.887604,
+      14.794801
+    ],
+    "India": [
+      79.358105,
+      22.686852
+    ],
+    "Indonesia": [
+      101.892949,
+      -0.954404
+    ],
+    "Ireland": [
+      -7.798588,
+      53.078726
+    ],
+    "Italy": [
+      11.076907,
+      44.732482
+    ],
+    "Jordan": [
+      36.375991,
+      30.805025
+    ],
+    "Lebanon": [
+      35.992892,
+      34.133368
+    ],
+    "Mexico": [
+      -102.289448,
+      23.919988
+    ],
+    "Nicaragua": [
+      -85.069347,
+      12.670697
+    ],
+    "Nigeria": [
+      7.50322,
+      9.439799
+    ],
+    "Pakistan": [
+      68.545632,
+      29.328389
+    ],
+    "Panama": [
+      -80.352106,
+      8.72198
+    ],
+    "Paraguay": [
+      -60.146394,
+      -21.674509
+    ],
+    "Peru": [
+      -72.90016,
+      -12.976679
+    ],
+    "Qatar": [
+      51.143509,
+      25.237383
+    ],
+    "Saudi Arabia": [
+      44.6996,
+      23.806908
+    ],
+    "Singapore": [
+      103.82,
+      1.35
+    ],
+    "Spain": [
+      -3.464718,
+      40.090953
+    ],
+    "Trinidad and Tobago": [
+      -61.2,
+      10.5
+    ],
+    "Turkey": [
+      34.508268,
+      39.345388
+    ],
+    "United Arab Emirates": [
+      54.547256,
+      23.466285
+    ],
+    "United Kingdom": [
+      -2.116346,
+      54.402739
+    ],
+    "Uruguay": [
+      -55.966942,
+      -32.961127
+    ],
+    "Vietnam": [
+      105.387292,
+      21.715416
+    ],
+    "Kuwait": [
+      47.313999,
+      29.413628
+    ],
+    "Egypt": [
+      29.445837,
+      26.186173
+    ]
+  },
+  "cities": {
+    "London|United Kingdom": [
+      -0.13,
+      51.5
+    ],
+    "Toronto|Canada": [
+      -79.38,
+      43.65
+    ],
+    "Abu Dhabi|United Arab Emirates": [
+      54.37,
+      24.45
+    ],
+    "Dubai|United Arab Emirates": [
+      55.27,
+      25.2
+    ],
+    "Sharjah|United Arab Emirates": [
+      55.4,
+      25.35
+    ],
+    "Riyadh|Saudi Arabia": [
+      46.68,
+      24.71
+    ],
+    "Doha|Qatar": [
+      51.53,
+      25.29
+    ],
+    "Madrid|Spain": [
+      -3.7,
+      40.42
+    ],
+    "Shanghai|China": [
+      121.47,
+      31.23
+    ],
+    "Guayaquil|Ecuador": [
+      -79.9,
+      -2.17
+    ],
+    "Guatemala City|Guatemala": [
+      -90.51,
+      14.63
+    ],
+    "Monterrey|Mexico": [
+      -100.32,
+      25.69
+    ],
+    "Asunción|Paraguay": [
+      -57.63,
+      -25.26
+    ],
+    "Guadalajara|Mexico": [
+      -103.35,
+      20.67
+    ],
+    "Managua|Nicaragua": [
+      -86.25,
+      12.11
+    ],
+    "Mexico City|Mexico": [
+      -99.13,
+      19.43
+    ],
+    "San Salvador|El Salvador": [
+      -89.19,
+      13.69
+    ],
+    "Tegucigalpa|Honduras": [
+      -87.2,
+      14.07
+    ],
+    "Palermo|Italy": [
+      13.36,
+      38.12
+    ],
+    "Rome|Italy": [
+      12.5,
+      41.9
+    ],
+    "Mirabella Eclano|Italy": [
+      15.0,
+      41.05
+    ],
+    "Waterford|Ireland": [
+      -7.11,
+      52.26
+    ],
+    "Clane|Ireland": [
+      -6.69,
+      53.29
+    ],
+    "Kilkenny|Ireland": [
+      -7.25,
+      52.65
+    ],
+    "Dublin|Ireland": [
+      -6.26,
+      53.35
+    ],
+    "Cork|Ireland": [
+      -8.47,
+      51.9
+    ],
+    "Zabok|Croatia": [
+      15.92,
+      46.03
+    ],
+    "Amman|Jordan": [
+      35.93,
+      31.95
+    ],
+    "Paget|Bermuda": [
+      -64.77,
+      32.28
+    ],
+    "Guangzhou|China": [
+      113.26,
+      23.13
+    ],
+    "Singapore|Singapore": [
+      103.82,
+      1.35
+    ],
+    "Quito|Ecuador": [
+      -78.47,
+      -0.18
+    ],
+    "Shenzhen|China": [
+      114.06,
+      22.54
+    ],
+    "Ho Chi Minh City|Vietnam": [
+      106.7,
+      10.78
+    ],
+    "New Cairo|Egypt": [
+      31.49,
+      30.01
+    ],
+    "Limerick|Ireland": [
+      -8.63,
+      52.66
+    ],
+    "Foshan|China": [
+      113.12,
+      23.02
+    ]
+  },
+  "note": "Approximate city/country locators for orientation; not facility geocodes."
+}

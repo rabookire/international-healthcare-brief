@@ -1,0 +1,1488 @@
+{
+  "IHB-0001": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-04-01",
+    "verified_status": "Operational",
+    "scope_note": "Original current London footprint source retained. April 1 is the appointment announcement; June 1 is the stated effective date. March 29, 2022 is the hospital opening date, not the date of every outpatient site in the aggregated footprint. Original facility announcement date remains unknown. A subsequent September 29 official release identifies Ridgeway as London president, corroborating her serving in the role by then.",
+    "source_note": "Original current London footprint source retained. April 1 is the appointment announcement; June 1 is the stated effective date. March 29, 2022 is the hospital opening date, not the date of every outpatient site in the aggregated footprint. Original facility announcement date remains unknown. A subsequent September 29 official release identifies Ridgeway as London president, corroborating her serving in the role by then.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/london-home/about",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://newsroom.clevelandclinic.org/2026/04/01/cleveland-clinic-appoints-beri-ridgeway-md-as-president-of-cleveland-clinic-london",
+        "type": "Primary",
+        "date": "2026-04-01"
+      },
+      {
+        "url": "https://newsroom.clevelandclinic.org/2026/09/29/cleveland-clinic-london-appoints-dr-heather-shaw-as-oncology-vice-chief",
+        "type": "Primary",
+        "date": "2026-09-29"
+      }
+    ],
+    "evidence": "The April 1 release appoints Beri Ridgeway president of Cleveland Clinic London effective June 1, 2026, succeeding Robert Lorenz. It states that Cleveland Clinic London hospital opened on March 29, 2022.",
+    "events": [
+      {
+        "date": "2026-04-01",
+        "summary": "Announced Beri Ridgeway as London president effective June 1, 2026; exact hospital opening date also verified as March 29, 2022.",
+        "source_url": "https://newsroom.clevelandclinic.org/2026/04/01/cleveland-clinic-appoints-beri-ridgeway-md-as-president-of-cleveland-clinic-london"
+      }
+    ]
+  },
+  "IHB-0002": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official current about page describes in-person care in downtown and midtown Toronto clinics and virtual care across Canada.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/canada/about",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0003": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official current profile describes a multispecialty hospital on Al Maryah Island in Abu Dhabi and an agreement between Mubadala and Cleveland Clinic. No equity percentage asserted.",
+    "sources": [
+      {
+        "url": "https://www.clevelandclinicabudhabi.ae/en/about-us/who-we-are",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0004": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Shenika Nesbitt; Allison Ferguson as representative(s) for Bahamas and Cayman Islands; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/bahamas",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0005": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Pamela Sehdev as representative(s) for Canada; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/canada",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0006": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Miguel Eduardo Hidalgo Tallaj as representative(s) for Dominican Republic; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/dominican-republic",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0007": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Maria Paula Loor Perez; Cecilia Viteri as representative(s) for Ecuador and Colombia; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/ecuador",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0008": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-06-15",
+    "scope_note": "Original country-directory source retained. June 15 is the announcement of the new representation; an exact separate start date is not disclosed. Representation is a patient-access role, not a medical-care facility.",
+    "source_note": "Original country-directory source retained. June 15 is the announcement of the new representation; an exact separate start date is not disclosed. Representation is a patient-access role, not a medical-care facility.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/el-salvador",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://newsroom.clevelandclinic.org/2026/06/15/cleveland-clinic-expands-access-to-care-with-an-el-salvador-based-representative",
+        "type": "Primary",
+        "date": "2026-06-15"
+      }
+    ],
+    "verified_status": "Operational",
+    "evidence": "The June 15 release identifies Nuria Sabater as Cleveland Clinic’s new El Salvador-based representative and describes local appointment and navigation support.",
+    "events": [
+      {
+        "date": "2026-06-15",
+        "summary": "Announced new El Salvador-based representative Nuria Sabater.",
+        "source_url": "https://newsroom.clevelandclinic.org/2026/06/15/cleveland-clinic-expands-access-to-care-with-an-el-salvador-based-representative"
+      }
+    ]
+  },
+  "IHB-0009": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Lisa Maria de Gonzalez as representative(s) for Guatemala; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/guatemala",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0010": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Deepika T. Grandhi as representative(s) for India; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/india",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0011": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Karen Chiquillo as representative(s) for Mexico; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/mexico",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0012": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Olufisayo Okunsanya as representative(s) for Nigeria; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/nigeria",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0013": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Michelle Hatch as representative(s) for Panama, Honduras and Costa Rica; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/panama",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0014": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Mari Loli Correa as representative(s) for Peru; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/peru",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0015": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Issam El Sayegh as representative(s) for Saudi Arabia; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/saudi-arabia",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0016": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official country page names Safwat Al Zuraiki as representative(s) for United Arab Emirates; no city or original appointment date asserted.",
+    "sources": [
+      {
+        "url": "https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0017": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-09-16",
+    "source_note": "Release says Cleveland Clinic US hospitals and specialty services are now available in Allshores networks to members with overseas-care coverage. No facility in Bermuda implied.",
+    "sources": [
+      {
+        "url": "https://newsroom.clevelandclinic.org/2026/09/16/cleveland-clinics-world-class-care-now-available-to-more-bermuda-residents",
+        "type": "Primary",
+        "date": "2026-09-16"
+      }
+    ]
+  },
+  "IHB-0018": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official about page describes outpatient clinic in Marylebone established in 2020; exact original dates not supplied.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/uk/about-mayo-healthcare-uk",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0019": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/canada",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0020": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-02-19",
+    "scope_note": "Original office-directory source retained. The release says Mayo is opening an office and the current directory lists it, supporting Operational status. Exact separate opening day is not stated, so the operational-date field remains blank. Grand Cayman is an island; no inferred city is added.",
+    "source_note": "Original office-directory source retained. The release says Mayo is opening an office and the current directory lists it, supporting Operational status. Exact separate opening day is not stated, so the operational-date field remains blank. Grand Cayman is an island; no inferred city is added.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/cayman-islands",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-opens-patient-information-office-in-cayman-islands/",
+        "type": "Primary",
+        "date": "2026-02-19"
+      }
+    ],
+    "verified_status": "Operational",
+    "evidence": "The February 19 release announces the first Cayman Islands patient-information office, in Grand Cayman, providing free appointment and travel-coordination assistance for Mayo care in the United States and London.",
+    "events": [
+      {
+        "date": "2026-02-19",
+        "summary": "Announced opening of Mayo’s first Cayman Islands patient-information office.",
+        "source_url": "https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-opens-patient-information-office-in-cayman-islands/"
+      }
+    ]
+  },
+  "IHB-0021": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0022": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0023": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0024": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0025": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0026": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0027": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0028": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0029": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0030": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0031": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0032": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0033": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0034": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/port-of-spain-trinidad",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0035": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0036": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+    "sources": [
+      {
+        "url": "https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0037": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official active-project listing and project page describe stroke, rehabilitation and psychiatric care operational work.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-hospitals-board",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0038": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current active-project listing and project page describe development and implementation of a population-health program, including chronic disease services; not merely data sharing.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0039": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Active-project listing and project page describe clinical-program and service expansion consulting and stroke care work.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/fundacion-santafe-de-bogota",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0040": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current active-project listing and project page describe a hospital consulting partnership with clinical case discussions and sustained unit-based safety programs.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-moinhos-de-vento",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0041": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current active-project listing and project page describe clinical-service development, operational efficiency and pediatric emergency care work. No new opening date asserted.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-punta-pacifica",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0042": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official AIH release dated April 12 2025 identifies ongoing Hopkins collaboration in clinical quality and patient safety; body names Vietnam and provides Ho Chi Minh City address. Separate December5 2022 release confirms Dec4 2022 long-term renewal. Hopkins current active-project page also explicitly identifies Vietnam, but its external partner hyperlink is erroneous.",
+    "sources": [
+      {
+        "url": "https://aih.com.vn/en/tin-tuc/the-american-international-hospital-johns-hopkins-medicine-international-strengthening-collaboration-for-premium-healthcare",
+        "type": "Primary",
+        "date": "2025-04-12"
+      }
+    ]
+  },
+  "IHB-0043": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official project page states a signed consulting agreement to establish a center within Shalamar Hospital in the Lahore area; no opening claimed.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific/shalamar-institute-health-sciences",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0044": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current project page explicitly states ongoing work following hospital construction and an affiliation agreement focused on clinical quality, patient safety and program development.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/anadolu-medical-center",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0045": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Active-project listing and current project page describe affiliation plus hospital development, patient experience and quality/risk assessment support.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0046": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current project page identifies CMI facilities in Dubai and Riyadh and says Hopkins provides oversight, development and training services. Facility operational status not inferred.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0047": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Same multicountry engagement as UAE record, split by country as methodology permits. Current source supports oversight, development and training; no operation or management contract claimed.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0048": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Official page states the partners launched JHAH in 2014 and describes an integrated health organization with clinical programs and operational improvements; exact original dates not supplied.",
+    "sources": [
+      {
+        "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/johns-hopkins-aramco-healthcare",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0049": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official partner page explicitly lists Madrid, Spain under International Affiliate; no ownership or current bed count claimed.",
+    "sources": [
+      {
+        "url": "https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network/network-partners.dir.html/1000",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0050": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-09-23",
+    "source_note": "MSK states the MOU is non-binding and establishes an assessment framework. A possible new Doha cancer facility under MSK clinical standards is a shared vision, not a signed operating contract or opening.",
+    "sources": [
+      {
+        "url": "https://www.mskcc.org/news-releases/msk-and-qatar-ministry-of-public-health-explore-potential-partnership-to-advance-cancer-care-in-middle-east",
+        "type": "Primary",
+        "date": "2026-09-23"
+      }
+    ]
+  },
+  "IHB-0051": {
+    "seed_kind": "baseline",
+    "latest_event_date": "",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current official partner about page identifies collaboration with Massachusetts General Hospital and joint appointments for leadership physicians. Tracked at parent-system level; no new date, equity interest or management contract claimed.",
+    "sources": [
+      {
+        "url": "https://jicc.jiahui.com/en_US/about/2.html",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0052": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Dubai patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0053": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Riyadh patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0054": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Guadalajara patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0055": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Guatemala City patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0056": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Managua patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0057": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Mexico City patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0058": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Monterrey patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0059": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a San Salvador patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0060": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Houston Methodist lists a Tegucigalpa patient liaison presence.",
+    "sources": [
+      {
+        "url": "https://www.houstonmethodist.org/international-locations/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0061": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC and Sicily maintain the ISMETT hospital partnership.",
+    "sources": [
+      {
+        "url": "https://upmc.it/en/locations/ismett",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.upmc.com/about/international-services/locations/italy",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0062": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC operates Salvator Mundi International Hospital in Rome.",
+    "sources": [
+      {
+        "url": "https://upmc.it/en/locations/salvator-mundi",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.upmc.com/about/international-services/locations/italy",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0063": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC Hillman Cancer Center San Pietro provides radiotherapy in Rome.",
+    "sources": [
+      {
+        "url": "https://upmc.it/en/locations/san-pietro",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0064": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC operates the Villa Maria cancer center in Mirabella Eclano.",
+    "sources": [
+      {
+        "url": "https://upmc.it/en/locations/villa-maria",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0065": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Whitfield Hospital and its co-located Hillman cancer service are represented as one hospital footprint record.",
+    "source_note": "UPMC operates Whitfield Hospital in Waterford.",
+    "sources": [
+      {
+        "url": "https://upmc.ie/locations/hospitals/whitfield",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://upmc.ie/locations/hillman-cancer-centres",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0066": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-09-28",
+    "source_note": "Sept 28 announcement confirms acquisition of remaining 25% from Institute of Eye Surgery, making UPMC sole owner. Ophthalmology collaboration continues. Original acquisition announced Nov 13 2019. Date corroborated in official 2026 archive. Regulator clearance issued Sept 25 2026.",
+    "sources": [
+      {
+        "url": "https://upmc.ie/news-events/2026/28092026-upmc-kildare-announcement",
+        "type": "Primary",
+        "date": "2026-09-28"
+      },
+      {
+        "url": "https://www.upmc.com/media/news/111319-clane-acquisition-release-us-version",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.ccpc.ie/enforcement-and-regulation/mergers/find-a-merger-case/details/upmc-upmc-kildare-hospital",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0067": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC operates Aut Even Hospital in Kilkenny.",
+    "sources": [
+      {
+        "url": "https://upmc.ie/locations/hospitals/aut-even",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0068": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC operates Sports Surgery Clinic in Dublin.",
+    "sources": [
+      {
+        "url": "https://upmc.ie/locations/hospitals/sports-surgery-clinic",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://upmc.ie/news-events/2023/13032023-upmc-completes-acquisition-of-renowned-sports-surgery-clinic-in-dublin",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0069": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC Hillman and Bon Secours provide radiotherapy in Cork.",
+    "sources": [
+      {
+        "url": "https://upmc.ie/locations/hillman-cancer-centres",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0070": {
+    "seed_kind": "baseline",
+    "verified_status": "Operating facility described by source",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "UPMC Hillman Cancer Center operates at Zabok General Hospital.",
+    "sources": [
+      {
+        "url": "https://www.upmc.com/about/international-services/locations/croatia",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0071": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Opened Cincinnati Children’s primary announcement dated May 6 2025. It describes a new phase with SEHA SKMC following a six-month assessment, and appointment of Daniel von Allmen as UAE regional president. Retain existing ID and baseline classification: May 6 precedes October 20 2025. The later November2025 Heart Institute profile is not a new deal or proof of a November announcement. Current SKMC partner page still supports ongoing activity.",
+    "sources": [
+      {
+        "url": "https://www.cincinnatichildrens.org/professional/subspecialist-news/heart/heart-network-global-expansion",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://skmc.seha.ae/cincinnati/",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.mediaoffice.abudhabi/en/health/seha-and-cincinnati-childrens-to-host-20th-international-paediatric-conference-in-abu-dhabi/",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.cincinnatichildrens.org/news/release/2025/expanding-global-reach",
+        "type": "Primary",
+        "date": "2025-05-06"
+      }
+    ],
+    "latest_event_date": "",
+    "verified_status": "Clinical consultancy operating; baseline relationship predates 12 month window",
+    "events": []
+  },
+  "IHB-0072": {
+    "seed_kind": "baseline",
+    "verified_status": "Advisory engagement active in pre-opening development; opening planned for 2027",
+    "scope_note": "Baseline means a pre-existing advisory engagement, not an operational hospital. The source supplies only the contract month, so no exact announcement date is entered.",
+    "source_note": "Official case page describes a 330-bed planned hospital, a June 2022 contract, and a September 2027 scheduled grand opening.",
+    "sources": [
+      {
+        "url": "https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://kingdomuniversity.edu.jo/news/26",
+        "type": "Primary",
+        "date": "2025-11-18"
+      }
+    ],
+    "verification_note": "Dated Nov 18, 2025 partner report confirms continued UCLA involvement in operational-readiness planning. This is verification of an existing relationship, not a material new deal/opening/expansion; no latest_event_date or backfill reclassification.",
+    "events": []
+  },
+  "IHB-0073": {
+    "seed_kind": "baseline",
+    "scope_note": "Exact historical signing date not supplied; no exact date or current volume is inferred.",
+    "source_note": "UCLA’s case page describes a 2009 MOU, real-time telemedicine and a formal referral channel, and reports completed telemedicine activity.",
+    "sources": [
+      {
+        "url": "https://www.uclahealth.org/international-services/consulting-education-services/international-projects/case-studies/second-affiliated-hospital-zhejiang-university-china",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0074": {
+    "seed_kind": "baseline",
+    "scope_note": "UCLA explicitly limits the relationship to receiving patient referrals; do not imply broader affiliation.",
+    "source_note": "Current UCLA page lists this organization under China partners for remote second opinions.",
+    "sources": [
+      {
+        "url": "https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0075": {
+    "seed_kind": "baseline",
+    "scope_note": "UCLA explicitly limits the relationship to receiving patient referrals; do not imply broader affiliation.",
+    "source_note": "Current UCLA page lists this organization under China partners for remote second opinions.",
+    "sources": [
+      {
+        "url": "https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0076": {
+    "seed_kind": "baseline",
+    "scope_note": "UCLA explicitly limits the relationship to receiving patient referrals; do not imply broader affiliation.",
+    "source_note": "Current UCLA page lists this organization under China partners for remote second opinions.",
+    "sources": [
+      {
+        "url": "https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0077": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current NYP page names the Dubai center and describes collaboration to improve children’s cardiac services and treatment access.",
+    "sources": [
+      {
+        "url": "https://www.nyp.org/globalservices/about-global-services/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0078": {
+    "seed_kind": "baseline",
+    "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+    "source_note": "Current NYP page states an affiliation agreement and arrangements for cardiologists from affiliated medical schools to examine CORE patients and plan care.",
+    "sources": [
+      {
+        "url": "https://www.nyp.org/globalservices/about-global-services/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0079": {
+    "seed_kind": "baseline",
+    "scope_note": "This is the care-delivery component of the alliance, not a standalone education or research record.",
+    "source_note": "Current Penn program page describes clinical-care provision, quality assurance and hospital staff management and operational improvement.",
+    "sources": [
+      {
+        "url": "https://www.med.upenn.edu/vingroup-penn-alliance/clincial-care.html",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0080": {
+    "seed_kind": "backfill",
+    "scope_note": "Dana-Farber is an academic advisor, not an equity owner of OncoClinic. The release uses future tense for the first Riyadh facility and does not prove it was open. Advisory announcement falls within the twelve-month history window.",
+    "source_note": "Primary February 5, 2026 release announces the collaboration and identifies strategic-planning and clinical-program-development advice.",
+    "sources": [
+      {
+        "url": "https://www.dana-farber.org/newsroom/news-releases/2026/dana-farber-collaboration-with-oncoclinic-a-joint-venture-between-al-faisaliah-group-and-oncoclinicasco-will-bring-world-class-oncology-to-saudi-arabia",
+        "type": "Primary",
+        "date": "2026-02-05"
+      },
+      {
+        "url": "https://www.dana-farber.org/about/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ],
+    "latest_event_date": "2026-02-05",
+    "verified_status": "Announced academic-advisory collaboration; planned first Riyadh outpatient oncology facility",
+    "events": [
+      {
+        "date": "2026-02-05",
+        "summary": "Academic-advisory collaboration announced",
+        "source_url": "https://www.dana-farber.org/newsroom/news-releases/2026/dana-farber-collaboration-with-oncoclinic-a-joint-venture-between-al-faisaliah-group-and-oncoclinicasco-will-bring-world-class-oncology-to-saudi-arabia"
+      }
+    ]
+  },
+  "IHB-0081": {
+    "seed_kind": "baseline",
+    "verified_status": "Development / advisory relationship",
+    "scope_note": "Shared deal: one record across both tracked institutions. Baseline records a pre-existing development/advisory relationship; no facility-opening claim.",
+    "source_note": "May 2023 release describes an advisory collaboration for a planned Sharjah healthcare system and flagship hospital.",
+    "sources": [
+      {
+        "url": "https://www.dana-farber.org/newsroom/news-releases/2023/mass-general-brigham-and-dana-farber-cancer-institute-collaborating-with-beeah-group-to-advise-on-a-new-patient-centered-health-care-system",
+        "type": "Primary",
+        "date": "2023-05-12"
+      },
+      {
+        "url": "https://www.dana-farber.org/about/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0082": {
+    "seed_kind": "baseline",
+    "scope_note": "Current Dana-Farber collaborations page continues to list Health City.",
+    "source_note": "Release describes peer review of complex oncology cases, clinician programs and a coordinated complex-cancer referral process.",
+    "sources": [
+      {
+        "url": "https://www.dana-farber.org/newsroom/news-releases/2023/dana-farber-cancer-institute-announces-collaboration-with-health-city-cayman-islands",
+        "type": "Primary",
+        "date": "2023-10-31"
+      },
+      {
+        "url": "https://www.dana-farber.org/about/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0083": {
+    "seed_kind": "baseline",
+    "scope_note": "The source does not provide an exact publication or alliance-start date.",
+    "source_note": "The partner’s 2026 guide describes its radiation alliance with Dana-Farber Brigham Cancer Center and treatment protocols delivered in Bermuda.",
+    "sources": [
+      {
+        "url": "https://www.cancer.bm/the-hub/centre-news/cancer-care-in-bermuda-a-guide-for-new-and-soon-to-be-residents-2026",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.dana-farber.org/about/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0084": {
+    "seed_kind": "baseline",
+    "scope_note": "No exact February 2021 signing day inferred. Record is the operational clinical relationship, not the symposium.",
+    "source_note": "Official university report describes a partnership since February 2021 with specialty advancement and telemedicine; Dana-Farber’s current page lists the relationship.",
+    "sources": [
+      {
+        "url": "https://www.sysu.edu.cn/sysuen/info/2961/47391.htm",
+        "type": "Primary",
+        "date": "2023-11-15"
+      },
+      {
+        "url": "https://www.dana-farber.org/about/collaborations",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0085": {
+    "seed_kind": "backfill",
+    "verified_status": "Operational: opened by the May 20, 2026 release; exact first day not supplied",
+    "scope_note": "The new flagship clinic was publicly described as planned on January 16, 2026 and confirmed open on May 20, 2026. Both fall within the twelve-month history window. The prior Wimpole Street clinic is context, not a duplicate record. Exact first patient day remains blank.",
+    "source_note": "Primary January release describes the planned New Cavendish Street clinic; primary May release confirms that it has opened.",
+    "sources": [
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/",
+        "type": "Primary",
+        "date": "2026-05-20"
+      },
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/harley-street-health-district-new-cedars-sinai-clinic-in-london/",
+        "type": "Primary",
+        "date": "2026-01-16"
+      }
+    ],
+    "latest_event_date": "2026-05-20",
+    "events": [
+      {
+        "date": "2026-01-16",
+        "summary": "Planned flagship clinic publicly described",
+        "source_url": "https://www.cedars-sinai.org/newsroom/harley-street-health-district-new-cedars-sinai-clinic-in-london/"
+      },
+      {
+        "date": "2026-05-20",
+        "summary": "Flagship clinic confirmed open",
+        "source_url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/"
+      }
+    ]
+  },
+  "IHB-0086": {
+    "seed_kind": "baseline",
+    "scope_note": "Singapore office also listed in the June 2025 Ecuador office release.",
+    "source_note": "March 2024 release describes an opened Singapore office supporting access to Cedars-Sinai specialists.",
+    "sources": [
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-singapore-office/",
+        "type": "Primary",
+        "date": "2024-03-13"
+      },
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0087": {
+    "seed_kind": "baseline",
+    "scope_note": "This is the newer Mexico City office; the source acknowledges earlier offices. Also listed June 2025.",
+    "source_note": "October 2023 release describes patient referrals and telehealth scheduling and says the office does not provide on-site care.",
+    "sources": [
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-unveils-mexico-city-office/",
+        "type": "Primary",
+        "date": "2023-10-05"
+      },
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0088": {
+    "seed_kind": "baseline",
+    "scope_note": "One bundled record for the partner relationship and co-located office. Office opening is an update; exact original partnership date is not supplied.",
+    "source_note": "June 2025 release states a Quito office opened inside Hospital de los Valles and describes Cedars-Sinai quality assessments at the partner.",
+    "sources": [
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/",
+        "type": "Primary",
+        "date": "2025-06-05"
+      }
+    ]
+  },
+  "IHB-0089": {
+    "seed_kind": "baseline",
+    "scope_note": "No ownership, management-contract or new opening inferred from this source.",
+    "source_note": "Current partner article explicitly describes an ongoing Cedars-Sinai affiliation and patient-experience collaboration.",
+    "sources": [
+      {
+        "url": "https://www.theviewhospital.com/news/the-view-hospital-hosts-cedars-sinai-patient-experience-expert-class",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/top-ranked-us-hospital-cedars-sinai-sending-expert-delegation-to-arab-health-2024/",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0090": {
+    "seed_kind": "baseline",
+    "scope_note": "Chinese primary partner page; partnership support does not establish that Cedars-Sinai owns or operates the hospital. Government report separately confirms hospital open in 2024.",
+    "source_note": "Current hospital page describes a Cedars-Sinai strategic collaboration across planning, clinical care, nursing, patient service and hospital management.",
+    "sources": [
+      {
+        "url": "https://www.szqhtkyy.com/szqh/qqzp/xxcz/index.html",
+        "type": "Primary",
+        "date": ""
+      },
+      {
+        "url": "https://qh.sz.gov.cn/en/news/content/post_11645506.html",
+        "type": "Primary",
+        "date": ""
+      }
+    ]
+  },
+  "IHB-0091": {
+    "seed_kind": "baseline",
+    "scope_note": "The May 20, 2026 institutional release explicitly lists an office in this country. It does not establish a city, opening date, staffing level or independent care-delivery facility. Older city-specific references are not treated as current city evidence.",
+    "source_note": "The release lists patient referral offices in Mexico, China, Singapore, Qatar and Ecuador.",
+    "sources": [
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/",
+        "type": "Primary",
+        "date": "2026-05-20"
+      }
+    ]
+  },
+  "IHB-0092": {
+    "seed_kind": "baseline",
+    "scope_note": "The May 20, 2026 institutional release explicitly lists an office in this country. It does not establish a city, opening date, staffing level or independent care-delivery facility. Older city-specific references are not treated as current city evidence.",
+    "source_note": "The release lists patient referral offices in Mexico, China, Singapore, Qatar and Ecuador.",
+    "sources": [
+      {
+        "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/",
+        "type": "Primary",
+        "date": "2026-05-20"
+      }
+    ]
+  },
+  "IHB-0093": {
+    "source_note": "This is one Bupa relationship with a new cardiac pilot event. The source says the initial value-based collaboration began in 2024 without an exact date, so original announcement and operational dates are blank. A June 19, 2025 release announces a new multi-year contract; that milestone precedes this twelve-month window.",
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-07-23",
+    "sources": [
+      {
+        "url": "https://newsroom.clevelandclinic.org/2026/07/23/cleveland-clinic-london-and-bupa-launch-valuebased-cardiac-care-pilot",
+        "type": "Primary",
+        "date": "2026-07-23"
+      },
+      {
+        "url": "https://newsroom.clevelandclinic.org/2025/06/19/cleveland-clinic-london-and-bupa-uk-insurance-sign-value-based-care-pilot",
+        "type": "Primary",
+        "date": "2025-06-19"
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-07-23",
+        "summary": "2026-07-23: Announced launch of a value-based cardiac-care pilot within the existing Bupa relationship.",
+        "source_url": "https://newsroom.clevelandclinic.org/2026/07/23/cleveland-clinic-london-and-bupa-launch-valuebased-cardiac-care-pilot"
+      }
+    ]
+  },
+  "IHB-0094": {
+    "source_note": "Country represents the explicitly named Kuwait access market. Clinical care is at Cleveland Clinic Abu Dhabi in the UAE; no Kuwait clinic or telemedicine delivery is claimed. The agreement was signed January 14; earliest verified public announcement is January 15. Both sources describe the first phase in future tense, so status remains Announced.",
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-01-15",
+    "sources": [
+      {
+        "url": "https://www.clevelandclinicabudhabi.ae/en/media-center/news/ccad-to-partner-with-kuwait-based-dawi-for-advanced-regional-healthcare-delivery",
+        "type": "Primary",
+        "date": "2026-01-16"
+      },
+      {
+        "url": "https://www.wam.ae/en/article/by8o7ke-cleveland-clinic-abu-dhabi-partners-with",
+        "type": "Primary",
+        "date": "2026-01-15"
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-01-15",
+        "summary": "2026-01-15: Public announcement of agreement signed January 14 for a Kuwait digital access channel, with first-phase packages planned.",
+        "source_url": "https://www.clevelandclinicabudhabi.ae/en/media-center/news/ccad-to-partner-with-kuwait-based-dawi-for-advanced-regional-healthcare-delivery"
+      }
+    ]
+  },
+  "IHB-0095": {
+    "source_note": "One investment relationship, represented under Singapore. The release explicitly names existing Pathology Asia operations in Singapore, Malaysia, Indonesia, Thailand, Vietnam, the Philippines and Australia and planned collaboration coverage in Southeast Asia, Australia and New Zealand. It does not establish a distinct new Mayo facility or new operating launch in each country. No investment amount, ownership percentage, close date, or market-by-market rollout date is disclosed. This is commercial laboratory expansion, rather than a standalone research item.",
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-09-23",
+    "sources": [
+      {
+        "url": "https://news.mayocliniclabs.com/2026/09/23/mayo-clinic-laboratories-invests-in-pathology-asia-holdings-and-lifestrands-genomics-to-advance-diagnostics-and-precision-medicine/",
+        "type": "Primary",
+        "date": "2026-09-23"
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-09-23",
+        "summary": "2026-09-23: Announced strategic investment and collaboration; named-market service expansion and selected co-branding are prospective.",
+        "source_url": "https://news.mayocliniclabs.com/2026/09/23/mayo-clinic-laboratories-invests-in-pathology-asia-holdings-and-lifestrands-genomics-to-advance-diagnostics-and-precision-medicine/"
+      }
+    ]
+  },
+  "IHB-0096": {
+    "source_note": "One relationship covering two named facilities. Admitted narrowly for explicit facility-specific consulting and patient-case second-opinion services. Access is announced; the source does not demonstrate that a consultation was performed or that a particular implementation date has passed, so status remains Announced and operational date blank. No Mayo ownership, management contract, guaranteed referral volume or new Mayo hospital is claimed.",
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-03-20",
+    "sources": [
+      {
+        "url": "https://newsnetwork.mayoclinic.org/discussion/heyou-hospital-and-heyou-pinnacle-medical-center-join-mayo-clinic-care-network/",
+        "type": "Primary",
+        "date": "2026-03-20"
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-03-20",
+        "summary": "Announced clinical advisory and patient-case consultation access for two independent Heyou facilities in Foshan.",
+        "source_url": "https://newsnetwork.mayoclinic.org/discussion/heyou-hospital-and-heyou-pinnacle-medical-center-join-mayo-clinic-care-network/"
+      }
+    ]
+  },
+  "IHB-0097": {
+    "seed_kind": "backfill",
+    "latest_event_date": "",
+    "event_date_month": "2026-01",
+    "verified_status": "Partnership announced; hospital operational status not established",
+    "source_note": "Opened Khaleej Times staff article published 18 February 2026. It states that January brought announcement of a multi-year Houston Methodist partnership intended to improve care at New Cairo’s Madinaty Hospital. Month is January 2026 from the dated article context; no exact announcement day is proven. Secondary route used because the foreign partner’s specific primary release returned HTTP404 on repeated direct attempts. EnterpriseAM independently reports the partnership, but both stories may derive some material from the EFG statement; do not call them independent sources for a major-item test. Only the narrow strategic affiliation claim is published; not a JV, management contract, facility opening or any detailed consulting scope.",
+    "sources": [
+      {
+        "url": "https://www.khaleejtimes.com/business/efg-hermes-concludes-advisory-on-190-million-investment-in-alameda-healthcare?amp=1",
+        "type": "Secondary",
+        "date": "2026-02-18"
+      },
+      {
+        "url": "https://enterpriseam.com/egypt/2026/02/19/dpi-and-alameda-seal-their-agreement-eyeing-local-and-regional-expansion/",
+        "type": "Secondary",
+        "date": "2026-02-19"
+      }
+    ],
+    "timing_paraphrase": "The February 18 staff report identifies January as the month in which the hospital partnership was announced.",
+    "events": [
+      {
+        "date": "2026-01",
+        "summary": "Houston Methodist and Alameda announce a multi-year Madinaty Hospital partnership.",
+        "source_url": "https://www.khaleejtimes.com/business/efg-hermes-concludes-advisory-on-190-million-investment-in-alameda-healthcare?amp=1"
+      }
+    ]
+  },
+  "IHB-0098": {
+    "seed_kind": "backfill",
+    "latest_event_date": "2026-10-12",
+    "verified_status": "Under construction; not operational",
+    "source_note": "Opened Aedifica, the direct real-estate development counterparty, reporting that the Limerick cancer centre has entered its final construction phase. It identifies tenant CROAL as a UPMC–Bon Secours JV. The page’s JSON-LD datePublished and article:published_time both give 2026-10-12T07:00:32+00:00; dateModified gives the same calendar day. Date is the dated construction progress update, not a claimed opening/construction-start day. UPMC’s original announcement is explicitly dated May 21 2025. Both sources opened; no duplicate Limerick record found in existing CSV.",
+    "sources": [
+      {
+        "url": "https://aedifica.eu/4-irish-healthcare-projects-running-completed-totalling-e105-million/",
+        "type": "Primary",
+        "date": "2026-10-12"
+      },
+      {
+        "url": "https://upmc.ie/news-events/2025/21052025-upmc-and-bon-secours-to-enhance-cancer-care-across-mid-west",
+        "type": "Primary",
+        "date": "2025-05-21"
+      }
+    ],
+    "date_evidence": {
+      "datePublished": "2026-10-12T07:00:32+00:00",
+      "article:published_time": "2026-10-12T07:00:32+00:00",
+      "dateModified": "2026-10-12T16:04:02+00:00",
+      "verification_route": "Public HTML metadata fetched from the same primary URL; body independently opened in web tool."
+    },
+    "events": [
+      {
+        "date": "2026-10-12",
+        "summary": "UPMC–Bon Secours Limerick cancer centre reaches its final construction phase.",
+        "source_url": "https://aedifica.eu/4-irish-healthcare-projects-running-completed-totalling-e105-million/"
+      }
+    ]
+  }
+}
