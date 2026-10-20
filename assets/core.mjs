@@ -28,3 +28,9 @@ export function filterEditions(editions,records,s) {
   return (!s.region||item.region===s.region)&&(!s.country||item.country===s.country)&&(!s.tactic||item.tactic===s.tactic);
  })));
 }
+
+// Country summaries always identify the actual institutions, regardless of filters.
+export function activityDisplay(r,s,{country=false}={}){
+ const single=!country&&s.institution?.length===1;
+ return {title:single?r.partner:r.institution,partner:single?'':r.partner,shared:single?institutionsOf(r).filter(n=>n!==s.institution[0]):[]};
+}

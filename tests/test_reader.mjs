@@ -54,3 +54,13 @@ test('every seeded record has a map locator and projection stays in the world fr
 test('invalid operational-year queries are normalized and valid zero-result years retained',()=>{
  assert.equal(readState('year=banana').year,'');assert.equal(readState('year=20260').year,'');assert.equal(readState('year=2026').year,'2026');
 });
+
+test('country overview retains actual ownership under a different institution filter',async()=>{
+ const {activityDisplay}=await import('../assets/core.mjs');
+ const s=state({institution:['Mayo Clinic'],country:'Vietnam'}),vn=rows.filter(r=>r.country==='Vietnam');
+ assert.equal(activityDisplay(vn[0],s,{country:true}).title,'Johns Hopkins Medicine International');
+ assert.equal(activityDisplay(vn[1],s,{country:true}).title,'Penn Medicine');
+ assert.deepEqual(activityDisplay(vn[0],s,{country:true}).shared,[]);
+ const shared=rows.find(r=>r.id==='IHB-0081');
+ assert.deepEqual(activityDisplay(shared,state({institution:['Dana-Farber Cancer Institute']})).shared,['Mass General Brigham']);
+});
