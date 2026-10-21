@@ -1,41 +1,15 @@
-# Build status — 2026-10-20
+# Reader release 2026-10-21.1
 
-The static reader is published on GitHub Pages, with a reviewed partial inventory and passing CI. Research coverage and browser acceptance remain incomplete.
+Status: implemented and prepared for review; publication awaits real-browser verification.
 
-- Live publication: https://rabookire.github.io/international-healthcare-brief/
-- Live map: https://rabookire.github.io/international-healthcare-brief/map/
-- Repository: https://github.com/rabookire/international-healthcare-brief
-- Verified source deployment: `2753cd16afb59adccdb373f90387b9dc6e91a2f7`; [Actions run #1](https://github.com/rabookire/international-healthcare-brief/actions/runs/39507846953) completed validation and deployment successfully. Subsequent documentation-only commits use the same checked pipeline.
+Base: `f0f790747dc6969c99423c552391dc571cf74e27`, the merged research-desk reader. The live main release and this prepared branch are separate deployment states.
 
-## Delivered source
+Implemented: independent lifecycle/history, source-supported normalization of 14 baseline relationships, explicit Unknown for 70 others, planned-facility scope, revised research/inbound policy, six geography groups, clearer activity summaries, focus lenses and filter chips, filtered country shading, evidence-preserving export, mobile List/Map controls, country briefs, institution comparison, printable citations, coverage page, demoted empty brief archive, source-independent methodology loading, source formatting and development-only DOM integration tests.
 
-- Public-facing overview, interactive map, sortable/filterable tracker, institution views, methodology reader and brief archive.
-- Canonical 19-column CSV; deterministic derived JSON, Markdown tracker, 19 institution profiles and seed report.
-- 98 records: 84 baseline and 14 historical backfill, across 38 countries. Fourteen Tier 1 institutions have seeded records; all 19, including Dana-Farber Cancer Institute, have profiles and coverage notes.
-- One shared MGB/Dana-Farber agreement is one global record with both institution memberships. Per-institution totals can exceed the global deal count.
-- Complete editorial methodology and source standard, production runbook, change logs, evidence notes, held candidates, generator, test suite and GitHub Pages workflow.
-- All reader assets are local. No runtime backend, API key, tile service, tracking, logos or login.
+Source inventory: 98 records, 38 countries, records for 14 of 19 listed institutions. All record IDs, source verification dates and initial/historical classifications remain intact. The checked source inventory date is October 20, 2026. Reader changes do not represent a new source scan or new editorial edition.
 
-## Executed checks
+Automated validation: 24 generated projections; 27 Python and 29 Node checks, including seven DOM integration journeys. See VERIFICATION.md for commands and limits. Local success must be confirmed for the exact committed revision; CI supplies its own result.
 
-- 24 Python tests: editorial validation, lifecycle/date/source boundaries, duplicate/shared records, deterministic projections, edition metadata and public staging.
-- 10 Node tests: actual seeded filter results, compound filters, shared membership, post-launch activity, URL roundtrips, signal-only archive filtering, Markdown safety/rebasing, CSV formula handling and map-locator coverage.
-- Generator `--check`: 24 derived projections match the canonical inputs.
-- JavaScript syntax checks, staged HTML link resolution and public asset packaging completed. Pages workflow action versions were checked against current primary documentation; remote validation and deployment passed.
-- Fresh independent source/code review found missing publication assets, future-activity and archive boundary problems. These were repaired and checked. Active-year display and signal-only archive-country choices were also corrected.
-- Ten representative source records rechecked in the managing review; see SOURCE-AUDIT.md. Broader per-record evidence is in data/evidence.json.
+Open release gate: browser tools were not exposed in the working session. No new desktop/mobile screenshot, touch check, visual verdict or live publication is claimed. The repository instructions require those journeys for UI changes. Save as a draft PR until they can be completed.
 
-## Unfinished acceptance criteria
-
-1. **Research completeness.** This is a partial sourced inventory, not an exhaustive baseline or 12-month historical backfill. Detailed per-institution gaps are in SEED-REPORT.md. No qualifying record was established in this bounded sweep for Boston Children's Hospital, Children's Hospital of Philadelphia, Texas Children's Hospital, Stanford Medicine or NYU Langone Health. That is not a zero-footprint conclusion. Tier 2 and Market Signal coverage need the editorial sweeps described in RUNBOOK.md.
-2. **Browser QA.** The managed preview could not mount `/proc`. After deployment, live DOM checks confirmed the 98-record overview/map, 14-record history, Vietnam country panel, compound URL filters, Mayo and Dana-Farber counts, record details, archive empty state and methodology. Browser credential protection then blocked interaction and screenshot observations, including after the prescribed fresh-tab recovery. Clicks, sorting, exports, keyboard/touch behavior, visual layout and mobile acceptance remain unverified. The procedure in VERIFICATION.md remains a draft pending a full interaction journey.
-3. **Publication maintenance.** Repository creation, Pages configuration, source push, CI and initial deployment are complete. The live URL was returned by the successful deployment and opened in the browser. GitHub emitted non-blocking upstream action Node runtime and runner migration notices; no check was weakened.
-4. **Daily production.** The editorial workflow is encoded. No brief has been fabricated and no edition has been backdated. No complete current 24-hour scan is claimed; the first daily edition and any recurring operating schedule remain to be established.
-
-A reviewer should complete these checks before representing the publication as production-ready.
-
-## Option 3 redesign under review
-
-The selected Research Desk layout is implemented in a separate review branch: compact navigation/filters, left activity list/right map, contextual source/details, map drag/wheel/pinch/keyboard controls, adaptive mobile details and expanded-map focus handling. All facts and generated data remain unchanged. Forty automated checks pass. Independent source review findings were corrected.
-
-The supported preview starts, but browser capture remains blocked by native credential state. Visual design QA is **blocked**, recorded in [design-qa.md](./design-qa.md). This redesign has not replaced the live layout. The earlier deployment evidence above applies to the existing live version.
+Research partnership and non-U.S. competitor seeding are ongoing editorial work, not completed coverage in this release. No project-wide code/data license was selected implicitly.

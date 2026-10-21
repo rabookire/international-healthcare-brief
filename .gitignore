@@ -2,4 +2,4 @@ __pycache__/
 *.py[cod]
 _site/
 .DS_Store
-_site/
+node_modules/

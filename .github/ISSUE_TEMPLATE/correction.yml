@@ -1,0 +1,30 @@
+name: Sourced correction or coverage gap
+description: Suggest a correction or a missing relationship using a directly linked public source.
+title: "[Evidence] "
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record ID or institution and country
+      description: Use the IHB record ID when suggesting a correction to an existing relationship.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction or missing activity
+      description: Explain what the public source establishes, including any limits on dates or operating status.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Direct public source URL
+      description: Prefer an institutional, counterparty or government announcement. Do not include private institutional information or personal contact details.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Relevant dates and source scope
+      description: Distinguish announcement, agreement, construction and operation. Leave dates unknown when they are not disclosed.

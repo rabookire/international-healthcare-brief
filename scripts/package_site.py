@@ -5,8 +5,8 @@ import shutil
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'_site'
-PUBLIC_DIRS=('assets','map','data','briefs','institutions','methodology')
-PUBLIC_FILES=('index.html','README.md','METHODOLOGY.md','RUNBOOK.md','SEED-REPORT.md','BUILD-STATUS.md','SOURCE-AUDIT.md','VERIFICATION.md','design-qa.md')
+PUBLIC_DIRS=('assets','map','data','briefs','institutions','methodology','markets','compare','coverage','updates')
+PUBLIC_FILES=('index.html','METHODOLOGY.md')
 ALLOWED={'.geojson','.html','.css','.js','.mjs','.json','.csv','.md','.svg','.png','.jpg','.webp','.ico','.woff2','.txt'}
 
 def package(root=ROOT):

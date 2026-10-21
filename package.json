@@ -1,1 +1,14 @@
-{"name":"international-healthcare-brief","private":true,"scripts":{"dev":"python3 scripts/dev_server.py","test":"node --test tests/test_*.mjs"}}
+{
+  "name": "international-healthcare-brief",
+  "private": true,
+  "scripts": {
+    "dev": "python3 scripts/dev_server.py",
+    "test": "node --test tests/test_*.mjs",
+    "check": "python3 scripts/generate.py --check && python3 -m unittest discover -s tests -v && node --test tests/test_*.mjs",
+    "format:check": "prettier --check assets/*.mjs assets/styles.css tests/*.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "prettier": "3.6.2"
+  }
+}

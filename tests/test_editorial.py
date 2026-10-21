@@ -13,7 +13,7 @@ spec.loader.exec_module(g)
 INSTITUTIONS=['Cleveland Clinic','Mayo Clinic','Johns Hopkins Medicine International','MD Anderson Cancer Center','Memorial Sloan Kettering','Mass General Brigham','Houston Methodist','UPMC',"Boston Children's Hospital","Cincinnati Children's","Children's Hospital of Philadelphia","Texas Children's Hospital",'Stanford Medicine','UCLA Health','NewYork-Presbyterian','NYU Langone Health','Cedars-Sinai','Penn Medicine','Dana-Farber Cancer Institute']
 
 def row(**updates):
-    values=['IHB-0001','Cleveland Clinic','Example hospital partner','United Arab Emirates','GCC','Abu Dhabi','T3','T8','Baseline','','','A sourced example agreement','Analysis: A management agreement can create an operating presence.','https://official.example/news/agreement','Primary','','2026-10-20','2026-10-20: Added sourced baseline.']
+    values=['IHB-0001','Cleveland Clinic','Example hospital partner','United Arab Emirates','GCC','Abu Dhabi','T3','T8','Unknown','','','A sourced example agreement','Analysis: A management agreement can create an operating presence.','https://official.example/news/agreement','Primary','','2026-10-20','2026-10-20: Added sourced baseline.']
     data=dict(zip(g.HEADERS,values))
     data.update(updates)
     return data
@@ -129,10 +129,31 @@ class EditorialBoundaries(unittest.TestCase):
 
     def test_planned_baseline_remains_explicit(self):
         ev={'IHB-0001':{'seed_kind':'baseline','verified_status':'Announced','scope_note':'Planned project, no opening established.'}}
-        r=self.valid(evidence=ev)[0]
-        self.assertEqual(r['status'],'Baseline')
+        r=self.valid([row(Status='Announced')],evidence=ev)[0]
+        self.assertEqual(r['status'],'Announced')
+        self.assertEqual(r['seed_kind'],'baseline')
         self.assertEqual(r['verified_status'],'Announced')
         self.assertEqual(r['operational_date'],'')
+
+    def test_baseline_is_not_a_lifecycle_and_unknown_is_not_operational(self):
+        with self.assertRaisesRegex(g.DataError,'invalid status'):
+            self.valid([row(Status='Baseline')])
+        self.assertEqual(self.valid()[0]['status'],'Unknown')
+
+    def test_active_advice_does_not_open_a_planned_facility(self):
+        ev={'IHB-0001':{'seed_kind':'baseline','facility_status':'Planned','status_note':'Advisory engagement active; hospital planned.'}}
+        advice=row(Status='Operational',**{'Tactic (primary)':'T4','Tactic (secondary)':''})
+        result=self.valid([advice],ev)[0]
+        self.assertEqual(result['facility_status'],'Planned')
+        with self.assertRaisesRegex(g.DataError,'conflicts'):
+            self.valid([row(Status='Operational',**{'Tactic (primary)':'T1','Tactic (secondary)':''})],ev)
+
+    def test_research_taxonomy_and_region_split_are_validated(self):
+        research=row(Country='Nigeria',Region='Africa',**{'Tactic (primary)':'T10','Tactic (secondary)':''})
+        self.assertEqual(self.valid([research])[0]['tactic_primary'],'T10')
+        self.assertEqual(self.valid([row(Country='Jordan',Region='Middle East')])[0]['region'],'Middle East')
+        with self.assertRaisesRegex(g.DataError,'country/region'):
+            self.valid([row(Country='Jordan',Region='Other')])
 
 class ReproducibleProjections(unittest.TestCase):
     def setup_root(self,path):

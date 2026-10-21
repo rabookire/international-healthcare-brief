@@ -29,7 +29,8 @@
         "summary": "Announced Beri Ridgeway as London president effective June 1, 2026; exact hospital opening date also verified as March 29, 2022.",
         "source_url": "https://newsroom.clevelandclinic.org/2026/04/01/cleveland-clinic-appoints-beri-ridgeway-md-as-president-of-cleveland-clinic-london"
       }
-    ]
+    ],
+    "facility_status": "Open"
   },
   "IHB-0002": {
     "seed_kind": "baseline",
@@ -43,7 +44,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0003": {
     "seed_kind": "baseline",
@@ -57,7 +60,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0004": {
     "seed_kind": "baseline",
@@ -70,7 +75,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0005": {
     "seed_kind": "baseline",
@@ -83,7 +89,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0006": {
     "seed_kind": "baseline",
@@ -96,7 +103,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0007": {
     "seed_kind": "baseline",
@@ -109,7 +117,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0008": {
     "seed_kind": "backfill",
@@ -149,7 +158,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0010": {
     "seed_kind": "baseline",
@@ -162,7 +172,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0011": {
     "seed_kind": "baseline",
@@ -175,7 +186,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0012": {
     "seed_kind": "baseline",
@@ -188,7 +200,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0013": {
     "seed_kind": "baseline",
@@ -201,7 +214,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0014": {
     "seed_kind": "baseline",
@@ -214,7 +228,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0015": {
     "seed_kind": "baseline",
@@ -227,7 +242,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0016": {
     "seed_kind": "baseline",
@@ -240,7 +256,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0017": {
     "seed_kind": "backfill",
@@ -266,7 +283,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0019": {
     "seed_kind": "baseline",
@@ -279,7 +298,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0020": {
     "seed_kind": "backfill",
@@ -319,7 +339,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0022": {
     "seed_kind": "baseline",
@@ -332,7 +353,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0023": {
     "seed_kind": "baseline",
@@ -345,7 +367,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0024": {
     "seed_kind": "baseline",
@@ -358,7 +381,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0025": {
     "seed_kind": "baseline",
@@ -371,7 +395,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0026": {
     "seed_kind": "baseline",
@@ -384,7 +409,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0027": {
     "seed_kind": "baseline",
@@ -397,7 +423,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0028": {
     "seed_kind": "baseline",
@@ -410,7 +437,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0029": {
     "seed_kind": "baseline",
@@ -423,7 +451,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0030": {
     "seed_kind": "baseline",
@@ -436,7 +465,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0031": {
     "seed_kind": "baseline",
@@ -449,7 +479,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0032": {
     "seed_kind": "baseline",
@@ -462,7 +493,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0033": {
     "seed_kind": "baseline",
@@ -475,7 +507,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0034": {
     "seed_kind": "baseline",
@@ -488,7 +521,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0035": {
     "seed_kind": "baseline",
@@ -501,7 +535,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0036": {
     "seed_kind": "baseline",
@@ -514,7 +549,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0037": {
     "seed_kind": "baseline",
@@ -527,7 +563,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0038": {
     "seed_kind": "baseline",
@@ -540,7 +577,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0039": {
     "seed_kind": "baseline",
@@ -553,7 +591,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0040": {
     "seed_kind": "baseline",
@@ -566,7 +605,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0041": {
     "seed_kind": "baseline",
@@ -579,7 +619,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0042": {
     "seed_kind": "baseline",
@@ -592,7 +633,8 @@
         "type": "Primary",
         "date": "2025-04-12"
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0043": {
     "seed_kind": "baseline",
@@ -605,7 +647,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0044": {
     "seed_kind": "baseline",
@@ -618,7 +661,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0045": {
     "seed_kind": "baseline",
@@ -631,7 +675,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0046": {
     "seed_kind": "baseline",
@@ -644,7 +689,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0047": {
     "seed_kind": "baseline",
@@ -657,7 +703,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0048": {
     "seed_kind": "baseline",
@@ -670,7 +717,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0049": {
     "seed_kind": "baseline",
@@ -683,7 +731,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0050": {
     "seed_kind": "backfill",
@@ -708,7 +757,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0052": {
     "seed_kind": "baseline",
@@ -720,7 +770,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0053": {
     "seed_kind": "baseline",
@@ -732,7 +783,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0054": {
     "seed_kind": "baseline",
@@ -744,7 +796,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0055": {
     "seed_kind": "baseline",
@@ -756,7 +809,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0056": {
     "seed_kind": "baseline",
@@ -768,7 +822,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0057": {
     "seed_kind": "baseline",
@@ -780,7 +835,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0058": {
     "seed_kind": "baseline",
@@ -792,7 +848,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0059": {
     "seed_kind": "baseline",
@@ -804,7 +861,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0060": {
     "seed_kind": "baseline",
@@ -816,7 +874,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0061": {
     "seed_kind": "baseline",
@@ -834,7 +893,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0062": {
     "seed_kind": "baseline",
@@ -852,7 +913,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0063": {
     "seed_kind": "baseline",
@@ -865,7 +928,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0064": {
     "seed_kind": "baseline",
@@ -878,7 +943,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0065": {
     "seed_kind": "baseline",
@@ -896,7 +963,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0066": {
     "seed_kind": "backfill",
@@ -918,7 +987,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "facility_status": "Open"
   },
   "IHB-0067": {
     "seed_kind": "baseline",
@@ -931,7 +1001,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0068": {
     "seed_kind": "baseline",
@@ -949,7 +1021,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0069": {
     "seed_kind": "baseline",
@@ -962,7 +1036,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0070": {
     "seed_kind": "baseline",
@@ -975,7 +1051,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Operating facility described by source",
+    "facility_status": "Open"
   },
   "IHB-0071": {
     "seed_kind": "baseline",
@@ -1005,7 +1083,8 @@
     ],
     "latest_event_date": "",
     "verified_status": "Clinical consultancy operating; baseline relationship predates 12 month window",
-    "events": []
+    "events": [],
+    "status_note": "Clinical consultancy operating; baseline relationship predates 12 month window"
   },
   "IHB-0072": {
     "seed_kind": "baseline",
@@ -1025,7 +1104,9 @@
       }
     ],
     "verification_note": "Dated Nov 18, 2025 partner report confirms continued UCLA involvement in operational-readiness planning. This is verification of an existing relationship, not a material new deal/opening/expansion; no latest_event_date or backfill reclassification.",
-    "events": []
+    "events": [],
+    "status_note": "The advisory engagement is active. The associated hospital remains planned; no opening is established by this record.",
+    "facility_status": "Planned"
   },
   "IHB-0073": {
     "seed_kind": "baseline",
@@ -1037,7 +1118,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0074": {
     "seed_kind": "baseline",
@@ -1049,7 +1131,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0075": {
     "seed_kind": "baseline",
@@ -1061,7 +1144,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0076": {
     "seed_kind": "baseline",
@@ -1073,7 +1157,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0077": {
     "seed_kind": "baseline",
@@ -1085,7 +1170,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0078": {
     "seed_kind": "baseline",
@@ -1097,7 +1183,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0079": {
     "seed_kind": "baseline",
@@ -1109,7 +1196,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0080": {
     "seed_kind": "backfill",
@@ -1135,7 +1223,8 @@
         "summary": "Academic-advisory collaboration announced",
         "source_url": "https://www.dana-farber.org/newsroom/news-releases/2026/dana-farber-collaboration-with-oncoclinic-a-joint-venture-between-al-faisaliah-group-and-oncoclinicasco-will-bring-world-class-oncology-to-saudi-arabia"
       }
-    ]
+    ],
+    "facility_status": "Planned"
   },
   "IHB-0081": {
     "seed_kind": "baseline",
@@ -1153,7 +1242,9 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+    "facility_status": "Planned"
   },
   "IHB-0082": {
     "seed_kind": "baseline",
@@ -1170,7 +1261,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0083": {
     "seed_kind": "baseline",
@@ -1187,7 +1279,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0084": {
     "seed_kind": "baseline",
@@ -1204,7 +1297,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0085": {
     "seed_kind": "backfill",
@@ -1235,7 +1329,8 @@
         "summary": "Flagship clinic confirmed open",
         "source_url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/"
       }
-    ]
+    ],
+    "facility_status": "Open"
   },
   "IHB-0086": {
     "seed_kind": "baseline",
@@ -1252,7 +1347,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0087": {
     "seed_kind": "baseline",
@@ -1269,7 +1365,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0088": {
     "seed_kind": "baseline",
@@ -1281,7 +1378,8 @@
         "type": "Primary",
         "date": "2025-06-05"
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0089": {
     "seed_kind": "baseline",
@@ -1298,7 +1396,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0090": {
     "seed_kind": "baseline",
@@ -1315,7 +1414,8 @@
         "type": "Primary",
         "date": ""
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0091": {
     "seed_kind": "baseline",
@@ -1327,7 +1427,8 @@
         "type": "Primary",
         "date": "2026-05-20"
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0092": {
     "seed_kind": "baseline",
@@ -1339,7 +1440,8 @@
         "type": "Primary",
         "date": "2026-05-20"
       }
-    ]
+    ],
+    "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation."
   },
   "IHB-0093": {
     "source_note": "This is one Bupa relationship with a new cardiac pilot event. The source says the initial value-based collaboration began in 2024 without an exact date, so original announcement and operational dates are blank. A June 19, 2025 release announces a new multi-year contract; that milestone precedes this twelve-month window.",
@@ -1483,6 +1585,7 @@
         "summary": "UPMC–Bon Secours Limerick cancer centre reaches its final construction phase.",
         "source_url": "https://aedifica.eu/4-irish-healthcare-projects-running-completed-totalling-e105-million/"
       }
-    ]
+    ],
+    "facility_status": "Under construction"
   }
 }

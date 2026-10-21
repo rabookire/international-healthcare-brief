@@ -6,7 +6,7 @@ All scripts use Python 3’s standard library. No network request or package ins
 
 `data/tracker.csv` is the single source of truth for deal facts. `data/institutions.json` is the 19-name Tier 1 registry. Optional `data/tier2-institutions.json` explicitly registers additional US tracked institutions; counterparties are never silently promoted into the tracked universe.
 
-`data/evidence.json` is an object keyed by Record ID. It adds `seed_kind` (`baseline`, `backfill`, `new`), `latest_event_date` for substantive updates to older deals, `source_note`, `scope_note`, and optional `verified_status`. A baseline record’s underlying status may be planned; Baseline itself never claims operation. Major secondary-sourced events require a `sources` array with two independent reputable reports; structural domain checks cannot establish editorial independence. Official LinkedIn items need `linkedin_archive: {post_date, full_text, official_verified: true}`.
+`data/evidence.json` is an object keyed by Record ID. It adds `seed_kind` (`baseline`, `backfill`, `new`), `latest_event_date` for substantive updates to older deals, `source_note`, `scope_note`, and optional `verified_status`. The canonical Status is a lifecycle field and never accepts Baseline. Initial inventory is the independent `seed_kind: baseline` label. Use Unknown when current lifecycle is not established; do not infer it from a date. `facility_status` distinguishes a planned associated hospital from an active advisory engagement; `status_note` explains that scope. Generated records retain the additional `sources` array. Major secondary-sourced events require a `sources` array with two independent reputable reports; structural domain checks cannot establish editorial independence. Official LinkedIn items need `linkedin_archive: {post_date, full_text, official_verified: true}`.
 
 Historical backfill uses the fixed **2025-10-20 through 2026-10-19 inclusive** window: 12 months before launch on 2026-10-20. `BACKFILL_START` and `LAUNCH_DATE` enforce this window against the original announcement date or evidenced `latest_event_date`; baseline dates are not forced into the historical window. Source standards remain identical. `data/tracker.json` exposes `launch_date`, `backfill_start` and `backfill_end` for readers and interface labels.
 
@@ -79,7 +79,7 @@ A Market Signal item uses `section: "market_signal"` and may omit `record_id` be
 
 ## Publishing artifact
 
-`package_site.py` creates `_site/` from an explicit allowlist: reader HTML, assets, map, data, briefs, institutions, and public methodology/runbook/seed documentation. It excludes Git metadata, research working files, Python tests and workflow files. Pages deploys these static bytes, not an application server.
+`package_site.py` creates `_site/` from an explicit allowlist: reader HTML, assets, map, data, briefs, institutions, and reader-facing methodology and the markets, compare, coverage and updates routes; internal runbook/QA files stay in GitHub. It excludes Git metadata, research working files, Python tests and workflow files. Pages deploys these static bytes, not an application server.
 
 The GitHub Actions workflow runs tests, verifies current generated outputs, stages the static tree and deploys it through GitHub Pages. A successful local check is not a live deployment. Confirm the Pages deployment’s URL and run the browser journeys against it before declaring publication verified.
 
@@ -88,3 +88,11 @@ Official deployment reference: [Using custom workflows with GitHub Pages](https:
 ## Reader behavior checks
 
 Run `node --test tests/test_reader.mjs` (Node 22 or newer). These checks use the actual seed for combined filters and shared-deal membership, plus bounded fixtures for post-launch and Market Signal cases. They do not replace desktop/mobile browser QA. The Pages workflow runs these alongside the Python suite.
+
+## Reader version 2026-10-21.1
+
+`data/release.json` retains `as_of: 2026-10-20` for the checked source inventory and adds `reader_version: 2026-10-21.1`. Schema version 2 separates lifecycle from inventory history, adds Unknown, splits the former Other region into Africa and Middle East, and adds the T10 research category. Existing record IDs and source dates are preserved.
+
+The CSV retains its 18-column canonical contract. Evidence sidecars hold `seed_kind`, `facility_status`, `status_note`, source scope and provenance. Generated projections must never be edited directly. The filtered reader export is a different, expanded 32-column view containing the record evidence plus view metadata; do not substitute it for the canonical CSV.
+
+Development-only Node dependencies provide formatting and DOM integration tests. Production remains static and has no runtime npm dependency. Run `npm ci --ignore-scripts` before the Node suite. The tests use jsdom with the production entrypoint and actual inventory; they check controls, source rendering, history, export content and recovery, but have no browser layout or visual output.

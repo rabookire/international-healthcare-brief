@@ -1,72 +1,68 @@
 # International Healthcare Brief
 
-Independent intelligence on US hospitals’ international businesses, for business-development leaders and strategists at major US academic medical centers.
+Public-source intelligence on U.S. health systems’ international facilities, partnerships and patient-access channels, for AMC international-program leaders and hospital consultants.
 
-Follow overseas facilities, operating partnerships, management and consulting agreements, in-country offices, patient channels and named-market care services. Each published fact links to a public source. Analysis is labeled. Not investment or business advice. No affiliation or endorsement is implied.
+[Live publication — current main release](https://rabookire.github.io/international-healthcare-brief/) · [Methodology](./METHODOLOGY.md) · [Release verification](./VERIFICATION.md)
 
-- [Live publication](https://rabookire.github.io/international-healthcare-brief/) · [Live map](https://rabookire.github.io/international-healthcare-brief/map/) · [12-month historical activity](https://rabookire.github.io/international-healthcare-brief/data/?footprint=new)
-- [Publication home source](./index.html)
-- [Latest brief and searchable archive](./briefs/index.html) — editions appear only after a completed scan identifies material news; historical seeding does not create backdated briefs.
-- [Interactive global map](./map/index.html)
-- [Sortable, filterable permanent tracker](./data/index.html) · [CSV](./data/tracker.csv) · [Markdown view](./data/tracker.md)
-- [Tier 1 institution profiles](./institutions/index.html) — 19 institutions, including Dana-Farber Cancer Institute.
-- [Methodology](./METHODOLOGY.md) · [Production runbook](./RUNBOOK.md) · [Seed counts and coverage gaps](./SEED-REPORT.md)
+## Prepared reader release: 2026-10-21.1
 
-## Current build status
+This branch prepares a research workflow release. It is not a claim that the new routes are deployed. Automated checks cover editorial boundaries, reader logic, DOM integration and static packaging; real desktop/mobile screenshots and interaction checks remain required before publication. See [BUILD-STATUS.md](./BUILD-STATUS.md).
 
-The initial inventory contains **98 records: 84 baseline and 14 historical backfill, across 38 countries**. Coverage is partial; 14 of 19 Tier 1 institutions have seeded records. The reader and editorial tooling are implemented, with 34 passing automated checks. The same-standard historical window is October 20, 2025–October 19, 2026. GitHub Pages is live; the source and deployment passed the 34 automated checks. Live DOM checks confirmed page rendering, URL-filtered counts and source detail rendering. Click-based, visual, download, keyboard and mobile QA remain incomplete because browser credential protection blocked interactions and screenshots. Exhaustive seeding also remains incomplete. See [BUILD-STATUS.md](./BUILD-STATUS.md) and [SOURCE-AUDIT.md](./SOURCE-AUDIT.md) for evidence and limits.
+The source inventory remains **98 records across 38 countries**, with records for **14 of 19 listed institutions**, checked as of October 20, 2026. Its 84 initial-inventory and 14 historical records retain their IDs and source dates. Lifecycle is independent of that history: 21 relationships are active/operational, 70 have status not established, six are announced and one is in development. These counts describe this partial inventory, not market share or patient volumes.
 
-## Sourcing standard — non-negotiable
+## Useful research tasks
 
-1. **Primary sources first:** the tracked institution's newsroom/press release; the foreign partner's official announcement; a government/ministry/embassy/regulator announcement.
-2. **Reputable secondary only when no primary exists, flagged as secondary:** Becker's Hospital Review, Modern Healthcare, Fierce Healthcare, Reuters, Bloomberg, AP, STAT, established regional outlets of record.
-3. **LinkedIn rule:** a post on an institution's **official, verified LinkedIn company page** counts as primary when it states substantive facts (partner, country, nature of the deal); archive the post's date and full text in the record (posts can be edited/deleted) and upgrade the link when a press release appears. **Individual employees' posts — including CEOs and international presidents — are never sources**; they are tips only.
-4. **Never acceptable:** aggregators, content farms, PR-syndication mirrors, Wikipedia, personal social posts, blogs, unidentifiable outlets.
-5. **Every factual claim traces to the linked source.** Figures (deal value, beds, volumes, timelines) appear only if in a linked source. Direct links to the specific article/release, never homepages.
-6. **Announced ≠ operational.** Wording follows exactly what the source proves (MOU/intent vs signed vs under construction vs open).
-7. **Major items** (openings, JVs, management contracts, exits) require a primary source or two independent reputable sources.
-8. **Corrections** are made in place with a dated correction note in the item and a tracker change-log entry. Nothing is silently edited.
+- Find documented activity by institution, country, lifecycle, specific activity or focus lens. Every result shows the event, relevant date, role category and source context.
+- Read a country brief with participating institutions, relationship models, recent recorded developments and printable citations.
+- Compare two or three institutions across the same filters. Shared agreements retain one ID and are exported once.
+- Inspect planned-facility caveats separately from active advisory work. Unknown status never means inactive.
+- Export the selected records with evidence scope, direct and additional sources, date precision, dataset hash, reader version and query context.
 
-## Read and run locally
+The mobile interface has an explicit List/Map switch and starts with the list. The table remains an equivalent research view. Desktop/mobile rendering, touch behavior and assistive-technology output still need real-browser verification; jsdom has no layout or visual output. Genuine screenshots will be added after that verification.
 
-The site is static HTML, CSS and JavaScript. It has no backend, account, tracking, API key or runtime build requirement. Serve this directory with any static web server; for example:
+## How it is built
+
+The production site is static HTML, CSS and native JavaScript modules. It needs no backend, account, tracking, API key or production build. A canonical CSV and evidence sidecars feed deterministic Python projections. Shared IDs prevent duplicated agreements; URL state makes filtered views reproducible.
+
+- `assets/core.mjs`: filtering, URL state, escaping, Markdown and evidence-preserving CSV.
+- `assets/research.mjs`: reader vocabulary, focus lenses, coverage and comparison summaries.
+- `assets/record-view.mjs`: shared source/evidence presentation.
+- `assets/pages.mjs`: country, comparison, coverage and printable research views.
+- `assets/app.mjs`: navigation, DOM events, map and page orchestration.
+- `scripts/generate.py`: editorial validation and reproducible JSON/Markdown projections.
+
+Node dependencies are development-only: jsdom runs integration tests, and Prettier formats source. GitHub Actions checks the data, tests the reader, stages allowed static files and deploys main through GitHub Pages.
+
+## Run and verify
 
 ```bash
-python3 -m http.server 8000
+npm ci --ignore-scripts
+python3 scripts/dev_server.py
 ```
 
-Open `http://localhost:8000/`. Opening HTML directly through a `file:` URL can prevent browsers from loading JSON; use an HTTP server.
-
-The CSV is canonical. After editing it and its evidence/coverage notes:
+Open the local address printed by the server. Use an HTTP server rather than opening HTML through a file URL.
 
 ```bash
-python3 scripts/generate.py
 python3 scripts/generate.py --check
 python3 -m unittest discover -s tests -v
-node --test tests/test_reader.mjs
+npm test
+python3 scripts/package_site.py
 ```
 
-See [scripts/README.md](./scripts/README.md) for the exact schema, edition metadata and reproducible commands. See [VERIFICATION.md](./VERIFICATION.md) for reader journeys and release checks. Generated dates are explicit editorial inventory dates, never machine-clock guesses.
+After editing the canonical CSV or evidence, run `python3 scripts/generate.py` and repeat the checks. See [the data contract](./scripts/README.md), [editorial runbook](./RUNBOOK.md) and [browser journeys](./VERIFICATION.md).
 
-## Publish on GitHub Pages
+## Scope and limits
 
-The included Pages workflow validates generated outputs and tests before deploying a static artifact on a push to `main`. The repository and live Pages URL must be confirmed after deployment; an expected URL is not evidence of publication.
+Primary sources are preferred; facts and analysis are separate. Dates remain unknown when a source does not establish them. Announced relationships are not operating facilities. Map locations are city/country approximations. Shared or multi-category activity is not an additive measure of scale.
 
-For a new repository, run from this directory with an authenticated GitHub CLI:
+The tracked universe currently focuses on U.S. institutions. It is not a complete global competitor map. Research partnerships are eligible under the revised policy, but their systematic review is pending. Missing records must not be read as no activity. No editorial edition or completed monitoring scan is fabricated.
 
-```bash
-git init -b main
-git add .
-git commit -m "Build International Healthcare Brief"
-gh repo create international-healthcare-brief --public --source=. --remote=origin --push
-gh api --method POST repos/{owner}/international-healthcare-brief/pages -f build_type=workflow
-gh workflow run pages.yml
-```
+Report a correction through the [sourced correction template](https://github.com/rabookire/international-healthcare-brief/issues/new?template=correction.yml). Include a record ID and direct public source; do not submit private institutional information.
 
-If the repository already exists, add its remote and push the reviewed source rather than creating a duplicate. If Pages already exists, preserve its settings and use the configured deployment workflow. Confirm the Actions run and returned Pages URL, then exercise the live map and source links. Repository creation and Pages administration require capabilities beyond content-only GitHub access.
+## Next evidence work
 
-## Option 3 redesign review
+Complete real-browser release checks, then expand research coverage and deliberately curate non-U.S. competitor coverage. Add specialties, financial terms, ownership roles and agreement duration only where sources establish them. Keep undisclosed, unreviewed and inapplicable facts distinguishable.
 
-The redesign source implements the selected split map/list dashboard with concise text, compact filters and contextual details. The homepage opens the workspace directly. The data and source standard are unchanged. **40 automated checks pass** (24 Python + 16 Node). See [design-qa.md](./design-qa.md) for the remaining browser/visual acceptance gate; this branch is not the published redesign.
+## Licensing and attribution
 
-For the supported managed preview, run `sites-preview start "$PWD"`. Its `npm run dev` command serves static files with the Python standard library; it does not introduce a production build or runtime dependency. Future checks use `node --test tests/test_*.mjs` so map-camera regressions are included.
+No project-wide code/data license has been selected. Linking an external source does not grant rights to its contents. Natural Earth map data and the vendored Feather icons retain their documented attributions and terms in `assets/MAP-SOURCES.md` and `assets/icons/LICENSE.txt`. Institution names are text references and imply no endorsement.

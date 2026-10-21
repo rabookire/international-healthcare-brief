@@ -1,69 +1,46 @@
-# Verification procedure and feature map
+# Release verification
 
-This procedure is a release checklist. A written procedure does not establish that a journey was executed. Record actual evidence, exact snapshot/commit and remaining blockers in the release report.
+Prepared reader: 2026-10-21.1. Source inventory checked: 2026-10-20. Base: `f0f790747dc6969c99423c552391dc571cf74e27`.
 
-| Surface | Reader job | Required observation |
-| --- | --- | --- |
-| Home | Understand the publication and coverage | Independence, source standard, current inventory date and links are visible; no unsupported no-news claim. |
-| Map | Find management agreements in the GCC | T3 + GCC returns exactly the CSV rows satisfying both filters, including eligible shared deals. |
-| Map | Inspect Vietnam across institutions | Country=Vietnam returns all and only Vietnam records; country panel lists all institutions there. |
-| Map/profile | Inspect Mayo Clinic’s footprint | Institution=Mayo Clinic returns every participating record, including baseline and any shared deal. |
-| Map | Find Saudi openings in the current year | Country=Saudi Arabia plus operational-year filter returns only records with evidenced operational dates in that year. Unknown dates do not qualify. |
-| Map | Inspect a record | Pin/table selection reveals headline, institution, partner, status, dates, analysis and direct source. Status shape and text remain usable without color. |
-| Tracker | Compare and export records | Combined filters and sort preserve CSV counts; CSV download matches canonical data. |
-| Archive | Find an edition | Date, institution, region, country and tactic filters combine; an empty archive explains that no edition has been published. |
-| Institution | Understand sourced activity | Footprint, map slice, timeline, source scope, sources and last verification match the tracker. |
-| Methodology | Assess evidence | Full source standard, universe, inclusion/exclusion filter, five regions and nine tactics are available. |
-
-## Structural checks
+## Automated checks
 
 ```bash
+npm ci --ignore-scripts
 python3 scripts/generate.py --check
 python3 -m unittest discover -s tests -v
-node --test tests/test_reader.mjs
+npm test
 python3 scripts/package_site.py
 ```
 
-The generator validates taxonomy, registered institutions, IDs, country/region mappings, dates, source types, direct link structure, secondary major-item evidence metadata and projection agreement. Tests deliberately submit invalid data and prove that those boundaries reject it; they do not merely restate a rendering implementation.
+The release contains 27 Python checks and 29 JavaScript checks (five camera, 11 existing reader, six research semantics, seven DOM integration). The integration suite executes the production reader with the real inventory in jsdom. It checks controls, combined filters, result counts, map shading, URL/history, source details, focus restoration for tested controls, CSV content, country briefs, shared comparison IDs, print invocation and loading recovery. It does not render layout, capture screenshots, inspect the browser accessibility tree, simulate real touch behavior or verify actual downloads/printing.
 
-## Source review
+## Required real-browser journeys
 
-Open at least 10 seeded sources spanning institutions, regions, tactics and lifecycle states. Check every factual claim against each source, including original versus latest-event dates. Record exact IDs and outcomes. A source URL passing structural validation is not evidence that its page is reachable or its facts are correct. An old announcement alone does not prove current operation. Check all major secondary-sourced items for two independent reputable reports. Check official LinkedIn archives if any are used.
+Use desktop 1440×1024 and mobile 390×844, plus 320px reflow and 200% zoom. Capture actual screenshots for each important state. No current screenshots or full interaction pass exist.
 
-## Browser journey
+| Step | Task | Expected result |
+| --- | --- | --- |
+| 1 | Open home | Audience, partial scope, 98 records/38 countries, coverage link and search are clear. |
+| 2 | Filter UAE + Active/operational | Exactly IHB-0003 and IHB-0071 match. Open evidence and confirm facility versus advisory roles. |
+| 3 | Open IHB-0072 | Active advisory work and its planned associated facility remain clearly distinct. |
+| 4 | Filter T9 and then research | T9 gives 42 records and explains secondary matches. Research gives an explicit unreviewed-coverage notice. |
+| 5 | Filter Vietnam; add Mayo | Country gives two records; Mayo + Vietnam gives none. The all-country context explicitly ignores other filters. Shading follows matching pins. |
+| 6 | Combine institution, country, activity, lifecycle, history and year | Results match the canonical filters. GCC + T3 and Saudi 2026 openings remain honest zero-result views. |
+| 7 | Select and close details; sort, search, clear, back/forward | No lost keyboard focus, unexpected filter changes or inaccessible selection. Copy/reopen a view and record link. |
+| 8 | Use mobile List/Map switch | Search and filters remain visible; list is default; details stay reachable without forcing map navigation. No horizontal page overflow. |
+| 9 | Use map with mouse, keyboard and touch | Drag/pinch/zoom, pin navigation, wheel-scroll handoff, reset and expanded mode work. Background is inert in expanded mode; Escape and focus restoration work. Overlapping hit regions do not hide records. |
+| 10 | Export filtered CSV | Actual downloaded file opens correctly and retains lifecycle, facility state, scope, source notes, additional URLs, month precision, version/hash and query. |
+| 11 | Open Vietnam country brief and institution profile | Country/profile counts and citations agree with data; source links work; printed output includes provenance and caveats. |
+| 12 | Compare MGB and Dana-Farber | IHB-0081 appears in both columns and only once in exported records. Counts are not presented as rankings. Add a third institution; remaining choices are disabled. |
+| 13 | Open coverage, updates and methodology | Nineteen coverage entries, explicit research gap and no fabricated edition. Methodology still loads when tracker/evidence/brief requests fail. |
+| 14 | Check contrast, focus, screen reader, loading and errors | Labels, heading order, focus indicators, status announcements and error recovery are usable. Inspect browser console errors. |
 
-Serve the static tree through the supported preview. Inspect desktop and a narrow mobile portrait layout. Exercise every row in the feature map, combinations of all filters, reset, empty result, source click, malformed URL state, back/forward navigation, sorting, and keyboard focus. Check that map pins do not hide overlapping records and that all essential details are reachable without hover or color perception. Check baseline/new controls with suspended and closed records. Reopen a shared view URL and confirm the same selection.
+## Editorial review
 
-If a data request fails, the reader should see a meaningful error and retry route; it must not look like a legitimate zero-record result. Inspect horizontal overflow and touch target spacing on mobile. Verify that all shipped assets are local except user-activated source links; the publication must not add tracking or require login.
+The lifecycle migration uses existing evidence notes, not a new source scan. Source dates and verification dates remain unchanged. Before adding facts, open the exact primary sources and verify factual entailment, lifecycle, event dates and roles. Research candidates require reassessment under the revised methodology; old exclusions are not automatically admitted.
 
-## Deployment
+## Publication
 
-A passing local build is distinct from a successful Pages deployment. Record the Actions/deployment result and returned URL. Test the deployed site’s subdirectory-relative asset and data paths, especially `/international-healthcare-brief/map/`, profiles and archive links. Do not call an anticipated URL live until that deployment exists. If publication is unavailable, deliver the reviewed repository package and state the missing capability.
+Keep the change in a draft PR until the real-browser journeys pass and screenshots are inspected. Automated checks alone do not establish a visual pass. After merging, confirm the exact deployed commit, successful Pages run and returned Pages URL, then test subdirectory asset paths and critical live journeys. An expected URL is not evidence of publication.
 
-## Current execution record
-
-2026-10-20: 24 Python tests and 10 Node tests passed, as did projection equality, JavaScript syntax and public staging checks. Independent review found no new blocking finding in the twelve-month changes.
-
-GitHub Actions run [39507846953](https://github.com/rabookire/international-healthcare-brief/actions/runs/39507846953) passed validation and deployment for source commit `2753cd16afb59adccdb373f90387b9dc6e91a2f7`. The deployment returned https://rabookire.github.io/international-healthcare-brief/ and that page was opened successfully. All following observations are from the deployed reader, not a mock:
-
-| Live DOM observation | Observed result |
-| --- | --- |
-| Overview and unfiltered map | 19 institutions, 98 records, 38 countries; 98 accessible record pins |
-| History tracker `footprint=new` | 14 table rows; Alameda displays January 2026 with day not disclosed |
-| Vietnam map URL | 2 records; country panel includes Johns Hopkins and Penn |
-| GCC + T3 URL | 0 records with an explicit empty state |
-| UCLA + China + T7 + Baseline + baseline footprint URL | 4 records; primary and secondary tactics both match |
-| Saudi Arabia + operational year 2026 URL | 0 records; no unknown date treated as an opening |
-| Mayo map URL | 21 records |
-| Institution index and Dana-Farber profile | 19 profile cards; Dana-Farber has 5 records in 5 countries |
-| Alameda deep-linked record dialog | Announced; exact announcement/operational dates unstated; month-only latest event; secondary source and evidence limits visible |
-| Brief archive | No edition published yet; no fabricated no-news or backdated edition |
-| Methodology | Full standard and 19-name Tier 1 list, including Dana-Farber, load under the Pages subdirectory |
-
-The managed preview initially failed to mount `/proc`. Live DOM reads and navigation subsequently worked, but browser credential protection blocked click/select actions and screenshot observations. The documented fresh-tab recovery did not remove the restriction. No screenshot was produced. Sorting, exports, reset, click-driven filters, back/forward behavior, keyboard focus, touch and desktop/mobile visual layout are not verified. No full interaction journey is claimed; the procedure remains a draft. These are browser-environment limitations, not proven application failures. See BUILD-STATUS.md and SOURCE-AUDIT.md.
-
-## Option 3 redesign — 2026-10-20
-
-The review branch replaces the overview/map with the selected split workspace, preserves the canonical facts, and adds camera/ownership regression checks. The current redesigned source passes **24 Python + 16 Node tests**, projection equality, syntax and staging. Independent code review findings and repairs are in [design-qa.md](./design-qa.md).
-
-The managed preview now starts successfully using the supplied `npm run dev` command. Cloud browser creation still fails with the native credential-state error, including after reset. No browser-rendered screenshot, visual comparison, primary interaction, console or mobile check is claimed for the redesign. The Product Design result is blocked. Existing execution evidence above describes the earlier deployed layout, not the redesigned branch.
+Earlier execution logs and design references belong to the previous commits in Git history; they are not evidence for this release.
