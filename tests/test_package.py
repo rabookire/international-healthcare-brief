@@ -13,6 +13,7 @@ class PublicPackage(unittest.TestCase):
         required=['index.html','map/index.html','methodology/index.html','data/index.html','briefs/index.html','institutions/index.html','assets/app.mjs','assets/core.mjs','assets/styles.css','assets/world.geojson','assets/places.json','data/tracker.json','data/institutions.json','data/evidence.json','data/coverage.json','data/briefs.json','METHODOLOGY.md','SEED-REPORT.md','design-qa.md','assets/map-camera.mjs','assets/icons/search.svg','assets/icons/LICENSE.txt']
         with tempfile.TemporaryDirectory() as d:
             r=Path(d)
+            required += ['assets/profile.mjs','assets/profile.css']
             for name in required:
                 target=r/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_text('test')
             (r/'tests').mkdir();(r/'tests/private.txt').write_text('not public')

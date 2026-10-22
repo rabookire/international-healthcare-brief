@@ -13,24 +13,24 @@ Baseline identifies a pre-existing arrangement at seeding; it is not an operatin
 | Record | Institution | Country | Region | Tactic | Status | Source |
 | --- | --- | --- | --- | --- | --- | --- |
 | IHB-0018 | Mayo Clinic | United Kingdom | Europe | T1 Owned/operated facility | Baseline | [Source](https://www.mayoclinic.org/uk/about-mayo-healthcare-uk) |
-| IHB-0019 | Mayo Clinic | Canada | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/canada) |
-| IHB-0020 | Mayo Clinic | Cayman Islands | Americas | T6 In-country office/representative | Operational | [Source](https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-opens-patient-information-office-in-cayman-islands/) |
-| IHB-0021 | Mayo Clinic | Colombia | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0022 | Mayo Clinic | Dominican Republic | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0023 | Mayo Clinic | Ecuador | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0024 | Mayo Clinic | El Salvador | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0025 | Mayo Clinic | Guatemala | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0026 | Mayo Clinic | Honduras | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0027 | Mayo Clinic | India | Asia Pacific | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0028 | Mayo Clinic | Indonesia | Asia Pacific | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia) |
-| IHB-0029 | Mayo Clinic | Mexico | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico) |
-| IHB-0030 | Mayo Clinic | Panama | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0031 | Mayo Clinic | Paraguay | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay) |
-| IHB-0032 | Mayo Clinic | Peru | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru) |
-| IHB-0033 | Mayo Clinic | Saudi Arabia | GCC | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0034 | Mayo Clinic | Trinidad and Tobago | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/port-of-spain-trinidad) |
-| IHB-0035 | Mayo Clinic | United Arab Emirates | GCC | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0036 | Mayo Clinic | Uruguay | Americas | T6 In-country office/representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay) |
+| IHB-0019 | Mayo Clinic | Canada | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/canada) |
+| IHB-0020 | Mayo Clinic | Cayman Islands | Americas | T6 In-Country Representative | Operational | [Source](https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-opens-patient-information-office-in-cayman-islands/) |
+| IHB-0021 | Mayo Clinic | Colombia | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0022 | Mayo Clinic | Dominican Republic | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0023 | Mayo Clinic | Ecuador | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0024 | Mayo Clinic | El Salvador | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0025 | Mayo Clinic | Guatemala | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0026 | Mayo Clinic | Honduras | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0027 | Mayo Clinic | India | Asia Pacific | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0028 | Mayo Clinic | Indonesia | Asia Pacific | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia) |
+| IHB-0029 | Mayo Clinic | Mexico | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico) |
+| IHB-0030 | Mayo Clinic | Panama | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0031 | Mayo Clinic | Paraguay | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay) |
+| IHB-0032 | Mayo Clinic | Peru | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru) |
+| IHB-0033 | Mayo Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0034 | Mayo Clinic | Trinidad and Tobago | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/port-of-spain-trinidad) |
+| IHB-0035 | Mayo Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0036 | Mayo Clinic | Uruguay | Americas | T6 In-Country Representative | Baseline | [Source](https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay) |
 | IHB-0095 | Mayo Clinic | Singapore | Asia Pacific | T5 Strategic affiliation/partnership | Announced | [Source](https://news.mayocliniclabs.com/2026/09/23/mayo-clinic-laboratories-invests-in-pathology-asia-holdings-and-lifestrands-genomics-to-advance-diagnostics-and-precision-medicine/) |
 | IHB-0096 | Mayo Clinic | China | Asia Pacific | T4 Consulting/advisory | Announced | [Source](https://newsnetwork.mayoclinic.org/discussion/heyou-hospital-and-heyou-pinnacle-medical-center-join-mayo-clinic-care-network/) |
 
@@ -58,7 +58,7 @@ Change log: 2026-10-20: Added verified twelve-month history. 2026-03-20: Announc
 
 ### 2026-02-19 — Mayo Clinic opens its first Cayman Islands patient-information office.
 
-IHB-0020 · Cayman Islands · Operational · T6 In-country office/representative
+IHB-0020 · Cayman Islands · Operational · T6 In-Country Representative
 
 Analysis: The office adds a local coordination channel for care at Mayo’s U.S. and London locations without creating local clinical capacity.
 
@@ -72,7 +72,7 @@ Source scope: Original office-directory source retained. The release says Mayo i
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Uruguay.
 
-IHB-0036 · Uruguay · Baseline · T6 In-country office/representative
+IHB-0036 · Uruguay · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -84,7 +84,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in United Arab Emirates.
 
-IHB-0035 · United Arab Emirates · Baseline · T6 In-country office/representative
+IHB-0035 · United Arab Emirates · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -96,7 +96,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Trinidad and Tobago.
 
-IHB-0034 · Trinidad and Tobago · Baseline · T6 In-country office/representative
+IHB-0034 · Trinidad and Tobago · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -108,7 +108,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Saudi Arabia.
 
-IHB-0033 · Saudi Arabia · Baseline · T6 In-country office/representative
+IHB-0033 · Saudi Arabia · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -120,7 +120,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Peru.
 
-IHB-0032 · Peru · Baseline · T6 In-country office/representative
+IHB-0032 · Peru · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -132,7 +132,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Asunción, Paraguay.
 
-IHB-0031 · Paraguay · Baseline · T6 In-country office/representative
+IHB-0031 · Paraguay · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -144,7 +144,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Panama.
 
-IHB-0030 · Panama · Baseline · T6 In-country office/representative
+IHB-0030 · Panama · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -156,7 +156,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Monterrey, Mexico.
 
-IHB-0029 · Mexico · Baseline · T6 In-country office/representative
+IHB-0029 · Mexico · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -168,7 +168,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Indonesia.
 
-IHB-0028 · Indonesia · Baseline · T6 In-country office/representative
+IHB-0028 · Indonesia · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -180,7 +180,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in India.
 
-IHB-0027 · India · Baseline · T6 In-country office/representative
+IHB-0027 · India · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -192,7 +192,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Honduras.
 
-IHB-0026 · Honduras · Baseline · T6 In-country office/representative
+IHB-0026 · Honduras · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -204,7 +204,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Guatemala.
 
-IHB-0025 · Guatemala · Baseline · T6 In-country office/representative
+IHB-0025 · Guatemala · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -216,7 +216,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in El Salvador.
 
-IHB-0024 · El Salvador · Baseline · T6 In-country office/representative
+IHB-0024 · El Salvador · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -228,7 +228,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Guayaquil, Ecuador.
 
-IHB-0023 · Ecuador · Baseline · T6 In-country office/representative
+IHB-0023 · Ecuador · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -240,7 +240,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Dominican Republic.
 
-IHB-0022 · Dominican Republic · Baseline · T6 In-country office/representative
+IHB-0022 · Dominican Republic · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -252,7 +252,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Colombia.
 
-IHB-0021 · Colombia · Baseline · T6 In-country office/representative
+IHB-0021 · Colombia · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 
@@ -264,7 +264,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Mayo Clinic lists a representative office in Canada.
 
-IHB-0019 · Canada · Baseline · T6 In-country office/representative
+IHB-0019 · Canada · Baseline · T6 In-Country Representative
 
 Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.
 

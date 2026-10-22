@@ -4,7 +4,7 @@
   "backfill_start": "2025-10-20",
   "backfill_end": "2026-10-19",
   "source": "data/tracker.csv",
-  "source_sha256": "c2102ae7fc0a8a6f2b6a57f9ecb527f76d1076b336a7952ee3b13ac5248df2c5",
+  "source_sha256": "13ec8baf906d9baaa720243999f7103cc6383f14beaf77dcdbaf369e9f851cbb",
   "counts": {
     "records": 98,
     "baseline": 84,
@@ -20,10 +20,11 @@
     "T3": "Management contract",
     "T4": "Consulting/advisory",
     "T5": "Strategic affiliation/partnership",
-    "T6": "In-country office/representative",
+    "T6": "In-Country Representative",
     "T7": "Telemedicine/remote second opinion",
     "T8": "Education/training",
-    "T9": "Inbound patient channel"
+    "T9": "Inbound patient channel",
+    "T11": "Insurer Partnership"
   },
   "statuses": [
     "Announced",
@@ -38,7 +39,8 @@
     "Americas",
     "Asia Pacific",
     "Europe",
-    "Other"
+    "Middle East (non-GCC)",
+    "Africa"
   ],
   "records": [
     {
@@ -415,7 +417,7 @@
       "institution": "Cleveland Clinic",
       "partner": "Olufisayo Okunsanya",
       "country": "Nigeria",
-      "region": "Other",
+      "region": "Africa",
       "city": "",
       "tactic_primary": "T6",
       "tactic_secondary": [
@@ -430,7 +432,7 @@
       "source_type": "Primary",
       "source_date": "",
       "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Africa. Source facts and verification date unchanged.",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -582,7 +584,7 @@
       "country": "Bermuda",
       "region": "Americas",
       "city": "",
-      "tactic_primary": "T5",
+      "tactic_primary": "T11",
       "tactic_secondary": [
         "T9"
       ],
@@ -595,7 +597,7 @@
       "source_type": "Primary",
       "source_date": "2026-09-16",
       "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank. | 2026-10-22: Taxonomy update — reclassified from T5 to T11 Insurer Partnership; consulting retained as T4 secondary where applicable. Source facts and verification date unchanged.",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -1279,8 +1281,10 @@
       "country": "Bermuda",
       "region": "Americas",
       "city": "",
-      "tactic_primary": "T4",
-      "tactic_secondary": [],
+      "tactic_primary": "T11",
+      "tactic_secondary": [
+        "T4"
+      ],
       "status": "Baseline",
       "announcement_date": "",
       "operational_date": "",
@@ -1290,7 +1294,7 @@
       "source_type": "Primary",
       "source_date": "",
       "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank. | 2026-10-22: Taxonomy update — reclassified from T4 to T11 Insurer Partnership; consulting retained as T4 secondary where applicable. Source facts and verification date unchanged.",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1506,7 +1510,7 @@
       "institution": "Johns Hopkins Medicine International",
       "partner": "Clemenceau Medical Center",
       "country": "Lebanon",
-      "region": "Other",
+      "region": "Middle East (non-GCC)",
       "city": "",
       "tactic_primary": "T4",
       "tactic_secondary": [
@@ -1521,7 +1525,7 @@
       "source_type": "Primary",
       "source_date": "",
       "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Middle East (non-GCC). Source facts and verification date unchanged.",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -2353,7 +2357,7 @@
       "institution": "UCLA Health",
       "partner": "Saudi Jordanian Medical and Educational Investment Company / Kingdom University Hospital",
       "country": "Jordan",
-      "region": "Other",
+      "region": "Middle East (non-GCC)",
       "city": "Amman",
       "tactic_primary": "T4",
       "tactic_secondary": [
@@ -2368,7 +2372,7 @@
       "source_type": "Primary",
       "source_date": "",
       "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.\n2026-10-20: Expanded to the same-standard 12-month historical window. Add dated corroboration of continued pre-opening advice while preserving Baseline classification and original dates. Delegation visit does not pass the material-news threshold.",
+      "change_log": "2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.\n2026-10-20: Expanded to the same-standard 12-month historical window. Add dated corroboration of continued pre-opening advice while preserving Baseline classification and original dates. Delegation visit does not pass the material-news threshold. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Middle East (non-GCC). Source facts and verification date unchanged.",
       "institutions": [
         "UCLA Health"
       ],
@@ -3060,7 +3064,7 @@
       "country": "United Kingdom",
       "region": "Europe",
       "city": "London",
-      "tactic_primary": "T5",
+      "tactic_primary": "T11",
       "tactic_secondary": [],
       "status": "Operational",
       "announcement_date": "",
@@ -3071,7 +3075,7 @@
       "source_type": "Primary",
       "source_date": "2026-07-23",
       "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Added verified twelve-month history. 2026-07-23: Announced launch of a value-based cardiac-care pilot within the existing Bupa relationship.",
+      "change_log": "2026-10-20: Added verified twelve-month history. 2026-07-23: Announced launch of a value-based cardiac-care pilot within the existing Bupa relationship. | 2026-10-22: Taxonomy update — reclassified from T5 to T11 Insurer Partnership; consulting retained as T4 secondary where applicable. Source facts and verification date unchanged.",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -3210,7 +3214,7 @@
       "institution": "Houston Methodist",
       "partner": "Alameda Healthcare Group; Madinaty Hospital",
       "country": "Egypt",
-      "region": "Other",
+      "region": "Africa",
       "city": "New Cairo",
       "tactic_primary": "T5",
       "tactic_secondary": [],
@@ -3223,7 +3227,7 @@
       "source_type": "Secondary",
       "source_date": "2026-02-18",
       "last_verified": "2026-10-20",
-      "change_log": "2026-01 (day not established): Multi-year strategic partnership announced, according to the February 18 Khaleej Times report. 2026-10-20: Added from acceptable secondary coverage; exact event day left blank; no claim that the hospital has opened.",
+      "change_log": "2026-01 (day not established): Multi-year strategic partnership announced, according to the February 18 Khaleej Times report. 2026-10-20: Added from acceptable secondary coverage; exact event day left blank; no claim that the hospital has opened. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Africa. Source facts and verification date unchanged.",
       "institutions": [
         "Houston Methodist"
       ],

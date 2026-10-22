@@ -1,11 +1,11 @@
-export const TACTICS = {T1:'Owned / operated facility',T2:'Joint venture',T3:'Management contract',T4:'Consulting / advisory',T5:'Strategic partnership',T6:'In-country office',T7:'Remote care / second opinion',T8:'Education / training',T9:'Inbound patient channel'};
-export const COLORS = {T1:'#0072B2',T2:'#D55E00',T3:'#009E73',T4:'#8C564B',T5:'#CC79A7',T6:'#7354B0',T7:'#007F86',T8:'#957000',T9:'#4C5969'};
+export const TACTICS = {T1:'Owned / operated facility',T2:'Joint venture',T3:'Management contract',T4:'Consulting / advisory',T5:'Strategic partnership',T6:'In-Country Representative',T7:'Remote care / second opinion',T8:'Education / training',T9:'Inbound patient channel',T11:'Insurer Partnership'};
+export const COLORS = {T1:'#0072B2',T2:'#D55E00',T3:'#009E73',T4:'#8C564B',T5:'#CC79A7',T6:'#7354B0',T7:'#007F86',T8:'#957000',T9:'#4C5969',T11:'#b06a14'};
 export const STATUSES = ['Announced','In development','Operational','Suspended/restructured','Closed/exited','Baseline'];
-export const REGIONS = ['GCC','Americas','Asia Pacific','Europe','Other'];
+export const REGIONS = ['GCC','Americas','Asia Pacific','Europe','Middle East (non-GCC)','Africa'];
 export function institutionsOf(r) { return r.institutions || r.institution.split(';').map(x=>x.trim()).filter(Boolean); }
-export function readState(search='') { const p=new URLSearchParams(search);return {institution:p.getAll('institution'),tactic:p.get('tactic')||'',region:p.get('region')||'',country:p.get('country')||'',status:p.get('status')||'',footprint:['all','baseline','new'].includes(p.get('footprint'))?p.get('footprint'):'all',q:p.get('q')||'',year:/^\d{4}$/.test(p.get('year')||'')?p.get('year'):'',record:p.get('record')||'',from:p.get('from')||'',to:p.get('to')||''}; }
-export function stateQuery(s) { const p=new URLSearchParams();for(const x of s.institution||[])p.append('institution',x);for(const k of ['tactic','region','country','status','q','year','record','from','to'])if(s[k])p.set(k,s[k]);if(s.footprint&&s.footprint!=='all')p.set('footprint',s.footprint);return p.toString(); }
-export function filterRecords(rows,s) { const q=(s.q||'').trim().toLocaleLowerCase();return rows.filter(r=>(!s.institution?.length||s.institution.some(x=>institutionsOf(r).includes(x)))&&(!s.tactic||r.tactic_primary===s.tactic||(r.tactic_secondary||[]).includes(s.tactic))&&(!s.region||r.region===s.region)&&(!s.country||r.country===s.country)&&(!s.status||r.status===s.status)&&(s.footprint!=='baseline'||r.seed_kind==='baseline')&&(s.footprint!=='new'||r.seed_kind!=='baseline')&&(!s.year||(r.operational_date||'').startsWith(s.year)&&r.status!=='Closed/exited')&&(!q||[r.id,r.institution,r.partner,r.country,r.region,r.city,r.headline,r.analysis,r.status,TACTICS[r.tactic_primary]].join(' ').toLocaleLowerCase().includes(q))); }
+export function readState(search='') { const p=new URLSearchParams(search);return {view:p.get('view')==='list'?'list':'map',institution:p.getAll('institution'),tactic:p.get('tactic')||'',region:p.get('region')||'',country:p.get('country')||'',status:p.get('status')||'',footprint:['all','baseline','new'].includes(p.get('footprint'))?p.get('footprint'):'all',q:p.get('q')||'',year:/^\d{4}$/.test(p.get('year')||'')?p.get('year'):'',record:p.get('record')||'',from:p.get('from')||'',to:p.get('to')||''}; }
+export function stateQuery(s) { const p=new URLSearchParams();for(const x of s.institution||[])p.append('institution',x);for(const k of ['tactic','region','country','status','q','year','record','from','to'])if(s[k])p.set(k,s[k]);if(s.view==='list')p.set('view','list');if(s.footprint&&s.footprint!=='all')p.set('footprint',s.footprint);return p.toString(); }
+export function filterRecords(rows,s) { const q=(s.q||'').trim().toLocaleLowerCase();return rows.filter(r=>(!s.institution?.length||s.institution.some(x=>institutionsOf(r).includes(x)))&&(!s.tactic||r.tactic_primary===s.tactic||(r.tactic_secondary||[]).includes(s.tactic))&&(!s.region||regionMatches(r.region,s.region))&&(!s.country||r.country===s.country)&&(!s.status||r.status===s.status)&&(s.footprint!=='baseline'||r.seed_kind==='baseline')&&(s.footprint!=='new'||r.seed_kind!=='baseline')&&(!s.year||(r.operational_date||'').startsWith(s.year)&&r.status!=='Closed/exited')&&(!q||[r.id,r.institution,r.partner,r.country,r.region,r.city,r.headline,r.analysis,r.status,TACTICS[r.tactic_primary]].join(' ').toLocaleLowerCase().includes(q))); }
 export function sortRecords(rows,key='last_verified',direction=-1) { return [...rows].sort((a,b)=>direction*String(a[key]||'').localeCompare(String(b[key]||''))||a.id.localeCompare(b.id)); }
 export function escapeHTML(s='') { return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 export function safeURL(s='') { try{const u=new URL(s);return u.protocol==='https:'?u.href:'#';}catch{return '#';} }
@@ -25,7 +25,7 @@ export function filterEditions(editions,records,s) {
  return editions.filter(ed=>(!s.from||ed.date>=s.from)&&(!s.to||ed.date<=s.to)&&(!s.q||JSON.stringify(ed).toLowerCase().includes(s.q.toLowerCase()))&&(!constrained||(ed.items||[]).some(item=>{
   if(item.record_id)return selected.has(item.record_id);
   if(item.section!=='market_signal'||s.institution?.length||s.status||s.year||s.footprint!=='all')return false;
-  return (!s.region||item.region===s.region)&&(!s.country||item.country===s.country)&&(!s.tactic||item.tactic===s.tactic);
+  return (!s.region||regionMatches(item.region,s.region))&&(!s.country||item.country===s.country)&&(!s.tactic||item.tactic===s.tactic);
  })));
 }
 
@@ -34,3 +34,6 @@ export function activityDisplay(r,s,{country=false}={}){
  const single=!country&&s.institution?.length===1;
  return {title:single?r.partner:r.institution,partner:single?'':r.partner,shared:single?institutionsOf(r).filter(n=>n!==s.institution[0]):[]};
 }
+
+// Preserve old shared links while the canonical inventory uses the two explicit regions.
+export function regionMatches(region, selected) { return region===selected || (selected==='Other' && ['Africa','Middle East (non-GCC)'].includes(region)); }

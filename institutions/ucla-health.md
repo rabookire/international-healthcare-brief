@@ -12,7 +12,7 @@ Baseline identifies a pre-existing arrangement at seeding; it is not an operatin
 
 | Record | Institution | Country | Region | Tactic | Status | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| IHB-0072 | UCLA Health | Jordan | Other | T4 Consulting/advisory | Baseline | [Source](https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital) |
+| IHB-0072 | UCLA Health | Jordan | Middle East (non-GCC) | T4 Consulting/advisory | Baseline | [Source](https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital) |
 | IHB-0073 | UCLA Health | China | Asia Pacific | T5 Strategic affiliation/partnership | Baseline | [Source](https://www.uclahealth.org/international-services/consulting-education-services/international-projects/case-studies/second-affiliated-hospital-zhejiang-university-china) |
 | IHB-0074 | UCLA Health | China | Asia Pacific | T7 Telemedicine/remote second opinion | Baseline | [Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) |
 | IHB-0075 | UCLA Health | China | Asia Pacific | T7 Telemedicine/remote second opinion | Baseline | [Source](https://www.uclahealth.org/international-services/become-patient/referring-providers/referral-partners) |
@@ -82,7 +82,7 @@ This model places operating standards and workforce preparation at the center of
 [Source](https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
-2026-10-20: Expanded to the same-standard 12-month historical window. Add dated corroboration of continued pre-opening advice while preserving Baseline classification and original dates. Delegation visit does not pass the material-news threshold.
+2026-10-20: Expanded to the same-standard 12-month historical window. Add dated corroboration of continued pre-opening advice while preserving Baseline classification and original dates. Delegation visit does not pass the material-news threshold. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Middle East (non-GCC). Source facts and verification date unchanged.
 
 Source scope: Baseline means a pre-existing advisory engagement, not an operational hospital. The source supplies only the contract month, so no exact announcement date is entered.
 

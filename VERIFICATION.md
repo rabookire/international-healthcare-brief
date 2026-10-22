@@ -12,15 +12,15 @@ This procedure is a release checklist. A written procedure does not establish th
 | Map | Inspect a record | Pin/table selection reveals headline, institution, partner, status, dates, analysis and direct source. Status shape and text remain usable without color. |
 | Tracker | Compare and export records | Combined filters and sort preserve CSV counts; CSV download matches canonical data. |
 | Archive | Find an edition | Date, institution, region, country and tactic filters combine; an empty archive explains that no edition has been published. |
-| Institution | Understand sourced activity | Footprint, map slice, timeline, source scope, sources and last verification match the tracker. |
-| Methodology | Assess evidence | Full source standard, universe, inclusion/exclusion filter, five regions and nine tactics are available. |
+| Institution | Understand sourced activity | Map-first footprint, matching region/activity controls, right-hand recent developments, List alternative, source scope and verification dates match the tracker. |
+| Methodology | Assess evidence | Full source standard, universe, inclusion/exclusion filter, six regions and the activity taxonomy are available. |
 
 ## Structural checks
 
 ```bash
 python3 scripts/generate.py --check
 python3 -m unittest discover -s tests -v
-node --test tests/test_reader.mjs
+node --test tests/test_*.mjs
 python3 scripts/package_site.py
 ```
 
@@ -67,3 +67,11 @@ The managed preview initially failed to mount `/proc`. Live DOM reads and naviga
 The review branch replaces the overview/map with the selected split workspace, preserves the canonical facts, and adds camera/ownership regression checks. The current redesigned source passes **24 Python + 16 Node tests**, projection equality, syntax and staging. Independent code review findings and repairs are in [design-qa.md](./design-qa.md).
 
 The managed preview now starts successfully using the supplied `npm run dev` command. Cloud browser creation still fails with the native credential-state error, including after reset. No browser-rendered screenshot, visual comparison, primary interaction, console or mobile check is claimed for the redesign. The Product Design result is blocked. Existing execution evidence above describes the earlier deployed layout, not the redesigned branch.
+
+## Institution profile draft — 2026-10-22
+
+24 Python and 21 Node tests pass; all 24 projections agree. New tests cover insurer classification, retained secondary consulting, region migration and legacy links, combined profile filters, view URL state, sourced recent dates, empty results, list source access and secondary-activity discoverability. Packaging includes both new profile assets.
+
+Browser execution remains blocked: local socket binding is denied and Browser Use rejects file URLs. No rendered screenshot, console inspection, desktop/mobile interaction or live deployment is claimed for this change. See the latest section of design-qa.md.
+
+Before publication test Cleveland Clinic with Americas + Insurer Partnership (one record), Europe + Insurer Partnership (one record), and Africa + Insurer Partnership (zero with Clear filters). Switch between Map and List, open source/details, and verify reload/back/forward. Verify UPMC's secondary Joint venture filter, Mayo's Remote care filter, and a zero-record institution. Compare desktop and mobile layouts with the selected concept and inspect the long filter labels and map legend.
