@@ -36,3 +36,9 @@ Historical events now cover October 20, 2025–October 19, 2026 under the same s
 - IHB-0098 retains the original May 21, 2025 Limerick announcement plus the development counterparty’s October 12, 2026 final-construction-stage update. It remains In development.
 - IHB-0096 is admitted narrowly for explicit, named-facility clinical advisory and patient-case consultation access, rather than membership alone. No ownership or completed consultation is inferred.
 - Vague MoUs, standalone training, routine meetings, local affiliate insurer renewals without US-institution involvement, and sources that could not be fully retrieved remain held in data/held-candidates.json.
+
+## Classification migration — 2026-10-21
+
+The reader release separates lifecycle from launch-inventory history using the evidence already recorded above. Twelve baseline operating-facility records and two active consultancy/advisory records become Operational; 70 baseline records become Unknown. An active advisory engagement (IHB-0072) retains its associated facility as Planned. The migration does not claim that sources were reopened, that a current full scan was completed, or that verification dates advanced. The 98 IDs and 84 baseline/14 backfill classifications are preserved.
+
+The former Other group is split into Middle East and Africa as an editorial navigation change. Research eligibility expands, but previously excluded candidates require fresh review under that scope before publication.

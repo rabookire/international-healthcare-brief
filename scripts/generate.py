@@ -18,15 +18,18 @@ ROOT = Path(__file__).resolve().parents[1]
 HEADERS = ['Record ID','Institution','Partner/Counterparty','Country','Region','City','Tactic (primary)','Tactic (secondary)','Status','Announcement date','Operational date','Headline summary','So-what (1–2 lines, labeled analysis)','Source URL','Source type','Source date','Last verified','Change log']
 FIELDS = ['id','institution','partner','country','region','city','tactic_primary','tactic_secondary','status','announcement_date','operational_date','headline','analysis','source_url','source_type','source_date','last_verified','change_log']
 REGIONS = {'GCC','Americas','Asia Pacific','Europe','Middle East (non-GCC)','Africa'}
-STATUSES = {'Announced','In development','Operational','Suspended/restructured','Closed/exited','Baseline'}
-TACTICS = {'T1':'Owned/operated facility','T2':'Joint venture','T3':'Management contract','T4':'Consulting/advisory','T5':'Strategic affiliation/partnership','T6':'In-Country Representative','T7':'Telemedicine/remote second opinion','T8':'Education/training','T9':'Inbound patient channel','T11':'Insurer Partnership'}
-TACTIC_ORDER = ['T1','T2','T3','T11','T4','T6','T5','T8','T7','T9']
+STATUSES = {'Announced','In development','Operational','Suspended/restructured','Closed/exited','Unknown'}
+TACTICS = {'T1':'Owned/operated facility','T2':'Joint venture','T3':'Management contract','T4':'Consulting/advisory','T5':'Strategic affiliation/partnership','T6':'In-Country Representative','T7':'Telemedicine/remote second opinion','T8':'Education/training','T9':'Inbound patient channel','T10':'Research partnership','T11':'Insurer Partnership'}
+TACTIC_ORDER = ['T1','T2','T3','T11','T4','T6','T5','T10','T8','T7','T9']
 GCC = {'Saudi Arabia','United Arab Emirates','UAE','Qatar','Kuwait','Oman','Bahrain'}
 AMERICAS = {'Canada','Mexico','Argentina','Bolivia','Brazil','Chile','Colombia','Costa Rica','Cuba','Dominica','Dominican Republic','Ecuador','El Salvador','Guatemala','Haiti','Honduras','Jamaica','Nicaragua','Panama','Paraguay','Peru','Suriname','Uruguay','Venezuela','Belize','Guyana','Bahamas','Barbados','Bermuda','Trinidad and Tobago','Grenada','Antigua and Barbuda','Saint Lucia','Saint Kitts and Nevis','Saint Vincent and the Grenadines','Cayman Islands','Aruba','Curaçao','Puerto Rico'}
 EUROPE = {'United Kingdom','UK','Ireland','France','Spain','Portugal','Germany','Italy','Austria','Belgium','Netherlands','Switzerland','Sweden','Norway','Denmark','Finland','Iceland','Poland','Czechia','Czech Republic','Slovakia','Hungary','Romania','Bulgaria','Greece','Turkey','Türkiye','Croatia','Slovenia','Serbia','Montenegro','Bosnia and Herzegovina','North Macedonia','Albania','Kosovo','Estonia','Latvia','Lithuania','Ukraine','Belarus','Moldova','Russia','Malta','Cyprus','Luxembourg','Monaco','Andorra','Liechtenstein','San Marino','Vatican City'}
 ASIA = {'India','China','Japan','South Korea','North Korea','Korea','Vietnam','Viet Nam','Thailand','Singapore','Malaysia','Indonesia','Philippines','Cambodia','Laos','Myanmar','Brunei','Timor-Leste','Australia','New Zealand','Bangladesh','Pakistan','Sri Lanka','Nepal','Bhutan','Maldives','Afghanistan','Mongolia','Taiwan','Hong Kong','Macau','Kazakhstan','Uzbekistan','Kyrgyzstan','Tajikistan','Turkmenistan','Fiji','Papua New Guinea','Samoa','Tonga','Solomon Islands','Vanuatu','Palau','Micronesia','Marshall Islands','Kiribati','Nauru','Tuvalu'}
-MIDDLE_EAST = {'Lebanon','Jordan','Israel','Palestine','Iraq','Iran','Syria','Yemen','Armenia','Azerbaijan','Georgia'}
-AFRICA = {'Egypt','Morocco','Algeria','Tunisia','Libya','Sudan','South Sudan','Ethiopia','Eritrea','Djibouti','Somalia','Kenya','Tanzania','Uganda','Rwanda','Burundi','Democratic Republic of the Congo','Republic of the Congo','Congo','Gabon','Equatorial Guinea','Cameroon','Nigeria','Niger','Chad','Central African Republic','Ghana','Togo','Benin','Burkina Faso','Mali','Senegal','Mauritania','Guinea','Guinea-Bissau','Liberia','Sierra Leone',"Côte d’Ivoire",'Ivory Coast','Gambia','Cape Verde','Cabo Verde','South Africa','Namibia','Botswana','Zimbabwe','Zambia','Malawi','Mozambique','Angola','Lesotho','Eswatini','Madagascar','Mauritius','Seychelles','Comoros','São Tomé and Príncipe'}
+OTHER = {'Lebanon','Jordan','Israel','Palestine','Iraq','Iran','Syria','Yemen','Egypt','Morocco','Algeria','Tunisia','Libya','Sudan','South Sudan','Ethiopia','Eritrea','Djibouti','Somalia','Kenya','Tanzania','Uganda','Rwanda','Burundi','Democratic Republic of the Congo','Republic of the Congo','Congo','Gabon','Equatorial Guinea','Cameroon','Nigeria','Niger','Chad','Central African Republic','Ghana','Togo','Benin','Burkina Faso','Mali','Senegal','Mauritania','Guinea','Guinea-Bissau','Liberia','Sierra Leone',"Côte d’Ivoire",'Ivory Coast','Gambia','Cape Verde','Cabo Verde','South Africa','Namibia','Botswana','Zimbabwe','Zambia','Malawi','Mozambique','Angola','Lesotho','Eswatini','Madagascar','Mauritius','Seychelles','Comoros','São Tomé and Príncipe','Armenia','Azerbaijan','Georgia'}
+MIDDLE_EAST = {'Lebanon','Jordan','Israel','Palestine','Iraq','Iran','Syria','Yemen'}
+CAUCASUS = {'Armenia','Azerbaijan','Georgia'}
+MIDDLE_EAST |= CAUCASUS
+AFRICA = OTHER-MIDDLE_EAST
 COUNTRY_REGIONS = {**dict.fromkeys(GCC,'GCC'),**dict.fromkeys(AMERICAS,'Americas'),**dict.fromkeys(EUROPE,'Europe'),**dict.fromkeys(ASIA,'Asia Pacific'),**dict.fromkeys(MIDDLE_EAST,'Middle East (non-GCC)'),**dict.fromkeys(AFRICA,'Africa')}
 LAUNCH_DATE = date(2026,10,20)
 BACKFILL_START = date(2025,10,20)
@@ -73,7 +76,7 @@ def validate_records(csv_text, institutions, evidence=None, as_of='2026-10-20'):
     evidence = evidence or {}
     iso(as_of,'as_of',True)
     reader = csv.DictReader(io.StringIO(csv_text))
-    if reader.fieldnames != HEADERS: raise DataError('CSV headers do not match the documented 19-column schema')
+    if reader.fieldnames != HEADERS: raise DataError('CSV headers do not match the documented 18-column schema')
     records, seen, deals = [], set(), set()
     for row_num,row in enumerate(reader,2):
         if None in row: raise DataError(f'CSV row {row_num}: extra cells')
@@ -106,9 +109,15 @@ def validate_records(csv_text, institutions, evidence=None, as_of='2026-10-20'):
         direct_url(r['source_url'],label)
         if r['source_type'] not in {'Primary','Secondary','Official LinkedIn'}: raise DataError(f'{label}: invalid source type')
         ev = evidence.get(r['id'],{})
-        seed_kind = ev.get('seed_kind','baseline' if r['status']=='Baseline' else 'backfill')
+        seed_kind = ev.get('seed_kind','baseline' if r['status']=='Unknown' else 'backfill')
         if seed_kind not in {'baseline','backfill','new'}: raise DataError(f'{label}: invalid seed kind')
-        if r['status']=='Baseline' and seed_kind!='baseline': raise DataError(f'{label}: Baseline status requires baseline seed kind')
+        facility_status = ev.get('facility_status','Unknown' if r['tactic_primary']=='T1' else 'Not applicable')
+        if facility_status not in {'Open','Planned','Under construction','Closed','Unknown','Not applicable'}:
+            raise DataError(f'{label}: invalid facility status')
+        if facility_status=='Open' and r['status'] in {'Announced','In development'}:
+            raise DataError(f'{label}: announced/developing relationship cannot assert an open facility')
+        if r['tactic_primary']=='T1' and r['status']=='Operational' and facility_status in {'Planned','Under construction','Closed'}:
+            raise DataError(f'{label}: operating facility conflicts with facility status')
         if r['source_type']=='Official LinkedIn':
             archive = ev.get('linkedin_archive',{})
             if not archive.get('full_text') or not archive.get('post_date') or archive.get('official_verified') is not True:
@@ -161,6 +170,11 @@ def validate_records(csv_text, institutions, evidence=None, as_of='2026-10-20'):
         r['source_note']=ev.get('source_note',ev.get('evidence',''))
         r['scope_note']=ev.get('scope_note','')
         r['verified_status']=ev.get('verified_status','')
+        r['facility_status']=facility_status
+        r['status_note']=ev.get('status_note','')
+        r['sources']=ev.get('sources',[])
+        for source in r['sources']:
+            direct_url(source.get('url',''),f'{label} additional source')
         records.append(r)
     return sorted(records,key=lambda r:int(r['id'].split('-')[1]))
 
@@ -168,7 +182,7 @@ def md(value):
     return str(value).replace('|','\\|').replace('\n','<br>')
 
 def footprint_table(records):
-    lines=['| Record | Institution | Country | Region | Tactic | Status | Source |','| --- | --- | --- | --- | --- | --- | --- |']
+    lines=['| Record | Institution | Country | Region | Activity | Lifecycle | Source |','| --- | --- | --- | --- | --- | --- | --- |']
     for r in records:
         lines.append(f'| {r["id"]} | {md(r["institution"])} | {md(r["country"])} | {r["region"]} | {r["tactic_primary"]} {TACTICS[r["tactic_primary"]]} | {r["status"]} | [Source]({r["source_url"]}) |')
     return '\n'.join(lines) if records else 'No records yet meet the public sourcing standard for this inventory. This does not establish that the institution has no international activity.'
@@ -179,7 +193,7 @@ def generate_profile(institution, records, coverage, as_of):
     lines=[f'# {institution}','',f'Last verified: {verified}. Inventory as of {as_of}.','',
            f'[Interactive profile](./index.html?institution={quote(institution)}) · [Map slice](../map/?institution={quote(institution)}) · [All institutions](../institutions/)','',
            'Independent publication. Public sources only. Analysis is labeled. Not investment or business advice.','',
-           '## Footprint inventory','', 'Baseline identifies a pre-existing arrangement at seeding; it is not an operating-status claim. A baseline arrangement may still be planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.','',footprint_table(active),'',
+            '## Activity inventory','', 'Initial-inventory history is separate from lifecycle. Unknown means current status has not been established. Advisory activity can be active while its associated facility remains planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.','',footprint_table(active),'',
            '## Chronological timeline','']
     if records:
         for r in sorted(records,key=lambda x:(x['latest_event_date'] or x.get('latest_event_month','') or x['announcement_date'] or x['operational_date'] or '0000',x['id']),reverse=True):
@@ -239,9 +253,10 @@ def build(root=ROOT,as_of='2026-10-20'):
     coverage={x['institution']:x for x in coverage_list}
     editions=load_editions(root,records)
     counts={'records':len(records),'baseline':sum(r['seed_kind']=='baseline' for r in records),'backfill':sum(r['seed_kind']=='backfill' for r in records),'new':sum(r['seed_kind']=='new' for r in records),'countries':len({r['country'] for r in records}),'tier_1_institutions':len(institutions),'institutions_with_records':len({n for r in records for n in r['institutions']})}
-    payload={'generated_as_of':as_of,'launch_date':LAUNCH_DATE.isoformat(),'backfill_start':BACKFILL_START.isoformat(),'backfill_end':BACKFILL_END.isoformat(),'source':'data/tracker.csv','source_sha256':hashlib.sha256(raw.encode()).hexdigest(),'counts':counts,'tactics':TACTICS,'statuses':sorted(STATUSES),'regions':['GCC','Americas','Asia Pacific','Europe','Middle East (non-GCC)','Africa'],'records':records}
+    release=read_json(root/'data/release.json',{})
+    payload={'generated_as_of':as_of,'reader_version':release.get('reader_version',''),'schema_version':2,'launch_date':LAUNCH_DATE.isoformat(),'backfill_start':BACKFILL_START.isoformat(),'backfill_end':BACKFILL_END.isoformat(),'source':'data/tracker.csv','source_sha256':hashlib.sha256(raw.encode()).hexdigest(),'counts':counts,'tactics':TACTICS,'statuses':sorted(STATUSES),'regions':['GCC','Americas','Asia Pacific','Europe','Middle East (non-GCC)','Africa'],'records':records}
     outputs={root/'data/tracker.json':json.dumps(payload,ensure_ascii=False,indent=2)+'\n',root/'data/briefs.json':json.dumps({'editions':editions},ensure_ascii=False,indent=2)+'\n'}
-    outputs[root/'data/tracker.md']='# Permanent deal tracker\n\n[Sortable, filterable tracker](./index.html) · [Interactive map](../map/) · [CSV](./tracker.csv)\n\n'+f'{len(records)} sourced records. Generated from tracker.csv; inventory as of {as_of}.\n\n'+footprint_table(records)+'\n\nAnalysis is labeled in each record. For complete dates, source types and change logs, use the interactive tracker or CSV.\n'
+    outputs[root/'data/tracker.md']='# Activity tracker\n\n[Sortable, filterable tracker](./index.html) · [Interactive map](../map/) · [Canonical CSV](./tracker.csv)\n\n'+f'{len(records)} sourced records. Generated from tracker.csv; inventory as of {as_of}. Unknown is not an absence of activity.\n\n'+footprint_table(records)+'\n\nAnalysis is labeled in each record. The reader’s filtered export also includes evidence scope, additional sources, month-only dates and inventory metadata.\n'
     for institution in institutions:
         outputs[root/'institutions'/f'{slug(institution)}.md']=generate_profile(institution,[r for r in records if institution in r['institutions']],coverage.get(institution,{}),as_of)
     index=['# Brief archive','','[Search and filter editions](./index.html) · [Tracker](../data/) · [Map](../map/)','']
@@ -261,7 +276,7 @@ def build(root=ROOT,as_of='2026-10-20'):
         if isinstance(unresolved,str): unresolved=[unresolved] if unresolved else []
         note=' '.join([str(info.get('scope_checked','Research coverage not documented.')),str(info.get('backfill_status','12-month historical scan not documented.'))]+[str(x) for x in unresolved])
         report.append(f'| [{name}](institutions/{slug(name)}.md) | {c["baseline"]} | {c["backfill"]} | {c["new"]} | {md(note)} |')
-    report += ['','## Source limitations','','- Undated official pages retain a blank source date; last verified is the date checked, not the publication date.','- A baseline marker identifies a pre-existing arrangement; it does not establish that a planned facility is operational. Read each record’s source-scope note.','- Historical candidate events that cannot meet the sourcing standard remain excluded or on hold.','- Baseline records are visually muted and can be filtered independently from new activity.','- Backfill records retain original announcement dates. Updates to older deals carry an evidenced latest-event date and never create duplicate records or backdated editions.','', '## Reproduce counts','','Run `python3 scripts/generate.py --check` to verify that all committed projections match the CSV. Source admissibility and factual entailment still require editorial review; structural validation does not establish them.','']
+    report += ['','## Source limitations','','- Undated official pages retain a blank source date; last verified is the date checked, not the publication date.','- Initial-inventory history is independent of lifecycle. Unknown status must never be read as inactive. Active advisory work does not establish that its associated facility is open.','- Historical candidate events that cannot meet the sourcing standard remain excluded or on hold.','- Initial inventory and dated activity can be filtered independently. Neither is a measure of economic scale.','- Historical records retain original announcement dates. Updates to older relationships carry an evidenced latest-event date and never create duplicate records or backdated editions.','', '## Reproduce counts','','Run `python3 scripts/generate.py --check` to verify that all committed projections match the CSV. Source admissibility and factual entailment still require editorial review; structural validation does not establish them.','']
     outputs[root/'SEED-REPORT.md']='\n'.join(report)
     return outputs,counts
 

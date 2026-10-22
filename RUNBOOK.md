@@ -2,7 +2,7 @@
 
 ## Cadence and coverage window
 
-Produce on weekday mornings in **America/New_York**, observing daylight saving time. Cover the prior 24 hours; Monday covers Friday’s prior run through the weekend. Record exact start/end timestamps and the scan time in edition metadata. Run a Tier 2 sweep weekly. A launch seed is an inventory, not an edition.
+When an editorial monitoring process is staffed, the target cadence is weekday mornings in **America/New_York**, observing daylight saving time. Cover the prior 24 hours; Monday covers Friday’s prior run through the weekend. Record exact start/end timestamps and the scan time in edition metadata. Run a Tier 2 sweep weekly. A launch seed is an inventory, not an edition.
 
 No material news means no edition. Record the completed scan in the editorial log without publishing an empty post. An uncompleted scan must not be described as a no-news day. This repository documents the workflow; it does not install a scheduled agent or imply unattended editorial coverage.
 
@@ -12,7 +12,7 @@ No material news means no edition. Record the completed scan in the editorial lo
 2. Apply [the methodology](./METHODOLOGY.md) to every candidate: actor eligibility, in-scope operational substance and exclusions, needle test, then sourcing. Fail any step and exclude; hold borderline items.
 3. Open the exact source. Check every proposed factual claim, figure, name, country and event date. Distinguish an MOU or intention from a signed agreement, construction and operation. Save the evidence scope and link. Do not use internal knowledge.
 4. Deduplicate against Record IDs and existing institution/partner/country relationships. Update the original record for signing, opening, expansion, renewal, ownership change, restructuring or exit. Never delete an exited record. Record the original event date and latest update separately.
-5. Draft the edition. Group institution items by the six regions, Tier 1 first. Market Signals are a secondary section and never lead. Use a neutral, precise executive voice; no hype or invented color.
+5. Draft the edition. Group institution items by the current regions, Tier 1 first. Market Signals are a secondary section and never lead. Use a neutral, precise executive voice; no hype or invented color.
 6. Perform the per-item QA below. If no candidate remains, publish nothing.
 7. Update `data/tracker.csv`, `data/evidence.json` and any coverage notes. Add `briefs/YYYY-MM-DD.md` and same-name `.json` metadata. Generate the tracker, map dataset, profile pages, archive and seed report in the **same commit** as the brief.
 8. Execute structural tests and reader journeys, inspect desktop and mobile rendering, check source links, review the exact diff, and publish only the coherent commit. Confirm the returned live Pages URL and deployment status.
@@ -69,3 +69,17 @@ The launch historical backfill covers the **12 months from 2025-10-20 through 20
 A failed source, ambiguous MOU, missing date or insufficient major-item evidence is a hold, not permission to infer. Restore generated files from the canonical CSV after fixing the source data. A failed deployment does not establish publication: retain the reviewed commit and retry that deployment after resolving the failure. Label prepared, structurally tested, browser-tested and live-deployed evidence separately.
 
 For an already published correction, retain the Record ID, append a dated correction note to the item and change log, explain the source-supported replacement, regenerate all projections and publish one atomic commit. Exits remain visible as historical records.
+
+## Reader release 2026-10-21.1
+
+The canonical Status field now stores lifecycle, including Unknown, independently of `seed_kind`. Never restore Baseline as a lifecycle to preserve an old filter. Old `status=Baseline` URLs resolve to initial-inventory history instead. Do not infer active status from listing, a dated announcement, or an old agreement. Use the explicit `facility_status` sidecar for a planned facility associated with active advisory work.
+
+Research partnerships under the revised methodology must be reviewed against that policy before previously held candidates enter the CSV. The Research focus is available but its systematic coverage remains pending. Do not turn the policy change into invented records or a completed-scan claim.
+
+Reader versions and source inventory dates are separate in `data/release.json`: `reader_version` identifies a software/content presentation release; `as_of` identifies the checked source inventory. A UI or classification release does not advance source dates.
+
+Before publishing UI changes, execute the desktop/mobile journeys in VERIFICATION.md. A passing jsdom integration suite is not browser or visual verification. A release can be saved as a draft PR while the browser gate is outstanding.
+
+## Combined reader taxonomy
+
+Use T10 for research partnerships and T11 for insurer partnerships. An insurer agreement retains supported consulting or patient-access activity as secondary tags. In-Country Representative (T6) follows the official hospital-listing standard in METHODOLOGY.md. Keep Africa and Middle East (non-GCC) separate, including the Caucasus in the latter. Both Middle East labels and legacy Other shared links remain compatible. Profile defaults are map-first; the global mobile explorer defaults to List. Regenerate all projections after canonical CSV changes. Reader integration does not advance inventory or source-verification dates.

@@ -6,22 +6,22 @@ Last verified: 2026-10-20. Inventory as of 2026-10-20.
 
 Independent publication. Public sources only. Analysis is labeled. Not investment or business advice.
 
-## Footprint inventory
+## Activity inventory
 
-Baseline identifies a pre-existing arrangement at seeding; it is not an operating-status claim. A baseline arrangement may still be planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
+Initial-inventory history is separate from lifecycle. Unknown means current status has not been established. Advisory activity can be active while its associated facility remains planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
 
-| Record | Institution | Country | Region | Tactic | Status | Source |
+| Record | Institution | Country | Region | Activity | Lifecycle | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| IHB-0061 | UPMC | Italy | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.it/en/locations/ismett) |
-| IHB-0062 | UPMC | Italy | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.it/en/locations/salvator-mundi) |
-| IHB-0063 | UPMC | Italy | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.it/en/locations/san-pietro) |
-| IHB-0064 | UPMC | Italy | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.it/en/locations/villa-maria) |
-| IHB-0065 | UPMC | Ireland | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.ie/locations/hospitals/whitfield) |
+| IHB-0061 | UPMC | Italy | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.it/en/locations/ismett) |
+| IHB-0062 | UPMC | Italy | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.it/en/locations/salvator-mundi) |
+| IHB-0063 | UPMC | Italy | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.it/en/locations/san-pietro) |
+| IHB-0064 | UPMC | Italy | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.it/en/locations/villa-maria) |
+| IHB-0065 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hospitals/whitfield) |
 | IHB-0066 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/news-events/2026/28092026-upmc-kildare-announcement) |
-| IHB-0067 | UPMC | Ireland | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.ie/locations/hospitals/aut-even) |
-| IHB-0068 | UPMC | Ireland | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.ie/locations/hospitals/sports-surgery-clinic) |
-| IHB-0069 | UPMC | Ireland | Europe | T1 Owned/operated facility | Baseline | [Source](https://upmc.ie/locations/hillman-cancer-centres) |
-| IHB-0070 | UPMC | Croatia | Europe | T1 Owned/operated facility | Baseline | [Source](https://www.upmc.com/about/international-services/locations/croatia) |
+| IHB-0067 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hospitals/aut-even) |
+| IHB-0068 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hospitals/sports-surgery-clinic) |
+| IHB-0069 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hillman-cancer-centres) |
+| IHB-0070 | UPMC | Croatia | Europe | T1 Owned/operated facility | Operational | [Source](https://www.upmc.com/about/international-services/locations/croatia) |
 | IHB-0098 | UPMC | Ireland | Europe | T1 Owned/operated facility | In development | [Source](https://aedifica.eu/4-irish-healthcare-projects-running-completed-totalling-e105-million/) |
 
 ## Chronological timeline
@@ -48,109 +48,118 @@ Change log: 2019-11-13: UPMC announced acquisition of Clane General Hospital wit
 
 ### Date not disclosed — UPMC Hillman Cancer Center operates at Zabok General Hospital.
 
-IHB-0070 · Croatia · Baseline · T1 Owned/operated facility
+IHB-0070 · Croatia · Operational · T1 Owned/operated facility
 
 Analysis: Local oncology capacity may retain complex care.
 
 [Source](https://www.upmc.com/about/international-services/locations/croatia) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC Hillman and Bon Secours provide radiotherapy in Cork.
 
-IHB-0069 · Ireland · Baseline · T1 Owned/operated facility
+IHB-0069 · Ireland · Operational · T1 Owned/operated facility
 
 Analysis: Local radiotherapy strengthens a continuing care platform.
 
 [Source](https://upmc.ie/locations/hillman-cancer-centres) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC operates Sports Surgery Clinic in Dublin.
 
-IHB-0068 · Ireland · Baseline · T1 Owned/operated facility
+IHB-0068 · Ireland · Operational · T1 Owned/operated facility
 
 Analysis: The hospital supports an orthopaedic care platform.
 
 [Source](https://upmc.ie/locations/hospitals/sports-surgery-clinic) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC operates Aut Even Hospital in Kilkenny.
 
-IHB-0067 · Ireland · Baseline · T1 Owned/operated facility
+IHB-0067 · Ireland · Operational · T1 Owned/operated facility
 
 Analysis: The hospital supports a local care platform.
 
 [Source](https://upmc.ie/locations/hospitals/aut-even) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC operates Whitfield Hospital in Waterford.
 
-IHB-0065 · Ireland · Baseline · T1 Owned/operated facility
+IHB-0065 · Ireland · Operational · T1 Owned/operated facility
 
 Analysis: The hospital supports a local care platform.
 
 [Source](https://upmc.ie/locations/hospitals/whitfield) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Whitfield Hospital and its co-located Hillman cancer service are represented as one hospital footprint record.
 
 ### Date not disclosed — UPMC operates the Villa Maria cancer center in Mirabella Eclano.
 
-IHB-0064 · Italy · Baseline · T1 Owned/operated facility
+IHB-0064 · Italy · Operational · T1 Owned/operated facility
 
 Analysis: Local oncology services may retain complex care.
 
 [Source](https://upmc.it/en/locations/villa-maria) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC Hillman Cancer Center San Pietro provides radiotherapy in Rome.
 
-IHB-0063 · Italy · Baseline · T1 Owned/operated facility
+IHB-0063 · Italy · Operational · T1 Owned/operated facility
 
 Analysis: Local oncology services may retain complex care.
 
 [Source](https://upmc.it/en/locations/san-pietro) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC operates Salvator Mundi International Hospital in Rome.
 
-IHB-0062 · Italy · Baseline · T1 Owned/operated facility
+IHB-0062 · Italy · Operational · T1 Owned/operated facility
 
 Analysis: The hospital provides a local care platform.
 
 [Source](https://upmc.it/en/locations/salvator-mundi) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — UPMC and Sicily maintain the ISMETT hospital partnership.
 
-IHB-0061 · Italy · Baseline · T1 Owned/operated facility
+IHB-0061 · Italy · Operational · T1 Owned/operated facility
 
 Analysis: The hospital anchors a sustained local care platform.
 
 [Source](https://upmc.it/en/locations/ismett) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 

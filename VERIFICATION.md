@@ -1,77 +1,78 @@
-# Verification procedure and feature map
+# Release verification
 
-This procedure is a release checklist. A written procedure does not establish that a journey was executed. Record actual evidence, exact snapshot/commit and remaining blockers in the release report.
+Prepared reader: 2026-10-21.1. Source inventory checked: 2026-10-20. Base: `f0f790747dc6969c99423c552391dc571cf74e27`.
 
-| Surface | Reader job | Required observation |
-| --- | --- | --- |
-| Home | Understand the publication and coverage | Independence, source standard, current inventory date and links are visible; no unsupported no-news claim. |
-| Map | Find management agreements in the GCC | T3 + GCC returns exactly the CSV rows satisfying both filters, including eligible shared deals. |
-| Map | Inspect Vietnam across institutions | Country=Vietnam returns all and only Vietnam records; country panel lists all institutions there. |
-| Map/profile | Inspect Mayo Clinic’s footprint | Institution=Mayo Clinic returns every participating record, including baseline and any shared deal. |
-| Map | Find Saudi openings in the current year | Country=Saudi Arabia plus operational-year filter returns only records with evidenced operational dates in that year. Unknown dates do not qualify. |
-| Map | Inspect a record | Pin/table selection reveals headline, institution, partner, status, dates, analysis and direct source. Status shape and text remain usable without color. |
-| Tracker | Compare and export records | Combined filters and sort preserve CSV counts; CSV download matches canonical data. |
-| Archive | Find an edition | Date, institution, region, country and tactic filters combine; an empty archive explains that no edition has been published. |
-| Institution | Understand sourced activity | Map-first footprint, matching region/activity controls, right-hand recent developments, List alternative, source scope and verification dates match the tracker. |
-| Methodology | Assess evidence | Full source standard, universe, inclusion/exclusion filter, six regions and the activity taxonomy are available. |
-
-## Structural checks
+## Automated checks
 
 ```bash
+npm ci --ignore-scripts
 python3 scripts/generate.py --check
 python3 -m unittest discover -s tests -v
-node --test tests/test_*.mjs
+npm test
 python3 scripts/package_site.py
 ```
 
-The generator validates taxonomy, registered institutions, IDs, country/region mappings, dates, source types, direct link structure, secondary major-item evidence metadata and projection agreement. Tests deliberately submit invalid data and prove that those boundaries reject it; they do not merely restate a rendering implementation.
+The combined local candidate contains 27 Python checks and 39 JavaScript checks (five camera, 11 existing reader, six research semantics, six profile checks, eleven DOM integration journeys). The integration suite executes the production reader with the real inventory in jsdom. It checks controls, combined filters, result counts, map shading, URL/history, source details, focus restoration for tested controls, CSV content, country briefs, shared comparison IDs, print invocation and loading recovery. It does not render layout, capture screenshots, inspect the browser accessibility tree, simulate real touch behavior or verify actual downloads/printing.
 
-## Source review
+## Required real-browser journeys
 
-Open at least 10 seeded sources spanning institutions, regions, tactics and lifecycle states. Check every factual claim against each source, including original versus latest-event dates. Record exact IDs and outcomes. A source URL passing structural validation is not evidence that its page is reachable or its facts are correct. An old announcement alone does not prove current operation. Check all major secondary-sourced items for two independent reputable reports. Check official LinkedIn archives if any are used.
+Use desktop 1440×1024 and mobile 390×844, plus 320px reflow and 200% zoom. Capture actual screenshots for each important state. Desktop/mobile screenshots and the local integration execution record are supplied below and in the local handoff evidence; physical touch and assistive-technology checks remain outstanding.
 
-## Browser journey
+| Step | Task | Expected result |
+| --- | --- | --- |
+| 1 | Open home | Audience, partial scope, 98 records/38 countries, coverage link and search are clear. |
+| 2 | Filter UAE + Active/operational | Exactly IHB-0003 and IHB-0071 match. Open evidence and confirm facility versus advisory roles. |
+| 3 | Open IHB-0072 | Active advisory work and its planned associated facility remain clearly distinct. |
+| 4 | Filter T9 and then research | T9 gives 42 records and explains secondary matches. Research gives an explicit unreviewed-coverage notice. |
+| 5 | Filter Vietnam; add Mayo | Country gives two records; Mayo + Vietnam gives none. The all-country context explicitly ignores other filters. Shading follows matching pins. |
+| 6 | Combine institution, country, activity, lifecycle, history and year | Results match the canonical filters. GCC + T3 and Saudi 2026 openings remain honest zero-result views. |
+| 7 | Select and close details; sort, search, clear, back/forward | No lost keyboard focus, unexpected filter changes or inaccessible selection. Copy/reopen a view and record link. |
+| 8 | Use mobile List/Map switch | Search and filters remain visible; list is default; details stay reachable without forcing map navigation. No horizontal page overflow. |
+| 9 | Use map with mouse, keyboard and touch | Drag/pinch/zoom, pin navigation, wheel-scroll handoff, reset and expanded mode work. Background is inert in expanded mode; Escape and focus restoration work. Overlapping hit regions do not hide records. |
+| 10 | Export filtered CSV | Actual downloaded file opens correctly and retains lifecycle, facility state, scope, source notes, additional URLs, month precision, version/hash and query. |
+| 11 | Open Vietnam country brief and institution profile | Country/profile counts and citations agree with data; source links work; printed output includes provenance and caveats. |
+| 12 | Compare MGB and Dana-Farber | IHB-0081 appears in both columns and only once in exported records. Counts are not presented as rankings. Add a third institution; remaining choices are disabled. |
+| 13 | Open coverage, updates and methodology | Nineteen coverage entries, explicit research gap and no fabricated edition. Methodology still loads when tracker/evidence/brief requests fail. |
+| 14 | Check contrast, focus, screen reader, loading and errors | Labels, heading order, focus indicators, status announcements and error recovery are usable. Inspect browser console errors. |
 
-Serve the static tree through the supported preview. Inspect desktop and a narrow mobile portrait layout. Exercise every row in the feature map, combinations of all filters, reset, empty result, source click, malformed URL state, back/forward navigation, sorting, and keyboard focus. Check that map pins do not hide overlapping records and that all essential details are reachable without hover or color perception. Check baseline/new controls with suspended and closed records. Reopen a shared view URL and confirm the same selection.
+## Editorial review
 
-If a data request fails, the reader should see a meaningful error and retry route; it must not look like a legitimate zero-record result. Inspect horizontal overflow and touch target spacing on mobile. Verify that all shipped assets are local except user-activated source links; the publication must not add tracking or require login.
+The lifecycle migration uses existing evidence notes, not a new source scan. Source dates and verification dates remain unchanged. Before adding facts, open the exact primary sources and verify factual entailment, lifecycle, event dates and roles. Research candidates require reassessment under the revised methodology; old exclusions are not automatically admitted.
 
-## Deployment
+## Publication
 
-A passing local build is distinct from a successful Pages deployment. Record the Actions/deployment result and returned URL. Test the deployed site’s subdirectory-relative asset and data paths, especially `/international-healthcare-brief/map/`, profiles and archive links. Do not call an anticipated URL live until that deployment exists. If publication is unavailable, deliver the reviewed repository package and state the missing capability.
+Keep the change in a draft PR until the real-browser journeys pass and screenshots are inspected. Automated checks alone do not establish a visual pass. After merging, confirm the exact deployed commit, successful Pages run and returned Pages URL, then test subdirectory asset paths and critical live journeys. An expected URL is not evidence of publication.
 
-## Current execution record
+Earlier execution logs and design references belong to the previous commits in Git history; they are not evidence for this release.
 
-2026-10-20: 24 Python tests and 10 Node tests passed, as did projection equality, JavaScript syntax and public staging checks. Independent review found no new blocking finding in the twelve-month changes.
+## Local integration of PR #2 and merged PR #3 — October 22, 2026
 
-GitHub Actions run [39507846953](https://github.com/rabookire/international-healthcare-brief/actions/runs/39507846953) passed validation and deployment for source commit `2753cd16afb59adccdb373f90387b9dc6e91a2f7`. The deployment returned https://rabookire.github.io/international-healthcare-brief/ and that page was opened successfully. All following observations are from the deployed reader, not a mock:
+Exact inputs: PR #2 `a3fb3745a6a7658292b6d9b9aecc3c42c9b572b6`; main / PR #3 merge `e796227309268c0b34a1e18fbc177219fd9a6740`; merge-base `f0f790747dc6969c99423c552391dc571cf74e27`. This record applies to the supplied local source copy, not a deployment or a committed integration.
 
-| Live DOM observation | Observed result |
-| --- | --- |
-| Overview and unfiltered map | 19 institutions, 98 records, 38 countries; 98 accessible record pins |
-| History tracker `footprint=new` | 14 table rows; Alameda displays January 2026 with day not disclosed |
-| Vietnam map URL | 2 records; country panel includes Johns Hopkins and Penn |
-| GCC + T3 URL | 0 records with an explicit empty state |
-| UCLA + China + T7 + Baseline + baseline footprint URL | 4 records; primary and secondary tactics both match |
-| Saudi Arabia + operational year 2026 URL | 0 records; no unknown date treated as an opening |
-| Mayo map URL | 21 records |
-| Institution index and Dana-Farber profile | 19 profile cards; Dana-Farber has 5 records in 5 countries |
-| Alameda deep-linked record dialog | Announced; exact announcement/operational dates unstated; month-only latest event; secondary source and evidence limits visible |
-| Brief archive | No edition published yet; no fabricated no-news or backdated edition |
-| Methodology | Full standard and 19-name Tier 1 list, including Dana-Farber, load under the Pages subdirectory |
+All 24 projections were regenerated from the reconciled canonical CSV. All 98 IDs, original source facts and dates, source-verification dates, and the 84 initial / 14 historical classifications are preserved. T10 Research and T11 Insurer Partnership coexist. T4 consulting remains a secondary tag on IHB-0038. Main's Middle East (non-GCC) grouping is canonical, with both Middle East spellings and Other accepted by the reader. Both dated classification histories are retained.
 
-The managed preview initially failed to mount `/proc`. Live DOM reads and navigation subsequently worked, but browser credential protection blocked click/select actions and screenshot observations. The documented fresh-tab recovery did not remove the restriction. No screenshot was produced. Sorting, exports, reset, click-driven filters, back/forward behavior, keyboard focus, touch and desktop/mobile visual layout are not verified. No full interaction journey is claimed; the procedure remains a draft. These are browser-environment limitations, not proven application failures. See BUILD-STATUS.md and SOURCE-AUDIT.md.
+The combined reader preserves map-first institution profiles and three recent developments, alongside lifecycle/facility distinctions, country briefs, comparisons, source details, scoped exports, keyboard navigation and global mobile List default. Explicit Map/List URLs round-trip across both default contexts. The previous local mobile-focus and archive-country fixes remain included.
 
-## Option 3 redesign — 2026-10-20
+### Executed checks
 
-The review branch replaces the overview/map with the selected split workspace, preserves the canonical facts, and adds camera/ownership regression checks. The current redesigned source passes **24 Python + 16 Node tests**, projection equality, syntax and staging. Independent code review findings and repairs are in [design-qa.md](./design-qa.md).
+- Generator regeneration and projection agreement; Python tests; all Node tests including jsdom; static packaging, local link/module checks and syntax checks.
+- Chrome at desktop 1440×1024, mobile 390×844 and 320px reflow, plus actual browser 200% zoom (720 CSS pixels at a 1440px viewport). Screenshots were captured and inspected.
+- Cleveland Clinic profile: 19 records and three sourced developments; Americas + T11 gives IHB-0017, Europe + T11 gives IHB-0093, Africa + T11 gives honest zero with recovery. Region changes clear a prior country constraint. Map/List, reload, back/forward, evidence access and focus restoration passed.
+- UPMC secondary T2 gives IHB-0069 and IHB-0098; Mayo secondary T7 gives IHB-0096. A zero-record institution retains an explicit coverage gap.
+- Global explorer: UAE + Operational gives IHB-0003 and IHB-0071. Vietnam gives IHB-0042 and IHB-0079; adding Mayo gives zero while all-country context keeps both records. T9 gives 42 records; research gives an explicit unreviewed-coverage notice. Other gives four records; either Middle East spelling gives two. Patient access + T11 finds all three insurers.
+- Mobile List and Map selection dismissal restore visible focus. Arrow navigation continues between pins. Expanded-map background is inert; Escape restores the map control. Pointer dragging, keyboard pan and zoom controls change the camera correctly. No horizontal page overflow was observed.
+- An actual one-record insurer CSV was downloaded and checked against the current dataset hash, filter query, T11 and evidence fields.
+- Vietnam country brief retains two records and two citations. MGB/Dana-Farber comparison retains shared IHB-0081 in both columns and six unique citations. A third institution disables the other 16 choices. Long comparison headings wrap correctly on screen and in print.
+- The final comparison print preview and saved PDF contain five pages and evidence for six unique records, including source dates, facility/status caveats, view filters and dataset hash.
+- Desktop/mobile archive fixtures confirm edition-only Belgium and item-only Luxembourg remain selectable with combined filters. These clearly labeled test fixtures were served only by the loopback preview; canonical edition data remains empty.
+- Coverage has 19 entries; methodology renders T10, T11, the representative definition and the region convention; Updates and the production archive continue to state that no edition has been published. No application console errors were captured.
 
-The managed preview now starts successfully using the supplied `npm run dev` command. Cloud browser creation still fails with the native credential-state error, including after reset. No browser-rendered screenshot, visual comparison, primary interaction, console or mobile check is claimed for the redesign. The Product Design result is blocked. Existing execution evidence above describes the earlier deployed layout, not the redesigned branch.
+Physical touchscreen/pinch behavior, screen-reader output, other browser engines and live deployment were not verified. Earlier branch/production observations are not evidence for this combined candidate. No commit, push, branch/PR merge or publication was performed.
 
-## Institution profile draft — 2026-10-22
+## PR #2 revision and merge preparation — October 22, 2026
 
-24 Python and 21 Node tests pass; all 24 projections agree. New tests cover insurer classification, retained secondary consulting, region migration and legacy links, combined profile filters, view URL state, sourced recent dates, empty results, list source access and secondary-activity discoverability. Packaging includes both new profile assets.
+The combined candidate above is now prepared as the PR revision. It includes the comparison-header correction: `.comparison-table th` sets `white-space: normal`, overriding the inherited global `nowrap` so long institution names and dimension labels stay within their columns on narrow screens and in print.
 
-Browser execution remains blocked: local socket binding is denied and Browser Use rejects file URLs. No rendered screenshot, console inspection, desktop/mobile interaction or live deployment is claimed for this change. See the latest section of design-qa.md.
+The 91-file source candidate was verified against the previously tested integration manifest and the current main revision. All 24 projections, 27 Python tests, 39 JavaScript tests and static packaging passed. Focused Chrome checks repeated the three-institution comparison at desktop 1440px, mobile 390px/320px and print width; actual CSV download, generated PDF, mobile map focus restoration and the combined Europe/T11 profile filter passed. Screenshots were inspected, and no application errors were observed. [Saved browser evidence and limits](docs/verification/pr2-release/README.md).
 
-Before publication test Cleveland Clinic with Americas + Insurer Partnership (one record), Europe + Insurer Partnership (one record), and Africa + Insurer Partnership (zero with Clear filters). Switch between Map and List, open source/details, and verify reload/back/forward. Verify UPMC's secondary Joint venture filter, Mayo's Remote care filter, and a zero-record institution. Compare desktop and mobile layouts with the selected concept and inspect the long filter labels and map legend.
+The earlier statements that no commit/push/merge occurred describe their local preparation stage. GitHub CI and the Pages workflow establish the subsequent committed and deployed state independently. Physical touch/pinch, full screen-reader behavior, other engines and physical printing remain unverified.

@@ -1,0 +1,1012 @@
+{
+  "comparison": [
+    {
+      "mode": "desktop",
+      "headers": [
+        {
+          "text": "Dimension",
+          "width": 180,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 390.65625,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 390.65625,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 390.6875,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Documented records",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Countries represented",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Status not established",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Latest recorded event",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Owned / operated facility",
+          "width": 180,
+          "height": 72.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Joint venture",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Management contract",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Consulting / advisory",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Strategic partnership",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "In-Country Representative",
+          "width": 180,
+          "height": 72.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Remote care / second opinion",
+          "width": 180,
+          "height": 72.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Education / training",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Inbound patient channel",
+          "width": 180,
+          "height": 72.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Research partnership",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Insurer Partnership",
+          "width": 180,
+          "height": 50.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Country",
+          "width": 180,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 390.65625,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 390.65625,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 390.6875,
+          "height": 50.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Bermuda",
+          "width": 180,
+          "height": 189.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Brazil",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Cayman Islands",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "China",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Colombia",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Lebanon",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Pakistan",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Panama",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Saudi Arabia",
+          "width": 180,
+          "height": 189.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Turkey",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "United Arab Emirates",
+          "width": 180,
+          "height": 109.1875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Vietnam",
+          "width": 180,
+          "height": 129.484375,
+          "whiteSpace": "normal",
+          "overflows": false
+        }
+      ]
+    },
+    {
+      "mode": "print",
+      "headers": [
+        {
+          "text": "Dimension",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Documented records",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Countries represented",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Status not established",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Latest recorded event",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Owned / operated facility",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Joint venture",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Management contract",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Consulting / advisory",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Strategic partnership",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "In-Country Representative",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Remote care / second opinion",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Education / training",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Inbound patient channel",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Research partnership",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Insurer Partnership",
+          "width": 198.5,
+          "height": 31.59375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Country",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 198.5,
+          "height": 49.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Bermuda",
+          "width": 198.5,
+          "height": 196.53125,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Brazil",
+          "width": 198.5,
+          "height": 122.15625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Cayman Islands",
+          "width": 198.5,
+          "height": 122.15625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "China",
+          "width": 198.5,
+          "height": 139.546875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Colombia",
+          "width": 198.5,
+          "height": 104.765625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Lebanon",
+          "width": 198.5,
+          "height": 104.765625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Pakistan",
+          "width": 198.5,
+          "height": 122.15625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Panama",
+          "width": 198.5,
+          "height": 104.765625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Saudi Arabia",
+          "width": 198.5,
+          "height": 196.53125,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Turkey",
+          "width": 198.5,
+          "height": 122.15625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "United Arab Emirates",
+          "width": 198.5,
+          "height": 104.765625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Vietnam",
+          "width": 198.5,
+          "height": 122.15625,
+          "whiteSpace": "normal",
+          "overflows": false
+        }
+      ]
+    },
+    {
+      "mode": "mobile390",
+      "headers": [
+        {
+          "text": "Dimension",
+          "width": 180,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 166.6875,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Documented records",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Countries represented",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Status not established",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Latest recorded event",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Owned / operated facility",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Joint venture",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Management contract",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Consulting / advisory",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Strategic partnership",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "In-Country Representative",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Remote care / second opinion",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Education / training",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Inbound patient channel",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Research partnership",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Insurer Partnership",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Country",
+          "width": 180,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 166.6875,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Bermuda",
+          "width": 180,
+          "height": 324.046875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Brazil",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Cayman Islands",
+          "width": 180,
+          "height": 184.671875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "China",
+          "width": 180,
+          "height": 184.671875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Colombia",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Lebanon",
+          "width": 180,
+          "height": 164.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Pakistan",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Panama",
+          "width": 180,
+          "height": 184.671875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Saudi Arabia",
+          "width": 180,
+          "height": 364.640625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Turkey",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "United Arab Emirates",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Vietnam",
+          "width": 180,
+          "height": 225.265625,
+          "whiteSpace": "normal",
+          "overflows": false
+        }
+      ]
+    },
+    {
+      "mode": "mobile320",
+      "headers": [
+        {
+          "text": "Dimension",
+          "width": 180,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 166.6875,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Documented records",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Countries represented",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Status not established",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Latest recorded event",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Owned / operated facility",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Joint venture",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Management contract",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Consulting / advisory",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Strategic partnership",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "In-Country Representative",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Remote care / second opinion",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Education / training",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Inbound patient channel",
+          "width": 180,
+          "height": 68.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Research partnership",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Insurer Partnership",
+          "width": 180,
+          "height": 46.6875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Country",
+          "width": 180,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Johns Hopkins Medicine International",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Mass General Brigham",
+          "width": 166.65625,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Dana-Farber Cancer Institute",
+          "width": 166.6875,
+          "height": 89.5625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Bermuda",
+          "width": 180,
+          "height": 324.046875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Brazil",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Cayman Islands",
+          "width": 180,
+          "height": 184.671875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "China",
+          "width": 180,
+          "height": 184.671875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Colombia",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Lebanon",
+          "width": 180,
+          "height": 164.375,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Pakistan",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Panama",
+          "width": 180,
+          "height": 184.671875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Saudi Arabia",
+          "width": 180,
+          "height": 364.640625,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Turkey",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "United Arab Emirates",
+          "width": 180,
+          "height": 204.96875,
+          "whiteSpace": "normal",
+          "overflows": false
+        },
+        {
+          "text": "Vietnam",
+          "width": 180,
+          "height": 225.265625,
+          "whiteSpace": "normal",
+          "overflows": false
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "download": {
+    "name": "ihb-filtered-tracker.csv",
+    "bytes": 32557,
+    "sharedRecordOnce": true
+  },
+  "mobileKeyboardFocus": true,
+  "profileInsurerFilter": 1
+}

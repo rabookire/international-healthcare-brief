@@ -6,25 +6,26 @@ Last verified: 2026-10-20. Inventory as of 2026-10-20.
 
 Independent publication. Public sources only. Analysis is labeled. Not investment or business advice.
 
-## Footprint inventory
+## Activity inventory
 
-Baseline identifies a pre-existing arrangement at seeding; it is not an operating-status claim. A baseline arrangement may still be planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
+Initial-inventory history is separate from lifecycle. Unknown means current status has not been established. Advisory activity can be active while its associated facility remains planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
 
-| Record | Institution | Country | Region | Tactic | Status | Source |
+| Record | Institution | Country | Region | Activity | Lifecycle | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| IHB-0049 | MD Anderson Cancer Center | Spain | Europe | T5 Strategic affiliation/partnership | Baseline | [Source](https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network/network-partners.dir.html/1000) |
+| IHB-0049 | MD Anderson Cancer Center | Spain | Europe | T5 Strategic affiliation/partnership | Unknown | [Source](https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network/network-partners.dir.html/1000) |
 
 ## Chronological timeline
 
 ### Date not disclosed — MD Anderson lists its Madrid cancer center as an international affiliate.
 
-IHB-0049 · Spain · Baseline · T5 Strategic affiliation/partnership
+IHB-0049 · Spain · Unknown · T5 Strategic affiliation/partnership
 
 Analysis: An affiliate provides a regional alternative for cancer care. Evaluate the specific clinical relationship separately from ownership.
 
 [Source](https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network/network-partners.dir.html/1000) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 

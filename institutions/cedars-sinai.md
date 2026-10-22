@@ -6,20 +6,20 @@ Last verified: 2026-10-20. Inventory as of 2026-10-20.
 
 Independent publication. Public sources only. Analysis is labeled. Not investment or business advice.
 
-## Footprint inventory
+## Activity inventory
 
-Baseline identifies a pre-existing arrangement at seeding; it is not an operating-status claim. A baseline arrangement may still be planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
+Initial-inventory history is separate from lifecycle. Unknown means current status has not been established. Advisory activity can be active while its associated facility remains planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
 
-| Record | Institution | Country | Region | Tactic | Status | Source |
+| Record | Institution | Country | Region | Activity | Lifecycle | Source |
 | --- | --- | --- | --- | --- | --- | --- |
 | IHB-0085 | Cedars-Sinai | United Kingdom | Europe | T1 Owned/operated facility | Operational | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
-| IHB-0086 | Cedars-Sinai | Singapore | Asia Pacific | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-singapore-office/) |
-| IHB-0087 | Cedars-Sinai | Mexico | Americas | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-unveils-mexico-city-office/) |
-| IHB-0088 | Cedars-Sinai | Ecuador | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/) |
-| IHB-0089 | Cedars-Sinai | Qatar | GCC | T5 Strategic affiliation/partnership | Baseline | [Source](https://www.theviewhospital.com/news/the-view-hospital-hosts-cedars-sinai-patient-experience-expert-class) |
-| IHB-0090 | Cedars-Sinai | China | Asia Pacific | T4 Consulting/advisory | Baseline | [Source](https://www.szqhtkyy.com/szqh/qqzp/xxcz/index.html) |
-| IHB-0091 | Cedars-Sinai | China | Asia Pacific | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
-| IHB-0092 | Cedars-Sinai | Qatar | GCC | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
+| IHB-0086 | Cedars-Sinai | Singapore | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-singapore-office/) |
+| IHB-0087 | Cedars-Sinai | Mexico | Americas | T6 In-Country Representative | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-unveils-mexico-city-office/) |
+| IHB-0088 | Cedars-Sinai | Ecuador | Americas | T4 Consulting/advisory | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/) |
+| IHB-0089 | Cedars-Sinai | Qatar | GCC | T5 Strategic affiliation/partnership | Unknown | [Source](https://www.theviewhospital.com/news/the-view-hospital-hosts-cedars-sinai-patient-experience-expert-class) |
+| IHB-0090 | Cedars-Sinai | China | Asia Pacific | T4 Consulting/advisory | Unknown | [Source](https://www.szqhtkyy.com/szqh/qqzp/xxcz/index.html) |
+| IHB-0091 | Cedars-Sinai | China | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
+| IHB-0092 | Cedars-Sinai | Qatar | GCC | T6 In-Country Representative | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
 
 ## Chronological timeline
 
@@ -41,7 +41,7 @@ Source scope: The new flagship clinic was publicly described as planned on Janua
 
 ### 2025-06-05 — Cedars-Sinai combines a Quito office with Hospital de los Valles collaboration
 
-IHB-0088 · Ecuador · Baseline · T4 Consulting/advisory
+IHB-0088 · Ecuador · Unknown · T4 Consulting/advisory
 
 Analysis: Co-locating patient access with an operational partner can link local quality work and referrals.
 The relationship gives strategists a model for extending reach through an existing provider.
@@ -49,12 +49,13 @@ The relationship gives strategists a model for extending reach through an existi
 [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/) (Primary; source date: 2025-06-05; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: One bundled record for the partner relationship and co-located office. Office opening is an update; exact original partnership date is not supplied.
 
 ### 2024-03-13 — Cedars-Sinai maintains a Singapore patient-access office
 
-IHB-0086 · Singapore · Baseline · T6 In-Country Representative
+IHB-0086 · Singapore · Unknown · T6 In-Country Representative
 
 Analysis: Local representation can reduce friction for patients considering care abroad.
 It provides market access without the operating burden of a local hospital.
@@ -62,12 +63,13 @@ It provides market access without the operating burden of a local hospital.
 [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-singapore-office/) (Primary; source date: 2024-03-13; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: Singapore office also listed in the June 2025 Ecuador office release.
 
 ### 2023-10-05 — Cedars-Sinai maintains a Mexico City referral coordination office
 
-IHB-0087 · Mexico · Baseline · T6 In-Country Representative
+IHB-0087 · Mexico · Unknown · T6 In-Country Representative
 
 Analysis: An office can provide a local front door for cross-border specialty care.
 Its role should be distinguished from a facility that treats patients on site.
@@ -75,36 +77,39 @@ Its role should be distinguished from a facility that treats patients on site.
 [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-unveils-mexico-city-office/) (Primary; source date: 2023-10-05; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: This is the newer Mexico City office; the source acknowledges earlier offices. Also listed June 2025.
 
 ### Date not disclosed — Cedars-Sinai lists a patient referral office in Qatar.
 
-IHB-0092 · Qatar · Baseline · T6 In-Country Representative
+IHB-0092 · Qatar · Unknown · T6 In-Country Representative
 
 Analysis: In-country referral representation can support patient access and coordination with the US program.
 
 [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) (Primary; source date: 2026-05-20; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: The May 20, 2026 institutional release explicitly lists an office in this country. It does not establish a city, opening date, staffing level or independent care-delivery facility. Older city-specific references are not treated as current city evidence.
 
 ### Date not disclosed — Cedars-Sinai lists a patient referral office in China.
 
-IHB-0091 · China · Baseline · T6 In-Country Representative
+IHB-0091 · China · Unknown · T6 In-Country Representative
 
 Analysis: In-country referral representation can support patient access and coordination with the US program.
 
 [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) (Primary; source date: 2026-05-20; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: The May 20, 2026 institutional release explicitly lists an office in this country. It does not establish a city, opening date, staffing level or independent care-delivery facility. Older city-specific references are not treated as current city evidence.
 
 ### Date not disclosed — Cedars-Sinai supports Qianhai Taikang hospital’s clinical and operational development
 
-IHB-0090 · China · Baseline · T4 Consulting/advisory
+IHB-0090 · China · Unknown · T4 Consulting/advisory
 
 Analysis: Advisory participation can establish a role inside a foreign hospital without equity ownership.
 This distinction matters when comparing capital exposure and operational control.
@@ -112,12 +117,13 @@ This distinction matters when comparing capital exposure and operational control
 [Source](https://www.szqhtkyy.com/szqh/qqzp/xxcz/index.html) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: Chinese primary partner page; partnership support does not establish that Cedars-Sinai owns or operates the hospital. Government report separately confirms hospital open in 2024.
 
 ### Date not disclosed — Cedars-Sinai and The View Hospital maintain a clinical affiliation
 
-IHB-0089 · Qatar · Baseline · T5 Strategic affiliation/partnership
+IHB-0089 · Qatar · Unknown · T5 Strategic affiliation/partnership
 
 Analysis: An affiliation can extend a US institution’s care standards through a locally operated hospital.
 It creates a different risk and control profile from owning or managing the facility.
@@ -125,6 +131,7 @@ It creates a different risk and control profile from owning or managing the faci
 [Source](https://www.theviewhospital.com/news/the-view-hospital-hosts-cedars-sinai-patient-experience-expert-class) (Primary; source date: Not displayed; verified 2026-10-20).
 
 Change log: 2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.
+2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 
 Source scope: No ownership, management-contract or new opening inferred from this source.
 

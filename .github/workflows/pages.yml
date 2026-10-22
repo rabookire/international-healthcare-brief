@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
+      - name: Install development test dependencies
+        run: npm ci --ignore-scripts
       - name: Check reader filtering and source rendering
         run: node --test tests/test_*.mjs
       - name: Stage public static files

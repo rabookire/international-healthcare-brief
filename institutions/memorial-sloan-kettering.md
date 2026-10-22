@@ -6,11 +6,11 @@ Last verified: 2026-10-20. Inventory as of 2026-10-20.
 
 Independent publication. Public sources only. Analysis is labeled. Not investment or business advice.
 
-## Footprint inventory
+## Activity inventory
 
-Baseline identifies a pre-existing arrangement at seeding; it is not an operating-status claim. A baseline arrangement may still be planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
+Initial-inventory history is separate from lifecycle. Unknown means current status has not been established. Advisory activity can be active while its associated facility remains planned. Read the source-scope notes below. Suspended and exited arrangements remain in the historical timeline.
 
-| Record | Institution | Country | Region | Tactic | Status | Source |
+| Record | Institution | Country | Region | Activity | Lifecycle | Source |
 | --- | --- | --- | --- | --- | --- | --- |
 | IHB-0050 | Memorial Sloan Kettering | Qatar | GCC | T5 Strategic affiliation/partnership | Announced | [Source](https://www.mskcc.org/news-releases/msk-and-qatar-ministry-of-public-health-explore-potential-partnership-to-advance-cancer-care-in-middle-east) |
 
