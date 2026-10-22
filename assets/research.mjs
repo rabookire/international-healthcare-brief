@@ -9,7 +9,7 @@ export const STATUS_LABELS = {
 };
 
 export const LENSES = {
-  patient: { label: "Patient access", tactics: ["T6", "T7", "T9"] },
+  patient: { label: "Patient access", tactics: ["T6", "T7", "T9", "T11"] },
   clinical: {
     label: "Care delivery & clinical collaboration",
     tactics: ["T1", "T5", "T7"],
@@ -34,12 +34,24 @@ export const historyText = (r) =>
     backfill: "Historical activity",
     new: "New activity",
   })[r.seed_kind] || "Initial inventory";
+const canonicalRegion = (region) =>
+  region === "Middle East" ? "Middle East (non-GCC)" : region;
 export const regionText = (region) =>
-  region === "Other" ? "Africa & non-GCC Middle East (legacy view)" : region;
-export const regionMatches = (r, region) =>
-  !region ||
-  r.region === region ||
-  (region === "Other" && ["Africa", "Middle East"].includes(r.region));
+  region === "Other"
+    ? "Africa & non-GCC Middle East (legacy view)"
+    : canonicalRegion(region);
+export const regionMatches = (record, region) => {
+  const actual = canonicalRegion(
+      typeof record === "string" ? record : record.region,
+    ),
+    selected = canonicalRegion(region);
+  return (
+    !selected ||
+    actual === selected ||
+    (selected === "Other" &&
+      ["Africa", "Middle East (non-GCC)"].includes(actual))
+  );
+};
 
 export function coverageSummary(rows, institutions = []) {
   const covered = new Set(

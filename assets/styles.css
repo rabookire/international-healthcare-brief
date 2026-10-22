@@ -2521,6 +2521,7 @@ body.map-expanded {
   font-size: 14px;
   text-transform: none;
   letter-spacing: 0;
+  white-space: normal;
 }
 .comparison-table th:first-child {
   width: 180px;

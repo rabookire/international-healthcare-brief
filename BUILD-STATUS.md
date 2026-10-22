@@ -1,15 +1,13 @@
 # Reader release 2026-10-21.1
 
-Status: implemented and prepared for review; publication awaits real-browser verification.
+Status: combined PR revision prepared for CI and merge, with local desktop/mobile browser verification. Publication is established separately by the successful Pages deployment of the exact merged commit.
 
-Base: `f0f790747dc6969c99423c552391dc571cf74e27`, the merged research-desk reader. The live main release and this prepared branch are separate deployment states.
+Inputs: research workflows from PR #2 `a3fb3745a6a7658292b6d9b9aecc3c42c9b572b6` and map-first profiles from merged PR #3 / main `e796227309268c0b34a1e18fbc177219fd9a6740`.
 
-Implemented: independent lifecycle/history, source-supported normalization of 14 baseline relationships, explicit Unknown for 70 others, planned-facility scope, revised research/inbound policy, six geography groups, clearer activity summaries, focus lenses and filter chips, filtered country shading, evidence-preserving export, mobile List/Map controls, country briefs, institution comparison, printable citations, coverage page, demoted empty brief archive, source-independent methodology loading, source formatting and development-only DOM integration tests.
+The combined reader preserves lifecycle/history separation, Unknown status, facility caveats, research T10, insurer T11, legacy region links, map-first institution profiles with recent developments, global mobile List default, country briefs, comparisons, coverage explanations, scoped exports and cited print output. Mobile keyboard focus, archive-only country options and comparison header wrapping are corrected.
 
-Source inventory: 98 records, 38 countries, records for 14 of 19 listed institutions. All record IDs, source verification dates and initial/historical classifications remain intact. The checked source inventory date is October 20, 2026. Reader changes do not represent a new source scan or new editorial edition.
+The canonical inventory retains all 98 records, 38 countries, 84 initial and 14 historical records, and original source and verification dates. The source inventory remains dated October 20, 2026. This release does not claim a new scan, new edition, complete research coverage or a complete non-U.S. competitor inventory.
 
-Automated validation: 24 generated projections; 27 Python and 29 Node checks, including seven DOM integration journeys. See VERIFICATION.md for commands and limits. Local success must be confirmed for the exact committed revision; CI supplies its own result.
+Local checks: all 24 projections agree; 27 Python and 39 JavaScript tests pass; static packaging succeeds. Desktop/mobile and 200% zoom journeys from the integration are recorded in [VERIFICATION.md](VERIFICATION.md). The final comparison, actual CSV download, generated PDF, mobile focus and insurer-filter checks are documented with [browser evidence](docs/verification/pr2-release/README.md).
 
-Open release gate: browser tools were not exposed in the working session. No new desktop/mobile screenshot, touch check, visual verdict or live publication is claimed. The repository instructions require those journeys for UI changes. Save as a draft PR until they can be completed.
-
-Research partnership and non-U.S. competitor seeding are ongoing editorial work, not completed coverage in this release. No project-wide code/data license was selected implicitly.
+Physical touchscreen/pinch, full screen-reader behavior, other browser engines and physical printing remain unverified. CI and deployment results must be checked for the exact pushed/merged revision. No claim of live deployment is made by this source document.

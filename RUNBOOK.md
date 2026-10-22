@@ -79,3 +79,7 @@ Research partnerships under the revised methodology must be reviewed against tha
 Reader versions and source inventory dates are separate in `data/release.json`: `reader_version` identifies a software/content presentation release; `as_of` identifies the checked source inventory. A UI or classification release does not advance source dates.
 
 Before publishing UI changes, execute the desktop/mobile journeys in VERIFICATION.md. A passing jsdom integration suite is not browser or visual verification. A release can be saved as a draft PR while the browser gate is outstanding.
+
+## Combined reader taxonomy
+
+Use T10 for research partnerships and T11 for insurer partnerships. An insurer agreement retains supported consulting or patient-access activity as secondary tags. In-Country Representative (T6) follows the official hospital-listing standard in METHODOLOGY.md. Keep Africa and Middle East (non-GCC) separate, including the Caucasus in the latter. Both Middle East labels and legacy Other shared links remain compatible. Profile defaults are map-first; the global mobile explorer defaults to List. Regenerate all projections after canonical CSV changes. Reader integration does not advance inventory or source-verification dates.

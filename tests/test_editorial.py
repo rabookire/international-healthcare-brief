@@ -151,7 +151,11 @@ class EditorialBoundaries(unittest.TestCase):
     def test_research_taxonomy_and_region_split_are_validated(self):
         research=row(Country='Nigeria',Region='Africa',**{'Tactic (primary)':'T10','Tactic (secondary)':''})
         self.assertEqual(self.valid([research])[0]['tactic_primary'],'T10')
-        self.assertEqual(self.valid([row(Country='Jordan',Region='Middle East')])[0]['region'],'Middle East')
+        self.assertEqual(self.valid([row(Country='Jordan',Region='Middle East (non-GCC)')])[0]['region'],'Middle East (non-GCC)')
+        self.assertEqual(self.valid([row(Country='Armenia',Region='Middle East (non-GCC)')])[0]['region'],'Middle East (non-GCC)')
+        self.assertEqual(self.valid([row(**{'Tactic (primary)':'T11','Tactic (secondary)':'T4'})])[0]['tactic_primary'],'T11')
+        with self.assertRaisesRegex(g.DataError,'tiebreak'):
+            self.valid([row(**{'Tactic (primary)':'T4','Tactic (secondary)':'T11'})])
         with self.assertRaisesRegex(g.DataError,'country/region'):
             self.valid([row(Country='Jordan',Region='Other')])
 

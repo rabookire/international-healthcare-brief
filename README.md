@@ -6,7 +6,7 @@ Public-source intelligence on U.S. health systems’ international facilities, p
 
 ## Prepared reader release: 2026-10-21.1
 
-This branch prepares a research workflow release. It is not a claim that the new routes are deployed. Automated checks cover editorial boundaries, reader logic, DOM integration and static packaging; real desktop/mobile screenshots and interaction checks remain required before publication. See [BUILD-STATUS.md](./BUILD-STATUS.md).
+This branch prepares a research workflow release. It is not a claim that the new routes are deployed. Automated checks cover editorial boundaries, reader logic, DOM integration and static packaging. Local desktop/mobile interaction checks and screenshots are recorded in [release verification](./docs/verification/pr2-release/README.md); CI and deployment establish their own results for the exact committed revision. See [BUILD-STATUS.md](./BUILD-STATUS.md).
 
 The source inventory remains **98 records across 38 countries**, with records for **14 of 19 listed institutions**, checked as of October 20, 2026. Its 84 initial-inventory and 14 historical records retain their IDs and source dates. Lifecycle is independent of that history: 21 relationships are active/operational, 70 have status not established, six are announced and one is in development. These counts describe this partial inventory, not market share or patient volumes.
 
@@ -66,3 +66,7 @@ Complete real-browser release checks, then expand research coverage and delibera
 ## Licensing and attribution
 
 No project-wide code/data license has been selected. Linking an external source does not grant rights to its contents. Natural Earth map data and the vendored Feather icons retain their documented attributions and terms in `assets/MAP-SOURCES.md` and `assets/icons/LICENSE.txt`. Institution names are text references and imply no endorsement.
+
+## Combined local reader integration
+
+The local integration of the research workflows and map-first institution profiles keeps T10 Research partnership and T11 Insurer Partnership distinct. Profiles open on their interactive map; the global mobile explorer opens in List. Explicit view links preserve their selection. Middle East (non-GCC) is canonical, while older Middle East and Other links remain usable. See VERIFICATION.md for the exact source revisions, executed local checks and remaining release limits. Source inventory and source-verification dates remain October 20, 2026; this integration does not claim a new scan or publication.

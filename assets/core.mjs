@@ -6,17 +6,19 @@ import {
   regionText,
   statusText,
 } from "./research.mjs";
+export { regionMatches };
 export const TACTICS = {
   T1: "Owned / operated facility",
   T2: "Joint venture",
   T3: "Management contract",
   T4: "Consulting / advisory",
   T5: "Strategic partnership",
-  T6: "In-country office / representation",
+  T6: "In-Country Representative",
   T7: "Remote care / second opinion",
   T8: "Education / training",
   T9: "Inbound patient channel",
   T10: "Research partnership",
+  T11: "Insurer Partnership",
 };
 export const COLORS = {
   T1: "#0072B2",
@@ -29,6 +31,7 @@ export const COLORS = {
   T8: "#957000",
   T9: "#4C5969",
   T10: "#6D4596",
+  T11: "#b06a14",
 };
 export const STATUSES = Object.keys(STATUS_LABELS);
 export const REGIONS = [
@@ -36,7 +39,7 @@ export const REGIONS = [
   "Americas",
   "Asia Pacific",
   "Europe",
-  "Middle East",
+  "Middle East (non-GCC)",
   "Africa",
 ];
 export function institutionsOf(r) {
@@ -48,13 +51,16 @@ export function institutionsOf(r) {
       .filter(Boolean)
   );
 }
-export function readState(search = "") {
+export function readState(search = "", { defaultView = "list" } = {}) {
   const p = new URLSearchParams(search),
     legacy = p.get("status") === "Baseline";
   return {
     institution: [...new Set(p.getAll("institution").filter(Boolean))],
     tactic: p.get("tactic") || "",
-    region: p.get("region") || "",
+    region:
+      p.get("region") === "Middle East"
+        ? "Middle East (non-GCC)"
+        : p.get("region") || "",
     country: p.get("country") || "",
     status: legacy ? "" : p.get("status") || "",
     footprint: legacy
@@ -68,7 +74,7 @@ export function readState(search = "") {
     from: p.get("from") || "",
     to: p.get("to") || "",
     lens: p.get("lens") || "",
-    view: p.get("view") === "map" ? "map" : "list",
+    view: ["map", "list"].includes(p.get("view")) ? p.get("view") : defaultView,
   };
 }
 export function stateQuery(s) {
@@ -88,7 +94,7 @@ export function stateQuery(s) {
   ])
     if (s[k]) p.set(k, s[k]);
   if (s.footprint && s.footprint !== "all") p.set("footprint", s.footprint);
-  if (s.view === "map") p.set("view", "map");
+  if (["list", "map"].includes(s.view)) p.set("view", s.view);
   return p.toString();
 }
 export function filterRecords(rows, s) {

@@ -19,6 +19,7 @@ import {
   secondaryMatch,
 } from "./research.mjs";
 import { recordDetail } from "./record-view.mjs";
+import { renderProfile, PROFILE_COLORS, profileSymbol } from "./profile.mjs";
 import {
   coveragePage,
   marketsPage,
@@ -47,6 +48,7 @@ const ROOT = new URL(document.body.dataset.root, location.href),
   main = document.querySelector("#main"),
   dialog = document.querySelector("#record-dialog");
 const url = (p = "") => new URL(p, ROOT).href;
+const stateOptions = { defaultView: page === "institutions" ? "map" : "list" };
 let data,
   records = [],
   names = [],
@@ -54,7 +56,7 @@ let data,
   editions = [],
   world,
   places,
-  state = readState(location.search),
+  state = readState(location.search, stateOptions),
   visible = [],
   sortKey = "last_verified",
   sortDir = -1,
@@ -84,6 +86,10 @@ const tag = (r) =>
   `<span class="tag ${r.seed_kind !== "baseline" ? "new" : ""}">${e(historyText(r))}</span>`;
 const statusLabel = statusText;
 const isWorkspace = () => page === "map" || page === "home";
+const isProfile = () =>
+  page === "institutions" &&
+  state.institution.length === 1 &&
+  names.includes(state.institution[0]);
 const icon = (n) =>
   `<img class="icon" src="${url("assets/icons/" + n + ".svg")}" alt="" width="20" height="20">`;
 function shell() {
@@ -115,10 +121,14 @@ function change(patch, replace = false) {
     focus = active?.dataset?.filter,
     view = active?.dataset?.view,
     sort = active?.dataset?.sort;
-  if (isWorkspace() && ("country" in patch || "institution" in patch)) {
+  if (
+    (isWorkspace() || isProfile()) &&
+    ["country", "institution", "region", "tactic"].some((key) => key in patch)
+  ) {
     mapZoom = 1;
     mapCenter = [500, 220];
   }
+  if (isProfile() && "region" in patch) patch = { ...patch, country: "" };
   state = { ...state, ...patch };
   const q = stateQuery(state);
   history[replace ? "replaceState" : "pushState"](
@@ -137,8 +147,8 @@ function change(patch, replace = false) {
   target?.focus({ preventScroll: true });
 }
 window.addEventListener("popstate", () => {
-  state = readState(location.search);
-  if (isWorkspace()) {
+  state = readState(location.search, stateOptions);
+  if (isWorkspace() || isProfile()) {
     mapZoom = 1;
     mapCenter = [500, 220];
   }
@@ -179,7 +189,17 @@ function scopeNotice() {
     : "";
 }
 function filters({ archive = false } = {}) {
-  const countries = [...new Set(records.map((r) => r.country))].sort();
+  const countries = [
+    ...new Set([
+      ...records.map((r) => r.country),
+      ...(archive
+        ? editions.flatMap((ed) => [
+            ...(ed.countries || []),
+            ...(ed.items || []).map((item) => item.country).filter(Boolean),
+          ])
+        : []),
+    ]),
+  ].sort();
   const years = [
     ...new Set(
       records
@@ -385,14 +405,19 @@ function renderMapSelection() {
   host
     .querySelector("[data-dismiss-selection]")
     .addEventListener("click", () => {
-      const expanded = main.querySelector(".map-canvas.expanded"),
-        target = expanded
+      const mapOnly =
+          main.querySelector(".map-canvas.expanded") ||
+          getComputedStyle(main.querySelector(".activity-pane")).display ===
+            "none",
+        target = mapOnly
           ? [...main.querySelectorAll("[data-map-record]")].find(
               (n) => n.dataset.mapRecord === r.id,
             )
-          : [...main.querySelectorAll(".activity-row")].find(
-              (n) => n.dataset.record === r.id,
-            );
+          : [
+              ...main.querySelectorAll(
+                ".activity-pane > .activity-list .activity-row",
+              ),
+            ].find((n) => n.dataset.record === r.id);
       (target || main.querySelector("[data-fullscreen]"))?.focus();
       state.record = "";
       replaceRecordURL();
@@ -530,7 +555,8 @@ async function drawMap() {
   try {
     await geo();
     if (!svg.isConnected) return;
-    const recorded = new Set(visible.map((r) => r.country)),
+    const profile = isProfile(),
+      recorded = new Set(visible.map((r) => r.country)),
       labels = new Set(),
       showLabels = new Set(visible.map((r) => r.country)).size <= 8;
     let html =
@@ -545,16 +571,22 @@ async function drawMap() {
       const loc = locationOf(r);
       if (!loc) continue;
       const [x, y] = loc.xy,
-        showLabel = showLabels && !labels.has(r.country);
+        showLabel =
+          (showLabels || (profile && r.tactic_primary === "T1" && r.city)) &&
+          !labels.has(r.country);
       labels.add(r.country);
-      html += `<g class="pin ${r.status === "Unknown" ? "unknown" : ""} ${state.record === r.id ? "selected" : ""}" tabindex="-1" role="button" aria-pressed="${state.record === r.id}" aria-label="${e(r.institution + "; " + r.partner + "; " + r.country + "; " + TACTICS[r.tactic_primary] + "; " + statusLabel(r))}" data-map-record="${e(r.id)}" data-x="${x}" data-y="${y}"><title>${e(r.headline + " · " + loc.scope)}</title><path class="pin-leader" stroke="#7b9298" stroke-width="1" vector-effect="non-scaling-stroke"/><g class="pin-marker"><circle class="pin-halo" r="12"/><circle r="22" fill="transparent"/><path class="pin-shape" d="${shape(r.status, 6)}" fill="${r.status === "Closed/exited" ? "none" : COLORS[r.tactic_primary]}" style="${r.status === "Closed/exited" ? "stroke:" + COLORS[r.tactic_primary] : ""}"/>${showLabel ? `<text class="location-label" x="13" y="5">${e(r.country)}</text>` : ""}</g></g>`;
+      html += `<g class="pin ${r.status === "Unknown" ? "unknown" : ""} ${state.record === r.id ? "selected" : ""}" tabindex="-1" role="button" aria-pressed="${state.record === r.id}" aria-label="${e(r.institution + "; " + r.partner + "; " + r.country + "; " + TACTICS[r.tactic_primary] + "; " + statusLabel(r))}" data-map-record="${e(r.id)}" data-x="${x}" data-y="${y}"><title>${e(r.headline + " · " + loc.scope)}</title><path class="pin-leader" stroke="#7b9298" stroke-width="1" vector-effect="non-scaling-stroke"/><g class="pin-marker"><circle class="pin-halo" r="12"/><circle r="22" fill="transparent"/><path class="pin-shape" d="${profile ? profileSymbol(r.tactic_primary) : shape(r.status, 6)}" fill="${r.status === "Closed/exited" ? "none" : (profile ? PROFILE_COLORS : COLORS)[r.tactic_primary]}" style="${r.status === "Closed/exited" ? "stroke:" + COLORS[r.tactic_primary] : ""}"/>${showLabel ? `<text class="location-label" x="13" y="5">${e(profile && r.city ? r.city : r.country)}</text>` : ""}</g></g>`;
     }
     svg.innerHTML = html;
     const points = visible
       .map(locationOf)
       .filter(Boolean)
       .map((l) => l.xy);
-    if ((state.country || state.institution.length) && mapZoom === 1) {
+    if (
+      (state.country ||
+        (profile ? state.region || state.tactic : state.institution.length)) &&
+      mapZoom === 1
+    ) {
       const c = fitPoints(points, mapAspect());
       mapCenter = [c.x, c.y];
       mapZoom = c.zoom;
@@ -562,10 +594,14 @@ async function drawMap() {
     updateMapView();
     bindMapGestures(svg);
   } catch (err) {
-    svg.outerHTML =
-      '<p class="notice">Map unavailable. All records remain available in the activity list.</p>';
+    svg.outerHTML = profileMapError();
     console.error(err);
   }
+}
+function profileMapError() {
+  return isProfile()
+    ? '<p class="notice">Map unavailable. Choose List above to inspect every matching record.</p>'
+    : '<p class="notice">Map unavailable. All records remain available in the activity list.</p>';
 }
 function bindMapGestures(svg) {
   mapCleanup();
@@ -659,7 +695,8 @@ function bindMapGestures(svg) {
     clickTarget = null;
     const pin = target.closest("[data-map-record]");
     if (pin) {
-      selectMapRecord(pin.dataset.mapRecord);
+      if (isProfile()) showRecord(pin.dataset.mapRecord);
+      else selectMapRecord(pin.dataset.mapRecord);
       return;
     }
     const country = target.closest("[data-country]")?.dataset.country;
@@ -742,7 +779,8 @@ function bindMapGestures(svg) {
     }
     if (pin && ["Enter", " "].includes(ev.key)) {
       ev.preventDefault();
-      selectMapRecord(pin.dataset.mapRecord, { focus: true });
+      if (isProfile()) showRecord(pin.dataset.mapRecord);
+      else selectMapRecord(pin.dataset.mapRecord, { focus: true });
       return;
     }
     const pan = {
@@ -852,6 +890,7 @@ function renderUpdates() {
     renderEditionList(main.querySelector("#edition-list"), editions);
 }
 function renderInstitutions() {
+  document.body.classList.remove("institution-profile");
   const selected =
     state.institution.length === 1 && names.includes(state.institution[0])
       ? state.institution[0]
@@ -875,24 +914,16 @@ function renderInstitutions() {
   }
   const rows = records.filter((r) => institutionsOf(r).includes(selected)),
     note = coverage.find((x) => x.institution === selected);
-  visible = rows;
+  document.body.classList.add("institution-profile");
+  visible = filterRecords(rows, state);
   main.innerHTML =
-    `<a class="small" href="${url("institutions/")}">← All institutions</a>` +
-    heading(
-      "Institution profile",
-      e(selected),
-      "Documented relationships and milestones. Source coverage is partial.",
-      `<a class="button" href="${url("compare/?institution=" + encodeURIComponent(selected))}">Add to comparison</a>`,
-    ) +
-    `<div class="profile-stats"><div class="stat"><strong>${rows.length}</strong><span>documented records</span></div><div class="stat"><strong>${new Set(rows.map((r) => r.country)).size}</strong><span>countries represented</span></div><div class="stat"><strong>${rows.filter((r) => r.status === "Unknown").length}</strong><span>status not established</span></div></div><p class="notice">Record counts do not measure patient volumes, investment or market share. Missing records do not establish an absence of activity. <a href="${url("coverage/")}">Read coverage and open questions</a>.</p>${note ? `<details class="profile-coverage"><summary>Coverage reviewed and open questions</summary><p>${e(typeof note.scope_checked === "string" ? note.scope_checked : "Review scope not documented.")}</p><p>${e(Array.isArray(note.unresolved) ? note.unresolved.join(" ") : note.unresolved || "")}</p><p>${e(note.backfill_status || "")}</p></details>` : ""}${
-      rows.length
-        ? `<div class="profile-grid"><section><div class="section-head"><h2>Activity locations</h2><a href="${url("map/?institution=" + encodeURIComponent(selected))}">Explore map &amp; list</a></div><div class="hero-map" id="profile-map"></div></section><section><div class="section-head"><h2>Record timeline</h2></div>${list(
-            [...rows].sort((a, b) => eventKey(b).localeCompare(eventKey(a))),
-            { timeline: true },
-          )}</section></div>${resultBar(rows, "map/")}${table(rows)}${briefSources(rows)}`
-        : `<div class="empty-state"><h2>No qualifying records verified in this inventory</h2><p>This is a research gap, not a conclusion about ${e(selected)}’s international activity.</p></div>`
-    }`;
-  if (rows.length) drawMini("profile-map", rows);
+    renderProfile({ selected, rows, visible, state, note, fmt, url, icon }) +
+    activeFilters() +
+    scopeNotice() +
+    `<p class="notice">${rows.filter((r) => r.status === "Unknown").length} of ${rows.length} inventory records have status not established. Record counts do not measure patient volumes, investment or market share. Missing records do not establish an absence of activity. <a href="${url("coverage/")}">Coverage and open questions</a> · <a href="${url("compare/?institution=" + encodeURIComponent(selected))}">Add to comparison</a></p>` +
+    resultBar(visible, "map/") +
+    briefSources(visible);
+  if (visible.length && state.view === "map") drawMap();
 }
 function renderEditionList(node, items) {
   node.innerHTML = items
@@ -1024,6 +1055,22 @@ function setExpanded(expanded) {
   updateMapView();
 }
 function bind() {
+  main.querySelectorAll("[data-profile-view]").forEach((n) =>
+    n.addEventListener("click", () => {
+      change({ view: n.dataset.profileView, record: "" });
+      main.querySelector(`[data-profile-view="${state.view}"]`)?.focus();
+    }),
+  );
+  main.querySelectorAll("[data-profile-reset]").forEach((n) =>
+    n.addEventListener("click", () => {
+      const institution = state.institution,
+        view = state.view;
+      mapZoom = 1;
+      mapCenter = [500, 220];
+      change({ ...readState("", stateOptions), institution, view });
+      main.querySelector('[data-filter="region"]')?.focus();
+    }),
+  );
   main
     .querySelectorAll("[data-record]")
     .forEach((n) =>
@@ -1062,7 +1109,7 @@ function bind() {
     n.addEventListener("click", () => {
       mapZoom = 1;
       mapCenter = [500, 220];
-      change(readState());
+      change(readState("", stateOptions));
     }),
   );
   const search = main.querySelector("#record-search");
