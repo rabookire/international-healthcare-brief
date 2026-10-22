@@ -13,14 +13,14 @@ Baseline identifies a pre-existing arrangement at seeding; it is not an operatin
 | Record | Institution | Country | Region | Tactic | Status | Source |
 | --- | --- | --- | --- | --- | --- | --- |
 | IHB-0037 | Johns Hopkins Medicine International | Bermuda | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-hospitals-board) |
-| IHB-0038 | Johns Hopkins Medicine International | Bermuda | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance) |
+| IHB-0038 | Johns Hopkins Medicine International | Bermuda | Americas | T11 Insurer Partnership | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance) |
 | IHB-0039 | Johns Hopkins Medicine International | Colombia | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/fundacion-santafe-de-bogota) |
 | IHB-0040 | Johns Hopkins Medicine International | Brazil | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-moinhos-de-vento) |
 | IHB-0041 | Johns Hopkins Medicine International | Panama | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-punta-pacifica) |
 | IHB-0042 | Johns Hopkins Medicine International | Vietnam | Asia Pacific | T4 Consulting/advisory | Baseline | [Source](https://aih.com.vn/en/tin-tuc/the-american-international-hospital-johns-hopkins-medicine-international-strengthening-collaboration-for-premium-healthcare) |
 | IHB-0043 | Johns Hopkins Medicine International | Pakistan | Asia Pacific | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific/shalamar-institute-health-sciences) |
 | IHB-0044 | Johns Hopkins Medicine International | Turkey | Europe | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/anadolu-medical-center) |
-| IHB-0045 | Johns Hopkins Medicine International | Lebanon | Other | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center) |
+| IHB-0045 | Johns Hopkins Medicine International | Lebanon | Middle East (non-GCC) | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center) |
 | IHB-0046 | Johns Hopkins Medicine International | United Arab Emirates | GCC | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international) |
 | IHB-0047 | Johns Hopkins Medicine International | Saudi Arabia | GCC | T4 Consulting/advisory | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international) |
 | IHB-0048 | Johns Hopkins Medicine International | Saudi Arabia | GCC | T2 Joint venture | Baseline | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/johns-hopkins-aramco-healthcare) |
@@ -71,7 +71,7 @@ Analysis: Operational expertise can extend market presence through local partner
 
 [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center) (Primary; source date: Not displayed; verified 2026-10-20).
 
-Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
+Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Middle East (non-GCC). Source facts and verification date unchanged.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
@@ -149,13 +149,13 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Johns Hopkins supports a Bermuda insurer’s population-health program.
 
-IHB-0038 · Bermuda · Baseline · T4 Consulting/advisory
+IHB-0038 · Bermuda · Baseline · T11 Insurer Partnership
 
 Analysis: Operational expertise can extend market presence through local partners. Assess the scope of the engagement before treating it as ownership or direct hospital management.
 
 [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance) (Primary; source date: Not displayed; verified 2026-10-20).
 
-Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
+Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank. | 2026-10-22: Taxonomy update — reclassified from T4 to T11 Insurer Partnership; consulting retained as T4 secondary where applicable. Source facts and verification date unchanged.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 

@@ -12,16 +12,16 @@ Baseline identifies a pre-existing arrangement at seeding; it is not an operatin
 
 | Record | Institution | Country | Region | Tactic | Status | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| IHB-0052 | Houston Methodist | United Arab Emirates | GCC | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0053 | Houston Methodist | Saudi Arabia | GCC | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0054 | Houston Methodist | Mexico | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0055 | Houston Methodist | Guatemala | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0056 | Houston Methodist | Nicaragua | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0057 | Houston Methodist | Mexico | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0058 | Houston Methodist | Mexico | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0059 | Houston Methodist | El Salvador | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0060 | Houston Methodist | Honduras | Americas | T6 In-country office/representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
-| IHB-0097 | Houston Methodist | Egypt | Other | T5 Strategic affiliation/partnership | Announced | [Source](https://www.khaleejtimes.com/business/efg-hermes-concludes-advisory-on-190-million-investment-in-alameda-healthcare?amp=1) |
+| IHB-0052 | Houston Methodist | United Arab Emirates | GCC | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0053 | Houston Methodist | Saudi Arabia | GCC | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0054 | Houston Methodist | Mexico | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0055 | Houston Methodist | Guatemala | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0056 | Houston Methodist | Nicaragua | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0057 | Houston Methodist | Mexico | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0058 | Houston Methodist | Mexico | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0059 | Houston Methodist | El Salvador | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0060 | Houston Methodist | Honduras | Americas | T6 In-Country Representative | Baseline | [Source](https://www.houstonmethodist.org/international-locations/) |
+| IHB-0097 | Houston Methodist | Egypt | Africa | T5 Strategic affiliation/partnership | Announced | [Source](https://www.khaleejtimes.com/business/efg-hermes-concludes-advisory-on-190-million-investment-in-alameda-healthcare?amp=1) |
 
 ## Chronological timeline
 
@@ -33,11 +33,11 @@ Analysis: An institutional affiliation may strengthen care offered locally.
 
 [Source](https://www.khaleejtimes.com/business/efg-hermes-concludes-advisory-on-190-million-investment-in-alameda-healthcare?amp=1) (Secondary; source date: 2026-02-18; verified 2026-10-20).
 
-Change log: 2026-01 (day not established): Multi-year strategic partnership announced, according to the February 18 Khaleej Times report. 2026-10-20: Added from acceptable secondary coverage; exact event day left blank; no claim that the hospital has opened.
+Change log: 2026-01 (day not established): Multi-year strategic partnership announced, according to the February 18 Khaleej Times report. 2026-10-20: Added from acceptable secondary coverage; exact event day left blank; no claim that the hospital has opened. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Africa. Source facts and verification date unchanged.
 
 ### Date not disclosed — Houston Methodist lists a Tegucigalpa patient liaison presence.
 
-IHB-0060 · Honduras · Baseline · T6 In-country office/representative
+IHB-0060 · Honduras · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -49,7 +49,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a San Salvador patient liaison presence.
 
-IHB-0059 · El Salvador · Baseline · T6 In-country office/representative
+IHB-0059 · El Salvador · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -61,7 +61,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Monterrey patient liaison presence.
 
-IHB-0058 · Mexico · Baseline · T6 In-country office/representative
+IHB-0058 · Mexico · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -73,7 +73,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Mexico City patient liaison presence.
 
-IHB-0057 · Mexico · Baseline · T6 In-country office/representative
+IHB-0057 · Mexico · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -85,7 +85,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Managua patient liaison presence.
 
-IHB-0056 · Nicaragua · Baseline · T6 In-country office/representative
+IHB-0056 · Nicaragua · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -97,7 +97,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Guatemala City patient liaison presence.
 
-IHB-0055 · Guatemala · Baseline · T6 In-country office/representative
+IHB-0055 · Guatemala · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -109,7 +109,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Guadalajara patient liaison presence.
 
-IHB-0054 · Mexico · Baseline · T6 In-country office/representative
+IHB-0054 · Mexico · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -121,7 +121,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Riyadh patient liaison presence.
 
-IHB-0053 · Saudi Arabia · Baseline · T6 In-country office/representative
+IHB-0053 · Saudi Arabia · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 
@@ -133,7 +133,7 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ### Date not disclosed — Houston Methodist lists a Dubai patient liaison presence.
 
-IHB-0052 · United Arab Emirates · Baseline · T6 In-country office/representative
+IHB-0052 · United Arab Emirates · Baseline · T6 In-Country Representative
 
 Analysis: Local representation supports patient access.
 

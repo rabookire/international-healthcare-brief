@@ -13,13 +13,13 @@ Baseline identifies a pre-existing arrangement at seeding; it is not an operatin
 | Record | Institution | Country | Region | Tactic | Status | Source |
 | --- | --- | --- | --- | --- | --- | --- |
 | IHB-0085 | Cedars-Sinai | United Kingdom | Europe | T1 Owned/operated facility | Operational | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
-| IHB-0086 | Cedars-Sinai | Singapore | Asia Pacific | T6 In-country office/representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-singapore-office/) |
-| IHB-0087 | Cedars-Sinai | Mexico | Americas | T6 In-country office/representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-unveils-mexico-city-office/) |
+| IHB-0086 | Cedars-Sinai | Singapore | Asia Pacific | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-singapore-office/) |
+| IHB-0087 | Cedars-Sinai | Mexico | Americas | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-unveils-mexico-city-office/) |
 | IHB-0088 | Cedars-Sinai | Ecuador | Americas | T4 Consulting/advisory | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-opens-ecuador-office/) |
 | IHB-0089 | Cedars-Sinai | Qatar | GCC | T5 Strategic affiliation/partnership | Baseline | [Source](https://www.theviewhospital.com/news/the-view-hospital-hosts-cedars-sinai-patient-experience-expert-class) |
 | IHB-0090 | Cedars-Sinai | China | Asia Pacific | T4 Consulting/advisory | Baseline | [Source](https://www.szqhtkyy.com/szqh/qqzp/xxcz/index.html) |
-| IHB-0091 | Cedars-Sinai | China | Asia Pacific | T6 In-country office/representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
-| IHB-0092 | Cedars-Sinai | Qatar | GCC | T6 In-country office/representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
+| IHB-0091 | Cedars-Sinai | China | Asia Pacific | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
+| IHB-0092 | Cedars-Sinai | Qatar | GCC | T6 In-Country Representative | Baseline | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
 
 ## Chronological timeline
 
@@ -54,7 +54,7 @@ Source scope: One bundled record for the partner relationship and co-located off
 
 ### 2024-03-13 — Cedars-Sinai maintains a Singapore patient-access office
 
-IHB-0086 · Singapore · Baseline · T6 In-country office/representative
+IHB-0086 · Singapore · Baseline · T6 In-Country Representative
 
 Analysis: Local representation can reduce friction for patients considering care abroad.
 It provides market access without the operating burden of a local hospital.
@@ -67,7 +67,7 @@ Source scope: Singapore office also listed in the June 2025 Ecuador office relea
 
 ### 2023-10-05 — Cedars-Sinai maintains a Mexico City referral coordination office
 
-IHB-0087 · Mexico · Baseline · T6 In-country office/representative
+IHB-0087 · Mexico · Baseline · T6 In-Country Representative
 
 Analysis: An office can provide a local front door for cross-border specialty care.
 Its role should be distinguished from a facility that treats patients on site.
@@ -80,7 +80,7 @@ Source scope: This is the newer Mexico City office; the source acknowledges earl
 
 ### Date not disclosed — Cedars-Sinai lists a patient referral office in Qatar.
 
-IHB-0092 · Qatar · Baseline · T6 In-country office/representative
+IHB-0092 · Qatar · Baseline · T6 In-Country Representative
 
 Analysis: In-country referral representation can support patient access and coordination with the US program.
 
@@ -92,7 +92,7 @@ Source scope: The May 20, 2026 institutional release explicitly lists an office 
 
 ### Date not disclosed — Cedars-Sinai lists a patient referral office in China.
 
-IHB-0091 · China · Baseline · T6 In-country office/representative
+IHB-0091 · China · Baseline · T6 In-Country Representative
 
 Analysis: In-country referral representation can support patient access and coordination with the US program.
 

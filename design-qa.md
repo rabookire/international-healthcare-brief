@@ -1,3 +1,64 @@
+# Institution profile redesign — October 22, 2026
+
+final result: blocked
+
+## Selected direction
+
+The user selected option 1 from the second design set: a dominant map on the left, recent developments on the right, and matching closed Region and Activity type controls. The selected corrected visual is `exec-60e8c228-8cfd-40a3-92cc-77d8893eee25.png`, inspected at 1488 × 1056. Subsequent user instructions add a distinct Insurer Partnership category, use In-Country Representative for hospital-listed representatives/offices, and split Africa from Middle East outside the GCC.
+
+The concept map is a design reference, not a geographic or factual source. The implementation retains Natural Earth geometry, canonical records and approximate locators. It uses the existing local icon library. No institution logos, illustrative map pins or unsupported facts were copied from the concept.
+
+## Runtime evidence and release gate
+
+- Intended viewports: 1440 × 1024 desktop and 390 × 844 mobile. No implementation viewport or screenshot was observed.
+- Local HTTP server startup failed with `PermissionError: [Errno 1] Operation not permitted` on socket bind. The managed cloud-preview command is unavailable in this desktop environment.
+- A separate file-based preview was prepared, but Browser Use rejected the `file:` URL because only HTTP/HTTPS protocols are allowed. No alternate browser surface or security workaround was attempted.
+- Browser-rendered implementation screenshot: **unavailable**.
+- Primary browser interactions tested: **none**. DOM template and filtering unit tests are not browser journeys.
+- Browser console inspection: **unavailable**.
+- Full-view and focused-region source/implementation comparison: **not performed**.
+- Product Design visual QA and the project AGENTS.md desktop/mobile gate remain **blocked**. This change is a draft, not a claim of publication or a completed visual handoff.
+
+## Required fidelity surfaces
+
+| Surface | Implemented | Remaining observation |
+| --- | --- | --- |
+| Typography | Existing Georgia headings, Arial controls; larger institution title and compact right-hand headlines | Wrapping, density and legibility at both viewports |
+| Layout and spacing | Map-first two-column desktop; three recent developments; paired filters; mobile stack with full-width controls below 480px | Actual map proportions, sidebar length, footer overlap and horizontal overflow |
+| Colors | Existing navy/teal palette, quiet gray geography; amber diamond for insurer partnerships | Rendered contrast and distinction at small marker sizes |
+| Assets | Real geography, existing local icons, analytic activity symbols | Marker overlap, labels, icon loading and map camera behavior |
+| Content | Counts moved below the map; source links and evidence details retained; dated updates separated from undated baseline | Actual reading order, source navigation and empty states |
+| Interaction/accessibility | Native selects, keyboard-accessible record pins, Map/List, clear filters, URL state, existing modal | Keyboard focus, touch/pinch, zoom/reset, browser back/forward and screen-reader announcements |
+
+## Source-review fixes
+
+A fresh read-only review found and verified fixes for:
+
+1. Profile map controls inherited a vertical global layout. Profile CSS now explicitly uses a horizontal row and removes the inherited reset-button margin.
+2. The activity dropdown initially omitted secondary tactics. It now includes them, while the legend describes only the primary symbols actually drawn. Regression coverage includes UPMC joint ventures and Mayo remote care.
+
+These are source-review iterations, not visual-QA iterations. The focused re-review found no remaining concrete source issue.
+
+## Automated evidence
+
+- 24 Python tests and 21 Node tests pass.
+- All 24 generated projections agree with the canonical CSV.
+- Insurer Partnership uses T11, avoiding the T10 research category already introduced in pending PR #2.
+- Allshores, Bupa and Bermuda Life/Argus are classified as insurer partnerships; the Johns Hopkins consulting service remains T4 secondary.
+- Four former Other records move to Africa or Middle East (non-GCC). Legacy Other links retain the union view.
+- All 98 stable IDs, source facts, source dates, source-verification dates and 84 baseline/14 historical classifications are preserved.
+- JavaScript syntax and public static asset staging pass.
+
+## Before merging
+
+Open the HTTP preview in an authorized browser and compare the Cleveland Clinic profile to the selected visual at desktop size and a narrow viewport. Exercise both filters individually and together, insurer-only results, Map/List, empty-result recovery, marker/detail/source access, camera controls, keyboard/touch alternatives, URL reload and back/forward. Inspect an institution with secondary activities and an institution with no seeded records. Check console errors and subdirectory-relative assets. Fix observed issues and repeat screenshots before changing the result to passed.
+
+PR #2 also changes shared reader and taxonomy code. Reconcile the two branches before releasing them together; retain its research category and status improvements. This draft is based on the current live main branch and does not overwrite that separate work.
+
+---
+
+# Earlier design QA record (preserved history)
+
 # Option 3 — Research Desk design QA
 
 final result: blocked

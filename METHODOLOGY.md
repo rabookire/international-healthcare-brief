@@ -50,9 +50,9 @@ The needle test governs every decision: publish nothing that would not move the 
 
 ## 5. Taxonomy and data model
 
-**Regions (exactly five):** GCC (Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain) · Americas (Canada, Mexico, Caribbean, Central & South America) · Asia Pacific (incl. India, China, Japan, Korea, SE Asia, Australia, New Zealand) · Europe (incl. Turkey) · Other (non-GCC Middle East and all of Africa). Region = the country where the activity takes place. Multi-country items get one record per country, or a primary-country record with other countries listed.
+**Regions (six):** GCC (Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain) · Americas (Canada, Mexico, Caribbean, Central & South America) · Asia Pacific (incl. India, China, Japan, Korea, SE Asia, Australia, New Zealand) · Europe (incl. Turkey) · Middle East (non-GCC) · Africa (including North Africa). Region = the country where the activity takes place. Multi-country items get one record per country, or a primary-country record with other countries listed.
 
-**Tactics (tag by substance, not headline; primary + optional secondary):** T1 Owned/operated facility · T2 Joint venture · T3 Management contract · T4 Consulting/advisory · T5 Strategic affiliation/partnership · T6 In-country office/representative · T7 Telemedicine/remote second opinion · T8 Education/training · T9 Inbound patient channel. Tiebreak order when bundled: T1 > T2 > T3 > T4 > T6 > T5 > T8 > T7 > T9.
+**Tactics (tag by substance, not headline; primary + optional secondary):** T1 Owned/operated facility · T2 Joint venture · T3 Management contract · T4 Consulting/advisory · T5 Strategic affiliation/partnership · T6 In-Country Representative · T7 Telemedicine/remote second opinion · T8 Education/training · T9 Inbound patient channel · T11 Insurer Partnership. Tiebreak order when bundled: T1 > T2 > T3 > T11 > T4 > T6 > T5 > T8 > T7 > T9.
 
 **Status lifecycle:** Announced · In development · Operational · Suspended/restructured · Closed/exited · Baseline (pre-existing footprint from seeding).
 
@@ -93,3 +93,11 @@ The canonical data is `data/tracker.csv`. Deterministic generators create the ma
 A structural validator checks dates, taxonomy, registered tracked institutions, stable IDs, direct HTTPS source links, overlapping deal identities and generated-file agreement. It cannot decide whether a source entails a factual claim or whether an item passes the needle test. An editor must do both.
 
 For major secondary-sourced items, two source domains are a minimum structural check; the editor must also establish that the reporting is independent and reputable. Official LinkedIn sources require dated full-text archives and an explicit verified-company-page check. Individual posts remain tips only.
+
+## Classification clarification — October 22, 2026
+
+The former Other region is split into Africa and Middle East (non-GCC). Egypt and Nigeria are in Africa; Jordan and Lebanon are in Middle East (non-GCC). GCC remains Bahrain, Kuwait, Oman, Qatar, Saudi Arabia and the United Arab Emirates. Turkey and Cyprus remain in Europe under this publication’s existing commercial-market convention. Armenia, Azerbaijan and Georgia remain with Middle East (non-GCC). These editorial market groupings are mutually exclusive; they are not a claim to reproduce the UN geoscheme. Africa includes North Africa, so Egypt is not counted twice. Existing Other links continue to show the union of the two replacement regions.
+
+**In-Country Representative (T6)** means a hospital-listed local representative, patient liaison or representative office that helps patients access the hospital, including its US locations. A listing on the hospital’s official website qualifies; separate proof of payroll status is not required. This label does not imply a care-delivery facility. Insurer agreements alone do not qualify as representation.
+
+**Insurer Partnership (T11)** identifies a documented agreement with a health insurer, such as a covered-provider network, referral arrangement, value-based care program or insurer-sponsored population-health program. It is separate from general strategic partnerships (T5) and local representatives (T6). An office helping with insurance paperwork does not qualify without a sourced insurer agreement. For an insurer agreement, retain consulting (T4), inbound patient channels (T9), or other supported activities as secondary tags. Ownership, joint ventures and management contracts remain higher-priority primary activities. The Allshores, Bupa and Bermuda Life/Argus records are reclassified without changing their source facts or verification dates.
