@@ -18,6 +18,8 @@ The candidate has 24 deterministic projections, 28 passing Python tests and 50 p
 
 ## Real-browser gate — outstanding
 
+The [October 23 resumption](docs/verification/pr4-resume/README.md) repeated all required automated checks successfully against source `6d41c0246b0ba7616e21ede9de8c2463b094c56d`. The new cloud browser could not reach localhost, and the environment host route was blocked by its client. Visual QA remains outstanding; these attempts produced no implementation screenshots.
+
 The local shell HTTP server could not bind in this environment. A separate runtime reported a loopback listener, but opening its Chrome preview did not return a usable browser observation and was interrupted. No final implementation screenshots or console capture were obtained. Do not reuse earlier screenshots as proof of this revision; `design-qa.md` remains `final result: blocked`.
 
 Use 1440×900 and 1440×1024 desktop, 390×844 mobile, 320px reflow and 200% zoom. Record the exact candidate SHA and inspect actual screenshots.

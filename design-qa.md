@@ -2,6 +2,8 @@
 
 final result: blocked
 
+October 23 resumption: the exact PR source was restored in a fresh environment; all 78 automated tests, formatting and packaging passed again. Cloud Chrome remained unable to reach the preview (connection refused on localhost; `ERR_BLOCKED_BY_CLIENT` on the environment host route). No final rendered screenshot or visual pass was obtained. See [the resumption record](docs/verification/pr4-resume/README.md). The earlier failed preview observations below remain historical context.
+
 ## Source of visual truth
 
 Approved Markets option 1: institution-led briefing, grouped concise activities, small location inset and supporting developments. The selected concept is `exec-8ff303eb-b0ff-43ba-8c73-8124e46cd32a.png` from the review conversation (first displayed Markets concept). It is a design reference, not a factual geography or dataset source. The implementation follows the user's additional instruction to remove the concept's oversized headings, questions and boilerplate. Institution profiles retain the previously approved map-left/developments-right direction.

@@ -2,6 +2,8 @@
 
 Base: `564d5880151228c0a145d74d99bde95d4c90a362`.
 
+[Draft PR #4](https://github.com/rabookire/international-healthcare-brief/pull/4) is open. The [October 23 resumption](docs/verification/pr4-resume/README.md) repeated all 78 tests, formatting and packaging successfully against source `6d41c0246b0ba7616e21ede9de8c2463b094c56d`; browser preview connectivity remains blocked. No merge or deployment was performed.
+
 Implemented: compact map-first Explore; anchored neutral clusters and persistent legend; one Operational-only rule across primary readers; institution-led Markets (approved option 1); two/three institution comparison; concise directory and map-first profiles; retained full evidence and historical deep links.
 
 Data: 110 canonical records, 74 current Operational relationships, 12 new IDs, 41 reconciled existing statuses. All 98 original IDs and original announcement/operational dates remain. [Bounded source review and holds](docs/research/reconciliation-2026-10-22.md).
