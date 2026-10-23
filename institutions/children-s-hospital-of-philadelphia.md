@@ -1,6 +1,6 @@
 # Children's Hospital of Philadelphia
 
-Last verified: Not yet verified. Inventory as of 2026-10-20.
+Last verified: Not yet verified. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=Children%27s%20Hospital%20of%20Philadelphia) · [Map slice](../map/?institution=Children%27s%20Hospital%20of%20Philadelphia) · [All institutions](../institutions/)
 

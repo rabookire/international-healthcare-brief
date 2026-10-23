@@ -71,3 +71,33 @@ export function revealPoint(c, point, aspect = 2) {
     return c;
   return constrain({ ...c, x: point[0] + w * 0.1, y: point[1] + h * 0.08 });
 }
+
+// Connected screen-space neighborhoods: no record is displaced from geography.
+export function clusterPoints(entries, unit = 1, radius = 42) {
+  const remaining = new Set(entries.map((_, i) => i)),
+    groups = [];
+  while (remaining.size) {
+    const first = remaining.values().next().value,
+      ids = [first];
+    remaining.delete(first);
+    for (let cursor = 0; cursor < ids.length; cursor++) {
+      const a = entries[ids[cursor]];
+      for (const i of remaining) {
+        const b = entries[i];
+        if (Math.hypot(a.xy[0] - b.xy[0], a.xy[1] - b.xy[1]) < radius * unit) {
+          ids.push(i);
+          remaining.delete(i);
+        }
+      }
+    }
+    const members = ids.map((i) => entries[i]);
+    groups.push({
+      members,
+      xy: [
+        members.reduce((n, p) => n + p.xy[0], 0) / members.length,
+        members.reduce((n, p) => n + p.xy[1], 0) / members.length,
+      ],
+    });
+  }
+  return groups;
+}

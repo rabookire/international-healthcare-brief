@@ -1,6 +1,6 @@
 # MD Anderson Cancer Center
 
-Last verified: 2026-10-20. Inventory as of 2026-10-20.
+Last verified: 2026-10-20. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=MD%20Anderson%20Cancer%20Center) · [Map slice](../map/?institution=MD%20Anderson%20Cancer%20Center) · [All institutions](../institutions/)
 

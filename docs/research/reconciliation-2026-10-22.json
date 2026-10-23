@@ -1,0 +1,99 @@
+{
+  "checked_date": "2026-10-22",
+  "base_commit": "564d5880151228c0a145d74d99bde95d4c90a362",
+  "new_relationship_ids": [
+    "IHB-0099",
+    "IHB-0100",
+    "IHB-0101",
+    "IHB-0102",
+    "IHB-0103",
+    "IHB-0104",
+    "IHB-0105",
+    "IHB-0106",
+    "IHB-0107",
+    "IHB-0108",
+    "IHB-0109",
+    "IHB-0110"
+  ],
+  "status_reconciled_ids": [
+    "IHB-0004",
+    "IHB-0005",
+    "IHB-0006",
+    "IHB-0007",
+    "IHB-0009",
+    "IHB-0010",
+    "IHB-0011",
+    "IHB-0012",
+    "IHB-0013",
+    "IHB-0014",
+    "IHB-0015",
+    "IHB-0016",
+    "IHB-0019",
+    "IHB-0021",
+    "IHB-0022",
+    "IHB-0023",
+    "IHB-0024",
+    "IHB-0025",
+    "IHB-0026",
+    "IHB-0027",
+    "IHB-0028",
+    "IHB-0029",
+    "IHB-0030",
+    "IHB-0031",
+    "IHB-0032",
+    "IHB-0033",
+    "IHB-0034",
+    "IHB-0035",
+    "IHB-0036",
+    "IHB-0037",
+    "IHB-0038",
+    "IHB-0039",
+    "IHB-0040",
+    "IHB-0041",
+    "IHB-0042",
+    "IHB-0043",
+    "IHB-0044",
+    "IHB-0045",
+    "IHB-0046",
+    "IHB-0047",
+    "IHB-0048"
+  ],
+  "existing_evidence_update_ids": [
+    "IHB-0070"
+  ],
+  "coverage_enriched_ids": [
+    "IHB-0004",
+    "IHB-0007",
+    "IHB-0013"
+  ],
+  "counts": {
+    "Operational": 74,
+    "Unknown": 29,
+    "Announced": 6,
+    "In development": 1
+  },
+  "notes": [
+    "No edition or completed exhaustive scan claimed.",
+    "Mayo failed office details use the explicit current official country directory, with retrieval limitations retained.",
+    "China authorized offices grouped as one referral network, not four asserted deals.",
+    "MSK GCC tumor board held pending regional relationship grouping.",
+    "No original IDs, dates, source history or exit records deleted."
+  ],
+  "mayo_current_directory_fallback_ids": [
+    "IHB-0021",
+    "IHB-0022",
+    "IHB-0023",
+    "IHB-0024",
+    "IHB-0025",
+    "IHB-0026",
+    "IHB-0030",
+    "IHB-0034",
+    "IHB-0035"
+  ],
+  "held_candidate_groups": [
+    "MSK GCC tumor-board collaborations: avoid splitting a regional program before agreement grouping is resolved.",
+    "Cleveland Bermuda in-country representative: exact source explicitly says US-based.",
+    "Other holds from evidence-expansion pack remain unadmitted."
+  ],
+  "validation": "Read-only validate_records passed on 110 rows; all prior 98 IDs, original announcement/operational dates and change-log prefixes preserved. Parent owns generation and full tests."
+}

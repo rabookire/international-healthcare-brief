@@ -86,7 +86,7 @@ When a source establishes an event’s month but not its day, the inventory pres
 
 One shared deal involving two tracked institutions remains one record. The CSV Institution cell lists those institution names separated by a semicolon; all participating institution pages and map slices include the same Record ID. Multi-country relationships use country-level records where the operational commitment is country-specific, with the shared agreement identified in the change log.
 
-Institution counts describe the inventory, not the scale of patient volumes or investment. Pin locations are cartographic approximations for the named city or country, never a sourced street address or facility boundary. The map’s table alternative preserves every record and filter.
+Institution counts describe the inventory, not the scale of patient volumes or investment. Pin locations are cartographic approximations for the named city or country, never a sourced street address or facility boundary. The equivalent activity list preserves every eligible current relationship and filter. Full canonical evidence retains all other records.
 
 ## Editorial evidence and technical checks
 
@@ -98,7 +98,7 @@ For major secondary-sourced items, two source domains are a minimum structural c
 
 ## Reuse and comparison
 
-Filtered CSV exports retain lifecycle, facility status, initial-inventory history, source scope, source notes, direct and additional source URLs, event history, month-only precision, source-verification date, dataset hash, reader version and view filters. An export timestamp is not substituted for a source-verification date. Printed country and institution comparisons retain citations and coverage limits.
+Filtered CSV exports retain lifecycle, facility status, initial-inventory history, source scope, source notes, direct and additional source URLs, event history, month-only precision, source-verification date, dataset hash, reader version and view filters. An export timestamp is not substituted for a source-verification date. Country briefs and comparisons keep full linked evidence one interaction away; the dedicated tracker retains scoped CSV export.
 
 Counts describe documented records, not revenue, investment, patient volumes or competitive strength. Shared agreements keep one record ID across participating institution columns and are exported once. A broad owned/operated category does not establish the institution’s exact equity or management role; inspect the specific source.
 
@@ -109,3 +109,14 @@ The former Other region is split into Africa and Middle East (non-GCC). Egypt an
 **In-Country Representative (T6)** means a hospital-listed local representative, patient liaison or representative office that helps patients access the hospital, including its US locations. A listing on the hospital’s official website qualifies; separate proof of payroll status is not required. This label does not imply a care-delivery facility. Insurer agreements alone do not qualify as representation.
 
 **Insurer Partnership (T11)** identifies a documented agreement with a health insurer, such as a covered-provider network, referral arrangement, value-based care program or insurer-sponsored population-health program. It is separate from general strategic partnerships (T5) and local representatives (T6). An office helping with insurance paperwork does not qualify without a sourced insurer agreement. For an insurer agreement, retain consulting (T4), inbound patient channels (T9), or other supported activities as secondary tags. Ownership, joint ventures and management contracts remain higher-priority primary activities. The Allshores, Bupa and Bermuda Life/Argus records are reclassified without changing their source facts or verification dates.
+
+
+## Current reader scope — 2026-10-22.2
+
+Explore, institution profiles/directories, Markets, Compare and the tracker display only relationships whose canonical lifecycle is Operational. The same predicate governs counts, map clusters and recent developments. Status/history controls and repeated lifecycle badges are removed from those primary workflows; this is a presentation scope, not deletion of canonical history. Direct links to non-current records retain full evidence with an exclusion notice. No inactive browsing section is introduced. Unknown still means current status was not established, never that the institution is inactive.
+
+Current official directories that explicitly offer continuing assistance and explicit Active Projects listings can support a narrowly scoped Operational determination after exact source review. Page availability, an old announcement, a signed MOU or no known closure alone cannot. Retain the claim, exact source, checked date and limitations in evidence and the change log. Active advisory work may concern a planned hospital; it remains advisory rather than an operating facility.
+
+Optional `covered_countries` metadata makes a single multi-market representative relationship discoverable in every explicitly sourced market while preserving one global Record ID. It does not create staffed offices, additional agreements or sourced street locations. A `representative_location_note` explains that limit. Country-scoped comparisons report only the selected market. Map clusters count unique relationship IDs within the cluster; a relationship may appear at multiple documented served-market locators, so adding map labels is not a global unique count.
+
+The October 22 bounded reconciliation added 12 records and reviewed current evidence for 41 existing relationships. The [per-ID research log](https://github.com/rabookire/international-healthcare-brief/blob/main/docs/research/reconciliation-2026-10-22.md) describes decisions and holds. This is not an exhaustive scan or a change to the 19-institution cohort or editorial needle test. Source dates are never replaced by the date a page was checked.

@@ -2,58 +2,58 @@
 
 [Sortable, filterable tracker](./index.html) · [Interactive map](../map/) · [Canonical CSV](./tracker.csv)
 
-98 sourced records. Generated from tracker.csv; inventory as of 2026-10-20. Unknown is not an absence of activity.
+110 sourced records. Generated from tracker.csv; inventory as of 2026-10-22. Unknown is not an absence of activity.
 
 | Record | Institution | Country | Region | Activity | Lifecycle | Source |
 | --- | --- | --- | --- | --- | --- | --- |
 | IHB-0001 | Cleveland Clinic | United Kingdom | Europe | T1 Owned/operated facility | Operational | [Source](https://newsroom.clevelandclinic.org/2026/04/01/cleveland-clinic-appoints-beri-ridgeway-md-as-president-of-cleveland-clinic-london) |
 | IHB-0002 | Cleveland Clinic | Canada | Americas | T1 Owned/operated facility | Operational | [Source](https://my.clevelandclinic.org/canada/about) |
 | IHB-0003 | Cleveland Clinic | United Arab Emirates | GCC | T1 Owned/operated facility | Operational | [Source](https://www.clevelandclinicabudhabi.ae/en/about-us/who-we-are) |
-| IHB-0004 | Cleveland Clinic | Bahamas | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/bahamas) |
-| IHB-0005 | Cleveland Clinic | Canada | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/canada) |
-| IHB-0006 | Cleveland Clinic | Dominican Republic | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/dominican-republic) |
-| IHB-0007 | Cleveland Clinic | Ecuador | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/ecuador) |
+| IHB-0004 | Cleveland Clinic | Bahamas | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/bahamas) |
+| IHB-0005 | Cleveland Clinic | Canada | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/canada) |
+| IHB-0006 | Cleveland Clinic | Dominican Republic | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/dominican-republic) |
+| IHB-0007 | Cleveland Clinic | Ecuador | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/ecuador) |
 | IHB-0008 | Cleveland Clinic | El Salvador | Americas | T6 In-Country Representative | Operational | [Source](https://newsroom.clevelandclinic.org/2026/06/15/cleveland-clinic-expands-access-to-care-with-an-el-salvador-based-representative) |
-| IHB-0009 | Cleveland Clinic | Guatemala | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/guatemala) |
-| IHB-0010 | Cleveland Clinic | India | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/india) |
-| IHB-0011 | Cleveland Clinic | Mexico | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/mexico) |
-| IHB-0012 | Cleveland Clinic | Nigeria | Africa | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/nigeria) |
-| IHB-0013 | Cleveland Clinic | Panama | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/panama) |
-| IHB-0014 | Cleveland Clinic | Peru | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/peru) |
-| IHB-0015 | Cleveland Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/saudi-arabia) |
-| IHB-0016 | Cleveland Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates) |
+| IHB-0009 | Cleveland Clinic | Guatemala | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/guatemala) |
+| IHB-0010 | Cleveland Clinic | India | Asia Pacific | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/india) |
+| IHB-0011 | Cleveland Clinic | Mexico | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/mexico) |
+| IHB-0012 | Cleveland Clinic | Nigeria | Africa | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/nigeria) |
+| IHB-0013 | Cleveland Clinic | Panama | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/panama) |
+| IHB-0014 | Cleveland Clinic | Peru | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/peru) |
+| IHB-0015 | Cleveland Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/saudi-arabia) |
+| IHB-0016 | Cleveland Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates) |
 | IHB-0017 | Cleveland Clinic | Bermuda | Americas | T11 Insurer Partnership | Operational | [Source](https://newsroom.clevelandclinic.org/2026/09/16/cleveland-clinics-world-class-care-now-available-to-more-bermuda-residents) |
 | IHB-0018 | Mayo Clinic | United Kingdom | Europe | T1 Owned/operated facility | Operational | [Source](https://www.mayoclinic.org/uk/about-mayo-healthcare-uk) |
-| IHB-0019 | Mayo Clinic | Canada | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/canada) |
+| IHB-0019 | Mayo Clinic | Canada | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/canada) |
 | IHB-0020 | Mayo Clinic | Cayman Islands | Americas | T6 In-Country Representative | Operational | [Source](https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-opens-patient-information-office-in-cayman-islands/) |
-| IHB-0021 | Mayo Clinic | Colombia | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0022 | Mayo Clinic | Dominican Republic | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0023 | Mayo Clinic | Ecuador | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0024 | Mayo Clinic | El Salvador | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0025 | Mayo Clinic | Guatemala | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0026 | Mayo Clinic | Honduras | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0027 | Mayo Clinic | India | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0028 | Mayo Clinic | Indonesia | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia) |
-| IHB-0029 | Mayo Clinic | Mexico | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico) |
-| IHB-0030 | Mayo Clinic | Panama | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0031 | Mayo Clinic | Paraguay | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay) |
-| IHB-0032 | Mayo Clinic | Peru | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru) |
-| IHB-0033 | Mayo Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0034 | Mayo Clinic | Trinidad and Tobago | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/port-of-spain-trinidad) |
-| IHB-0035 | Mayo Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
-| IHB-0036 | Mayo Clinic | Uruguay | Americas | T6 In-Country Representative | Unknown | [Source](https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay) |
-| IHB-0037 | Johns Hopkins Medicine International | Bermuda | Americas | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-hospitals-board) |
-| IHB-0038 | Johns Hopkins Medicine International | Bermuda | Americas | T11 Insurer Partnership | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance) |
-| IHB-0039 | Johns Hopkins Medicine International | Colombia | Americas | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/fundacion-santafe-de-bogota) |
-| IHB-0040 | Johns Hopkins Medicine International | Brazil | Americas | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-moinhos-de-vento) |
-| IHB-0041 | Johns Hopkins Medicine International | Panama | Americas | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-punta-pacifica) |
-| IHB-0042 | Johns Hopkins Medicine International | Vietnam | Asia Pacific | T4 Consulting/advisory | Unknown | [Source](https://aih.com.vn/en/tin-tuc/the-american-international-hospital-johns-hopkins-medicine-international-strengthening-collaboration-for-premium-healthcare) |
-| IHB-0043 | Johns Hopkins Medicine International | Pakistan | Asia Pacific | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific/shalamar-institute-health-sciences) |
-| IHB-0044 | Johns Hopkins Medicine International | Turkey | Europe | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/anadolu-medical-center) |
-| IHB-0045 | Johns Hopkins Medicine International | Lebanon | Middle East (non-GCC) | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center) |
-| IHB-0046 | Johns Hopkins Medicine International | United Arab Emirates | GCC | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international) |
-| IHB-0047 | Johns Hopkins Medicine International | Saudi Arabia | GCC | T4 Consulting/advisory | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international) |
-| IHB-0048 | Johns Hopkins Medicine International | Saudi Arabia | GCC | T2 Joint venture | Unknown | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/johns-hopkins-aramco-healthcare) |
+| IHB-0021 | Mayo Clinic | Colombia | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0022 | Mayo Clinic | Dominican Republic | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0023 | Mayo Clinic | Ecuador | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0024 | Mayo Clinic | El Salvador | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0025 | Mayo Clinic | Guatemala | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0026 | Mayo Clinic | Honduras | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0027 | Mayo Clinic | India | Asia Pacific | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/mumbai-india) |
+| IHB-0028 | Mayo Clinic | Indonesia | Asia Pacific | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia) |
+| IHB-0029 | Mayo Clinic | Mexico | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico) |
+| IHB-0030 | Mayo Clinic | Panama | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0031 | Mayo Clinic | Paraguay | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay) |
+| IHB-0032 | Mayo Clinic | Peru | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru) |
+| IHB-0033 | Mayo Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/riyadh-saudi-arabia) |
+| IHB-0034 | Mayo Clinic | Trinidad and Tobago | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0035 | Mayo Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices) |
+| IHB-0036 | Mayo Clinic | Uruguay | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay) |
+| IHB-0037 | Johns Hopkins Medicine International | Bermuda | Americas | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-hospitals-board) |
+| IHB-0038 | Johns Hopkins Medicine International | Bermuda | Americas | T11 Insurer Partnership | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance) |
+| IHB-0039 | Johns Hopkins Medicine International | Colombia | Americas | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/fundacion-santafe-de-bogota) |
+| IHB-0040 | Johns Hopkins Medicine International | Brazil | Americas | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-moinhos-de-vento) |
+| IHB-0041 | Johns Hopkins Medicine International | Panama | Americas | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-punta-pacifica) |
+| IHB-0042 | Johns Hopkins Medicine International | Vietnam | Asia Pacific | T4 Consulting/advisory | Operational | [Source](https://aih.com.vn/en/tin-tuc/the-american-international-hospital-johns-hopkins-medicine-international-strengthening-collaboration-for-premium-healthcare) |
+| IHB-0043 | Johns Hopkins Medicine International | Pakistan | Asia Pacific | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific/shalamar-institute-health-sciences) |
+| IHB-0044 | Johns Hopkins Medicine International | Turkey | Europe | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/anadolu-medical-center) |
+| IHB-0045 | Johns Hopkins Medicine International | Lebanon | Middle East (non-GCC) | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center) |
+| IHB-0046 | Johns Hopkins Medicine International | United Arab Emirates | GCC | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international) |
+| IHB-0047 | Johns Hopkins Medicine International | Saudi Arabia | GCC | T4 Consulting/advisory | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international) |
+| IHB-0048 | Johns Hopkins Medicine International | Saudi Arabia | GCC | T2 Joint venture | Operational | [Source](https://www.hopkinsmedicine.org/international/health-care-consulting/emea/johns-hopkins-aramco-healthcare) |
 | IHB-0049 | MD Anderson Cancer Center | Spain | Europe | T5 Strategic affiliation/partnership | Unknown | [Source](https://www.mdanderson.org/about-md-anderson/our-locations/md-anderson-cancer-network/network-partners.dir.html/1000) |
 | IHB-0050 | Memorial Sloan Kettering | Qatar | GCC | T5 Strategic affiliation/partnership | Announced | [Source](https://www.mskcc.org/news-releases/msk-and-qatar-ministry-of-public-health-explore-potential-partnership-to-advance-cancer-care-in-middle-east) |
 | IHB-0051 | Mass General Brigham | China | Asia Pacific | T5 Strategic affiliation/partnership | Unknown | [Source](https://jicc.jiahui.com/en_US/about/2.html) |
@@ -75,7 +75,7 @@
 | IHB-0067 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hospitals/aut-even) |
 | IHB-0068 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hospitals/sports-surgery-clinic) |
 | IHB-0069 | UPMC | Ireland | Europe | T1 Owned/operated facility | Operational | [Source](https://upmc.ie/locations/hillman-cancer-centres) |
-| IHB-0070 | UPMC | Croatia | Europe | T1 Owned/operated facility | Operational | [Source](https://www.upmc.com/about/international-services/locations/croatia) |
+| IHB-0070 | UPMC | Croatia | Europe | T1 Owned/operated facility | Operational | [Source](https://www.upmc.com/media/news/010926-upmc-hillman-croatia) |
 | IHB-0071 | Cincinnati Children's | United Arab Emirates | GCC | T4 Consulting/advisory | Operational | [Source](https://www.cincinnatichildrens.org/news/release/2025/expanding-global-reach) |
 | IHB-0072 | UCLA Health | Jordan | Middle East (non-GCC) | T4 Consulting/advisory | Operational | [Source](https://www.uclahealth.org/international-services/consulting-education-services/greenfield-hospital-development/kingdom-university-hospital) |
 | IHB-0073 | UCLA Health | China | Asia Pacific | T5 Strategic affiliation/partnership | Unknown | [Source](https://www.uclahealth.org/international-services/consulting-education-services/international-projects/case-studies/second-affiliated-hospital-zhejiang-university-china) |
@@ -104,5 +104,17 @@
 | IHB-0096 | Mayo Clinic | China | Asia Pacific | T4 Consulting/advisory | Announced | [Source](https://newsnetwork.mayoclinic.org/discussion/heyou-hospital-and-heyou-pinnacle-medical-center-join-mayo-clinic-care-network/) |
 | IHB-0097 | Houston Methodist | Egypt | Africa | T5 Strategic affiliation/partnership | Announced | [Source](https://www.khaleejtimes.com/business/efg-hermes-concludes-advisory-on-190-million-investment-in-alameda-healthcare?amp=1) |
 | IHB-0098 | UPMC | Ireland | Europe | T1 Owned/operated facility | In development | [Source](https://aedifica.eu/4-irish-healthcare-projects-running-completed-totalling-e105-million/) |
+| IHB-0099 | Memorial Sloan Kettering | Australia | Asia Pacific | T10 Research partnership | Operational | [Source](https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology) |
+| IHB-0100 | Memorial Sloan Kettering | Brazil | Americas | T10 Research partnership | Operational | [Source](https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology) |
+| IHB-0101 | Memorial Sloan Kettering | Nigeria | Africa | T10 Research partnership | Operational | [Source](https://www.mskcc.org/hcp-education-training/international/global-cancer-research-training-program/work) |
+| IHB-0102 | Mayo Clinic | China | Asia Pacific | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/china-authorized-representative-offices) |
+| IHB-0103 | Mayo Clinic | Ecuador | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/quito-ecuador) |
+| IHB-0104 | Mayo Clinic | Mexico | Americas | T6 In-Country Representative | Operational | [Source](https://www.mayoclinic.org/international/support/representative-offices/mexico-city-mexico) |
+| IHB-0105 | Johns Hopkins Medicine International | United Arab Emirates | GCC | T5 Strategic affiliation/partnership | Operational | [Source](https://www.hopkinsmedicine.org/neurology-neurosurgery/specialty-areas/khalifa-stroke-institute) |
+| IHB-0106 | UPMC | Ireland | Europe | T10 Research partnership | Operational | [Source](https://www.ucc.ie/en/med-health/news/leading-immunotherapy-expert-anna-olsson-brown-appointed-to-oncology-professorship.html) |
+| IHB-0107 | Cedars-Sinai | Israel | Middle East (non-GCC) | T5 Strategic affiliation/partnership | Operational | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/) |
+| IHB-0108 | Penn Medicine | Botswana | Africa | T5 Strategic affiliation/partnership | Operational | [Source](https://www.pennmedicine.org/news/a-model-global-health-academic-partnership-flourishes-in-botswana) |
+| IHB-0109 | Cleveland Clinic | Croatia | Europe | T4 Consulting/advisory | Operational | [Source](https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member) |
+| IHB-0110 | Cleveland Clinic | Uzbekistan | Asia Pacific | T4 Consulting/advisory | Operational | [Source](https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan) |
 
 Analysis is labeled in each record. The reader’s filtered export also includes evidence scope, additional sources, month-only dates and inventory metadata.

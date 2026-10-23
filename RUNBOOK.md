@@ -68,7 +68,7 @@ The launch historical backfill covers the **12 months from 2025-10-20 through 20
 
 A failed source, ambiguous MOU, missing date or insufficient major-item evidence is a hold, not permission to infer. Restore generated files from the canonical CSV after fixing the source data. A failed deployment does not establish publication: retain the reviewed commit and retry that deployment after resolving the failure. Label prepared, structurally tested, browser-tested and live-deployed evidence separately.
 
-For an already published correction, retain the Record ID, append a dated correction note to the item and change log, explain the source-supported replacement, regenerate all projections and publish one atomic commit. Exits remain visible as historical records.
+For an already published correction, retain the Record ID, append a dated correction note to the item and change log, explain the source-supported replacement, regenerate all projections and publish one atomic commit. Exits remain in canonical history and full direct-link evidence, outside the current-only reader.
 
 ## Reader release 2026-10-21.1
 
@@ -83,3 +83,14 @@ Before publishing UI changes, execute the desktop/mobile journeys in VERIFICATIO
 ## Combined reader taxonomy
 
 Use T10 for research partnerships and T11 for insurer partnerships. An insurer agreement retains supported consulting or patient-access activity as secondary tags. In-Country Representative (T6) follows the official hospital-listing standard in METHODOLOGY.md. Keep Africa and Middle East (non-GCC) separate, including the Caucasus in the latter. Both Middle East labels and legacy Other shared links remain compatible. Profile defaults are map-first; the global mobile explorer defaults to List. Regenerate all projections after canonical CSV changes. Reader integration does not advance inventory or source-verification dates.
+
+
+## Current reader 2026-10-22.2
+
+Use the shared `isCurrentRecord` Operational predicate across Explore, Institutions, Markets, Compare, tracker, aggregates and developments. Never promote uncertain rows to fill a sparse screen. Remove status/history controls only from primary reader workflows; preserve canonical status, history, corrections, source evidence and direct links. Do not add an inactive archive UI in this release.
+
+An explicit current service directory or Active Projects page can support the precise relationship it offers, after direct source review. Record exact claim, checked date, status rationale, source limitations and append-only corrections. Do not infer activity from an announcement, page existence or lack of an exit. Preserve associated-facility caveats.
+
+For a single sourced multi-market representation, use validated evidence `covered_countries` (including canonical Country, registered spellings, no duplicates) plus `representative_location_note`. Keep one ID; distinguish a documented market served from a physical office. Re-run generation, country filtering, map selection, comparison scope and unique-ID tests. The October 22 per-record [reconciliation](docs/research/reconciliation-2026-10-22.md) is a bounded source review, not a completed monitoring scan.
+
+Keep reader/UI and editorial changes reviewable in separate commits. Update VERIFICATION.md and design-qa.md for the actual candidate; historical screenshots cannot establish a new visual pass. Browser-blocked candidates may be saved only as draft PRs. Do not merge or deploy until the separately authorized publication gate is completed.

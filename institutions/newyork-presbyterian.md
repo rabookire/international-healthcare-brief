@@ -1,6 +1,6 @@
 # NewYork-Presbyterian
 
-Last verified: 2026-10-20. Inventory as of 2026-10-20.
+Last verified: 2026-10-20. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=NewYork-Presbyterian) · [Map slice](../map/?institution=NewYork-Presbyterian) · [All institutions](../institutions/)
 

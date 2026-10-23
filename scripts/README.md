@@ -37,7 +37,7 @@ Record ID,Institution,Partner/Counterparty,Country,Region,City,Tactic (primary),
 
 - IDs are stable sequential `IHB-0001` values. Do not renumber or reuse them.
 - A shared deal uses one row, with tracked institution names separated by `;`.
-- Primary tactic is `T1` through `T9`; optional secondary tactics are `;` separated, without repeating primary. Apply the documented tiebreak order.
+- Primary tactic is `T1` through `T11`; optional secondary tactics are `;` separated, without repeating primary. Apply the documented tiebreak order.
 - Country uses an explicit mapping in `COUNTRY_REGIONS`; unsupported spellings fail rather than silently assigning a region. Add a reviewed mapping when expanding to a new country.
 - Dates use `YYYY-MM-DD`, or an empty cell when the linked source does not disclose them. `Last verified` is required. An undated page is not assigned its crawl date.
 - The So-what cell starts with `Analysis: `. Source type is exactly `Primary`, `Secondary`, or `Official LinkedIn`.
@@ -96,3 +96,12 @@ Run `node --test tests/test_reader.mjs` (Node 22 or newer). These checks use the
 The CSV retains its 18-column canonical contract. Evidence sidecars hold `seed_kind`, `facility_status`, `status_note`, source scope and provenance. Generated projections must never be edited directly. The filtered reader export is a different, expanded 32-column view containing the record evidence plus view metadata; do not substitute it for the canonical CSV.
 
 Development-only Node dependencies provide formatting and DOM integration tests. Production remains static and has no runtime npm dependency. Run `npm ci --ignore-scripts` before the Node suite. The tests use jsdom with the production entrypoint and actual inventory; they check controls, source rendering, history, export content and recovery, but have no browser layout or visual output.
+
+
+## Reader 2026-10-22.2 and covered markets
+
+The October 22 reconciliation advances the explicit inventory `as_of` to 2026-10-22 and reader version to 2026-10-22.2; individual source dates and original event dates remain intact. A checked date is not a publication date or event date.
+
+Evidence may include `covered_countries: ["Bahamas", "Cayman Islands"]` for a single explicitly sourced multi-market relationship. Every value must be registered, unique, and the array must include canonical Country. `representative_location_note` is a string distinguishing services available in a market from staffed-office geography. The generator preserves both fields; the CSV remains canonical for the relationship, and generated country totals use the union. Global relationship totals remain unique IDs. Reader CSV includes these fields with the other evidence metadata.
+
+Primary reader eligibility is shared `status === "Operational"`; canonical projections retain all statuses. Do not filter generated JSON to delete history. Dedicated tests cover metadata validation, served-market selection, scoped comparison, current-only views and historical deep links.

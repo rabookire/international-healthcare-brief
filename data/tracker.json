@@ -1,18 +1,18 @@
 {
-  "generated_as_of": "2026-10-20",
-  "reader_version": "2026-10-21.1",
+  "generated_as_of": "2026-10-22",
+  "reader_version": "2026-10-22.2",
   "schema_version": 2,
   "launch_date": "2026-10-20",
   "backfill_start": "2025-10-20",
   "backfill_end": "2026-10-19",
   "source": "data/tracker.csv",
-  "source_sha256": "ba7dc894be8227b395cda67bfbb8e5432ab6445db5082d24b02b5b5379bd44fd",
+  "source_sha256": "2ead509eb6cc94d4386d709ff60b2bd18666efca0c29502e34fa78379b373447",
   "counts": {
-    "records": 98,
-    "baseline": 84,
-    "backfill": 14,
+    "records": 110,
+    "baseline": 94,
+    "backfill": 16,
     "new": 0,
-    "countries": 38,
+    "countries": 43,
     "tier_1_institutions": 19,
     "institutions_with_records": 14
   },
@@ -193,7 +193,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Bahamas and Cayman Islands.",
@@ -201,8 +201,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/bahamas",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/bahamas).\n2026-10-22: Preserved one relationship ID and added explicit served-country coverage; no extra staff locations or agreements asserted.",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -211,11 +211,16 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Shenika Nesbitt; Allison Ferguson as representative(s) for Bahamas and Cayman Islands; no city or original appointment date asserted.",
+      "covered_countries": [
+        "Bahamas",
+        "Cayman Islands"
+      ],
+      "representative_location_note": "Hospital-listed regional representation covers Bahamas and Cayman Islands. The source does not establish a separate staffed office in Cayman Islands.",
+      "source_note": "Official country page names Shenika Nesbitt; Allison Ferguson as representative(s) for Bahamas and Cayman Islands; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Bahamas.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Bahamas.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/bahamas",
@@ -235,7 +240,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Canada.",
@@ -243,8 +248,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/canada",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/canada).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -253,11 +258,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Pamela Sehdev as representative(s) for Canada; no city or original appointment date asserted.",
+      "source_note": "Official country page names Pamela Sehdev as representative(s) for Canada; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Canada.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Canada.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/canada",
@@ -277,7 +282,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Dominican Republic.",
@@ -285,8 +290,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/dominican-republic",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/dominican-republic).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -295,11 +300,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Miguel Eduardo Hidalgo Tallaj as representative(s) for Dominican Republic; no city or original appointment date asserted.",
+      "source_note": "Official country page names Miguel Eduardo Hidalgo Tallaj as representative(s) for Dominican Republic; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Dominican Republic.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Dominican Republic.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/dominican-republic",
@@ -319,7 +324,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Ecuador and Colombia.",
@@ -327,8 +332,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/ecuador",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/ecuador).\n2026-10-22: Preserved one relationship ID and added explicit served-country coverage; no extra staff locations or agreements asserted.",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -337,11 +342,16 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Maria Paula Loor Perez; Cecilia Viteri as representative(s) for Ecuador and Colombia; no city or original appointment date asserted.",
+      "covered_countries": [
+        "Ecuador",
+        "Colombia"
+      ],
+      "representative_location_note": "The official Ecuador page lists contacts serving Ecuador and Colombia; a separate staffed office in Colombia is not established.",
+      "source_note": "Official country page names Maria Paula Loor Perez; Cecilia Viteri as representative(s) for Ecuador and Colombia; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Ecuador.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Ecuador.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/ecuador",
@@ -414,7 +424,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Guatemala.",
@@ -422,8 +432,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/guatemala",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/guatemala).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -432,11 +442,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Lisa Maria de Gonzalez as representative(s) for Guatemala; no city or original appointment date asserted.",
+      "source_note": "Official country page names Lisa Maria de Gonzalez as representative(s) for Guatemala; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Guatemala.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Guatemala.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/guatemala",
@@ -456,7 +466,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering India.",
@@ -464,8 +474,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/india",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/india).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -474,11 +484,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Deepika T. Grandhi as representative(s) for India; no city or original appointment date asserted.",
+      "source_note": "Official country page names Deepika T. Grandhi as representative(s) for India; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for India.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for India.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/india",
@@ -498,7 +508,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Mexico.",
@@ -506,8 +516,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/mexico",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/mexico).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -516,11 +526,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Karen Chiquillo as representative(s) for Mexico; no city or original appointment date asserted.",
+      "source_note": "Official country page names Karen Chiquillo as representative(s) for Mexico; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Mexico.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Mexico.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/mexico",
@@ -540,7 +550,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Nigeria.",
@@ -548,8 +558,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/nigeria",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-21: Replaced the Other regional grouping with Africa; location and source facts unchanged. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Africa. Source facts and verification date unchanged.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-21: Replaced the Other regional grouping with Africa; location and source facts unchanged. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Africa. Source facts and verification date unchanged.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/nigeria).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -558,11 +568,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Olufisayo Okunsanya as representative(s) for Nigeria; no city or original appointment date asserted.",
+      "source_note": "Official country page names Olufisayo Okunsanya as representative(s) for Nigeria; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Nigeria.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Nigeria.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/nigeria",
@@ -582,7 +592,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Panama, Honduras and Costa Rica.",
@@ -590,8 +600,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/panama",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/panama).\n2026-10-22: Preserved one relationship ID and added explicit served-country coverage; no extra staff locations or agreements asserted.",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -600,11 +610,17 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Michelle Hatch as representative(s) for Panama, Honduras and Costa Rica; no city or original appointment date asserted.",
+      "covered_countries": [
+        "Panama",
+        "Honduras",
+        "Costa Rica"
+      ],
+      "representative_location_note": "The regional representative serves Panama, Honduras and Costa Rica. The source does not establish separately staffed offices in Honduras and Costa Rica.",
+      "source_note": "Official country page names Michelle Hatch as representative(s) for Panama, Honduras and Costa Rica; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Panama.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Panama.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/panama",
@@ -624,7 +640,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Peru.",
@@ -632,8 +648,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/peru",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/peru).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -642,11 +658,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Mari Loli Correa as representative(s) for Peru; no city or original appointment date asserted.",
+      "source_note": "Official country page names Mari Loli Correa as representative(s) for Peru; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Peru.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Peru.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/peru",
@@ -666,7 +682,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering Saudi Arabia.",
@@ -674,8 +690,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/saudi-arabia",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/saudi-arabia).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -684,11 +700,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Issam El Sayegh as representative(s) for Saudi Arabia; no city or original appointment date asserted.",
+      "source_note": "Official country page names Issam El Sayegh as representative(s) for Saudi Arabia; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for Saudi Arabia.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for Saudi Arabia.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/saudi-arabia",
@@ -708,7 +724,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Cleveland Clinic lists in-country representation covering United Arab Emirates.",
@@ -716,8 +732,8 @@
       "source_url": "https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates).",
       "institutions": [
         "Cleveland Clinic"
       ],
@@ -726,11 +742,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official country page names Safwat Al Zuraiki as representative(s) for United Arab Emirates; no city or original appointment date asserted.",
+      "source_note": "Official country page names Safwat Al Zuraiki as representative(s) for United Arab Emirates; no city or original appointment date asserted.\n2026-10-22: Current hospital page offers representative support for United Arab Emirates.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current hospital page offers representative support for United Arab Emirates.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active patient-coordination service; not a clinical facility.",
       "sources": [
         {
           "url": "https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates",
@@ -832,7 +848,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Canada.",
@@ -840,8 +856,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices/canada",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/canada).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -850,11 +866,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/canada",
@@ -927,7 +943,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Colombia.",
@@ -935,8 +951,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -945,11 +961,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -969,7 +985,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Dominican Republic.",
@@ -977,8 +993,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -987,11 +1003,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1011,7 +1027,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Guayaquil, Ecuador.",
@@ -1019,8 +1035,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1029,11 +1045,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1053,7 +1069,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in El Salvador.",
@@ -1061,8 +1077,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1071,11 +1087,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1095,7 +1111,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Guatemala.",
@@ -1103,8 +1119,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1113,11 +1129,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1137,7 +1153,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Honduras.",
@@ -1145,8 +1161,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1155,11 +1171,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1179,16 +1195,16 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in India.",
       "analysis": "Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.",
-      "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
+      "source_url": "https://www.mayoclinic.org/international/support/representative-offices/mumbai-india",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/mumbai-india).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1197,14 +1213,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices/mumbai-india",
           "type": "Primary",
           "date": ""
         }
@@ -1221,7 +1242,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Indonesia.",
@@ -1229,8 +1250,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1239,11 +1260,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/jakarta-indonesia",
@@ -1263,7 +1284,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Monterrey, Mexico.",
@@ -1271,8 +1292,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1281,11 +1302,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/monterrey-mexico",
@@ -1305,7 +1326,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Panama.",
@@ -1313,8 +1334,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1323,11 +1344,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1347,7 +1368,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Asunción, Paraguay.",
@@ -1355,8 +1376,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1365,11 +1386,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/asuncion-paraguay",
@@ -1389,7 +1410,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Peru.",
@@ -1397,8 +1418,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1407,11 +1428,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/miraflores-peru",
@@ -1431,16 +1452,16 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Saudi Arabia.",
       "analysis": "Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.",
-      "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
+      "source_url": "https://www.mayoclinic.org/international/support/representative-offices/riyadh-saudi-arabia",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/riyadh-saudi-arabia).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1449,14 +1470,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices/riyadh-saudi-arabia",
           "type": "Primary",
           "date": ""
         }
@@ -1473,16 +1499,16 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Trinidad and Tobago.",
       "analysis": "Analysis: An office supports patient access without establishing local medical-care capacity. Compare this channel with competing representatives and payer relationships.",
-      "source_url": "https://www.mayoclinic.org/international/support/representative-offices/port-of-spain-trinidad",
+      "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1491,14 +1517,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/port-of-spain-trinidad",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices",
           "type": "Primary",
           "date": ""
         }
@@ -1515,7 +1546,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in United Arab Emirates.",
@@ -1523,8 +1554,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from current official office directory; detail-page source replaced after retrieval timeout. Original dates not established.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1533,11 +1564,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.",
+      "source_note": "Current official directory explicitly lists this office. Detail-page retrieval timed out on recheck; source upgraded to working official directory.\n2026-10-22: Current directory offers local coordination; detail retrieval incomplete.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices",
@@ -1557,7 +1588,7 @@
       "tactic_secondary": [
         "T9"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Mayo Clinic lists a representative office in Uruguay.",
@@ -1565,8 +1596,8 @@
       "source_url": "https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Verified currently offered representative support; original dates retained. (https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay).",
       "institutions": [
         "Mayo Clinic"
       ],
@@ -1575,11 +1606,11 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.",
+      "source_note": "Current official directory links this country-specific representative-office page. Original opening date is not asserted.\n2026-10-22: Reopened office page offering current local patient assistance.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Current local patient assistance offered.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active representative support; no medical care.",
       "sources": [
         {
           "url": "https://www.mayoclinic.org/international/support/representative-offices/montevideo-uruguay",
@@ -1599,7 +1630,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins provides clinical-operations consulting to Bermuda Hospitals Board.",
@@ -1607,8 +1638,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-hospitals-board",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/americas).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1617,14 +1648,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current official active-project listing and project page describe stroke, rehabilitation and psychiatric care operational work.",
+      "source_note": "Current official active-project listing and project page describe stroke, rehabilitation and psychiatric care operational work.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-hospitals-board",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas",
           "type": "Primary",
           "date": ""
         }
@@ -1641,7 +1677,7 @@
       "tactic_secondary": [
         "T4"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports a Bermuda insurer’s population-health program.",
@@ -1649,8 +1685,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained. | 2026-10-22: Taxonomy update — reclassified from T4 to T11 Insurer Partnership; consulting retained as T4 secondary where applicable. Source facts and verification date unchanged.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained. | 2026-10-22: Taxonomy update — reclassified from T4 to T11 Insurer Partnership; consulting retained as T4 secondary where applicable. Source facts and verification date unchanged.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/americas).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1659,14 +1695,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current active-project listing and project page describe development and implementation of a population-health program, including chronic disease services; not merely data sharing.",
+      "source_note": "Current active-project listing and project page describe development and implementation of a population-health program, including chronic disease services; not merely data sharing.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/bermuda-life-insurance",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas",
           "type": "Primary",
           "date": ""
         }
@@ -1683,7 +1724,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports clinical-program development at Fundación Santa Fe de Bogotá.",
@@ -1691,8 +1732,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/fundacion-santafe-de-bogota",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/americas).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1701,14 +1742,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Active-project listing and project page describe clinical-program and service expansion consulting and stroke care work.",
+      "source_note": "Active-project listing and project page describe clinical-program and service expansion consulting and stroke care work.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/fundacion-santafe-de-bogota",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas",
           "type": "Primary",
           "date": ""
         }
@@ -1725,7 +1771,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports clinical care and patient-safety operations at Hospital Moinhos de Vento.",
@@ -1733,8 +1779,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-moinhos-de-vento",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/americas).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1743,14 +1789,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current active-project listing and project page describe a hospital consulting partnership with clinical case discussions and sustained unit-based safety programs.",
+      "source_note": "Current active-project listing and project page describe a hospital consulting partnership with clinical case discussions and sustained unit-based safety programs.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-moinhos-de-vento",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas",
           "type": "Primary",
           "date": ""
         }
@@ -1767,7 +1818,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports stroke and pediatric emergency care at Pacífica Salud.",
@@ -1775,8 +1826,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-punta-pacifica",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/americas).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1785,14 +1836,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current active-project listing and project page describe clinical-service development, operational efficiency and pediatric emergency care work. No new opening date asserted.",
+      "source_note": "Current active-project listing and project page describe clinical-service development, operational efficiency and pediatric emergency care work. No new opening date asserted.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas/hospital-punta-pacifica",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/americas",
           "type": "Primary",
           "date": ""
         }
@@ -1809,7 +1865,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports clinical quality and care processes at American International Hospital in Vietnam.",
@@ -1817,8 +1873,8 @@
       "source_url": "https://aih.com.vn/en/tin-tuc/the-american-international-hospital-johns-hopkins-medicine-international-strengthening-collaboration-for-premium-healthcare",
       "source_type": "Primary",
       "source_date": "2025-04-12",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1827,16 +1883,21 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official AIH release dated April 12 2025 identifies ongoing Hopkins collaboration in clinical quality and patient safety; body names Vietnam and provides Ho Chi Minh City address. Separate December5 2022 release confirms Dec4 2022 long-term renewal. Hopkins current active-project page also explicitly identifies Vietnam, but its external partner hyperlink is erroneous.",
+      "source_note": "Official AIH release dated April 12 2025 identifies ongoing Hopkins collaboration in clinical quality and patient safety; body names Vietnam and provides Ho Chi Minh City address. Separate December5 2022 release confirms Dec4 2022 long-term renewal. Hopkins current active-project page also explicitly identifies Vietnam, but its external partner hyperlink is erroneous.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://aih.com.vn/en/tin-tuc/the-american-international-hospital-johns-hopkins-medicine-international-strengthening-collaboration-for-premium-healthcare",
           "type": "Primary",
           "date": "2025-04-12"
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific",
+          "type": "Primary",
+          "date": ""
         }
       ]
     },
@@ -1851,7 +1912,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins advises Shalamar on developing a comprehensive women’s health center.",
@@ -1859,8 +1920,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific/shalamar-institute-health-sciences",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1869,14 +1930,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official project page states a signed consulting agreement to establish a center within Shalamar Hospital in the Lahore area; no opening claimed.",
+      "source_note": "Official project page states a signed consulting agreement to establish a center within Shalamar Hospital in the Lahore area; no opening claimed.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
-      "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "verified_status": "Official Active Projects section names this engagement.",
+      "facility_status": "Planned",
+      "status_note": "Active advisory engagement toward a planned women’s health center; not an open-center claim.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific/shalamar-institute-health-sciences",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/asia-pacific",
           "type": "Primary",
           "date": ""
         }
@@ -1893,7 +1959,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins continues consulting and clinical-program collaboration with Anadolu Medical Center.",
@@ -1901,8 +1967,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/anadolu-medical-center",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/emea).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1911,14 +1977,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current project page explicitly states ongoing work following hospital construction and an affiliation agreement focused on clinical quality, patient safety and program development.",
+      "source_note": "Current project page explicitly states ongoing work following hospital construction and an affiliation agreement focused on clinical quality, patient safety and program development.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/anadolu-medical-center",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea",
           "type": "Primary",
           "date": ""
         }
@@ -1935,7 +2006,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins collaborates with Clemenceau Medical Center in Beirut.",
@@ -1943,8 +2014,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-21: Replaced the Other regional grouping with Middle East; location and source facts unchanged. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Middle East (non-GCC). Source facts and verification date unchanged.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-21: Replaced the Other regional grouping with Middle East; location and source facts unchanged. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Middle East (non-GCC). Source facts and verification date unchanged.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/emea).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1953,14 +2024,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Active-project listing and current project page describe affiliation plus hospital development, patient experience and quality/risk assessment support.",
+      "source_note": "Active-project listing and current project page describe affiliation plus hospital development, patient experience and quality/risk assessment support.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medical-center",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea",
           "type": "Primary",
           "date": ""
         }
@@ -1977,7 +2053,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports development and oversight for Clemenceau’s Dubai facility.",
@@ -1985,8 +2061,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/emea).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -1995,14 +2071,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Current project page identifies CMI facilities in Dubai and Riyadh and says Hopkins provides oversight, development and training services. Facility operational status not inferred.",
+      "source_note": "Current project page identifies CMI facilities in Dubai and Riyadh and says Hopkins provides oversight, development and training services. Facility operational status not inferred.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active setup and management consultancy; excludes the separately completed visiting-physician program.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea",
           "type": "Primary",
           "date": ""
         }
@@ -2019,7 +2100,7 @@
       "tactic_secondary": [
         "T8"
       ],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins supports development and oversight for Clemenceau’s Riyadh facility.",
@@ -2027,8 +2108,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/emea).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -2037,14 +2118,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Same multicountry engagement as UAE record, split by country as methodology permits. Current source supports oversight, development and training; no operation or management contract claimed.",
+      "source_note": "Same multicountry engagement as UAE record, split by country as methodology permits. Current source supports oversight, development and training; no operation or management contract claimed.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active setup and management consultancy; excludes the separately completed visiting-physician program.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/clemenceau-medicine-international",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea",
           "type": "Primary",
           "date": ""
         }
@@ -2059,7 +2145,7 @@
       "city": "",
       "tactic_primary": "T2",
       "tactic_secondary": [],
-      "status": "Unknown",
+      "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
       "headline": "Johns Hopkins and Saudi Aramco maintain an integrated healthcare joint venture.",
@@ -2067,8 +2153,8 @@
       "source_url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/johns-hopkins-aramco-healthcare",
       "source_type": "Primary",
       "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.\n2026-10-22: Reverified under the official Active Projects section; completed projects remain excluded. (https://www.hopkinsmedicine.org/international/health-care-consulting/emea).",
       "institutions": [
         "Johns Hopkins Medicine International"
       ],
@@ -2077,14 +2163,19 @@
       "event_date_label": "",
       "events": [],
       "seed_kind": "baseline",
-      "source_note": "Official page states the partners launched JHAH in 2014 and describes an integrated health organization with clinical programs and operational improvements; exact original dates not supplied.",
+      "source_note": "Official page states the partners launched JHAH in 2014 and describes an integrated health organization with clinical programs and operational improvements; exact original dates not supplied.\n2026-10-22: Reopened the regional Active Projects section and matched this counterparty and market.",
       "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
-      "verified_status": "",
+      "verified_status": "Official Active Projects section names this engagement.",
       "facility_status": "Not applicable",
-      "status_note": "Current status is not established. Inclusion in the initial inventory does not establish ongoing operation.",
+      "status_note": "Active relationship; specific role remains as sourced.",
       "sources": [
         {
           "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea/johns-hopkins-aramco-healthcare",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea",
           "type": "Primary",
           "date": ""
         }
@@ -2970,27 +3061,40 @@
       "region": "Europe",
       "city": "Zabok",
       "tactic_primary": "T1",
-      "tactic_secondary": [],
+      "tactic_secondary": [
+        "T11"
+      ],
       "status": "Operational",
       "announcement_date": "",
       "operational_date": "",
-      "headline": "UPMC Hillman Cancer Center operates at Zabok General Hospital.",
+      "headline": "UPMC’s Croatia cancer center adds a Croatian Health Insurance Fund access pathway.",
       "analysis": "Analysis: Local oncology capacity may retain complex care.",
-      "source_url": "https://www.upmc.com/about/international-services/locations/croatia",
+      "source_url": "https://www.upmc.com/media/news/010926-upmc-hillman-croatia",
       "source_type": "Primary",
-      "source_date": "",
-      "last_verified": "2026-10-20",
-      "change_log": "2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.",
+      "source_date": "2026-01-09",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-20: Added to the initial public-source inventory; source checked. Unstated historical dates remain blank.\n2026-10-21: Separated lifecycle from initial-inventory history. Active/operational is supported by the existing verification note; no new source review is claimed.\n2026-10-22: Added HZZO insurer pathway and sourced month-only opening milestone on this existing ID; backfill classification reflects the January 2026 access milestone. (https://www.upmc.com/media/news/010926-upmc-hillman-croatia).",
       "institutions": [
         "UPMC"
       ],
-      "latest_event_date": "",
+      "latest_event_date": "2026-01-07",
       "latest_event_month": "",
-      "event_date_label": "",
-      "events": [],
-      "seed_kind": "baseline",
-      "source_note": "UPMC Hillman Cancer Center operates at Zabok General Hospital.",
-      "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.",
+      "event_date_label": "2026-01-07",
+      "events": [
+        {
+          "date": "2025-03",
+          "summary": "UPMC says the Zabok cancer center opened in March 2025; exact day not disclosed.",
+          "source_url": "https://www.upmc.com/media/news/010926-upmc-hillman-croatia"
+        },
+        {
+          "date": "2026-01-07",
+          "summary": "UPMC commemorated its HZZO access partnership; January 9 release says referred patients can now access services. This is not an asserted signing date.",
+          "source_url": "https://www.upmc.com/media/news/010926-upmc-hillman-croatia"
+        }
+      ],
+      "seed_kind": "backfill",
+      "source_note": "UPMC Hillman Cancer Center operates at Zabok General Hospital.\n2026-10-22: January 9 release documents current HZZO-funded access, commemorated January 7. The source establishes the center opened in March 2025; neither an exact opening day nor contract-signing day is inferred.",
+      "scope_note": "Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status. The insurer pathway is retained as a milestone of this existing facility relationship, not a second cancer center.",
       "verified_status": "Operating facility described by source",
       "facility_status": "Open",
       "status_note": "Operating facility described by source",
@@ -2999,6 +3103,11 @@
           "url": "https://www.upmc.com/about/international-services/locations/croatia",
           "type": "Primary",
           "date": ""
+        },
+        {
+          "url": "https://www.upmc.com/media/news/010926-upmc-hillman-croatia",
+          "type": "Primary",
+          "date": "2026-01-09"
         }
       ]
     },
@@ -4307,6 +4416,548 @@
           "url": "https://upmc.ie/news-events/2025/21052025-upmc-and-bon-secours-to-enhance-cancer-care-across-mid-west",
           "type": "Primary",
           "date": "2025-05-21"
+        }
+      ]
+    },
+    {
+      "id": "IHB-0099",
+      "institution": "Memorial Sloan Kettering",
+      "partner": "Royal North Shore Hospital / US–Australia Cancer Alliance",
+      "country": "Australia",
+      "region": "Asia Pacific",
+      "city": "Sydney",
+      "tactic_primary": "T10",
+      "tactic_secondary": [],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "MSK and Royal North Shore Hospital collaborate on cancer research infrastructure and clinical-trial access.",
+      "analysis": "Analysis: Research infrastructure is a distinct route to institutional presence and trial access.",
+      "source_url": "https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology).",
+      "institutions": [
+        "Memorial Sloan Kettering"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "Current MSK program page describes ongoing R&D infrastructure collaboration with RNSH in Sydney.",
+      "scope_note": "One Australia relationship; consortium membership, fellowships and related trial evidence are not extra deals. No owned facility or inbound patient volumes asserted.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0100",
+      "institution": "Memorial Sloan Kettering",
+      "partner": "Hospital Sírio-Libanês",
+      "country": "Brazil",
+      "region": "Americas",
+      "city": "",
+      "tactic_primary": "T10",
+      "tactic_secondary": [],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "MSK and Hospital Sírio-Libanês develop precision-oncology research and trial-access collaboration.",
+      "analysis": "Analysis: A research referral network offers a different market approach from operating a hospital.",
+      "source_url": "https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology).",
+      "institutions": [
+        "Memorial Sloan Kettering"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "MSK describes a joint hub-and-spoke research network and molecular-testing aims with HSL.",
+      "scope_note": "Brazil research collaboration; no claim that local trial referrals travel to the United States or that MSK owns HSL.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.mskcc.org/research-areas/research-teams/translational-oncology-partnership/national-and-international-collaborations-for-precision-oncology",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0101",
+      "institution": "Memorial Sloan Kettering",
+      "partner": "Obafemi Awolowo University Teaching Hospitals Complex / African Research Group for Oncology",
+      "country": "Nigeria",
+      "region": "Africa",
+      "city": "",
+      "tactic_primary": "T10",
+      "tactic_secondary": [
+        "T8"
+      ],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "MSK sustains a funded institutional oncology research collaboration in Nigeria.",
+      "analysis": "Analysis: A sustained research network can deepen institutional ties without a hospital ownership model.",
+      "source_url": "https://www.mskcc.org/hcp-education-training/international/global-cancer-research-training-program/work",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.mskcc.org/hcp-education-training/international/global-cancer-research-training-program/work).",
+      "institutions": [
+        "Memorial Sloan Kettering"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "MSK describes ongoing NIH-supported ARGO research and infrastructure work with its Nigerian institutional partner. Initial partnership year is 2010; ARGO establishment year is 2013.",
+      "scope_note": "One institutional research relationship, not one record per consortium member or individual study. Exact start day and month are unknown.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.mskcc.org/hcp-education-training/international/global-cancer-research-training-program/work",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0102",
+      "institution": "Mayo Clinic",
+      "partner": "Mayo Clinic Authorized Representative Offices — China",
+      "country": "China",
+      "region": "Asia Pacific",
+      "city": "",
+      "tactic_primary": "T6",
+      "tactic_secondary": [
+        "T9"
+      ],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "Mayo Clinic works with authorized representative offices in China for referrals to its campuses.",
+      "analysis": "Analysis: Authorized local referral support is distinct from delivering medical care in China.",
+      "source_url": "https://www.mayoclinic.org/international/support/china-authorized-representative-offices",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.mayoclinic.org/international/support/china-authorized-representative-offices).",
+      "institutions": [
+        "Mayo Clinic"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "Mayo’s current authorized-office page expressly describes offices facilitating referrals and travel to its campuses.",
+      "scope_note": "One conservatively grouped country referral network; not four asserted contracts, owned clinics or employees. Multiple listed office locations do not imply a single physical China address.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.mayoclinic.org/international/support/china-authorized-representative-offices",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0103",
+      "institution": "Mayo Clinic",
+      "partner": "Mayo Clinic Representative Office — Quito",
+      "country": "Ecuador",
+      "region": "Americas",
+      "city": "Quito",
+      "tactic_primary": "T6",
+      "tactic_secondary": [
+        "T9"
+      ],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "Mayo Clinic offers US-care coordination through its Quito representative office.",
+      "analysis": "Analysis: The Quito office adds a separately documented local access point alongside Guayaquil.",
+      "source_url": "https://www.mayoclinic.org/international/support/representative-offices/quito-ecuador",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.mayoclinic.org/international/support/representative-offices/quito-ecuador).",
+      "institutions": [
+        "Mayo Clinic"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "Reopened exact Quito page describes a Quito-based representative helping patients communicate with Mayo’s US locations.",
+      "scope_note": "Distinct Quito office; existing Guayaquil office retains IHB-0023. No medical-care facility or opening date is inferred.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices/quito-ecuador",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0104",
+      "institution": "Mayo Clinic",
+      "partner": "Mayo Clinic Representative Office — Mexico City",
+      "country": "Mexico",
+      "region": "Americas",
+      "city": "Mexico City",
+      "tactic_primary": "T6",
+      "tactic_secondary": [
+        "T9"
+      ],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "Mayo Clinic offers US-care coordination through its Mexico City representative office.",
+      "analysis": "Analysis: Mexico City and Monterrey are distinct documented patient-access locations.",
+      "source_url": "https://www.mayoclinic.org/international/support/representative-offices/mexico-city-mexico",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.mayoclinic.org/international/support/representative-offices/mexico-city-mexico).",
+      "institutions": [
+        "Mayo Clinic"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "Current exact office page describes Mexico City-based representatives assisting access to US Mayo locations.",
+      "scope_note": "Existing Monterrey office retains IHB-0029; this is not a second record for that office. Not a care-delivery facility.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices/mexico-city-mexico",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.mayoclinic.org/international/support/representative-offices",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0105",
+      "institution": "Johns Hopkins Medicine International",
+      "partner": "Sheikh Khalifa Stroke Institute",
+      "country": "United Arab Emirates",
+      "region": "GCC",
+      "city": "",
+      "tactic_primary": "T5",
+      "tactic_secondary": [
+        "T10"
+      ],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "Johns Hopkins’ Sheikh Khalifa Stroke Institute operates across Baltimore and the UAE.",
+      "analysis": "Analysis: An institutional clinical and research program provides a presence distinct from a representative office.",
+      "source_url": "https://www.hopkinsmedicine.org/neurology-neurosurgery/specialty-areas/khalifa-stroke-institute",
+      "source_type": "Primary",
+      "source_date": "",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.hopkinsmedicine.org/neurology-neurosurgery/specialty-areas/khalifa-stroke-institute).",
+      "institutions": [
+        "Johns Hopkins Medicine International"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "Exact institute page describes an operating Baltimore–UAE institute spanning stroke treatment, rehabilitation and research. JHMI lists it as active.",
+      "scope_note": "Substantive institute work qualifies independently of its philanthropic origin. No UAE street address, hospital ownership or exact opening date is inferred.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.hopkinsmedicine.org/neurology-neurosurgery/specialty-areas/khalifa-stroke-institute",
+          "type": "Primary",
+          "date": ""
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/international/health-care-consulting/emea",
+          "type": "Primary",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": "IHB-0106",
+      "institution": "UPMC",
+      "partner": "University College Cork / Cork University Hospital / HSE–NCCP",
+      "country": "Ireland",
+      "region": "Europe",
+      "city": "Cork",
+      "tactic_primary": "T10",
+      "tactic_secondary": [
+        "T8"
+      ],
+      "status": "Operational",
+      "announcement_date": "2022-07-06",
+      "operational_date": "",
+      "headline": "UPMC-funded oncology research partnership completes recruitment of two UCC professorships.",
+      "analysis": "Analysis: Funded research capacity is a separate partnership from UPMC’s local treatment facilities.",
+      "source_url": "https://www.ucc.ie/en/med-health/news/leading-immunotherapy-expert-anna-olsson-brown-appointed-to-oncology-professorship.html",
+      "source_type": "Primary",
+      "source_date": "2026-05-25",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.ucc.ie/en/med-health/news/leading-immunotherapy-expert-anna-olsson-brown-appointed-to-oncology-professorship.html).",
+      "institutions": [
+        "UPMC"
+      ],
+      "latest_event_date": "2026-05-21",
+      "latest_event_month": "",
+      "event_date_label": "2026-05-21",
+      "events": [
+        {
+          "date": "2022-07-06",
+          "summary": "UPMC announced a funded oncology research partnership with UCC.",
+          "source_url": "https://inside.upmc.com/upmc-forms-first-cancer-focused-research-partnership-in-ireland/"
+        },
+        {
+          "date": "2026-05-21",
+          "summary": "UCC and HSE announced the second UPMC-funded professorship, completing recruitment.",
+          "source_url": "https://www.ucc.ie/en/med-health/news/leading-immunotherapy-expert-anna-olsson-brown-appointed-to-oncology-professorship.html"
+        }
+      ],
+      "seed_kind": "backfill",
+      "source_note": "UPMC announced the research-funding partnership July 6, 2022. UCC’s May 25, 2026 report identifies the second appointment announced May 21, 2026.",
+      "scope_note": "Same research agreement across funding and implementation milestones; distinct from the Cork radiotherapy service IHB-0069. No new hospital or routine standalone fellowship counted.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.ucc.ie/en/med-health/news/leading-immunotherapy-expert-anna-olsson-brown-appointed-to-oncology-professorship.html",
+          "type": "Primary",
+          "date": "2026-05-25"
+        },
+        {
+          "url": "https://inside.upmc.com/upmc-forms-first-cancer-focused-research-partnership-in-ireland/",
+          "type": "Primary",
+          "date": "2022-07-06"
+        }
+      ]
+    },
+    {
+      "id": "IHB-0107",
+      "institution": "Cedars-Sinai",
+      "partner": "Sheba Medical Center",
+      "country": "Israel",
+      "region": "Middle East (non-GCC)",
+      "city": "",
+      "tactic_primary": "T5",
+      "tactic_secondary": [],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "Cedars-Sinai and Sheba maintain clinical-care and research collaborations.",
+      "analysis": "Analysis: A defined clinical program shows more operational substance than a general affiliation label.",
+      "source_url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/",
+      "source_type": "Primary",
+      "source_date": "2026-05-21",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/).",
+      "institutions": [
+        "Cedars-Sinai"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "May 21 report describes an established perioperative IBD-care program with Sheba and ongoing joint clinical and research work.",
+      "scope_note": "One bilateral relationship. Implementation at other Israeli centers is not automatically a separate agreement; no ownership, exact original agreement date or Tel Aviv city location is inferred. Research is described factually, but no separate material research-program commitment is inferred from individual projects; primary classification is T5 only.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/",
+          "type": "Primary",
+          "date": "2026-05-21"
+        }
+      ]
+    },
+    {
+      "id": "IHB-0108",
+      "institution": "Penn Medicine",
+      "partner": "Botswana-UPenn Partnership / University of Botswana",
+      "country": "Botswana",
+      "region": "Africa",
+      "city": "Gaborone",
+      "tactic_primary": "T5",
+      "tactic_secondary": [
+        "T10",
+        "T8"
+      ],
+      "status": "Operational",
+      "announcement_date": "",
+      "operational_date": "",
+      "headline": "Penn Medicine participates in the ongoing Botswana-UPenn clinical and research partnership.",
+      "analysis": "Analysis: An enduring institutional clinical and research program represents a different commitment from short visits.",
+      "source_url": "https://www.pennmedicine.org/news/a-model-global-health-academic-partnership-flourishes-in-botswana",
+      "source_type": "Primary",
+      "source_date": "2026-07-07",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.pennmedicine.org/news/a-model-global-health-academic-partnership-flourishes-in-botswana).",
+      "institutions": [
+        "Penn Medicine"
+      ],
+      "latest_event_date": "",
+      "latest_event_month": "",
+      "event_date_label": "",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "Penn Medicine’s July 7 report describes its clinicians’ continuing clinical and research work through the Gaborone-based institutional partnership.",
+      "scope_note": "Substantive continuing clinical/research program, not a standalone charitable mission or routine fellowship. Penn Medicine participation is stated narrowly; no claim to own every University of Pennsylvania activity or a US-patient referral office. Partnership start year is 2001; exact day/month unknown.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://www.pennmedicine.org/news/a-model-global-health-academic-partnership-flourishes-in-botswana",
+          "type": "Primary",
+          "date": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "IHB-0109",
+      "institution": "Cleveland Clinic",
+      "partner": "Radiochirurgia Zagreb",
+      "country": "Croatia",
+      "region": "Europe",
+      "city": "Zagreb",
+      "tactic_primary": "T4",
+      "tactic_secondary": [
+        "T5",
+        "T8"
+      ],
+      "status": "Operational",
+      "announcement_date": "2025-08-11",
+      "operational_date": "",
+      "headline": "Cleveland Clinic provides clinical-quality advisory access through its Radiochirurgia Zagreb affiliation.",
+      "analysis": "Analysis: Clinical consultation and quality advisory access extend expertise without ownership or management control.",
+      "source_url": "https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member",
+      "source_type": "Primary",
+      "source_date": "2025-08-11",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member).",
+      "institutions": [
+        "Cleveland Clinic"
+      ],
+      "latest_event_date": "2025-08-11",
+      "latest_event_month": "",
+      "event_date_label": "2025-08-11",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "August 11, 2025 formal affiliation provides complex-case educational consultation, quality advisory and training access. May 1, 2026 current program profile names the ongoing member.",
+      "scope_note": "Qualifies through specified advisory and consultation services rather than membership alone. Cleveland Clinic does not manage or own the member hospital.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Not applicable",
+      "status_note": "Active relationship within the stated source scope.",
+      "sources": [
+        {
+          "url": "https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member",
+          "type": "Primary",
+          "date": "2025-08-11"
+        },
+        {
+          "url": "https://consultqd.clevelandclinic.org/keeping-care-local-expanding-expertise-inside-cleveland-clinic-connected",
+          "type": "Primary",
+          "date": "2026-05-01"
+        }
+      ]
+    },
+    {
+      "id": "IHB-0110",
+      "institution": "Cleveland Clinic",
+      "partner": "Central Asian University / Central Asian University Hospital",
+      "country": "Uzbekistan",
+      "region": "Asia Pacific",
+      "city": "Tashkent",
+      "tactic_primary": "T4",
+      "tactic_secondary": [
+        "T5",
+        "T8"
+      ],
+      "status": "Operational",
+      "announcement_date": "2025-08-27",
+      "operational_date": "",
+      "headline": "Cleveland Clinic advises Central Asian University on its planned Tashkent hospital.",
+      "analysis": "Analysis: Active development advice should be distinguished from an open foreign hospital.",
+      "source_url": "https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan",
+      "source_type": "Primary",
+      "source_date": "2025-08-27",
+      "last_verified": "2026-10-22",
+      "change_log": "2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan).",
+      "institutions": [
+        "Cleveland Clinic"
+      ],
+      "latest_event_date": "2025-08-27",
+      "latest_event_month": "",
+      "event_date_label": "2025-08-27",
+      "events": [],
+      "seed_kind": "baseline",
+      "source_note": "August 27, 2025 strategic agreement specifies design, clinical-program and workforce guidance. May 1, 2026 current profile describes the Cleveland team guiding development.",
+      "scope_note": "Active advisory work only; associated hospital remains Planned. Provisional Connected membership is not full membership, an ownership interest or proof of patient-care operations.",
+      "verified_status": "Current activity explicitly described by the linked primary source.",
+      "facility_status": "Planned",
+      "status_note": "Active advisory engagement; associated facility remains planned.",
+      "sources": [
+        {
+          "url": "https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan",
+          "type": "Primary",
+          "date": "2025-08-27"
+        },
+        {
+          "url": "https://consultqd.clevelandclinic.org/keeping-care-local-expanding-expertise-inside-cleveland-clinic-connected",
+          "type": "Primary",
+          "date": "2026-05-01"
         }
       ]
     }

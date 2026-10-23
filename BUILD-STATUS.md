@@ -1,13 +1,13 @@
-# Reader release 2026-10-21.1
+# Reader 2026-10-22.2 — draft candidate
 
-Status: combined PR revision prepared for CI and merge, with local desktop/mobile browser verification. Publication is established separately by the successful Pages deployment of the exact merged commit.
+Base: `564d5880151228c0a145d74d99bde95d4c90a362`.
 
-Inputs: research workflows from PR #2 `a3fb3745a6a7658292b6d9b9aecc3c42c9b572b6` and map-first profiles from merged PR #3 / main `e796227309268c0b34a1e18fbc177219fd9a6740`.
+[Draft PR #4](https://github.com/rabookire/international-healthcare-brief/pull/4) is open. The [October 23 resumption](docs/verification/pr4-resume/README.md) repeated all 78 tests, formatting and packaging successfully against source `6d41c0246b0ba7616e21ede9de8c2463b094c56d`; browser preview connectivity remains blocked. No merge or deployment was performed.
 
-The combined reader preserves lifecycle/history separation, Unknown status, facility caveats, research T10, insurer T11, legacy region links, map-first institution profiles with recent developments, global mobile List default, country briefs, comparisons, coverage explanations, scoped exports and cited print output. Mobile keyboard focus, archive-only country options and comparison header wrapping are corrected.
+Implemented: compact map-first Explore; anchored neutral clusters and persistent legend; one Operational-only rule across primary readers; institution-led Markets (approved option 1); two/three institution comparison; concise directory and map-first profiles; retained full evidence and historical deep links.
 
-The canonical inventory retains all 98 records, 38 countries, 84 initial and 14 historical records, and original source and verification dates. The source inventory remains dated October 20, 2026. This release does not claim a new scan, new edition, complete research coverage or a complete non-U.S. competitor inventory.
+Data: 110 canonical records, 74 current Operational relationships, 12 new IDs, 41 reconciled existing statuses. All 98 original IDs and original announcement/operational dates remain. [Bounded source review and holds](docs/research/reconciliation-2026-10-22.md).
 
-Local checks: all 24 projections agree; 27 Python and 39 JavaScript tests pass; static packaging succeeds. Desktop/mobile and 200% zoom journeys from the integration are recorded in [VERIFICATION.md](VERIFICATION.md). The final comparison, actual CSV download, generated PDF, mobile focus and insurer-filter checks are documented with [browser evidence](docs/verification/pr2-release/README.md).
+Automated validation: 24 projections agree; 28 Python tests and 50 JavaScript tests pass. Formatting and static packaging also pass, recorded in VERIFICATION.md. Independent read-only review identified interaction bugs; regression fixes cover mobile evidence, cluster focus/selection, covered markets, scoped comparisons and secondary matches.
 
-Physical touchscreen/pinch, full screen-reader behavior, other browser engines and physical printing remain unverified. CI and deployment results must be checked for the exact pushed/merged revision. No claim of live deployment is made by this source document.
+Real-browser visual QA remains blocked. No final desktop/mobile screenshot, touch/pinch verification or screen-reader pass is claimed. See [design-qa.md](design-qa.md) and [required journeys](VERIFICATION.md). Keep this PR draft. Earlier release screenshots in Git history are not evidence for this revision. This candidate has not been merged or deployed.

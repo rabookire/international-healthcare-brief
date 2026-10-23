@@ -1,6 +1,6 @@
 # Stanford Medicine
 
-Last verified: Not yet verified. Inventory as of 2026-10-20.
+Last verified: Not yet verified. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=Stanford%20Medicine) · [Map slice](../map/?institution=Stanford%20Medicine) · [All institutions](../institutions/)
 

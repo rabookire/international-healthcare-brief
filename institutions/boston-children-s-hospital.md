@@ -1,6 +1,6 @@
 # Boston Children's Hospital
 
-Last verified: Not yet verified. Inventory as of 2026-10-20.
+Last verified: Not yet verified. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=Boston%20Children%27s%20Hospital) · [Map slice](../map/?institution=Boston%20Children%27s%20Hospital) · [All institutions](../institutions/)
 
