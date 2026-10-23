@@ -23,7 +23,7 @@ const state = (patch) => ({ ...readState(), ...patch });
 test("insurer relationships are distinct while the consulting service remains discoverable", () => {
   assert.deepEqual(
     filterRecords(rows, state({ tactic: "T11" })).map((r) => r.id),
-    ["IHB-0017", "IHB-0038", "IHB-0093"],
+    ["IHB-0017", "IHB-0038", "IHB-0070", "IHB-0093"],
   );
   assert.ok(
     filterRecords(rows, state({ tactic: "T4" })).some(
@@ -44,8 +44,14 @@ test("explicit regions partition the legacy Other view and survive shared links"
     rows,
     state({ region: "Middle East (non-GCC)" }),
   );
-  assert.deepEqual(africa.map((r) => r.country).sort(), ["Egypt", "Nigeria"]);
+  assert.deepEqual(africa.map((r) => r.country).sort(), [
+    "Botswana",
+    "Egypt",
+    "Nigeria",
+    "Nigeria",
+  ]);
   assert.deepEqual(middleEast.map((r) => r.country).sort(), [
+    "Israel",
     "Jordan",
     "Lebanon",
   ]);
@@ -84,7 +90,12 @@ test("profile updates use sourced dates, honor filters, and never date an undate
     ["IHB-0008"],
   );
   assert.equal(
-    recentDevelopments(clinic.filter((r) => r.seed_kind === "baseline")).length,
+    recentDevelopments(
+      clinic.filter(
+        (r) =>
+          !r.latest_event_date && !r.latest_event_month && !r.announcement_date,
+      ),
+    ).length,
     0,
   );
 });
@@ -105,7 +116,7 @@ test("zero results offer recovery while list mode preserves source-backed detail
       icon: () => "",
     });
   const empty = render(state({ region: "Africa", tactic: "T11" }), []);
-  assert.match(empty, /No activity matches these filters/);
+  assert.match(empty, /No verified current records for these filters/);
   assert.match(empty, /data-profile-reset/);
   assert.doesNotMatch(empty, /<svg id="world-map"/);
   const s = state({ view: "list", tactic: "T11" }),
@@ -113,7 +124,7 @@ test("zero results offer recovery while list mode preserves source-backed detail
     list = render(s, insurers);
   assert.match(list, /data-record="IHB-0017"/);
   assert.match(list, /data-record="IHB-0093"/);
-  assert.match(list, /newsroom.clevelandclinic.org/);
+  assert.match(list, /Insurer Partnership/);
   assert.doesNotMatch(list, /data-record="IHB-0008"/);
 });
 
@@ -149,5 +160,5 @@ test("view links retain their intent across profile and explorer defaults", () =
     rows,
     state({ lens: "patient", tactic: "T11" }),
   );
-  assert.equal(insurers.length, 3);
+  assert.equal(insurers.length, 4);
 });

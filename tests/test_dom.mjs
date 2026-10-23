@@ -22,7 +22,11 @@ const executable = source.replace(
 );
 const settle = () => new Promise((resolve) => setImmediate(resolve));
 
-async function reader(t, path = "", { fail = [], json = {} } = {}) {
+async function reader(
+  t,
+  path = "",
+  { fail = [], json = {}, mobile = false } = {},
+) {
   const relative = path.split("?")[0],
     file = relative ? relative + "index.html" : "index.html";
   const dom = new JSDOM(readFileSync(new URL(file, root), "utf8"), {
@@ -36,6 +40,10 @@ async function reader(t, path = "", { fail = [], json = {} } = {}) {
     blobs = [],
     copied = [],
     errors = [];
+  Object.defineProperty(w, "matchMedia", {
+    value: () => ({ matches: mobile }),
+    configurable: true,
+  });
   w.fetch = async (input) => {
     const p = new URL(input, origin).pathname.slice(
       new URL(origin).pathname.length,
@@ -55,7 +63,11 @@ async function reader(t, path = "", { fail = [], json = {} } = {}) {
     }
   };
   w.console.error = (...args) => errors.push(args.map(String).join(" "));
-  w.SVGElement.prototype.getScreenCTM = () => ({ a: 1 });
+  w.SVGElement.prototype.getScreenCTM = function () {
+    return {
+      a: 1000 / (Number(this.getAttribute("viewBox")?.split(" ")[2]) || 1000),
+    };
+  };
   w.HTMLDialogElement.prototype.showModal = function () {
     this.open = true;
   };
@@ -107,50 +119,49 @@ async function reader(t, path = "", { fail = [], json = {} } = {}) {
   };
 }
 
-test("explorer filters active UAE facilities and keeps evidence, focus and export context", async (t) => {
-  const r = await reader(t);
-  assert.equal(r.all("[data-map-record]").length, 98);
-  assert.equal(r.$(".research-workspace").dataset.mobileView, "list");
+const dataset = JSON.parse(
+  readFileSync(new URL("data/tracker.json", root), "utf8"),
+);
+const active = dataset.records.filter((r) => r.status === "Operational");
+const activityIDs = (r) =>
+  r
+    .all(".activity-pane > .activity-list [data-record]")
+    .map((n) => n.dataset.record);
+test("current explorer ignores obsolete lifecycle URLs and keeps clusters readable", async (t) => {
+  const r = await reader(t, "map/?status=Unknown&footprint=baseline");
+  assert.equal(activityIDs(r).length, active.length);
+  assert.equal(r.$('[data-filter="status"]'), null);
+  assert.equal(r.$("[data-footprint]"), null);
+  assert.ok(r.$(".visible-legend"));
+  assert.ok(!r.$("main").textContent.includes("Global partnerships explorer"));
+  assert.ok(!r.w.location.search.includes("status="));
+  assert.ok(!activityIDs(r).includes("IHB-0081"));
+  assert.ok(r.all("[data-map-key]").length < active.length);
+  assert.equal(r.all(".pin-leader").length, 0);
   await r.change('[data-filter="country"]', "United Arab Emirates");
-  await r.change('[data-filter="status"]', "Operational");
-  assert.equal(
-    r.all(".activity-pane > .activity-list [data-record]").length,
-    2,
-  );
-  assert.ok(r.$('[data-map-record="IHB-0003"]'));
-  assert.equal(r.w.document.activeElement.dataset.filter, "status");
-  await r.click('.activity-pane > .activity-list [data-record="IHB-0003"]');
-  assert.ok(r.$(".selection-card h2").textContent.includes("Abu Dhabi"));
+  assert.ok(activityIDs(r).includes("IHB-0003"));
+  assert.ok(activityIDs(r).includes("IHB-0071"));
+  assert.ok(!activityIDs(r).includes("IHB-0081"));
+  await r.click('.activity-pane [data-record="IHB-0003"]');
+  assert.match(r.$(".selection-card").textContent, /Abu Dhabi/);
   assert.ok(
-    r.$(".selection-card").textContent.includes("Active / operational"),
+    !r.$(".selection-card").textContent.includes("Active / operational"),
   );
-  await r.click("[data-download]");
-  const csv = await r.blobs[0].text();
-  assert.ok(csv.includes('"scope_note"'));
-  assert.ok(csv.includes("country=United+Arab+Emirates"));
   await r.click(".selection-card [data-copy]");
-  assert.ok(r.copied.at(-1).includes("record=IHB-0003"));
+  assert.match(r.copied.at(-1), /record=IHB-0003/);
   await r.click("[data-dismiss-selection]");
   assert.equal(r.w.document.activeElement.dataset.record, "IHB-0003");
-  await r.click('[data-remove-key="status"]');
-  assert.equal(r.all("[data-map-record]").length, 8);
   assert.equal(r.errors.length, 0);
 });
-
-test("map shading, secondary matches, search and view history track the filtered records", async (t) => {
+test("secondary matches and covered countries remain discoverable with view history", async (t) => {
   const r = await reader(t, "map/");
-  await r.change('[data-filter="tactic"]', "T9");
-  assert.equal(r.all("[data-map-record]").length, 42);
-  assert.ok(r.$(".matched-tag").textContent.includes("Inbound patient"));
+  await r.change('[data-filter="tactic"]', "T4");
+  assert.ok(activityIDs(r).includes("IHB-0038"));
+  assert.match(r.$('[data-record="IHB-0038"]').textContent, /Consulting/);
   await r.click("[data-reset]");
   await r.change('[data-filter="country"]', "Vietnam");
+  assert.deepEqual(activityIDs(r), ["IHB-0042"]);
   assert.equal(r.all(".land.has-records").length, 1);
-  assert.equal(r.all("[data-map-record]").length, 2);
-  assert.ok(
-    r
-      .$(".country-overview summary")
-      .textContent.includes("ignores other filters"),
-  );
   await r.click('[data-view="map"]');
   assert.equal(r.$(".research-workspace").dataset.mobileView, "map");
   const previous = new Promise((resolve) =>
@@ -160,49 +171,260 @@ test("map shading, secondary matches, search and view history track the filtered
   await previous;
   await settle();
   assert.equal(r.$(".research-workspace").dataset.mobileView, "list");
-  await r.change('[data-filter="lens"]', "research");
-  assert.equal(r.all("[data-map-record]").length, 0);
-  assert.ok(
-    r
-      .$("main")
-      .textContent.includes(
-        "systematic research coverage has not been completed",
-      ),
+  await r.change('[data-filter="country"]', "Costa Rica");
+  assert.ok(activityIDs(r).includes("IHB-0013"));
+  await r.click('.activity-pane [data-record="IHB-0013"]');
+  assert.match(r.$(".selection-card").textContent, /Costa Rica/);
+  assert.equal(
+    new URL(r.$('.selection-card a[href*="markets/"]').href).searchParams.get(
+      "country",
+    ),
+    "Costa Rica",
   );
   assert.equal(r.errors.length, 0);
 });
-
-test("closing mobile map details restores pin focus and keyboard navigation", async (t) => {
+test("coincident locations offer reachable cluster activities and Escape restores map focus", async (t) => {
+  const r = await reader(t, "map/?country=United+Kingdom&view=map");
+  await r.click("[data-fullscreen]");
+  assert.equal(r.$("#header").inert, true);
+  r.$("#world-map").dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "Enter", bubbles: true }),
+  );
+  assert.ok(r.w.document.activeElement.dataset.mapKey);
+  r.$("[data-map-cluster]").dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "Enter", bubbles: true }),
+  );
+  assert.ok(r.$(".cluster-panel"));
+  r.w.document.activeElement.dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "Escape", bubbles: true }),
+  );
+  assert.equal(r.$(".cluster-panel"), null);
+  assert.equal(r.$("[data-fullscreen]").getAttribute("aria-pressed"), "true");
+  r.$("[data-map-cluster]").dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "Enter", bubbles: true }),
+  );
+  await r.click('[data-cluster-record="IHB-0001"]');
+  await r.click("[data-dismiss-selection]");
+  assert.ok(r.w.document.activeElement.dataset.mapKey);
+  assert.equal(r.all('[data-map-key][aria-pressed="true"]').length, 0);
+  r.w.dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "Escape", bubbles: true }),
+  );
+  assert.equal(r.$("#header").inert, false);
+  assert.equal(r.errors.length, 0);
+});
+test("mobile List opens visible evidence in the shared dialog", async (t) => {
+  const r = await reader(t, "map/");
+  Object.defineProperty(r.w, "matchMedia", {
+    value: () => ({ matches: true }),
+  });
+  await r.click('.activity-pane [data-record="IHB-0001"]');
+  assert.equal(r.$("#record-dialog").open, true);
+  assert.match(r.$("#record-dialog").textContent, /Cleveland Clinic London/);
+  assert.ok(r.$('#record-dialog a[href*="newsroom.clevelandclinic.org"]'));
+  await r.click("#record-dialog [data-close]");
+  assert.equal(r.w.location.search.includes("record="), false);
+});
+test("map regrouping keeps keyboard focus on the same record and market", async (t) => {
+  const r = await reader(t, "map/?view=map");
+  const target = r
+    .all("[data-map-key]")
+    .find((n) => n.getAttribute("aria-label").includes("Botswana"));
+  assert.ok(target);
+  target.focus();
+  r.$("#world-map").dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "+", bubbles: true }),
+  );
+  assert.match(
+    r.w.document.activeElement.getAttribute("aria-label"),
+    /Botswana/,
+  );
+});
+test("Markets clears comparison choices hidden by activity filters and history", async (t) => {
+  const r = await reader(t, "markets/?country=United+Kingdom");
+  await r.click('[data-market-compare="Cedars-Sinai"]');
+  await r.change('[data-filter="tactic"]', "T11");
+  assert.equal(r.$("[data-market-compare-count]").textContent, "");
+  assert.equal(
+    new URL(r.$("[data-market-compare-run]").href).searchParams.has(
+      "institution",
+    ),
+    false,
+  );
+});
+test("country-scoped comparison counts only the selected served market", async (t) => {
   const r = await reader(
     t,
-    "map/?country=United+Arab+Emirates&status=Operational",
+    "compare/?institution=Cleveland+Clinic&institution=Mayo+Clinic&country=Cayman+Islands",
   );
-  // jsdom has no responsive layout; model the mobile Map pane's CSS visibility.
-  const style = r.w.document.createElement("style");
-  style.textContent =
-    '.research-workspace[data-mobile-view="map"] .activity-pane { display: none; }';
-  r.w.document.head.append(style);
-  await r.click('[data-view="map"]');
-  for (const expanded of [false, true]) {
-    if (expanded) await r.click("[data-fullscreen]");
-    r.$('[data-map-record="IHB-0003"]').dispatchEvent(
-      new r.w.MouseEvent("click", { bubbles: true }),
-    );
-    await r.click("[data-dismiss-selection]");
-    assert.equal(r.w.document.activeElement.dataset.mapRecord, "IHB-0003");
-    assert.equal(r.$(".selection-card"), null);
-    assert.ok(!r.w.location.search.includes("record="));
-    r.w.document.activeElement.dispatchEvent(
-      new r.w.KeyboardEvent("keydown", {
-        key: "ArrowRight",
-        bubbles: true,
-      }),
-    );
-    assert.equal(r.w.document.activeElement.dataset.mapRecord, "IHB-0071");
-  }
+  assert.deepEqual(
+    r.all(".comparison-number").map((n) => n.textContent),
+    ["1", "1"],
+  );
+  assert.deepEqual(
+    r.all(".market-chips li").map((n) => n.textContent),
+    ["Cayman Islands", "Cayman Islands"],
+  );
+});
+test("compare selectors preserve an intentionally empty first slot", async (t) => {
+  const r = await reader(t, "compare/");
+  await r.change('[data-compare-slot="1"]', "Mayo Clinic");
+  assert.equal(r.$('[data-compare-slot="0"]').value, "");
+  assert.equal(r.$('[data-compare-slot="1"]').value, "Mayo Clinic");
+  await r.change('[data-compare-slot="0"]', "Cleveland Clinic");
+  assert.equal(r.all(".comparison-names h2").length, 2);
+});
+test("profile lists explain secondary activity matches", async (t) => {
+  const r = await reader(
+    t,
+    "institutions/?institution=UPMC&tactic=T11&view=list",
+  );
+  assert.match(
+    r.$(".profile-records").textContent,
+    /Owned \/ operated facility/,
+  );
+  assert.match(
+    r.$(".profile-records").textContent,
+    /Also matches: Insurer Partnership/,
+  );
+});
+test("Markets groups hospital activities and carries selected hospitals and market into Compare", async (t) => {
+  const r = await reader(t, "markets/?country=United+Kingdom");
+  assert.equal(r.$("h1").textContent, "United Kingdom");
+  assert.equal(r.all(".hospital-brief").length, 3);
+  assert.equal(r.all("table").length, 0);
+  await r.click('[data-market-compare="Cleveland Clinic"]');
+  await r.click('[data-market-compare="Mayo Clinic"]');
+  const link = new URL(r.$("[data-market-compare-run]").href);
+  assert.deepEqual(link.searchParams.getAll("institution"), [
+    "Cleveland Clinic",
+    "Mayo Clinic",
+  ]);
+  assert.equal(link.searchParams.get("country"), "United Kingdom");
+  assert.equal(
+    r.$("[data-market-compare-run]").getAttribute("aria-disabled"),
+    "false",
+  );
+  await r.click('.hospital-brief [data-record="IHB-0001"]');
+  assert.equal(r.$("dialog").open, true);
+  assert.match(r.$("dialog").textContent, /Source checked/);
   assert.equal(r.errors.length, 0);
 });
-
+test("profiles retain map-first filtering, source evidence and honest empty-state recovery", async (t) => {
+  const r = await reader(t, "institutions/?institution=Cleveland+Clinic");
+  assert.ok(r.$(".profile-map"));
+  assert.equal(r.all(".profile-developments li").length, 3);
+  await r.change('[data-filter="region"]', "Americas");
+  await r.change('[data-filter="tactic"]', "T11");
+  r.$('[data-map-record="IHB-0017"]').dispatchEvent(
+    new r.w.MouseEvent("click", { bubbles: true }),
+  );
+  assert.equal(r.$("dialog").open, true);
+  await r.click("[data-close]");
+  await r.click('[data-profile-view="list"]');
+  assert.equal(r.$("#world-map"), null);
+  assert.ok(r.$('.profile-records [data-record="IHB-0017"]'));
+  await r.change('[data-filter="region"]', "Africa");
+  assert.match(
+    r.$(".profile-empty").textContent,
+    /No verified current records/,
+  );
+  await r.click("[data-profile-reset]");
+  assert.equal(r.$('[data-filter="tactic"]').value, "");
+  assert.equal(r.w.document.activeElement.dataset.filter, "region");
+  assert.ok(r.$(".profile-records"));
+  assert.equal(r.errors.length, 0);
+});
+test("Compare exposes two searchable slots, optional third and duplicate prevention", async (t) => {
+  const r = await reader(t, "compare/");
+  assert.equal(r.all("[data-compare-slot]").length, 2);
+  await r.change('[data-compare-slot="0"]', "Mayo Clinic");
+  await r.change(
+    '[data-compare-slot="1"]',
+    "Johns Hopkins Medicine International",
+  );
+  assert.equal(r.all(".comparison-names > h2").length, 2);
+  assert.equal(r.all("table").length, 0);
+  await r.click("[data-compare-add]");
+  await r.change('[data-compare-slot="2"]', "Cleveland Clinic");
+  assert.equal(r.all(".comparison-names > h2").length, 3);
+  await r.change('[data-compare-slot="2"]', "Mayo Clinic");
+  assert.equal(r.$('[data-compare-slot="2"]').value, "Cleveland Clinic");
+  assert.equal(r.$("[data-compare-add]"), null);
+  for (const selector of ["[data-copy]", "[data-download]", "[data-print]"])
+    assert.equal(r.$("main " + selector), null);
+  await r.click('[data-compare-remove="2"]');
+  assert.equal(r.all("[data-compare-slot]").length, 2);
+  assert.equal(r.errors.length, 0);
+});
+test("shared agreements retain identity across comparison columns", async (t) => {
+  const json = {
+    "data/tracker.json": {
+      ...dataset,
+      records: dataset.records.map((r) =>
+        r.id === "IHB-0081" ? { ...r, status: "Operational" } : r,
+      ),
+    },
+  };
+  const r = await reader(
+    t,
+    "compare/?institution=Mass+General+Brigham&institution=Dana-Farber+Cancer+Institute",
+    { json },
+  );
+  const section = r
+    .all(".comparison-dimension")
+    .find((n) => n.querySelector("h2").textContent.includes("Consulting"));
+  assert.equal(section.querySelectorAll('[data-record="IHB-0081"]').length, 2);
+  assert.equal(
+    json["data/tracker.json"].records.filter((r) => r.id === "IHB-0081").length,
+    1,
+  );
+  assert.equal(r.errors.length, 0);
+});
+test("inactive deep links preserve evidence without entering current aggregates", async (t) => {
+  const r = await reader(t, "map/?record=IHB-0081&status=Unknown");
+  assert.ok(!activityIDs(r).includes("IHB-0081"));
+  assert.equal(r.$("dialog").open, true);
+  assert.match(r.$("dialog").textContent, /outside the verified current view/);
+  assert.match(r.$("dialog").textContent, /Status not established/);
+  assert.equal(r.errors.length, 0);
+});
+test("tracker search, sort and CSV retain the selected current source context", async (t) => {
+  const r = await reader(t, "data/");
+  const search = r.$("#record-search");
+  search.value = "Nuria";
+  search.dispatchEvent(new r.w.Event("input", { bubbles: true }));
+  await settle();
+  assert.equal(r.all("tbody tr").length, 1);
+  assert.equal(r.w.document.activeElement.id, "record-search");
+  await r.click('[data-sort="country"]');
+  await r.click("[data-download]");
+  const csv = await r.blobs[0].text();
+  for (const field of [
+    "scope_note",
+    "source_urls",
+    "covered_countries",
+    "representative_location_note",
+    "source_sha256",
+  ])
+    assert.ok(csv.includes('"' + field + '"'));
+  assert.ok(csv.includes('"IHB-0008"'));
+  await r.click("[data-reset]");
+  assert.equal(r.all("tbody tr").length, active.length);
+  assert.equal(r.errors.length, 0);
+});
+test("coverage and releases preserve research limitations outside primary surfaces", async (t) => {
+  const r = await reader(t, "coverage/");
+  assert.equal(r.all(".coverage-list details").length, 19);
+  assert.ok(
+    r.all(".coverage-stats strong").some((n) => n.textContent === "29"),
+  );
+  const update = await reader(t, "updates/");
+  assert.match(update.$("main").textContent, /No edition has been published/);
+  assert.ok(update.$("main").textContent.includes(dataset.reader_version));
+  assert.equal(r.errors.length, 0);
+  assert.equal(update.errors.length, 0);
+});
 test("archive country options include edition-only markets and combine with other filters", async (t) => {
   const json = {
     "data/briefs.json": {
@@ -275,134 +497,6 @@ test("archive country options include edition-only markets and combine with othe
   assert.equal(tracker.errors.length, 0);
 });
 
-test("country brief exports its selected records with cited print content", async (t) => {
-  const r = await reader(t, "markets/?country=Vietnam");
-  assert.equal(r.$("h1").textContent, "Vietnam");
-  assert.equal(r.all("tbody [data-record]").length, 2);
-  assert.equal(r.all(".print-sources li").length, 2);
-  await r.click("[data-print]");
-  assert.equal(r.printed(), 1);
-  await r.click('tbody [data-record="IHB-0079"]');
-  assert.equal(r.$("dialog").open, true);
-  assert.ok(r.$("dialog").textContent.includes("Source checked"));
-  assert.equal(r.errors.length, 0);
-});
-
-test("map-first profiles retain insurer filtering, evidence, exports and explicit List links", async (t) => {
-  const r = await reader(t, "institutions/?institution=Cleveland+Clinic");
-  assert.ok(r.w.document.body.classList.contains("institution-profile"));
-  assert.equal(
-    r.$('[data-profile-view="map"]').getAttribute("aria-pressed"),
-    "true",
-  );
-  assert.equal(r.all(".profile-developments li").length, 3);
-  assert.ok(r.$(".profile-map"));
-  await r.change('[data-filter="region"]', "Americas");
-  await r.change('[data-filter="tactic"]', "T11");
-  assert.equal(r.all("[data-map-record]").length, 1);
-  assert.ok(r.$('[data-map-record="IHB-0017"]'));
-  assert.equal(r.all(".print-sources li").length, 1);
-  await r.click("[data-download]");
-  const csv = await r.blobs[0].text();
-  assert.ok(csv.includes('"T11"'));
-  assert.ok(csv.includes('"scope_note"'));
-  await r.click("[data-print]");
-  assert.equal(r.printed(), 1);
-  r.$('[data-map-record="IHB-0017"]').dispatchEvent(
-    new r.w.MouseEvent("click", { bubbles: true }),
-  );
-  assert.equal(r.$("dialog").open, true);
-  assert.ok(r.$("dialog").textContent.includes("Source checked"));
-  await r.click("[data-close]");
-  await r.click('[data-profile-view="list"]');
-  assert.equal(r.all('.profile-records [data-record="IHB-0017"]').length, 1);
-  assert.equal(r.$("#world-map"), null);
-  assert.equal(r.w.document.activeElement.dataset.profileView, "list");
-  const linked = await reader(t, "institutions/" + r.w.location.search);
-  assert.ok(linked.$(".profile-records"));
-  await r.click("[data-profile-reset]");
-  assert.equal(r.$('[data-filter="region"]').value, "");
-  assert.equal(r.$('[data-filter="tactic"]').value, "");
-  assert.equal(
-    new URLSearchParams(r.w.location.search).get("institution"),
-    "Cleveland Clinic",
-  );
-  assert.ok(r.$(".profile-records"));
-  assert.equal(r.errors.length, 0);
-  assert.equal(linked.errors.length, 0);
-  const countryLinked = await reader(
-    t,
-    "institutions/?institution=Cleveland+Clinic&country=Bermuda&tactic=T11",
-  );
-  await countryLinked.change('[data-filter="region"]', "Europe");
-  assert.ok(countryLinked.$('[data-map-record="IHB-0093"]'));
-  assert.equal(
-    new URLSearchParams(countryLinked.w.location.search).get("country"),
-    null,
-  );
-  assert.equal(countryLinked.errors.length, 0);
-});
-
-test("profiles normalize legacy region links and preserve research empty-state recovery", async (t) => {
-  const r = await reader(
-    t,
-    "institutions/?institution=UCLA+Health&region=Middle+East",
-  );
-  assert.equal(r.$('[data-filter="region"]').value, "Middle East (non-GCC)");
-  assert.equal(r.all("[data-map-record]").length, 1);
-  const research = await reader(
-    t,
-    "institutions/?institution=UCLA+Health&region=Middle+East&tactic=T10",
-  );
-  assert.ok(
-    research.$(".profile-empty").textContent.includes("No activity matches"),
-  );
-  assert.equal(research.$('[data-filter="tactic"]').value, "T10");
-  assert.ok(
-    research.$("main").textContent.includes("systematic research coverage"),
-  );
-  await research.click("[data-profile-reset]");
-  assert.ok(research.$(".profile-map"));
-  assert.equal(research.$('[data-filter="tactic"]').value, "");
-  assert.equal(research.w.document.activeElement.dataset.filter, "region");
-  assert.equal(r.errors.length, 0);
-  assert.equal(research.errors.length, 0);
-});
-
-test("comparison preserves a shared agreement in both columns and once in export", async (t) => {
-  const r = await reader(
-    t,
-    "compare/?institution=Mass+General+Brigham&institution=Dana-Farber+Cancer+Institute",
-  );
-  assert.equal(r.all(".comparison-table").length, 2);
-  assert.equal(r.all('.comparison-table [data-record="IHB-0081"]').length, 2);
-  assert.equal(r.all(".print-sources li").length, 6);
-  await r.click("[data-download]");
-  const csv = await r.blobs[0].text();
-  assert.equal((csv.match(/"IHB-0081"/g) || []).length, 1);
-  assert.ok(r.$("main").textContent.includes("counts are not rankings"));
-  assert.equal(r.errors.length, 0);
-});
-
-test("tracker search, sorting, dialog dismissal and clear filters retain usable state", async (t) => {
-  const r = await reader(t, "data/");
-  const search = r.$("#record-search");
-  search.value = "non-binding";
-  search.dispatchEvent(new r.w.Event("input", { bubbles: true }));
-  await settle();
-  assert.equal(r.all("tbody tr").length, 1);
-  assert.equal(r.w.document.activeElement.id, "record-search");
-  await r.click('[data-sort="country"]');
-  assert.equal(r.w.document.activeElement.dataset.sort, "country");
-  await r.click('[data-record="IHB-0050"]');
-  assert.equal(r.$("dialog").open, true);
-  await r.click("[data-close]");
-  assert.ok(!r.w.location.search.includes("record="));
-  await r.click("[data-reset]");
-  assert.equal(r.all("tbody tr").length, 98);
-  assert.equal(r.errors.length, 0);
-});
-
 test("methodology loads independently and dataset failure has an explicit recovery path", async (t) => {
   const r = await reader(t, "methodology/", {
     fail: ["data/tracker.json", "data/evidence.json", "data/briefs.json"],
@@ -414,14 +508,44 @@ test("methodology loads independently and dataset failure has an explicit recove
   assert.ok(failed.$('main a[href$="methodology/"]'));
 });
 
-test("coverage and update pages distinguish source review from reader changes", async (t) => {
-  const coverage = await reader(t, "coverage/");
-  assert.equal(coverage.all(".coverage-list details").length, 19);
-  assert.ok(coverage.$("main").textContent.includes("70"));
-  const updates = await reader(t, "updates/");
-  assert.ok(
-    updates.$("main").textContent.includes("No edition has been published"),
+test("mobile shared links and switching to List keep evidence visible", async (t) => {
+  const r = await reader(t, "map/?record=IHB-0001&view=list", { mobile: true });
+  assert.equal(r.$("#record-dialog").open, true);
+  await r.click("#record-dialog [data-close]");
+  await r.click('[data-view="map"]');
+  await r.click('.activity-pane [data-record="IHB-0001"]');
+  await r.click('[data-view="list"]');
+  assert.equal(r.$("#record-dialog").open, true);
+});
+test("unfiltered served-market cluster preserves its geography on selection", async (t) => {
+  const r = await reader(t, "map/?view=map");
+  for (let i = 0; i < 15; i++)
+    r.$("#world-map").dispatchEvent(
+      new r.w.KeyboardEvent("keydown", { key: "+", bubbles: true }),
+    );
+  const cayman = r
+    .all("[data-map-cluster]")
+    .find(
+      (n) => n.getAttribute("aria-label") === "2 activities in Cayman Islands",
+    );
+  assert.ok(cayman);
+  cayman.dispatchEvent(
+    new r.w.KeyboardEvent("keydown", { key: "Enter", bubbles: true }),
   );
-  assert.ok(updates.$("main").textContent.includes("2026-10-21.1"));
-  assert.equal(updates.errors.length, 0);
+  await r.click('[data-cluster-record="IHB-0004"]');
+  assert.match(r.$(".selection-card .eyebrow").textContent, /Cayman Islands/);
+  assert.match(r.$(".selection-card").textContent, /documented market served/);
+  assert.equal(
+    new URL(r.$('.selection-card a[href*="markets/"]').href).searchParams.get(
+      "country",
+    ),
+    "Cayman Islands",
+  );
+});
+test("Compare uses dedicated selectors without redundant institution chips", async (t) => {
+  const r = await reader(
+    t,
+    "compare/?institution=Mayo+Clinic&institution=Cleveland+Clinic",
+  );
+  assert.equal(r.all('[data-remove-key="institution"]').length, 0);
 });

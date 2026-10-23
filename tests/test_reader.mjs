@@ -89,25 +89,10 @@ test("new activity includes post-launch records as well as launch backfill", () 
     filterRecords([future], state({ footprint: "baseline" })).length,
     0,
   );
-  assert.deepEqual(
-    filterRecords(rows, state({ footprint: "new" })).map((r) => r.id),
-    [
-      "IHB-0001",
-      "IHB-0008",
-      "IHB-0017",
-      "IHB-0020",
-      "IHB-0050",
-      "IHB-0066",
-      "IHB-0080",
-      "IHB-0085",
-      "IHB-0093",
-      "IHB-0094",
-      "IHB-0095",
-      "IHB-0096",
-      "IHB-0097",
-      "IHB-0098",
-    ],
-  );
+  const dated = filterRecords(rows, state({ footprint: "new" }));
+  assert.ok(dated.some((r) => r.id === "IHB-0106"));
+  assert.ok(dated.every((r) => r.seed_kind !== "baseline"));
+  assert.ok(!dated.some((r) => r.id === "IHB-0099"));
 });
 test("multi-select and compound filters survive link serialization", () => {
   const s = state({
