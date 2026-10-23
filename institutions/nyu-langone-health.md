@@ -1,6 +1,6 @@
 # NYU Langone Health
 
-Last verified: Not yet verified. Inventory as of 2026-10-20.
+Last verified: Not yet verified. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=NYU%20Langone%20Health) · [Map slice](../map/?institution=NYU%20Langone%20Health) · [All institutions](../institutions/)
 

@@ -1,6 +1,6 @@
 # Cincinnati Children's
 
-Last verified: 2026-10-20. Inventory as of 2026-10-20.
+Last verified: 2026-10-20. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=Cincinnati%20Children%27s) · [Map slice](../map/?institution=Cincinnati%20Children%27s) · [All institutions](../institutions/)
 

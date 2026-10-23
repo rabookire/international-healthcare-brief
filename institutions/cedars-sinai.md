@@ -1,6 +1,6 @@
 # Cedars-Sinai
 
-Last verified: 2026-10-20. Inventory as of 2026-10-20.
+Last verified: 2026-10-22. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=Cedars-Sinai) · [Map slice](../map/?institution=Cedars-Sinai) · [All institutions](../institutions/)
 
@@ -20,6 +20,7 @@ Initial-inventory history is separate from lifecycle. Unknown means current stat
 | IHB-0090 | Cedars-Sinai | China | Asia Pacific | T4 Consulting/advisory | Unknown | [Source](https://www.szqhtkyy.com/szqh/qqzp/xxcz/index.html) |
 | IHB-0091 | Cedars-Sinai | China | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
 | IHB-0092 | Cedars-Sinai | Qatar | GCC | T6 In-Country Representative | Unknown | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-launches-flagship-outpatient-clinic-in-london/) |
+| IHB-0107 | Cedars-Sinai | Israel | Middle East (non-GCC) | T5 Strategic affiliation/partnership | Operational | [Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/) |
 
 ## Chronological timeline
 
@@ -81,6 +82,18 @@ Change log: 2026-10-20: Added to the initial public-source inventory; source che
 
 Source scope: This is the newer Mexico City office; the source acknowledges earlier offices. Also listed June 2025.
 
+### Date not disclosed — Cedars-Sinai and Sheba maintain clinical-care and research collaborations.
+
+IHB-0107 · Israel · Operational · T5 Strategic affiliation/partnership
+
+Analysis: A defined clinical program shows more operational substance than a general affiliation label.
+
+[Source](https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/) (Primary; source date: 2026-05-21; verified 2026-10-22).
+
+Change log: 2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://www.cedars-sinai.org/newsroom/cedars-sinai-expands-medical-and-research-ties-with-israel-healthcare-partners/).
+
+Source scope: One bilateral relationship. Implementation at other Israeli centers is not automatically a separate agreement; no ownership, exact original agreement date or Tel Aviv city location is inferred. Research is described factually, but no separate material research-program commitment is inferred from individual projects; primary classification is T5 only.
+
 ### Date not disclosed — Cedars-Sinai lists a patient referral office in Qatar.
 
 IHB-0092 · Qatar · Unknown · T6 In-Country Representative
@@ -137,10 +150,10 @@ Source scope: No ownership, management-contract or new opening inferred from thi
 
 ## Coverage notes
 
-October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.
+October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs. October 22, 2026 bounded reconciliation: Opened May 21, 2026 primary account and admitted the established Sheba clinical-care/research collaboration as one relationship.
 
 Existing IHB-0085 qualifies: planned-clinic source Jan 16, 2026 and opened confirmation May 20, 2026.
 
 Open sourcing gaps:
 
-- Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change. The May 20, 2026 institutional release confirms China and Qatar patient referral offices at country level; Shanghai/Doha city identities from older references remain held.
+- Other Israeli institutions mentioned in the source are not automatically distinct agreements. Previously unresolved original dates and current-status questions for other footprint rows remain open.

@@ -28,6 +28,15 @@ class EditorialBoundaries(unittest.TestCase):
     def test_country_region_mismatch_rejected(self):
         with self.assertRaisesRegex(g.DataError,'country/region'): self.valid([row(Region='Europe')])
 
+    def test_covered_markets_preserve_one_record_and_validate_countries(self):
+        ev={'IHB-0001':{'seed_kind':'baseline','covered_countries':['United Arab Emirates','Qatar'],'representative_location_note':'Serves both markets; not a staffed-office claim.'}}
+        result=self.valid(evidence=ev)
+        self.assertEqual(len(result),1)
+        self.assertEqual(result[0]['covered_countries'],['United Arab Emirates','Qatar'])
+        for countries in (['Not a country'],['Qatar'],['United Arab Emirates','Qatar','Qatar']):
+            with self.subTest(countries=countries),self.assertRaises(g.DataError):
+                self.valid(evidence={'IHB-0001':{'covered_countries':countries}})
+
     def test_unknown_institution_rejected(self):
         with self.assertRaisesRegex(g.DataError,'unregistered'): self.valid([row(Institution='Foreign operator')])
 
@@ -201,3 +210,4 @@ class ReproducibleProjections(unittest.TestCase):
             with self.assertRaisesRegex(g.DataError,'empty editions'): g.build(root)
 
 if __name__=='__main__': unittest.main()
+

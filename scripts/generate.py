@@ -167,6 +167,15 @@ def validate_records(csv_text, institutions, evidence=None, as_of='2026-10-20'):
         if dedup in deals: raise DataError(f'{label}: potential duplicate deal; update existing record or distinguish the facility/partner')
         deals.add(dedup)
         r['seed_kind']=seed_kind
+        covered = ev.get('covered_countries', [])
+        if not isinstance(covered, list) or any(not isinstance(c, str) or c not in COUNTRY_REGIONS for c in covered):
+            raise DataError(f'{label}: covered_countries must contain explicitly mapped countries')
+        if len(set(covered)) != len(covered) or (covered and r['country'] not in covered):
+            raise DataError(f'{label}: covered countries must be unique and include the primary country')
+        location_note = ev.get('representative_location_note', '')
+        if not isinstance(location_note, str): raise DataError(f'{label}: representative location note must be text')
+        if covered: r['covered_countries'] = covered
+        if location_note: r['representative_location_note'] = location_note
         r['source_note']=ev.get('source_note',ev.get('evidence',''))
         r['scope_note']=ev.get('scope_note','')
         r['verified_status']=ev.get('verified_status','')
@@ -252,7 +261,7 @@ def build(root=ROOT,as_of='2026-10-20'):
     coverage_list=read_json(root/'data/coverage.json',[])
     coverage={x['institution']:x for x in coverage_list}
     editions=load_editions(root,records)
-    counts={'records':len(records),'baseline':sum(r['seed_kind']=='baseline' for r in records),'backfill':sum(r['seed_kind']=='backfill' for r in records),'new':sum(r['seed_kind']=='new' for r in records),'countries':len({r['country'] for r in records}),'tier_1_institutions':len(institutions),'institutions_with_records':len({n for r in records for n in r['institutions']})}
+    counts={'records':len(records),'baseline':sum(r['seed_kind']=='baseline' for r in records),'backfill':sum(r['seed_kind']=='backfill' for r in records),'new':sum(r['seed_kind']=='new' for r in records),'countries':len({c for r in records for c in [r['country']]+r.get('covered_countries',[])}),'tier_1_institutions':len(institutions),'institutions_with_records':len({n for r in records for n in r['institutions']})}
     release=read_json(root/'data/release.json',{})
     payload={'generated_as_of':as_of,'reader_version':release.get('reader_version',''),'schema_version':2,'launch_date':LAUNCH_DATE.isoformat(),'backfill_start':BACKFILL_START.isoformat(),'backfill_end':BACKFILL_END.isoformat(),'source':'data/tracker.csv','source_sha256':hashlib.sha256(raw.encode()).hexdigest(),'counts':counts,'tactics':TACTICS,'statuses':sorted(STATUSES),'regions':['GCC','Americas','Asia Pacific','Europe','Middle East (non-GCC)','Africa'],'records':records}
     outputs={root/'data/tracker.json':json.dumps(payload,ensure_ascii=False,indent=2)+'\n',root/'data/briefs.json':json.dumps({'editions':editions},ensure_ascii=False,indent=2)+'\n'}
@@ -301,3 +310,4 @@ def main():
 
 if __name__=='__main__':
     raise SystemExit(main())
+
