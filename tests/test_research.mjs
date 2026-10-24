@@ -26,11 +26,11 @@ test("active filtering includes operating baseline facilities without promoting 
   const active = filterRecords(rows, state({ status: "Operational" }));
   for (const id of ["IHB-0003", "IHB-0018", "IHB-0070"])
     assert.ok(active.some((r) => r.id === id));
-  assert.equal(active.length, 21);
-  assert.equal(filterRecords(rows, state({ status: "Unknown" })).length, 70);
+  assert.equal(active.length, 74);
+  assert.equal(filterRecords(rows, state({ status: "Unknown" })).length, 29);
   assert.ok(!active.some((r) => r.id === "IHB-0081"));
   assert.equal(rows.find((r) => r.id === "IHB-0003").seed_kind, "baseline");
-  assert.ok(rows.every((r) => r.last_verified === "2026-10-20"));
+  assert.ok(rows.every((r) => r.last_verified <= data.generated_as_of));
 });
 
 test("legacy baseline and Other URLs remain useful after migration", () => {
@@ -38,16 +38,16 @@ test("legacy baseline and Other URLs remain useful after migration", () => {
   assert.equal(old.status, "");
   assert.equal(old.footprint, "baseline");
   assert.ok(filterRecords(rows, old).every((r) => r.seed_kind === "baseline"));
-  assert.equal(filterRecords(rows, readState("region=Other")).length, 4);
+  assert.equal(filterRecords(rows, readState("region=Other")).length, 7);
   assert.ok(!stateQuery(old).includes("status=Baseline"));
 });
 
-test("secondary filters explain matches and research has an explicit empty inventory", () => {
+test("secondary filters explain matches and reviewed research becomes discoverable", () => {
   const s = state({ lens: "patient", tactic: "T9" }),
     result = filterRecords(rows, s);
-  assert.equal(result.length, 42);
+  assert.equal(result.length, 45);
   assert.ok(secondaryMatch(result[0], s, TACTICS).includes("Inbound patient"));
-  assert.equal(filterRecords(rows, state({ lens: "research" })).length, 0);
+  assert.equal(filterRecords(rows, state({ lens: "research" })).length, 6);
   assert.equal(
     filterRecords(rows, state({ lens: "does-not-exist" })).length,
     0,

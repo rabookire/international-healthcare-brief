@@ -3,6 +3,8 @@ import { statusText, historyText, eventDate } from "./research.mjs";
 
 export function recordDetail(r, { fmt, compact = false } = {}) {
   const date = fmt || ((value) => value || "Not disclosed");
+  if (compact)
+    return `<div class="record-evidence"><p>${e(TACTICS[r.tactic_primary])}${["Planned", "Under construction"].includes(r.facility_status) ? " · Associated facility: " + e(r.facility_status.toLowerCase()) : ""}</p>${r.representative_location_note ? `<p>${e(r.representative_location_note)}</p>` : ""}<a class="source-link" href="${e(safeURL(r.source_url))}" target="_blank" rel="noopener noreferrer">Read primary source ↗</a></div>`;
   const field = (name, value) =>
     `<div><dt>${e(name)}</dt><dd>${e(value || "Not disclosed")}</dd></div>`;
   const caveats = [

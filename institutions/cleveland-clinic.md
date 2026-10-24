@@ -1,6 +1,6 @@
 # Cleveland Clinic
 
-Last verified: 2026-10-20. Inventory as of 2026-10-20.
+Last verified: 2026-10-22. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=Cleveland%20Clinic) · [Map slice](../map/?institution=Cleveland%20Clinic) · [All institutions](../institutions/)
 
@@ -15,22 +15,24 @@ Initial-inventory history is separate from lifecycle. Unknown means current stat
 | IHB-0001 | Cleveland Clinic | United Kingdom | Europe | T1 Owned/operated facility | Operational | [Source](https://newsroom.clevelandclinic.org/2026/04/01/cleveland-clinic-appoints-beri-ridgeway-md-as-president-of-cleveland-clinic-london) |
 | IHB-0002 | Cleveland Clinic | Canada | Americas | T1 Owned/operated facility | Operational | [Source](https://my.clevelandclinic.org/canada/about) |
 | IHB-0003 | Cleveland Clinic | United Arab Emirates | GCC | T1 Owned/operated facility | Operational | [Source](https://www.clevelandclinicabudhabi.ae/en/about-us/who-we-are) |
-| IHB-0004 | Cleveland Clinic | Bahamas | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/bahamas) |
-| IHB-0005 | Cleveland Clinic | Canada | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/canada) |
-| IHB-0006 | Cleveland Clinic | Dominican Republic | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/dominican-republic) |
-| IHB-0007 | Cleveland Clinic | Ecuador | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/ecuador) |
+| IHB-0004 | Cleveland Clinic | Bahamas | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/bahamas) |
+| IHB-0005 | Cleveland Clinic | Canada | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/canada) |
+| IHB-0006 | Cleveland Clinic | Dominican Republic | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/dominican-republic) |
+| IHB-0007 | Cleveland Clinic | Ecuador | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/ecuador) |
 | IHB-0008 | Cleveland Clinic | El Salvador | Americas | T6 In-Country Representative | Operational | [Source](https://newsroom.clevelandclinic.org/2026/06/15/cleveland-clinic-expands-access-to-care-with-an-el-salvador-based-representative) |
-| IHB-0009 | Cleveland Clinic | Guatemala | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/guatemala) |
-| IHB-0010 | Cleveland Clinic | India | Asia Pacific | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/india) |
-| IHB-0011 | Cleveland Clinic | Mexico | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/mexico) |
-| IHB-0012 | Cleveland Clinic | Nigeria | Africa | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/nigeria) |
-| IHB-0013 | Cleveland Clinic | Panama | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/panama) |
-| IHB-0014 | Cleveland Clinic | Peru | Americas | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/peru) |
-| IHB-0015 | Cleveland Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/saudi-arabia) |
-| IHB-0016 | Cleveland Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Unknown | [Source](https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates) |
+| IHB-0009 | Cleveland Clinic | Guatemala | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/guatemala) |
+| IHB-0010 | Cleveland Clinic | India | Asia Pacific | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/india) |
+| IHB-0011 | Cleveland Clinic | Mexico | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/mexico) |
+| IHB-0012 | Cleveland Clinic | Nigeria | Africa | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/nigeria) |
+| IHB-0013 | Cleveland Clinic | Panama | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/panama) |
+| IHB-0014 | Cleveland Clinic | Peru | Americas | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/peru) |
+| IHB-0015 | Cleveland Clinic | Saudi Arabia | GCC | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/saudi-arabia) |
+| IHB-0016 | Cleveland Clinic | United Arab Emirates | GCC | T6 In-Country Representative | Operational | [Source](https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates) |
 | IHB-0017 | Cleveland Clinic | Bermuda | Americas | T11 Insurer Partnership | Operational | [Source](https://newsroom.clevelandclinic.org/2026/09/16/cleveland-clinics-world-class-care-now-available-to-more-bermuda-residents) |
 | IHB-0093 | Cleveland Clinic | United Kingdom | Europe | T11 Insurer Partnership | Operational | [Source](https://newsroom.clevelandclinic.org/2026/07/23/cleveland-clinic-london-and-bupa-launch-valuebased-cardiac-care-pilot) |
 | IHB-0094 | Cleveland Clinic | Kuwait | GCC | T5 Strategic affiliation/partnership | Announced | [Source](https://www.clevelandclinicabudhabi.ae/en/media-center/news/ccad-to-partner-with-kuwait-based-dawi-for-advanced-regional-healthcare-delivery) |
+| IHB-0109 | Cleveland Clinic | Croatia | Europe | T4 Consulting/advisory | Operational | [Source](https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member) |
+| IHB-0110 | Cleveland Clinic | Uzbekistan | Asia Pacific | T4 Consulting/advisory | Operational | [Source](https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan) |
 
 ## Chronological timeline
 
@@ -92,160 +94,199 @@ Analysis: A Kuwait digital access channel could direct regional patient flows to
 
 Change log: 2026-10-20: Added verified twelve-month history. 2026-01-15: Public announcement of agreement signed January 14 for a Kuwait digital access channel, with first-phase packages planned.
 
+### 2025-08-27 — Cleveland Clinic advises Central Asian University on its planned Tashkent hospital.
+
+IHB-0110 · Uzbekistan · Operational · T4 Consulting/advisory
+
+Analysis: Active development advice should be distinguished from an open foreign hospital.
+
+[Source](https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan) (Primary; source date: 2025-08-27; verified 2026-10-22).
+
+Change log: 2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://newsroom.clevelandclinic.org/2025/08/27/cleveland-clinic-and-central-asian-university-sign-strategic-agreement-to-collaborate-on-central-asian-university-hospital-in-uzbekistan).
+
+Source scope: Active advisory work only; associated hospital remains Planned. Provisional Connected membership is not full membership, an ownership interest or proof of patient-care operations.
+
+### 2025-08-11 — Cleveland Clinic provides clinical-quality advisory access through its Radiochirurgia Zagreb affiliation.
+
+IHB-0109 · Croatia · Operational · T4 Consulting/advisory
+
+Analysis: Clinical consultation and quality advisory access extend expertise without ownership or management control.
+
+[Source](https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member) (Primary; source date: 2025-08-11; verified 2026-10-22).
+
+Change log: 2026-10-22: Added verified current footprint from opened public primary evidence; original date left blank unless explicitly established. (https://newsroom.clevelandclinic.org/2025/08/11/radiochirurgia-zagreb-becomes-a-cleveland-clinic-connected-member).
+
+Source scope: Qualifies through specified advisory and consultation services rather than membership alone. Cleveland Clinic does not manage or own the member hospital.
+
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering United Arab Emirates.
 
-IHB-0016 · United Arab Emirates · Unknown · T6 In-Country Representative
+IHB-0016 · United Arab Emirates · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/united-arab-emirates).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Saudi Arabia.
 
-IHB-0015 · Saudi Arabia · Unknown · T6 In-Country Representative
+IHB-0015 · Saudi Arabia · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/saudi-arabia) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/saudi-arabia) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/saudi-arabia).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Peru.
 
-IHB-0014 · Peru · Unknown · T6 In-Country Representative
+IHB-0014 · Peru · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/peru) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/peru) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/peru).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Panama, Honduras and Costa Rica.
 
-IHB-0013 · Panama · Unknown · T6 In-Country Representative
+IHB-0013 · Panama · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/panama) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/panama) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/panama).
+2026-10-22: Preserved one relationship ID and added explicit served-country coverage; no extra staff locations or agreements asserted.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Nigeria.
 
-IHB-0012 · Nigeria · Unknown · T6 In-Country Representative
+IHB-0012 · Nigeria · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/nigeria) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/nigeria) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
 2026-10-21: Replaced the Other regional grouping with Africa; location and source facts unchanged. | 2026-10-22: Taxonomy update — Other split into Africa and Middle East (non-GCC); assigned Africa. Source facts and verification date unchanged.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/nigeria).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Mexico.
 
-IHB-0011 · Mexico · Unknown · T6 In-Country Representative
+IHB-0011 · Mexico · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/mexico) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/mexico) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/mexico).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering India.
 
-IHB-0010 · India · Unknown · T6 In-Country Representative
+IHB-0010 · India · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/india) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/india) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/india).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Guatemala.
 
-IHB-0009 · Guatemala · Unknown · T6 In-Country Representative
+IHB-0009 · Guatemala · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/guatemala) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/guatemala) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/guatemala).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Ecuador and Colombia.
 
-IHB-0007 · Ecuador · Unknown · T6 In-Country Representative
+IHB-0007 · Ecuador · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/ecuador) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/ecuador) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/ecuador).
+2026-10-22: Preserved one relationship ID and added explicit served-country coverage; no extra staff locations or agreements asserted.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Dominican Republic.
 
-IHB-0006 · Dominican Republic · Unknown · T6 In-Country Representative
+IHB-0006 · Dominican Republic · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/dominican-republic) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/dominican-republic) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/dominican-republic).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Canada.
 
-IHB-0005 · Canada · Unknown · T6 In-Country Representative
+IHB-0005 · Canada · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/canada) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/canada) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/canada).
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
 ### Date not disclosed — Cleveland Clinic lists in-country representation covering Bahamas and Cayman Islands.
 
-IHB-0004 · Bahamas · Unknown · T6 In-Country Representative
+IHB-0004 · Bahamas · Operational · T6 In-Country Representative
 
 Analysis: Local representation is a patient-access channel rather than a clinical facility. Assess referral relationships separately from hospital capacity.
 
-[Source](https://my.clevelandclinic.org/patients/international/locations/bahamas) (Primary; source date: Not displayed; verified 2026-10-20).
+[Source](https://my.clevelandclinic.org/patients/international/locations/bahamas) (Primary; source date: Not displayed; verified 2026-10-22).
 
 Change log: 2026-10-20: Seeded from linked public primary source; original dates not supplied by that source remain blank.
 2026-10-21: Separated lifecycle from initial-inventory history. Current lifecycle is not established by the existing structured evidence; initial-inventory history is retained.
+2026-10-22: Reopened official country page and verified current representative assistance; no opening date inferred. (https://my.clevelandclinic.org/patients/international/locations/bahamas).
+2026-10-22: Preserved one relationship ID and added explicit served-country coverage; no extra staff locations or agreements asserted.
 
 Source scope: Pre-existing relationship listed by the linked primary source as checked on 2026-10-20. Baseline is an inventory category, not a claim about the original start date or facility operating status.
 
@@ -277,10 +318,10 @@ Source scope: Pre-existing relationship listed by the linked primary source as c
 
 ## Coverage notes
 
-Official global newsrooms, London facility and Bupa contract releases, Abu Dhabi partner releases and WAM, representative expansion news, and existing payer-channel item.
+Official global newsrooms, London facility and Bupa contract releases, Abu Dhabi partner releases and WAM, representative expansion news, and existing payer-channel item. October 22, 2026 bounded reconciliation: Reopened exact country pages for 12 existing Unknown representatives; current support established. Added sourced multi-country coverage on three existing IDs and two substantive Connected advisory relationships.
 
 Three new relationship events and two existing-ID updates recorded. Existing Allshores September 16 event remains valid. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture.
 
 Open sourcing gaps:
 
-- The London cancer-centre announcement is July 17, 2025, outside this window; September 2026 clinical staffing alone does not create a new facility event. Narrow routine clinical-service additions were not seeded. Earlier baseline sourcing gaps: Central Asian University Hospital, Saudi sports-medicine plans and additional Connected affiliations need ongoing-status and operational-scope verification; regional representative coverage does not prove a separate physical office in each covered country.
+- Other Connected affiliations and Saudi sports-medicine plans remain unreviewed. Served markets do not prove separate staffed offices. Bermuda’s named representative is explicitly US-based and was not admitted as in-country representation.

@@ -61,7 +61,9 @@ export function coverageSummary(rows, institutions = []) {
   );
   return {
     records: rows.length,
-    countries: new Set(rows.map((r) => r.country)).size,
+    countries: new Set(
+      rows.flatMap((r) => [r.country, ...(r.covered_countries || [])]),
+    ).size,
     institutions: covered.size,
     listed: institutions.length,
     unknown: rows.filter((r) => r.status === "Unknown").length,
@@ -121,7 +123,11 @@ export function institutionSummary(rows, name) {
   return {
     name,
     rows: matches,
-    countries: [...new Set(matches.map((r) => r.country))].sort(),
+    countries: [
+      ...new Set(
+        matches.flatMap((r) => [r.country, ...(r.covered_countries || [])]),
+      ),
+    ].sort(),
     unknown: matches.filter((r) => r.status === "Unknown").length,
     latest: matches.map(eventDate).filter(Boolean).sort().at(-1) || "",
     byTactic: (tactic) =>

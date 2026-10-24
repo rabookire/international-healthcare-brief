@@ -1,10 +1,18 @@
 import {
+  activityIcon,
+  activityCollection,
+  hospitalBrief,
+  developmentList,
+  comparisonLink,
+} from "./presentation.mjs";
+import {
   TACTICS,
   escapeHTML as e,
   safeURL,
   filterRecords,
   institutionsOf,
   stateQuery,
+  countriesOf,
 } from "./core.mjs";
 import {
   coverageSummary,
@@ -56,141 +64,112 @@ export function marketsPage({
   state,
   fmt,
   url,
-  heading,
   filters,
-  resultBar,
-  table,
   empty,
-  briefSources,
+  marketSelected = [],
 }) {
-  const countries = [...new Set(records.map((r) => r.country))].sort();
-  if (!state.country)
-    return (
-      heading(
-        "Country briefs",
-        "Explore markets",
-        "Understand documented participants, relationship models and recent developments. Every country view includes evidence and coverage limits.",
-      ) +
-      `<p class="notice">Only countries represented in the partial inventory appear below. Absence from this list is not an absence of international healthcare activity.</p><div class="institution-grid">${countries
-        .map((country) => {
-          const rows = records.filter((r) => r.country === country);
-          return `<a class="institution-card" href="${url("markets/?country=" + encodeURIComponent(country))}"><h2>${e(country)}</h2><p>${rows.length} documented records · ${new Set(rows.flatMap(institutionsOf)).size} U.S. institutions</p><p>${e(regionText(rows[0].region))}</p></a>`;
-        })
-        .join("")}</div>`
+  const countries = [...new Set(records.flatMap(countriesOf))].sort();
+  if (!state.country) {
+    const rows = filterRecords(records, state);
+    const available = countries.filter((country) =>
+      rows.some((r) => countriesOf(r).includes(country)),
     );
-  const allRows = records.filter((r) => r.country === state.country),
-    rows = filterRecords(records, state);
-  const names = [...new Set(rows.flatMap(institutionsOf))].sort(),
-    unknown = rows.filter((r) => r.status === "Unknown").length;
-  const latest = [...rows]
-    .filter((r) => eventDate(r))
-    .sort((a, b) => eventDate(b).localeCompare(eventDate(a)))
-    .slice(0, 5);
-  return (
-    `<a href="${url("markets/")}">← All country briefs</a>` +
-    heading(
-      "Country brief",
-      e(state.country),
-      "Publicly documented activity involving U.S. health systems. Source dates and lifecycle are retained; the inventory is partial.",
-    ) +
-    filters() +
-    `<div class="notice">${allRows.length} country records in the full inventory; ${rows.length} match this view. ${unknown} matching records have status not established. These counts do not establish market size or available patient flows.</div>` +
-    (rows.length
-      ? `<section class="market-overview"><div><h2>Participating U.S. institutions</h2><ul>${names.map((n) => `<li><a href="${url("institutions/?institution=" + encodeURIComponent(n))}">${e(n)}</a></li>`).join("")}</ul></div><div><h2>Documented relationship models</h2><ul>${Object.entries(
-          TACTICS,
-        )
-          .map(([t, label]) => [
-            label,
-            rows.filter(
-              (r) => r.tactic_primary === t || r.tactic_secondary?.includes(t),
-            ).length,
-          ])
-          .filter(([, count]) => count)
-          .map(([label, count]) => `<li>${e(label)} · ${count} records</li>`)
-          .join(
-            "",
-          )}</ul><p class="small muted">A relationship can have several activity types; category counts overlap. A facility label does not establish ownership.</p></div></section><section><h2>Latest recorded developments</h2>${latest.length ? `<ol class="market-timeline">${latest.map((r) => `<li><time>${e(fmt(eventDate(r)))}</time> <button class="record-title" data-record="${e(r.id)}">${e(r.headline)}</button></li>`).join("")}</ol>` : "<p>Material event dates are not established for these records.</p>"}</section>`
-      : "") +
-    resultBar(rows, "map/") +
-    (rows.length ? table(rows) : empty()) +
-    briefSources(rows)
-  );
+    return `<h1 class="reader-title">Markets</h1>${filters({ omitInstitution: true })}<div class="market-directory">${available
+      .map((country) => {
+        const inMarket = rows.filter((r) => countriesOf(r).includes(country));
+        const institutions = [...new Set(inMarket.flatMap(institutionsOf))];
+        return `<a class="market-choice" href="${url("markets/?" + stateQuery({ ...state, country, record: "" }))}"><h2>${e(country)}</h2><span>${e(institutions.slice(0, 3).join(" · "))}${institutions.length > 3 ? ` · +${institutions.length - 3}` : ""}</span></a>`;
+      })
+      .join("")}</div>${available.length ? "" : empty()}`;
+  }
+  const rows = filterRecords(records, state),
+    names = [...new Set(rows.flatMap(institutionsOf))].sort();
+  return `<h1 class="reader-title">${e(state.country)}</h1>${filters({ omitInstitution: true })}
+    <div class="market-compare-action"><span class="sr-only" role="status">${names.length} institutions in this view</span><a class="button" data-market-compare-run href="${comparisonLink(marketSelected, state, url)}" ${marketSelected.length < 2 ? 'aria-disabled="true"' : ""}>Compare selected <span data-market-compare-count>${marketSelected.length ? `(${marketSelected.length})` : ""}</span></a></div>
+    ${
+      rows.length
+        ? `<div class="market-hospitals">${names.map((n) => hospitalBrief(n, rows, { url, market: true, chosen: marketSelected, state })).join("")}</div>
+    <div class="market-support"><section aria-labelledby="market-location-title"><h2 id="market-location-title">Location</h2><div id="market-location" class="market-location"></div><a href="${url("map/?" + stateQuery({ ...state, view: "map" }))}">Explore this market</a></section><section aria-labelledby="market-developments-title"><h2 id="market-developments-title">Recent developments</h2>${developmentList(rows, { fmt })}</section></div>`
+        : empty()
+    }`;
 }
-
 export function comparePage({
   records,
   names,
   state,
   fmt,
-  heading,
+  url,
   filters,
-  briefSources,
+  compareSlots = 2,
+  compareChoices = null,
 }) {
-  const selected = [...new Set(state.institution)].filter((n) =>
-    names.includes(n),
-  );
+  const selected = [...new Set(state.institution)]
+    .filter((n) => names.includes(n))
+    .slice(0, 3);
+  const slots = Math.max(2, compareSlots, selected.length);
+  const chooser = `<div class="compare-chooser" style="--compare-columns:${slots}">${Array.from(
+    { length: slots },
+    (_, i) => {
+      const name = (compareChoices || selected)[i] || "";
+      return `<div class="compare-slot"><label for="compare-slot-${i}">Institution ${i + 1}</label><div><input id="compare-slot-${i}" data-compare-slot="${i}" type="search" list="compare-options-${i}" placeholder="Search institutions" value="${e(name)}" autocomplete="off" aria-describedby="compare-selection-help">${name || i === 2 ? `<button data-compare-remove="${i}" aria-label="Remove institution ${i + 1}">${e(name ? "Remove" : "Cancel")}</button>` : ""}</div><datalist id="compare-options-${i}">${names
+        .filter((n) => n === name || !selected.includes(n))
+        .map((n) => `<option value="${e(n)}"></option>`)
+        .join("")}</datalist></div>`;
+    },
+  ).join(
+    "",
+  )}</div><p id="compare-selection-help" class="sr-only">Choose two institutions, or add a third. Search and select a listed institution.</p>${slots < 3 ? '<button class="add-comparison" data-compare-add>Add a third institution</button>' : ""}`;
+  const intro = `<h1 class="reader-title">Compare institutions</h1>${chooser}${filters({ omitInstitution: true })}`;
+  if (selected.length < 2)
+    return (
+      intro +
+      '<div class="empty-state"><h2>Choose two institutions to compare</h2></div>'
+    );
   const rows = filterRecords(records, {
     ...state,
     institution: [],
     record: "",
   });
-  const summaries = selected.map((n) => institutionSummary(rows, n));
-  const uniqueRows = rows.filter((r) =>
-    institutionsOf(r).some((n) => selected.includes(n)),
+  const summaries = selected.map((n) => {
+    const summary = institutionSummary(rows, n);
+    if (state.country)
+      summary.countries = summary.countries.filter((c) => c === state.country);
+    return summary;
+  });
+  const tactics = Object.keys(TACTICS).filter((t) =>
+    summaries.some((s) => s.byTactic(t).length),
   );
-  const introduction =
-    heading(
-      "Research workspace",
-      "Compare institutions",
-      "Choose two or three institutions to compare documented activity across the same dimensions. Coverage differs; counts are not rankings.",
-    ) + filters();
-  if (
-    selected.length < 2 ||
-    selected.length > 3 ||
-    selected.length !== state.institution.length
-  )
-    return (
-      introduction +
-      '<div class="empty-state"><h2>Choose two or three listed institutions</h2><p>Use the Institutions control above. Country, lifecycle and activity filters apply to every comparison column.</p></div>'
-    );
-  const countries = [...new Set(summaries.flatMap((s) => s.countries))].sort();
-  const metricRow = (label, fn) =>
-    `<tr><th scope="row">${label}</th>${summaries.map((s) => `<td>${fn(s)}</td>`).join("")}</tr>`;
+  const cell = (s, body) =>
+    `<div class="comparison-value" aria-label="${e(s.name)}">${body}</div>`;
+  const dimension = (label, values) =>
+    `<section class="comparison-dimension"><h2>${label}</h2><div class="comparison-values" style="--compare-columns:${selected.length}">${values}</div></section>`;
   return (
-    introduction +
-    `<p class="notice">A shared agreement retains one record ID and can appear in several institution columns. A missing entry means no documented record in this view; it does not establish no activity. “Owned / operated” is a broad category: inspect the source for each institution’s actual role.</p><div class="result-tools compare-tools"><button data-copy>Copy comparison</button><button data-download>Export selected records</button><button data-print>Print cited comparison</button></div><div class="table-wrap"><table class="comparison-table"><caption>Comparison of documented records in the selected view</caption><thead><tr><th scope="col">Dimension</th>${summaries.map((s) => `<th scope="col">${e(s.name)}</th>`).join("")}</tr></thead><tbody>${metricRow("Documented records", (s) => String(s.rows.length))}${metricRow("Countries represented", (s) => String(s.countries.length))}${metricRow("Status not established", (s) => String(s.unknown))}${metricRow("Latest recorded event", (s) => e(fmt(s.latest)))}${Object.entries(
-      TACTICS,
-    )
-      .map(([t, label]) =>
-        metricRow(e(label), (s) =>
-          s.byTactic(t).length
-            ? String(s.byTactic(t).length)
-            : "No documented record",
+    intro +
+    `<div class="visual-comparison" style="--compare-columns:${selected.length}"><div class="comparison-names">${selected.map((n) => `<h2><a href="${url("institutions/?institution=" + encodeURIComponent(n))}">${e(n)}</a></h2>`).join("")}</div>
+    ${dimension("Verified markets", summaries.map((s) => cell(s, s.countries.length ? `<strong class="comparison-number">${s.countries.length}</strong><span class="sr-only">verified markets</span><ul class="market-chips">${s.countries.map((c) => `<li><a href="${url("markets/?" + stateQuery({ ...state, institution: [], country: c, record: "" }))}">${e(c)}</a></li>`).join("")}</ul>` : '<p class="muted">No verified current records for these filters.</p>')).join(""))}
+    ${tactics
+      .map((t) =>
+        dimension(
+          `${activityIcon(t, url)}<span>${e(TACTICS[t])}</span>`,
+          summaries
+            .map((s) => {
+              const matches = s.byTactic(t);
+              return cell(
+                s,
+                matches.length
+                  ? activityCollection(matches, {
+                      url,
+                      country: !state.country,
+                      state,
+                    })
+                  : '<span class="no-evidence" role="img" aria-label="No verified record in this dataset" title="No verified record in this dataset">—</span>',
+              );
+            })
+            .join(""),
         ),
       )
-      .join("")}</tbody></table></div><h2>Country and relationship detail</h2>${
-      countries.length
-        ? `<div class="table-wrap"><table class="comparison-table"><caption>Shared record IDs identify shared agreements. Activity types can overlap.</caption><thead><tr><th scope="col">Country</th>${selected.map((n) => `<th scope="col">${e(n)}</th>`).join("")}</tr></thead><tbody>${countries
-            .map(
-              (country) =>
-                `<tr><th scope="row">${e(country)}</th>${summaries
-                  .map(
-                    (s) =>
-                      `<td>${
-                        s.rows
-                          .filter((r) => r.country === country)
-                          .map(
-                            (r) =>
-                              `<p><button class="record-title" data-record="${e(r.id)}">${e(r.headline)}</button><small>${e(r.id)} · ${e(statusText(r))}</small></p>`,
-                          )
-                          .join("") || "No documented record"
-                      }</td>`,
-                  )
-                  .join("")}</tr>`,
-            )
-            .join("")}</tbody></table></div>`
-        : "<p>No documented records match these filters. Broaden the selection.</p>"
-    }` +
-    briefSources(uniqueRows)
+      .join("")}
+    ${dimension("Recent developments", summaries.map((s) => cell(s, developmentList(s.rows, { fmt, limit: 2 }))).join(""))}
+  </div>`
   );
 }

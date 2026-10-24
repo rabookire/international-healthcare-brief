@@ -7,8 +7,34 @@ import {
   panBy,
   fitPoints,
   spreadPoints,
+  clusterPoints,
 } from "../assets/map-camera.mjs";
 const near = (a, b) => assert.ok(Math.abs(a - b) < 1e-8, `${a} != ${b}`);
+test("anchored clusters retain every member and separate as the screen scale grows", () => {
+  const entries = [
+    { id: "a", xy: [10, 10] },
+    { id: "b", xy: [35, 10] },
+    { id: "c", xy: [90, 10] },
+  ];
+  const grouped = clusterPoints(entries, 1),
+    zoomed = clusterPoints(entries, 0.25);
+  assert.equal(grouped.length, 2);
+  assert.equal(zoomed.length, 3);
+  assert.deepEqual(grouped.flatMap((g) => g.members.map((m) => m.id)).sort(), [
+    "a",
+    "b",
+    "c",
+  ]);
+  assert.deepEqual(
+    entries.map((m) => m.xy),
+    [
+      [10, 10],
+      [35, 10],
+      [90, 10],
+    ],
+  );
+  assert.deepEqual(grouped[0].xy, [22.5, 10]);
+});
 test("anchored zoom keeps the same world point at the same viewport fraction", () => {
   const c = { x: 500, y: 220, zoom: 2 },
     point = { x: 600, y: 180 },

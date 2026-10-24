@@ -1,6 +1,6 @@
 # UCLA Health
 
-Last verified: 2026-10-20. Inventory as of 2026-10-20.
+Last verified: 2026-10-20. Inventory as of 2026-10-22.
 
 [Interactive profile](./index.html?institution=UCLA%20Health) · [Map slice](../map/?institution=UCLA%20Health) · [All institutions](../institutions/)
 

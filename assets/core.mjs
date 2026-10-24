@@ -51,6 +51,14 @@ export function institutionsOf(r) {
       .filter(Boolean)
   );
 }
+// Reader eligibility is independent of archival filtering and seed history.
+export const isCurrentRecord = (r) => r.status === "Operational";
+export const countriesOf = (r) => [
+  ...new Set([r.country, ...(r.covered_countries || [])].filter(Boolean)),
+];
+export function currentState(s) {
+  return { ...s, status: "", footprint: "all" };
+}
 export function readState(search = "", { defaultView = "list" } = {}) {
   const p = new URLSearchParams(search),
     legacy = p.get("status") === "Baseline";
@@ -108,7 +116,7 @@ export function filterRecords(rows, s) {
         (LENSES[s.lens] &&
           activityTags(r).some((t) => LENSES[s.lens].tactics.includes(t)))) &&
       regionMatches(r, s.region) &&
-      (!s.country || r.country === s.country) &&
+      (!s.country || countriesOf(r).includes(s.country)) &&
       (!s.status || r.status === s.status) &&
       (s.footprint !== "baseline" || r.seed_kind === "baseline") &&
       (s.footprint !== "new" || r.seed_kind !== "baseline") &&
@@ -170,6 +178,8 @@ export function csvExport(rows, metadata = {}) {
     "institution",
     "partner",
     "country",
+    "covered_countries",
+    "representative_location_note",
     "region",
     "city",
     "tactic_primary",

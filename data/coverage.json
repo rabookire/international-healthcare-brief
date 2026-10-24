@@ -1,24 +1,27 @@
 [
   {
     "institution": "Cleveland Clinic",
-    "scope_checked": "Official global newsrooms, London facility and Bupa contract releases, Abu Dhabi partner releases and WAM, representative expansion news, and existing payer-channel item.",
-    "unresolved": "The London cancer-centre announcement is July 17, 2025, outside this window; September 2026 clinical staffing alone does not create a new facility event. Narrow routine clinical-service additions were not seeded. Earlier baseline sourcing gaps: Central Asian University Hospital, Saudi sports-medicine plans and additional Connected affiliations need ongoing-status and operational-scope verification; regional representative coverage does not prove a separate physical office in each covered country.",
+    "scope_checked": "Official global newsrooms, London facility and Bupa contract releases, Abu Dhabi partner releases and WAM, representative expansion news, and existing payer-channel item. October 22, 2026 bounded reconciliation: Reopened exact country pages for 12 existing Unknown representatives; current support established. Added sourced multi-country coverage on three existing IDs and two substantive Connected advisory relationships.",
+    "unresolved": "Other Connected affiliations and Saudi sports-medicine plans remain unreviewed. Served markets do not prove separate staffed offices. Bermuda’s named representative is explicitly US-based and was not admitted as in-country representation.",
     "backfill_status": "Three new relationship events and two existing-ID updates recorded. Existing Allshores September 16 event remains valid. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "Mayo Clinic",
-    "scope_checked": "Official Mayo news network, Laboratories commercial releases, representative-office openings and China partner announcements.",
-    "unresolved": "Heyou is included narrowly for explicit facility-specific clinical advisory and patient-case consultations; actual consultation delivery is not demonstrated. Planned diagnostic expansion does not prove new facilities in every named market. Earlier baseline sourcing gaps: China authorized offices, Quito office and Mexico City office had retrieval failures and remain unseeded. Care Network memberships without specific operational commitments excluded; additional substantive consulting and payer agreements require review. Historical Abu Dhabi JV stake sold in 2024, so not represented as current. Ten initially accessible office detail pages timed out during repeat link verification; their country-level footprint facts now cite the current working official directory. Cities not specified in the directory are not inferred.",
+    "scope_checked": "Official Mayo news network, Laboratories commercial releases, representative-office openings and China partner announcements. October 22, 2026 bounded reconciliation: Rechecked current official representative directory and individually attempted its office pages. Seventeen existing Unknown office rows now describe currently offered patient assistance. Exact Quito and Mexico City pages recovered; China authorized referral network added conservatively.",
+    "unresolved": "Several country detail pages still time out intermittently; current support is supported narrowly by the official directory where that occurs. Original office opening dates remain unknown. China network admission does not assert four independent agreements or clinical facilities.",
     "backfill_status": "Two new service/investment relationships and one existing-ID opening update proposed. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "Johns Hopkins Medicine International",
-    "scope_checked": "Official international active-project pages and targeted 2025–2026 hospital/partner searches, including Bermuda, Vietnam, Brazil and Saudi Arabia; Maryland regulator records screened for international payer changes.",
-    "unresolved": "One Team Health November 2025 application/January 2026 approval tip is held: regulator PDF exceeds web retrieval limit and could not be independently opened. Routine accreditation and conference activity not treated as deal updates. Earlier baseline sourcing gaps: Singapore, HCL and other projects explicitly marked completed excluded from current baseline; exact start dates for undated active-project pages remain unknown. Regional projects were screened; separate global-health and standalone training activities excluded.",
+    "scope_checked": "Official international active-project pages and targeted 2025–2026 hospital/partner searches, including Bermuda, Vietnam, Brazil and Saudi Arabia; Maryland regulator records screened for international payer changes. October 22, 2026 bounded reconciliation: Matched each of 12 existing Unknown rows to official Active Projects sections; preserved the distinction from completed projects. Added the operating UAE stroke institute from its exact primary page.",
+    "unresolved": "Completed Singapore, HCL, Tokyo and other project pages remain outside active footprint. Al Madinah service delivery is attributed to Kennedy Krieger, with JHMI facilitating; held for role/materiality review. Bezmialem training-only boundary remains held.",
     "backfill_status": "No additional fully opened and verified material event admitted in this bounded twelve-month sweep. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Partially reviewed in the October 22, 2026 bounded reconciliation; systematic research coverage remains incomplete.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "MD Anderson Cancer Center",
@@ -29,10 +32,11 @@
   },
   {
     "institution": "Memorial Sloan Kettering",
-    "scope_checked": "Official MSK releases, existing Qatar MOU, international collaboration searches and relevant partner/government releases.",
-    "unresolved": "Research, data-platform, bilateral trial/training activity does not independently establish a material international operating relationship. Earlier baseline sourcing gaps: Historical Chennai center site redirects to general international services; current footprint could not be verified so held. Qatar MOU must remain Announced.",
+    "scope_checked": "Official MSK releases, existing Qatar MOU, international collaboration searches and relevant partner/government releases. October 22, 2026 bounded reconciliation: Opened current institutional program pages and added Australia RNSH, Brazil HSL and Nigeria ARGO research relationships under the existing T10 policy.",
+    "unresolved": "GCC tumor-board collaborations with Burjeel and KFSHRC remain held in this pass pending relationship grouping; no duplicate regional agreement count. Qatar MOU remains Announced. Broader research coverage is not systematic or complete.",
     "backfill_status": "Existing September 23, 2026 Qatar MOU remains the verified recent item; no additional qualifying material twelve-month operational event admitted. Scope: October 20, 2025–October 19, 2026. This is a bounded public-source sweep, not a guarantee of complete historical capture.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Partially reviewed in the October 22, 2026 bounded reconciliation; systematic research coverage remains incomplete.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "Mass General Brigham",
@@ -50,10 +54,11 @@
   },
   {
     "institution": "UPMC",
-    "scope_checked": "Opened full 2025 and 2026 Ireland/Italy news indexes; existing Kildare acquisition record; Limerick original hospital announcement and current developer update.",
-    "unresolved": "Clinical technology additions at SanPietro and ISMETT sixthOR expansion held on materiality. Malta2026 delegation described continuing existing collaboration, not a verified new agreement. Baseline inventory remains partial for smaller clinics. Earlier baseline sourcing gaps: Smaller sports medicine/outreach clinics, Limerick cancer center under development, ISMETT-2 build and Malta patient channel require additional source work. Baseline dates left blank when only month/year was proven. One hospital and separately operated cancer service share a campus; retained as distinct service/facility commitments.",
+    "scope_checked": "Opened full 2025 and 2026 Ireland/Italy news indexes; existing Kildare acquisition record; Limerick original hospital announcement and current developer update. October 22, 2026 bounded reconciliation: Opened current primary HZZO release for existing Croatia center, retaining one center ID; added insurer-access milestone and month-only opening history. Added UCC research agreement with original 2022 release and implemented May 2026 funding posts.",
+    "unresolved": "Malta channel requires current continuation evidence. Smaller clinics and Ri.MED commitments remain outside this bounded reconciliation. HZZO commemoration date is not asserted as the contract-signing date.",
     "backfill_status": "One new project record for Limerick, originalMay 2025 announcement and datedOctober 12 2026 construction-stage update. Existing KildareSeptember 28 2026 acquisition retained; no duplicate.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Partially reviewed in the October 22, 2026 bounded reconciliation; systematic research coverage remains incomplete.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "Boston Children's Hospital",
@@ -113,17 +118,19 @@
   },
   {
     "institution": "Cedars-Sinai",
-    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
-    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change. The May 20, 2026 institutional release confirms China and Qatar patient referral offices at country level; Shanghai/Doha city identities from older references remain held.",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs. October 22, 2026 bounded reconciliation: Opened May 21, 2026 primary account and admitted the established Sheba clinical-care/research collaboration as one relationship.",
+    "unresolved": "Other Israeli institutions mentioned in the source are not automatically distinct agreements. Previously unresolved original dates and current-status questions for other footprint rows remain open.",
     "backfill_status": "Existing IHB-0085 qualifies: planned-clinic source Jan 16, 2026 and opened confirmation May 20, 2026.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Partially reviewed in the October 22, 2026 bounded reconciliation; systematic research coverage remains incomplete.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "Penn Medicine",
-    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs.",
-    "unresolved": "Bounded public-source sweep, not an exhaustive historical archive. No absence-of-activity or complete-footprint claim. Undated current footprint is not treated as a new historical event. Earlier baseline sourcing gaps: Inventory is source-backed but not exhaustive; older announcements do not establish absence of later change.",
+    "scope_checked": "October 20, 2025–October 19, 2026 targeted searches for operational partnerships, overseas facilities, offices, payer agreements, exits, international-specific leadership and primary institutional/partner announcements; compared with existing tracker IDs. October 22, 2026 bounded reconciliation: Opened July 7, 2026 institutional account and admitted Penn Medicine’s substantive ongoing Botswana clinical/research partnership.",
+    "unresolved": "No general University of Pennsylvania global footprint was imported. Systematic research coverage and other country-specific operational relationships remain incomplete.",
     "backfill_status": "No additional qualifying dated deal/opening/payer/office/exit event verified in the twelve-month bounded sweep.",
-    "research_coverage": "Not systematically reviewed under the research inclusion policy introduced on 2026-10-21."
+    "research_coverage": "Partially reviewed in the October 22, 2026 bounded reconciliation; systematic research coverage remains incomplete.",
+    "reconciliation_status": "2026-10-22: Bounded source reconciliation, not a complete daily scan or exhaustive historical review."
   },
   {
     "institution": "Dana-Farber Cancer Institute",
